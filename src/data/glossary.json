@@ -861,7 +861,10 @@
     "avoid": [],
     "disputed": [],
     "notes": "自分の性別をどのように感じ、認識しているかという内面的な感覚。出生時に割り当てられた性別とは別に、自分自身が感じる性のあり方を指します。",
-    "source": "Gender identity"
+    "source": "Gender identity",
+    "wikipedia": {
+      "ja": "https://ja.wikipedia.org/wiki/性同一性"
+    }
   },
   {
     "id": "questioning",
@@ -1051,7 +1054,8 @@
       "ko": "https://ko.wikipedia.org/wiki/패싱_(젠더)",
       "es": "https://es.wikipedia.org/wiki/Passing_(identidad_de_género)",
       "zhHans": "https://zh.wikipedia.org/zh-hans/Passing",
-      "zhHant": "https://zh.wikipedia.org/zh-hant/Passing"
+      "zhHant": "https://zh.wikipedia.org/zh-hant/Passing",
+      "ja": "https://ja.wikipedia.org/wiki/パッシング"
     }
   },
   {
@@ -1182,7 +1186,10 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "source": "Prolactin（PRL）"
+    "source": "Prolactin（PRL）",
+    "wikipedia": {
+      "ja": "https://ja.wikipedia.org/wiki/プロラクチン"
+    }
   },
   {
     "id": "misgendering",
@@ -1681,7 +1688,10 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "source": "Resonance"
+    "source": "Resonance",
+    "wikipedia": {
+      "ja": "https://ja.wikipedia.org/wiki/共鳴"
+    }
   },
   {
     "id": "conjugated-estrogens",
@@ -2141,7 +2151,10 @@
     ],
     "avoid": [],
     "disputed": [],
-    "source": "Psychological Counseling"
+    "source": "Psychological Counseling",
+    "wikipedia": {
+      "ja": "https://ja.wikipedia.org/wiki/カウンセリング"
+    }
   },
   {
     "id": "diagnosis-certificate",
@@ -2157,7 +2170,10 @@
     "avoid": [],
     "disputed": [],
     "notes": "医療機関で受診・治療を受けた事実や診断結果を証明する書類のこと。ホルモン療法や手術、各種手続きの際に必要となることがある。",
-    "source": "Diagnosis Certificate"
+    "source": "Diagnosis Certificate",
+    "wikipedia": {
+      "ja": "https://ja.wikipedia.org/wiki/診断書"
+    }
   },
   {
     "id": "cyproterone-acetate",
@@ -2256,7 +2272,8 @@
     "source": "Sex Hormone",
     "wikipedia": {
       "en": "https://en.wikipedia.org/wiki/Sex_hormones",
-      "es": "https://es.wikipedia.org/wiki/Hormona_sexual"
+      "es": "https://es.wikipedia.org/wiki/Hormona_sexual",
+      "ja": "https://ja.wikipedia.org/wiki/性ホルモン"
     }
   },
   {
@@ -2403,7 +2420,10 @@
     "avoid": [],
     "disputed": [],
     "notes": "自分の性のあり方に合わせて、呼び名・服装・社会生活、必要に応じて医療や法的手続きなどを変えていくこと。社会的・医療的・法的な側面があり、どこまで行うかは人によって異なります。すべてを行う必要はありません。",
-    "source": "Transitioning (transgender)"
+    "source": "Transitioning (transgender)",
+    "wikipedia": {
+      "ja": "https://ja.wikipedia.org/wiki/性別移行"
+    }
   },
   {
     "id": "gaht",
