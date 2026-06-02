@@ -15,6 +15,9 @@ const contentPages = [
   '/surgery/',
   '/hair-removal/',
   '/legal-change/',
+  '/coming-out/',
+  '/safety/',
+  '/puberty-blockers/',
   '/learn/',
   '/pride/',
   '/works/',
@@ -60,7 +63,7 @@ test.describe('レイアウトの一貫性', () => {
 
   test('はじめての導線がトップに表示される', async ({ page }) => {
     await page.goto('/');
-    await expect(page.getByRole('link', { name: 'まず読む' })).toBeVisible();
+    await expect(page.getByRole('link', { name: 'はじめに' })).toBeVisible();
     await expect(page.locator('.site-nav').getByRole('link', { name: 'はじめての方へ' })).toBeVisible();
   });
 });
