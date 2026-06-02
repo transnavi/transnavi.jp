@@ -2,28 +2,14 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import References from '../components/References.astro';
 
-const groups = [
-  {
-    name: '性別適合手術（SRS / GAS）',
-    items: [
-      '女性化の方向：造腟術（陰茎反転法など）、精巣の摘出（去勢術）',
-      '男性化の方向：胸の手術（乳房切除）、子宮・卵巣の摘出、陰茎形成（metoidioplasty / phalloplasty）',
-    ],
-  },
-  {
-    name: '顔・のど・胸の手術',
-    items: [
-      '顔の手術（FFS など）：輪郭や鼻、額などの印象を変える',
-      '喉仏の手術（甲状軟骨形成）：のどの出っぱりを目立たなくする',
-      '豊胸：胸をふくらませる',
-    ],
-  },
-  {
-    name: '声の手術',
-    items: [
-      '声の女性化手術：声帯などに手を加える方法。まずは練習から始めるのが一般的です（→ 声を変える練習）。',
-    ],
-  },
+// FFS is a set of procedures, not one operation.
+const ffsParts = [
+  '額（前頭部）：眉の上の骨の出っぱりや、前に張り出した額を削って、なだらかに整える。',
+  '髪の生え際：おでこを狭く見せるために、生え際を前に出す（ヘアライン前進）。',
+  '鼻：鼻すじや鼻先の形を整える（鼻形成）。',
+  '頬：丸みを足したり、整えたりする。',
+  '顎・エラ：下顎の角（エラ）や顎先を、小さく・やわらかい印象に整える。',
+  '口元：上唇を少し持ち上げる、など。',
 ];
 ---
 
@@ -43,15 +29,39 @@ const groups = [
 
     <section aria-labelledby="kinds">
       <h2 id="kinds">どんな手術があるか</h2>
-      <p class="resource-section-intro">ここでは「こういうものがある」という入口だけを紹介します。詳しい内容は医療機関で確認してください。</p>
-      {groups.map((group) => (
-        <div class="link-group">
-          <h3 class="link-group-region">{group.name}</h3>
-          <ul class="assure-list assure-list-plain">
-            {group.items.map((item) => <li>{item}</li>)}
-          </ul>
-        </div>
-      ))}
+      <p class="resource-section-intro">主な手術を、女性化・男性化の方向ごとに紹介します。ここでは「こういうものがある」という入口です。詳しい内容や適応は、医療機関で確認してください。</p>
+
+      <h3 id="ffs">FFS（顔面女性化手術）</h3>
+      <p>
+        FFS（Facial Feminization Surgery）は、顔の骨や軟部組織に手を加えて、輪郭の印象を女性的に近づける手術の<strong>総称</strong>です。ひとつの手術ではなく、いくつかの部位を組み合わせて行います。
+      </p>
+      <ul class="assure-list assure-list-plain">
+        {ffsParts.map((part) => <li>{part}</li>)}
+      </ul>
+      <p>
+        どの部位を行うかは、もともとの顔立ちや希望によって人それぞれです。骨を扱う手術はからだへの負担も大きいので、術者の経験や実績、術後の回復について、よく確認して選んでください。声や喉仏とあわせて相談する人もいます。
+      </p>
+
+      <h3>喉仏を目立たなくする（甲状軟骨形成術）</h3>
+      <p>のどの軟骨（喉仏）の出っぱりを削って、目立たなくする手術です。FFS とあわせて行うこともあります。</p>
+
+      <h3>豊胸（乳房増大術）</h3>
+      <p>ホルモン療法だけでは足りないと感じるときに、シリコンなどで胸をふくらませる手術です。ホルモンによる胸の発達には時間がかかるため、数年ようすを見てから検討する人もいます。</p>
+
+      <h3>造腟術（女性化の性別適合手術・SRS）</h3>
+      <p>
+        陰茎や陰嚢の組織を使って、腟と外陰部を形成する手術です（陰茎反転法など）。あわせて精巣の摘出（去勢術）を行います。術後は、形を保つために<strong>定期的なダイレーション（拡張）</strong>が必要です。回復に時間がかかり、合併症もあるため、術者選びと術後のケアがとても大切です。
+      </p>
+
+      <h3>男性化の手術</h3>
+      <ul class="assure-list assure-list-plain">
+        <li><strong>胸オペ（乳房切除・胸の男性化）</strong>：胸を平らにする手術。比較的早い段階で希望する人が多くいます。</li>
+        <li><strong>子宮・卵巣の摘出</strong>。</li>
+        <li><strong>陰茎形成</strong>：ホルモンで大きくなった陰核を使う方法（メトイジオプラスティ）や、ほかの部位の皮膚で陰茎を形づくる方法（ファロプラスティ）などがあります。</li>
+      </ul>
+
+      <h3>声の手術（音声女性化手術）</h3>
+      <p>声帯や喉に手を加えて、声を高くする手術です。ただし、まずは練習から始めるのが一般的です（<a href="/voice/">声を変える練習</a>）。</p>
     </section>
 
     <section aria-labelledby="reality">
@@ -79,7 +89,7 @@ const groups = [
       {' '}<a href="https://mtf.wiki/" target="_blank" rel="noreferrer">MtF.wiki</a>
       や
       {' '}<a href="https://ftm.wiki/" target="_blank" rel="noreferrer">FtM.wiki</a>
-      なども参考になります（術者一覧は海外中心。日本の制度・費用とは異なります）。費用や保険は<a href="/clinics/">医療機関</a>へ確認してください。
+      なども参考になります（術者一覧は海外中心。日本の制度・費用とは異なります）。FFS や美容医療のくわしい発信は<a href="/resources/">関連サイト</a>にもまとまっています。費用や保険は<a href="/clinics/">医療機関</a>へ確認してください。
     </p>
     <References route="/surgery/" />
   </article>
