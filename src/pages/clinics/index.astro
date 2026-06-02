@@ -66,6 +66,24 @@ const categoryDefinitions = [
   { id: 'mental', label: '精神科（メンタルクリニック）' },
 ] as const;
 
+// Institution type, derived from the name (病院 ≥20 beds; 医院・クリニック are
+// 診療所). Others are specialty-named practices (産婦人科・美容外科 など).
+const typeOf = (name: string): string => {
+  if (name.includes('病院')) return '病院';
+  if (name.includes('クリニック')) return 'クリニック';
+  if (name.includes('医院')) return '医院';
+  if (name.includes('診療所')) return '診療所';
+  return 'その他';
+};
+const typeDefinitions = [
+  { id: '', label: 'すべて' },
+  { id: '病院', label: '病院' },
+  { id: 'クリニック', label: 'クリニック' },
+  { id: '医院', label: '医院' },
+  { id: '診療所', label: '診療所' },
+  { id: 'その他', label: 'その他' },
+] as const;
+
 const clinicsWithCategories = clinics.map((clinic) => {
   const categories = new Set<string>();
   const links = splitClinicUrls(clinic.urls);
@@ -90,6 +108,7 @@ const clinicsWithCategories = clinics.map((clinic) => {
   return {
     ...clinic,
     categories: [...categories],
+    type: typeOf(clinic.name),
     links,
   };
 });
@@ -125,19 +144,39 @@ const groupedClinics = prefectures.map((prefecture) => ({
       <span>{prefectures.length}地域</span>
     </div>
 
-    <section class="filter-tabs" aria-label="診療区分" data-filter-tabs>
-      {categoryDefinitions.map((category) => (
-        <button
-          type="button"
-          class="filter-tab"
-          data-filter-tab
-          data-filter-value={category.id}
-          aria-pressed={category.id === 'hrt' ? 'true' : 'false'}
-        >
-          {category.label}
-        </button>
-      ))}
-    </section>
+    <div class="filter-group-row">
+      <span class="filter-tabs-label">診療区分</span>
+      <section class="filter-tabs" aria-label="診療区分" data-filter-tabs data-filter-key="categories">
+        {categoryDefinitions.map((category) => (
+          <button
+            type="button"
+            class="filter-tab"
+            data-filter-tab
+            data-filter-value={category.id}
+            aria-pressed={category.id === 'hrt' ? 'true' : 'false'}
+          >
+            {category.label}
+          </button>
+        ))}
+      </section>
+    </div>
+
+    <div class="filter-group-row">
+      <span class="filter-tabs-label">施設の種類</span>
+      <section class="filter-tabs" aria-label="施設の種類" data-filter-tabs data-filter-key="types">
+        {typeDefinitions.map((type) => (
+          <button
+            type="button"
+            class="filter-tab"
+            data-filter-tab
+            data-filter-value={type.id}
+            aria-pressed={type.id === '' ? 'true' : 'false'}
+          >
+            {type.label}
+          </button>
+        ))}
+      </section>
+    </div>
 
     <form class="index-search" role="search" data-filter-form>
       <label for="clinic-search">医療機関を検索</label>
@@ -157,13 +196,17 @@ const groupedClinics = prefectures.map((prefecture) => ({
               class="clinic-card"
               data-filter-item
               data-categories={clinic.categories.join(',')}
-              data-search={[clinic.name, clinic.displayName, clinic.prefecture, clinic.city, clinic.address, clinic.phone, ...clinic.services].filter(Boolean).join(' ')}
+              data-types={clinic.type}
+              data-search={[clinic.name, clinic.displayName, clinic.prefecture, clinic.city, clinic.address, clinic.phone, clinic.type, ...clinic.services].filter(Boolean).join(' ')}
             >
               <div class="clinic-card-header">
                 <div>
-                  <a class="clinic-name-link" href={`/clinics/${clinic.id}/`}>
-                    <span class="clinic-name">{clinic.name}</span>
-                  </a>
+                  <div class="clinic-name-row">
+                    <a class="clinic-name-link" href={`/clinics/${clinic.id}/`}>
+                      <span class="clinic-name">{clinic.name}</span>
+                    </a>
+                    <span class="clinic-type">{clinic.type}</span>
+                  </div>
                   <span>{[clinic.city, clinic.address].filter(Boolean).join(' / ')}</span>
                 </div>
                 <button type="button" class="clinic-expand-button" data-expand-button aria-expanded="false">
@@ -203,6 +246,10 @@ const groupedClinics = prefectures.map((prefecture) => ({
                   <div>
                     <dt>地域</dt>
                     <dd>{[clinic.prefecture, clinic.city].filter(Boolean).join(' / ')}</dd>
+                  </div>
+                  <div>
+                    <dt>施設の種類</dt>
+                    <dd>{clinic.type}</dd>
                   </div>
                   {clinic.address && (
                     <div>

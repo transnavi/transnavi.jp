@@ -1,0 +1,18 @@
+<svg viewBox="0 0 240 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="とらんすナビのキャラクター">
+<defs>
+    <linearGradient id="u-hair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d7c6f0"/><stop offset="1" stop-color="#c3aee8"/></linearGradient>
+    <linearGradient id="u-body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe0fb"/><stop offset="1" stop-color="#9fcef7"/></linearGradient>
+    <linearGradient id="u-coat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eaf4fe"/></linearGradient>
+  </defs>
+<ellipse cx="120" cy="190" rx="64" ry="11" fill="#9fcef7" opacity="0.22"/>
+<circle cx="183" cy="44" r="22" fill="#fff" stroke="#cfe6fb" stroke-width="2"/><circle cx="158" cy="70" r="6.5" fill="#fff" stroke="#cfe6fb" stroke-width="2"/><circle cx="148" cy="84" r="3.7" fill="#fff" stroke="#cfe6fb" stroke-width="2"/><path d="M176 36c0-6 14-6 14 2 0 6-7 5-7 11" fill="none" stroke="#ff9ec4" stroke-width="3.4" stroke-linecap="round"/><circle cx="183" cy="56" r="2.1" fill="#ff9ec4"/><path d="M54 60 l2.4 6 6 2.4 -6 2.4 -2.4 6 -2.4 -6 -6 -2.4 6 -2.4 z" fill="#ffd1e0"/><path d="M206 112 l1.8 4.5 4.5 1.8 -4.5 1.8 -1.8 4.5 -1.8 -4.5 -4.5 -1.8 4.5 -1.8 z" fill="#bfe0fb"/>
+<path d="M84 188 C80 150 86 128 120 128 C154 128 160 150 156 188 Z" fill="url(#u-body)"/>
+
+<circle cx="86" cy="158" r="10" fill="#fce9e0"/><circle cx="154" cy="158" r="10" fill="#fce9e0"/>
+<circle cx="120" cy="92" r="46" fill="#fce9e0"/>
+<path d="M75 92 C73 56 96 44 120 44 C144 44 167 56 165 92 C160 78 150 72 150 72 C150 72 150 84 142 86 C138 74 132 70 132 70 C132 70 130 82 124 84 C120 70 112 68 112 68 C112 68 110 82 104 84 C100 72 92 72 92 76 C88 80 82 80 75 92 Z" fill="url(#u-hair)"/>
+<path d="M99 79 q7.5 -4.5 15 -0.5" fill="none" stroke="#b3a3d2" stroke-width="2.6" stroke-linecap="round"/><path d="M126 78.5 q7.5 -4 15 0.5" fill="none" stroke="#b3a3d2" stroke-width="2.6" stroke-linecap="round"/><ellipse cx="105" cy="96" rx="4.6" ry="6.2" fill="#4a5d80"/><ellipse cx="135" cy="96" rx="4.6" ry="6.2" fill="#4a5d80"/><circle cx="106.6" cy="93.6" r="1.5" fill="#fff"/><circle cx="136.6" cy="93.6" r="1.5" fill="#fff"/><path d="M114 113 q6 4 12 0" fill="none" stroke="#c98aa0" stroke-width="2.6" stroke-linecap="round"/>
+
+<ellipse cx="92" cy="107" rx="7" ry="4.2" fill="#fbb6ce" opacity="0.6"/><ellipse cx="148" cy="107" rx="7" ry="4.2" fill="#fbb6ce" opacity="0.6"/>
+
+</svg>

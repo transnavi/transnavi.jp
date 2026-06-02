@@ -1117,6 +1117,46 @@ ul {
   color: var(--ink-heading);
 }
 
+/* A labelled row per filter dimension (診療区分 / 施設の種類). */
+.filter-group-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+  margin: 0 0 14px;
+}
+
+.filter-tabs-label {
+  flex: 0 0 auto;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.filter-group-row .filter-tabs {
+  margin: 0;
+}
+
+.clinic-name-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Institution-type badge (高い詳細度で muted の既定色を上書き). */
+.clinic-card .clinic-name-row .clinic-type {
+  display: inline-block;
+  padding: 1px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--ink-heading);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
 .index-search {
   display: grid;
   gap: 8px;
