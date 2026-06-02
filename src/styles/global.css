@@ -1137,13 +1137,26 @@ ul {
   transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
 }
 
+.topic-item,
+.article-link,
+.glossary-card,
+.clinic-card {
+  /* Keep clickable card-buttons crisp: a solid (not see-through) surface,
+     no frosted backdrop blur, and a tighter shadow instead of the large soft
+     colored halo — so text and edges read sharply rather than hazy. */
+  background: #fff;
+  backdrop-filter: none;
+  border-color: rgba(150, 196, 233, 0.85);
+  box-shadow: 0 1px 2px rgba(63, 74, 98, 0.05), 0 3px 10px rgba(154, 207, 243, 0.15);
+}
+
 .clinic-card:hover,
 .glossary-card:hover,
 .article-link:hover,
 .topic-item:hover {
   transform: translateY(-2px);
   border-color: var(--line-hover);
-  box-shadow: var(--shadow-hover);
+  box-shadow: 0 2px 4px rgba(63, 74, 98, 0.06), 0 6px 16px rgba(255, 166, 204, 0.2);
 }
 
 .clinic-card-header {
