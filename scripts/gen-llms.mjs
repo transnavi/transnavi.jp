@@ -12,7 +12,7 @@ const SITE = 'https://transnavi.jp';
 // Prose pages, grouped — content is extracted from their built HTML.
 const sections = [
   { title: 'はじめの一歩', routes: ['/', '/start/', '/basics/'] },
-  { title: '性別と自分を知る', routes: ['/gender/', '/dysphoria/'] },
+  { title: '性別と自分を知る', routes: ['/gender/', '/orientation/', '/dysphoria/'] },
   { title: '性別移行・からだと医療', routes: ['/transition/', '/puberty-blockers/', '/hrt-effects/', '/hrt-medications/', '/fertility/', '/voice/', '/presentation/', '/hair-removal/', '/surgery/'] },
   { title: '暮らしと社会', routes: ['/coming-out/', '/allies/', '/safety/', '/legal-change/', '/flags/', '/pride/'] },
   { title: '相談・地域', routes: ['/support/', '/clinics/', '/map/'] },

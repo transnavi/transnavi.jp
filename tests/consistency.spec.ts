@@ -8,6 +8,7 @@ const contentPages = [
   '/allies/',
   '/basics/',
   '/gender/',
+  '/orientation/',
   '/dysphoria/',
   '/transition/',
   '/hrt-effects/',
