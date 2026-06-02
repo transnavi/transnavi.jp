@@ -11,11 +11,13 @@ const actions = [
 
 const routes = [
   { href: '/start/', when: '自分がトランスかも', to: 'はじめての方へ' },
+  { href: '/basics/', when: 'トランス・シス・ノンバイナリーって？', to: '基本のことば' },
   { href: '/dysphoria/', when: '感じている違和感を知りたい', to: '性別違和を知る' },
   { href: '/transition/', when: 'これからできることを知りたい', to: '性別移行を知る' },
   { href: '/glossary/', when: '言葉がわからない', to: '用語集' },
   { href: '/support/', when: '相談したい', to: '相談先' },
   { href: '/clinics/', when: '病院を探したい', to: '医療機関一覧' },
+  { href: '/map/', when: '近くの医療機関や団体を探したい', to: '地図で探す' },
   { href: '/allies/', when: '家族・学校・友人に説明したい', to: '周囲の人へ' },
 ];
 ---
@@ -60,6 +62,14 @@ const routes = [
           <span class="route-to">{route.to}</span>
         </a>
       ))}
+    </div>
+  </section>
+
+  <section aria-labelledby="community-heading">
+    <h2 id="community-heading">なかまと、ゆるくつながる</h2>
+    <p>同じように悩んだり、考えたりしている人たちが集まる、おしゃべりの場（Discord）があります。見るだけでも、書き込んでも大丈夫。あなたのペースでどうぞ。</p>
+    <div class="hero-actions">
+      <a class="hero-button hero-button-primary" href="https://discord.gg/S8NJGeS3Da" target="_blank" rel="noreferrer">Discord に参加する</a>
     </div>
   </section>
 
