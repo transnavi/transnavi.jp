@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const actions = [
+  { href: '/start/', label: 'まず読む', primary: true },
+  { href: '/glossary/', label: '用語を知る' },
+  { href: '/support/', label: '相談先を探す' },
+  { href: '/clinics/', label: '医療機関を探す' },
+];
+
+const routes = [
+  { href: '/start/', when: '自分がトランスかも', to: 'はじめての方へ' },
+  { href: '/glossary/', when: '言葉がわからない', to: '用語集' },
+  { href: '/support/', when: '相談したい', to: '相談先' },
+  { href: '/clinics/', when: '病院を探したい', to: '医療機関一覧' },
+  { href: '/allies/', when: '家族・学校・友人に説明したい', to: '周囲の人へ' },
+];
+---
+
+<BaseLayout
+  title="とらんすナビ - 日本のトランスジェンダー情報ウィキ"
+  description="「自分はトランスかもしれない」と思ったとき、日本で情報を探すための出発点。まだ答えが出ていなくても大丈夫です。"
+>
+  <section class="intro hero" aria-labelledby="site-description">
+    <h1 id="site-description">「自分はトランスかもしれない」と思ったあなたへ</h1>
+    <p class="lead">
+      まだ答えが出ていなくても大丈夫です。<br />
+      このサイトは、日本でトランスジェンダーに関する情報を探すための出発点です。
+    </p>
+    <div class="hero-actions">
+      {actions.map((action) => (
+        <a class:list={['hero-button', { 'hero-button-primary': action.primary }]} href={action.href}>
+          {action.label}
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section aria-labelledby="reassure">
+    <h2 id="reassure">まず、安心してほしいこと</h2>
+    <ul class="assure-list">
+      <li>すぐに決めなくていい</li>
+      <li>ひとりで抱えなくていい</li>
+      <li>誰かに話すかどうかは自分で選んでいい</li>
+      <li>情報を知ることは悪いことではない</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="routes">
+    <h2 id="routes">こんなとき、どこを読めばいい？</h2>
+    <div class="route-list">
+      {routes.map((route) => (
+        <a class="route-item" href={route.href}>
+          <span class="route-when">{route.when}</span>
+          <span class="route-arrow" aria-hidden="true">→</span>
+          <span class="route-to">{route.to}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <aside class="entry-message" role="note" aria-label="読んでいるあなたへ">
+    <p>昔の自分を、責め続けないであげてくださいね。あの子だって、何も見えない霧の中で、必死に迷っていたんだから。</p>
+  </aside>
+
+  <section class="notice" aria-labelledby="about-site">
+    <h2 id="about-site">このサイトについて</h2>
+    <ul class="assure-list assure-list-plain">
+      <li>医療や法律の最終的な判断を示すものではありません</li>
+      <li>情報の新しさにできるだけ注意しています</li>
+      <li>当事者の安全をいちばん大切にしています</li>
+      <li>誤りの修正や情報の追加を受け付けています（<a href="/edit/">情報を送る</a>）</li>
+    </ul>
+    <p class="home-motto">私たちの存在そのものが、悪意への最大の抵抗だ。</p>
+  </section>
+</BaseLayout>

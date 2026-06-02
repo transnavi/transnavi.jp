@@ -1,0 +1,34 @@
+{
+  "name": "transnavi.jp",
+  "type": "module",
+  "version": "0.0.1",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check",
+    "test:browser": "playwright test",
+    "deploy": "npm run build && wrangler deploy",
+    "generate-types": "wrangler types",
+    "import:mtf-clinics": "node scripts/import-mtf-clinics.mjs",
+    "import:mtf-content": "node scripts/import-mtf-ja-content.mjs",
+    "import:terminology": "node scripts/import-terminology.mjs",
+    "import:mtf": "npm run import:mtf-clinics && npm run import:mtf-content && npm run import:terminology"
+  },
+  "dependencies": {
+    "astro": "^5",
+    "wrangler": "^4.95.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "@cloudflare/workers-types": "^4.20260531.1",
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,147 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import worksData from '../data/works.json';
+import { workCategoryLabels, workCategoryOrder, type Work } from '../types/work';
+
+const works = worksData as Work[];
+
+const categoryRank = new Map(workCategoryOrder.map((category, index) => [category, index]));
+const sorted = [...works].sort((a, b) => {
+  const ra = categoryRank.get(a.category) ?? 99;
+  const rb = categoryRank.get(b.category) ?? 99;
+  if (ra !== rb) return ra - rb;
+  const ya = a.year ?? Infinity;
+  const yb = b.year ?? Infinity;
+  if (ya !== yb) return ya - yb;
+  return a.title.localeCompare(b.title, 'ja');
+});
+
+const usedCategories = workCategoryOrder.filter((category) =>
+  works.some((work) => work.category === category),
+);
+
+const posterInitial = (title: string) => Array.from(title)[0] ?? '?';
+---
+
+<BaseLayout
+  title="文芸作品データベース - とらんすナビ"
+  description="トランスジェンダーやノンバイナリーに関わる映画、ドラマ、漫画、小説、ゲームなどの文化作品データベース。"
+>
+  <article class="article-shell" data-works-db>
+    <div class="eyebrow">文芸作品</div>
+    <h1>文芸作品データベース</h1>
+    <p class="lead">
+      トランスジェンダー、ノンバイナリー、性別越境などに関わる映画、ドラマ、漫画、小説、ゲームなどの作品一覧です。
+    </p>
+    <p>
+      一部の作品には成人向け作品、古い用語、現在では一般的でない表現を含むものがあります。<span class="badge badge-adult">R18</span> が付いた作品は成人向けです。
+    </p>
+
+    <div class="clinic-summary" aria-label="掲載件数">
+      <span><span data-filter-count>{works.length}</span>件</span>
+      <span>{usedCategories.length}分類</span>
+    </div>
+
+    <section class="filter-tabs" aria-label="分類" data-filter-tabs>
+      <button type="button" class="filter-tab" data-filter-tab data-filter-value="" aria-pressed="true">
+        すべて
+      </button>
+      {usedCategories.map((category) => (
+        <button
+          type="button"
+          class="filter-tab"
+          data-filter-tab
+          data-filter-value={category}
+          aria-pressed="false"
+        >
+          {workCategoryLabels[category]}
+        </button>
+      ))}
+    </section>
+
+    <form class="index-search" role="search" data-filter-form>
+      <label for="works-search">作品を検索</label>
+      <input
+        id="works-search"
+        name="q"
+        type="search"
+        autocomplete="off"
+        placeholder="例: 映画、放浪息子、2018"
+        data-filter-input
+      />
+      <p id="works-search-help">作品名、分類、公開年で絞り込めます。</p>
+    </form>
+
+    <div class="works-table-wrap">
+      <table class="works-table">
+        <thead data-sort-head>
+          <tr>
+            <th scope="col" class="works-col-poster">ポスター</th>
+            <th scope="col" aria-sort="none">
+              <button type="button" class="works-sort" data-sort-key="title">作品</button>
+            </th>
+            <th scope="col" class="works-col-category" aria-sort="ascending">
+              <button type="button" class="works-sort" data-sort-key="category" data-sort-default>分類</button>
+            </th>
+            <th scope="col" class="works-col-year" aria-sort="none">
+              <button type="button" class="works-sort" data-sort-key="year">年</button>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {sorted.map((work) => (
+            <tr
+              data-filter-item
+              data-categories={work.category}
+              data-sort-title={work.title}
+              data-sort-category={categoryRank.get(work.category) ?? 99}
+              data-sort-year={work.year ?? ''}
+              data-search={[work.title, workCategoryLabels[work.category], work.year, work.series, ...(work.tags ?? [])].filter(Boolean).join(' ')}
+            >
+              <td class="works-col-poster">
+                <div class="work-poster" data-initial={posterInitial(work.title)}>
+                  {work.poster && (
+                    <img
+                      src={work.poster}
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      referrerpolicy="no-referrer"
+                      onerror="this.remove()"
+                    />
+                  )}
+                </div>
+              </td>
+              <td>
+                {work.url ? (
+                  <a class="work-title" href={work.url} target="_blank" rel="noreferrer">{work.title}</a>
+                ) : (
+                  <span class="work-title">{work.title}</span>
+                )}
+                {work.adult && <span class="badge badge-adult">R18</span>}
+                {work.series && <span class="work-series">{work.series}</span>}
+                {work.tags && work.tags.length > 0 && (
+                  <span class="work-tags">
+                    {work.tags.map((tag) => (
+                      <span class="work-tag">{tag}</span>
+                    ))}
+                  </span>
+                )}
+              </td>
+              <td class="works-col-category">{workCategoryLabels[work.category]}</td>
+              <td class="works-col-year">{work.year ?? '—'}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p class="empty-state" data-filter-empty hidden>条件に合う作品は見つかりませんでした。</p>
+    </div>
+
+    <p class="source-note">
+      作品データは
+      {' '}<a href="https://2345.lgbt/ja/cultural-works" target="_blank" rel="noreferrer">2345.LGBT</a>（CC0）をもとに、当サイトで追加・更新しています。ポスター画像は各配給元・出版社・配信元に帰属し、参照のために各サイトから読み込んでいます。
+    </p>
+  </article>
+  <script is:inline src="/filter-index.js" defer></script>
+  <script is:inline src="/works-sort.js" defer></script>
+</BaseLayout>

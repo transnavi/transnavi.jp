@@ -1,0 +1,241 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import clinicsData from '../../data/clinics.json';
+import type { Clinic } from '../../types/clinic';
+import { splitClinicUrls } from '../../utils/clinic-links';
+
+const clinics = clinicsData as Clinic[];
+const surgeryPattern = /(SRS|睾丸摘出|性別適合)/i;
+const mentalPattern = /(精神科|心療内科|心理|メンタル)/;
+const explicitSrsClinicIds = new Set([
+  'hrt-hokkaido-chuuou-sapmed',
+]);
+const prefectureOrder = [
+  '北海道',
+  '青森県',
+  '岩手県',
+  '宮城県',
+  '秋田県',
+  '山形県',
+  '福島県',
+  '茨城県',
+  '栃木県',
+  '群馬県',
+  '埼玉県',
+  '千葉県',
+  '東京都',
+  '神奈川県',
+  '新潟県',
+  '富山県',
+  '石川県',
+  '福井県',
+  '山梨県',
+  '長野県',
+  '岐阜県',
+  '静岡県',
+  '愛知県',
+  '三重県',
+  '滋賀県',
+  '京都府',
+  '大阪府',
+  '兵庫県',
+  '奈良県',
+  '和歌山県',
+  '鳥取県',
+  '島根県',
+  '岡山県',
+  '広島県',
+  '山口県',
+  '徳島県',
+  '香川県',
+  '愛媛県',
+  '高知県',
+  '福岡県',
+  '佐賀県',
+  '長崎県',
+  '熊本県',
+  '大分県',
+  '宮崎県',
+  '鹿児島県',
+  '沖縄県',
+];
+
+const categoryDefinitions = [
+  { id: 'hrt', label: 'ホルモン療法（HRT）' },
+  { id: 'srs', label: '性別適合手術（SRS）' },
+  { id: 'mental', label: '精神科（メンタルクリニック）' },
+] as const;
+
+const clinicsWithCategories = clinics.map((clinic) => {
+  const categories = new Set<string>();
+  const links = splitClinicUrls(clinic.urls);
+
+  if (clinic.id.startsWith('hrt') || clinic.services.some((service) => service.includes('ホルモン'))) {
+    categories.add('hrt');
+  }
+
+  if (
+    clinic.id.startsWith('psyco') ||
+    clinic.services.some((service) => service.includes('精神') || service.includes('診断')) ||
+    mentalPattern.test(clinic.name) ||
+    mentalPattern.test(clinic.notes)
+  ) {
+    categories.add('mental');
+  }
+
+  if (explicitSrsClinicIds.has(clinic.id) || surgeryPattern.test(clinic.notes)) {
+    categories.add('srs');
+  }
+
+  return {
+    ...clinic,
+    categories: [...categories],
+    links,
+  };
+});
+
+const prefectures = [...new Set(clinics.map((clinic) => clinic.prefecture))].sort((a, b) => {
+  const indexA = prefectureOrder.indexOf(a);
+  const indexB = prefectureOrder.indexOf(b);
+
+  if (indexA === -1 || indexB === -1) {
+    return a.localeCompare(b, 'ja');
+  }
+
+  return indexA - indexB;
+});
+const groupedClinics = prefectures.map((prefecture) => ({
+  prefecture,
+  clinics: clinicsWithCategories.filter((clinic) => clinic.prefecture === prefecture),
+}));
+---
+
+<BaseLayout title="医療機関 - とらんすナビ" description="ホルモン療法や診断に関する医療機関。">
+  <article class="article-shell">
+    <div class="eyebrow">医療機関</div>
+    <h1>医療機関</h1>
+    <p class="lead">
+      ホルモン療法や診断に関する医療機関。受診条件、診断書の要否、費用、診療内容は変わることがあります。
+    </p>
+    <p>予約前に必ず医療機関へ確認してください。口コミ、ランキング、推奨表現は掲載しません。詳しくは<a href="/legal/">掲載について</a>を確認してください。</p>
+
+    <div class="clinic-summary" aria-label="掲載件数">
+      <span><span data-filter-count>{clinics.length}</span>件</span>
+      <span>{prefectures.length}地域</span>
+    </div>
+
+    <section class="filter-tabs" aria-label="診療区分" data-filter-tabs>
+      {categoryDefinitions.map((category) => (
+        <button
+          type="button"
+          class="filter-tab"
+          data-filter-tab
+          data-filter-value={category.id}
+          aria-pressed={category.id === 'hrt' ? 'true' : 'false'}
+        >
+          {category.label}
+        </button>
+      ))}
+    </section>
+
+    <form class="index-search" role="search" data-filter-form>
+      <label for="clinic-search">医療機関を検索</label>
+      <input id="clinic-search" name="q" type="search" autocomplete="off" placeholder="例: 東京都、渋谷区、ホルモン療法" data-filter-input />
+      <p id="clinic-search-help">医療機関名、地域、住所、診療内容で絞り込めます。</p>
+    </form>
+
+    {groupedClinics.map((group) => (
+      <details class="clinic-region" data-filter-group>
+        <summary aria-labelledby={`prefecture-${group.prefecture}`}>
+          <span id={`prefecture-${group.prefecture}`}>{group.prefecture}</span>
+          <span class="clinic-region-count"><span data-filter-group-count>{group.clinics.length}</span>件</span>
+        </summary>
+        <div class="clinic-list">
+          {group.clinics.map((clinic) => (
+            <article
+              class="clinic-card"
+              data-filter-item
+              data-categories={clinic.categories.join(',')}
+              data-search={[clinic.name, clinic.displayName, clinic.prefecture, clinic.city, clinic.address, clinic.phone, ...clinic.services].filter(Boolean).join(' ')}
+            >
+              <div class="clinic-card-header">
+                <div>
+                  <a class="clinic-name-link" href={`/clinics/${clinic.id}/`}>
+                    <span class="clinic-name">{clinic.name}</span>
+                  </a>
+                  <span>{[clinic.city, clinic.address].filter(Boolean).join(' / ')}</span>
+                </div>
+                <button type="button" class="clinic-expand-button" data-expand-button aria-expanded="false">
+                  詳細を開く
+                </button>
+              </div>
+              <div class="clinic-meta">
+                {clinic.phone && <span>電話: {clinic.phone}</span>}
+                <span>{clinic.services.join('、')} / {clinic.verificationStatus}</span>
+              </div>
+              <div class="clinic-links">
+                {clinic.links.officialUrls.length > 0 ? (
+                  clinic.links.officialUrls.map((url) => (
+                    <a href={url} target="_blank" rel="noreferrer">
+                      <span class="clinic-link-label">公式サイト</span>
+                      <span class="clinic-link-url">{url}</span>
+                    </a>
+                  ))
+                ) : (
+                  <span>公式サイト未確認</span>
+                )}
+                {clinic.links.relatedUrls.length > 0 && (
+                  <span>
+                    関連ページ:
+                    {' '}
+                    {clinic.links.relatedUrls.map((url, index) => (
+                      <>
+                        {index > 0 && ' / '}
+                        <a href={url} target="_blank" rel="noreferrer">{index + 1}</a>
+                      </>
+                    ))}
+                  </span>
+                )}
+              </div>
+              <div class="clinic-expand-panel" data-expand-panel hidden>
+                <dl class="clinic-card-detail-list">
+                  <div>
+                    <dt>地域</dt>
+                    <dd>{[clinic.prefecture, clinic.city].filter(Boolean).join(' / ')}</dd>
+                  </div>
+                  {clinic.address && (
+                    <div>
+                      <dt>住所</dt>
+                      <dd>{clinic.address}</dd>
+                    </div>
+                  )}
+                  {clinic.phone && (
+                    <div>
+                      <dt>電話</dt>
+                      <dd>{clinic.phone}</dd>
+                    </div>
+                  )}
+                  <div>
+                    <dt>掲載項目</dt>
+                    <dd>{clinic.services.join('、')}</dd>
+                  </div>
+                  <div>
+                    <dt>カテゴリ</dt>
+                    <dd>{clinic.categories.map((category) => categoryDefinitions.find((item) => item.id === category)?.label ?? category).join(' / ')}</dd>
+                  </div>
+                  <div>
+                    <dt>確認状況</dt>
+                    <dd>{clinic.verificationStatus}</dd>
+                  </div>
+                </dl>
+                <p><a href={`/clinics/${clinic.id}/`}>掲載ページを見る</a></p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </details>
+    ))}
+    <p class="empty-state" data-filter-empty hidden>条件に合う医療機関は見つかりませんでした。</p>
+  </article>
+  <script is:inline src="/filter-index.js" defer></script>
+</BaseLayout>

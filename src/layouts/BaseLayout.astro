@@ -1,0 +1,102 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const siteName = 'とらんすナビ';
+const subtitle = '日本のトランスジェンダー情報ウィキ';
+const {
+  title = `${siteName} - ${subtitle}`,
+  description = 'トランスジェンダー、ノンバイナリー、Xジェンダー、ジェンダーを探索中の人のための医療・制度・生活・地域情報。',
+} = Astro.props;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#ffd6e8" />
+    <meta http-equiv="content-language" content="ja" />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ja_JP" />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hreflang="ja" href={canonicalUrl} />
+    <link rel="alternate" hreflang="ja-JP" href={canonicalUrl} />
+    <link rel="sitemap" href="/sitemap.xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="とらんすナビ ホーム">
+        <img class="brand-mark" src="/favicon.svg" alt="" width="44" height="44" />
+        <span>
+          <span class="brand-name">とらんすナビ</span>
+          <span class="brand-subtitle">{subtitle}</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="主要なページ">
+        <a href="/start/">はじめての方へ</a>
+        <a href="/support/">相談先</a>
+        <a href="/clinics/">医療機関</a>
+        <a href="/glossary/">用語集</a>
+        <a href="/articles/">記事</a>
+        <a href="/works/">文芸作品</a>
+        <a href="/resources/">リンク</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <img class="footer-mark" src="/favicon.svg" alt="" width="40" height="40" />
+          <div>
+            <span class="footer-name">{siteName}</span>
+            <span class="footer-tagline">{subtitle}</span>
+          </div>
+        </div>
+        <nav class="footer-nav" aria-label="フッターナビゲーション">
+          <div class="footer-col">
+            <h2>情報</h2>
+            <a href="/articles/">記事</a>
+            <a href="/clinics/">医療機関</a>
+            <a href="/glossary/">用語集</a>
+            <a href="/gender/">性別について</a>
+            <a href="/pride/">フラッグと記念日</a>
+            <a href="/works/">文芸作品</a>
+            <a href="/resources/">リンク</a>
+          </div>
+          <div class="footer-col">
+            <h2>サイト</h2>
+            <a href="/about/">このサイトについて</a>
+            <a href="/legal/">掲載について</a>
+            <a href="/edit/">情報を送る</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-legal">
+        <span>コンテンツ: <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja" rel="license">CC BY-SA 4.0</a></span>
+        <span>コード: <a href="https://opensource.org/license/mit" rel="license">MIT</a></span>
+      </div>
+    </footer>
+  </body>
+</html>

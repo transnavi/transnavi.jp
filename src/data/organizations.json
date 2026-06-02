@@ -1,0 +1,112 @@
+{
+  "sections": [
+    {
+      "key": "community-centers",
+      "title": "コミュニティセンター・地域団体",
+      "description": "各地の常設センターや地域の当事者団体。",
+      "groups": [
+        {
+          "region": "北海道・東北",
+          "items": [
+            { "name": "L-Port（札幌）", "url": "https://l-port.net/" },
+            { "name": "さっぽろレインボープライド", "url": "https://www.sprrainbowpride.com/" }
+          ]
+        },
+        {
+          "region": "関東",
+          "items": [
+            { "name": "プライドハウス東京レガシー", "url": "https://pridehouse.jp/" },
+            { "name": "SHIP（横浜）", "url": "https://ship.or.jp/" },
+            { "name": "SHIPにじいろキャビン（横浜）", "url": "https://ship.or.jp/cabin/" }
+          ]
+        },
+        {
+          "region": "中部",
+          "items": [
+            { "name": "PROUD LIFE（名古屋）", "url": "https://proudlife.org/" },
+            { "name": "名古屋レインボープライド", "url": "https://nagoyarainbowpride.com/" },
+            { "name": "レインボーなごや", "url": "https://rainbow758.wixsite.com/rainbow-nagoya" }
+          ]
+        },
+        {
+          "region": "関西",
+          "items": [
+            { "name": "QWRC（大阪）", "url": "https://qwrc.org/" },
+            { "name": "関西クィア映画祭", "url": "https://ja.wikipedia.org/wiki/関西クィア映画祭" }
+          ]
+        },
+        {
+          "region": "九州・沖縄",
+          "items": [
+            { "name": "ピンクドット沖縄", "url": "https://pinkdot-okinawa.com/" }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "university-circles",
+      "title": "大学サークル",
+      "description": "各大学の LGBTQ サークル・学生団体（主に X / Twitter）。",
+      "groups": [
+        {
+          "region": "北海道・東北",
+          "items": [
+            { "name": "北海道大学 gabgab", "url": "https://x.com/hokudaigabgab" },
+            { "name": "東北大学 rb_mitocon", "url": "https://x.com/rb_mitocon" }
+          ]
+        },
+        {
+          "region": "関東",
+          "items": [
+            { "name": "東京大学 UT-topos", "url": "http://topos.lolipop.jp/" },
+            { "name": "東京大学 Porta Rubra", "url": "https://portarubra.org/" },
+            { "name": "早稲田大学 GLOW", "url": "https://waseda-glow.com/" },
+            { "name": "慶應義塾大学 LGBT塾生会", "url": "https://x.com/Kolours2012" },
+            { "name": "上智大学 KIO LGBT Salon", "url": "https://x.com/kioiLgbt" },
+            { "name": "立教大学 saintpaulia", "url": "https://x.com/R_saintpaulia" },
+            { "name": "明治大学 arcoiris", "url": "https://x.com/meiji_arcoiris" },
+            { "name": "法政大学 doublerainbow", "url": "https://x.com/doublerainbow_h" },
+            { "name": "国際基督教大学 sumposion", "url": "https://x.com/sumposion" },
+            { "name": "横浜国立大学 YNUQueer", "url": "https://x.com/YNUQueer" },
+            { "name": "筑波大学 circleq", "url": "https://x.com/circleq9" }
+          ]
+        },
+        {
+          "region": "中部",
+          "items": [
+            { "name": "名古屋大学 LGBTサークル", "url": "https://x.com/nu_lgbt" }
+          ]
+        },
+        {
+          "region": "関西",
+          "items": [
+            { "name": "大阪大学 Libra", "url": "https://x.com/handai_libra" },
+            { "name": "関西学院大学 Rainbows", "url": "https://x.com/kscrainbows" },
+            { "name": "関西大学 kufree", "url": "https://x.com/kufreeLGBT" },
+            { "name": "京都大学 にじいろきょうと", "url": "https://x.com/regenbogenkyoto" },
+            { "name": "同志社大学 d_gradation", "url": "https://x.com/d_gradation" },
+            { "name": "立命館大学 colorfree", "url": "https://x.com/Rits_colorfree" },
+            { "name": "龍谷大学 sbylgbtq", "url": "https://x.com/sbylgbtq" }
+          ]
+        },
+        {
+          "region": "中国・四国",
+          "items": [
+            { "name": "広島大学 HULAT", "url": "https://x.com/hulat_lgbts" }
+          ]
+        },
+        {
+          "region": "九州",
+          "items": [
+            { "name": "九州大学 ARCUS", "url": "https://x.com/arcus_qu" },
+            { "name": "福岡大学 FLAG", "url": "https://x.com/flag_fu" }
+          ]
+        }
+      ],
+      "reference": {
+        "name": "Stonewall Japan — LGBT University Groups",
+        "url": "https://stonewalljapan.org/resources/lgbt-university-groups/"
+      }
+    }
+  ]
+}

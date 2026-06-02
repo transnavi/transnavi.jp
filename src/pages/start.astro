@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Beginner-ordered words, linking into the glossary.
+const words = [
+  { id: 'transgender', term: 'トランスジェンダー' },
+  { id: 'gender-dysphoria', term: '性別違和' },
+  { id: 'gender-identity', term: '性自認' },
+  { id: 'non-binary', term: 'ノンバイナリー' },
+  { id: 'questioning', term: 'クエスチョニング' },
+  { id: 'coming-out', term: 'カミングアウト' },
+  { id: 'force-outing', term: 'アウティング' },
+  { id: 'gaht', term: 'ホルモン療法' },
+  { id: 'gender-transition', term: '性別移行' },
+];
+
+const next = [
+  { href: '/glossary/', title: '言葉を知る', description: '気持ちに名前がつくと、少し整理しやすくなります。' },
+  { href: '/support/', title: '誰かに相談したい', description: '身近で安全なところから考えられます。' },
+  { href: '/clinics/', title: '医療や制度を知りたい', description: '急がなくて大丈夫。知りたくなったときに。' },
+];
+---
+
+<BaseLayout
+  title="自分はトランスかもしれないと思ったら - とらんすナビ"
+  description="すぐに答えを出さなくても大丈夫です。自分の気持ちを少しずつ整理するための、はじめの一歩。"
+>
+  <article class="article-shell prose">
+    <div class="eyebrow">はじめての方へ</div>
+    <h1>自分はトランスかもしれないと思ったら</h1>
+    <p class="lead">まだよくわからないあなたへ。</p>
+
+    <p>自分の性別について考えはじめたとき、すぐに正しい答えを出す必要はありません。</p>
+    <blockquote class="soft-quote">
+      <p>「自分はトランスジェンダーなのかもしれない」</p>
+      <p>「でも、違うかもしれない」</p>
+      <p>「何を信じればいいのかわからない」</p>
+    </blockquote>
+    <p>そう感じることは、めずらしいことではありません。このページでは、あなたが自分の気持ちを少しずつ整理するための情報をまとめています。</p>
+
+    <h2>こんな気持ち、ありませんか</h2>
+    <ul class="assure-list">
+      <li>自分の性別に違和感がある</li>
+      <li>男の子／女の子として扱われるのがつらい</li>
+      <li>別の名前や服装に安心する</li>
+      <li>将来の自分の性別を想像できない</li>
+      <li>でも、それが何なのかわからない</li>
+    </ul>
+    <p>それだけで何かを決める必要はありません。でも、その気持ちは無視しなくていいものです。<strong>すぐに答えを出さなくても大丈夫です。</strong></p>
+
+    <aside class="entry-message" role="note" aria-label="読んでいるあなたへ">
+      <p>昔の自分を、責め続けないであげてくださいね。あの子だって、何も見えない霧の中で、必死に迷っていたんだから。</p>
+    </aside>
+
+    <h2>言葉を、少しずつ</h2>
+    <p>気持ちに名前がつくと、少しだけ楽になることがあります。とくに「まだわからない」という状態にも<a href="/glossary/questioning/">クエスチョニング</a>という名前があります。急いで当てはめる必要はありません。</p>
+    <div class="word-chips">
+      {words.map((word) => (
+        <a class="word-chip" href={`/glossary/${word.id}/`}>{word.term}</a>
+      ))}
+    </div>
+    <p>「性別」そのものについては、<a href="/gender/">性別は、男女だけじゃない</a>も読んでみてください。旗や記念日の意味を知りたいときは、<a href="/pride/">プライドフラッグと記念日</a>のページもあります。</p>
+
+    <h2>次に読むなら</h2>
+    <div class="route-list">
+      {next.map((item) => (
+        <a class="route-item route-item-stack" href={item.href}>
+          <span class="route-to">{item.title}</span>
+          <span class="route-desc">{item.description}</span>
+        </a>
+      ))}
+    </div>
+
+    <p class="soft-close">決めつけない。急がせない。でも、迷っているあなたを放っておかない。それがこのサイトの考え方です。</p>
+  </article>
+</BaseLayout>

@@ -1,0 +1,18 @@
+{
+	"compatibility_date": "2026-05-31",
+	"compatibility_flags": ["nodejs_compat"],
+	"name": "transnavi-jp",
+	"main": "./src/worker.ts",
+	"routes": [
+		{ "pattern": "transnavi.jp", "custom_domain": true },
+		{ "pattern": "www.transnavi.jp", "custom_domain": true }
+	],
+	"assets": {
+		"directory": "./dist",
+		"binding": "ASSETS"
+	},
+	"observability": {
+		"enabled": true,
+		"head_sampling_rate": 1
+	}
+}

@@ -1,0 +1,28 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pages = (await getCollection('imported')).sort((a, b) => a.data.title.localeCompare(b.data.title, 'ja'));
+const categories = [...new Set(pages.map((page) => page.data.sourceCategory))].sort((a, b) => a.localeCompare(b, 'ja'));
+---
+
+<BaseLayout title="資料集 - とらんすナビ" description="既存資料を確認しやすい形で整理したページです。">
+  <article class="article-shell">
+    <div class="eyebrow">資料集</div>
+    <h1>資料集</h1>
+    <p class="lead">MtF.wiki 日本語版から取り込んだ資料。</p>
+    {categories.map((category) => (
+      <section aria-labelledby={`category-${category}`}>
+        <h2 id={`category-${category}`}>{category}</h2>
+        <div class="article-list">
+          {pages.filter((page) => page.data.sourceCategory === category).map((page) => (
+            <a class="article-link" href={`/library/${page.id}/`}>
+              <strong>{page.data.title}</strong>
+              <span>{page.data.sourcePath}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+  </article>
+</BaseLayout>

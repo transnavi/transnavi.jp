@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import glossaryData from '../../data/glossary.json';
+import type { GlossaryEntry } from '../../types/glossary';
+
+export function getStaticPaths() {
+  const entries = glossaryData as GlossaryEntry[];
+  return entries.map((entry) => ({ params: { id: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props as { entry: GlossaryEntry };
+const translations = [
+  ['英語', entry.translations.en],
+  ['簡体字中国語', entry.translations.zhHans],
+  ['繁体字中国語', entry.translations.zhHant],
+  ['スペイン語', entry.translations.es],
+].filter(([, value]) => value);
+---
+
+<BaseLayout title={`${entry.term} - とらんすナビ`} description={`${entry.term}に関する用語説明です。`}>
+  <article class="article-shell">
+    <div class="eyebrow">用語集</div>
+    <h1>{entry.term}</h1>
+    <dl class="clinic-detail">
+      {entry.abbr && (
+        <div>
+          <dt>略称</dt>
+          <dd>{entry.abbr}</dd>
+        </div>
+      )}
+      <div>
+        <dt>分野</dt>
+        <dd>{entry.category}</dd>
+      </div>
+      {entry.aliases.length > 0 && (
+        <div>
+          <dt>別名・関連表現</dt>
+          <dd>{entry.aliases.join('、')}</dd>
+        </div>
+      )}
+      {translations.length > 0 && (
+        <div>
+          <dt>多言語表記</dt>
+          <dd>
+            <ul>
+              {translations.map(([label, value]) => <li>{label}: {value}</li>)}
+            </ul>
+          </dd>
+        </div>
+      )}
+      {entry.avoid.length > 0 && (
+        <div>
+          <dt>避けたい表現</dt>
+          <dd>{entry.avoid.join('、')}</dd>
+        </div>
+      )}
+      {entry.disputed.length > 0 && (
+        <div>
+          <dt>議論がある表現</dt>
+          <dd>{entry.disputed.join('、')}</dd>
+        </div>
+      )}
+      {entry.notes && (
+        <div>
+          <dt>補足</dt>
+          <dd>{entry.notes}</dd>
+        </div>
+      )}
+      {entry.wikidata && (
+        <div>
+          <dt>Wikidata</dt>
+          <dd><a href={`https://www.wikidata.org/wiki/${entry.wikidata}`} target="_blank" rel="noreferrer">{entry.wikidata}</a></dd>
+        </div>
+      )}
+    </dl>
+
+    {entry.message && (
+      <aside class="entry-message" role="note" aria-label="読んでいるあなたへ">
+        <p>{entry.message}</p>
+      </aside>
+    )}
+  </article>
+</BaseLayout>

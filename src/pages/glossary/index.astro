@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import glossaryData from '../../data/glossary.json';
+import type { GlossaryEntry } from '../../types/glossary';
+
+const entries = glossaryData as GlossaryEntry[];
+const categories = [...new Set(entries.map((entry) => entry.category))].sort((a, b) => a.localeCompare(b, 'ja'));
+---
+
+<BaseLayout title="用語集 - とらんすナビ" description="トランスジェンダー、医療、制度、生活に関する用語集。">
+  <article class="article-shell">
+    <div class="eyebrow">用語集</div>
+    <h1>用語集</h1>
+    <p class="lead">トランスジェンダー、医療、制度、生活に関する用語集。</p>
+    <div class="clinic-summary" aria-label="掲載件数">
+      <span><span data-filter-count>{entries.length}</span>語</span>
+      <span>{categories.length}分野</span>
+    </div>
+
+    <form class="index-search" role="search" data-filter-form>
+      <label for="glossary-search">用語を検索</label>
+      <input id="glossary-search" name="q" type="search" autocomplete="off" placeholder="例: HRT、診断書、カミングアウト" data-filter-input />
+      <p id="glossary-search-help">用語、略語、別名、英語名、分野で絞り込めます。</p>
+    </form>
+
+    {categories.map((category) => (
+      <section aria-labelledby={`glossary-${category}`} data-filter-group>
+        <h2 id={`glossary-${category}`}>{category}</h2>
+        <div class="glossary-list">
+          {entries.filter((entry) => entry.category === category).map((entry) => (
+            <a class="glossary-card" href={`/glossary/${entry.id}/`} data-filter-item data-search={[entry.term, entry.abbr, entry.category, entry.translations.en, ...entry.aliases].filter(Boolean).join(' ')}>
+              <span class="clinic-name">{entry.term}{entry.abbr ? `（${entry.abbr}）` : ''}</span>
+              <span>{entry.aliases.length > 0 ? `別名: ${entry.aliases.join('、')}` : entry.translations.en}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+    <p class="empty-state" data-filter-empty hidden>条件に合う用語は見つかりませんでした。</p>
+  </article>
+  <script is:inline src="/filter-index.js" defer></script>
+</BaseLayout>

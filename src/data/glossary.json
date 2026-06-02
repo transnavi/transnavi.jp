@@ -1,0 +1,2190 @@
+[
+  {
+    "id": "17b-estradiol",
+    "term": "17β-エストラジオール",
+    "abbr": "E2",
+    "category": "ホルモン療法",
+    "wikidata": "Q422416",
+    "translations": {
+      "en": "17β-Estradiol",
+      "zhHans": "17β-雌二醇",
+      "zhHant": "17β-雌二醇",
+      "es": "17β-Estradiol"
+    },
+    "aliases": [
+      "Oestradiol",
+      "卵胞ホルモン"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "17β-Estradiol"
+  },
+  {
+    "id": "gnrh-analogues",
+    "term": "GnRHアナログ",
+    "abbr": "GnRH",
+    "category": "ホルモン療法",
+    "wikidata": "Q3606696",
+    "translations": {
+      "en": "GnRH Analogues",
+      "zhHans": "GnRH 类似物",
+      "zhHant": "GnRH 類似物",
+      "es": "Análogos de GnRH"
+    },
+    "aliases": [
+      "ホルモンブロッカー",
+      "ブロッカー"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "GnRH Analogues"
+  },
+  {
+    "id": "force-outing",
+    "term": "アウティング",
+    "category": "生活・社会",
+    "wikidata": "Q1054678",
+    "translations": {
+      "en": "Force Outing",
+      "zhHans": "踹柜门",
+      "zhHant": "踹櫃門",
+      "es": "Outing Forzado"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Force Outing"
+  },
+  {
+    "id": "informed-consent",
+    "term": "インフォームドコンセントモデル",
+    "abbr": "IC",
+    "category": "医療",
+    "translations": {
+      "en": "Informed Consent Model",
+      "zhHans": "知情同意模式",
+      "zhHant": "知情同意模式",
+      "es": "Modelo de Consentimiento Informado"
+    },
+    "aliases": [
+      "インフォームドコンセント"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Informed Consent Model"
+  },
+  {
+    "id": "estradiol-gel",
+    "term": "エストラジオールゲル",
+    "category": "ホルモン療法",
+    "translations": {
+      "en": "Estradiol Gel",
+      "zhHans": "雌二醇凝胶",
+      "zhHant": "雌二醇凝膠",
+      "es": "Gel de Estradiol"
+    },
+    "aliases": [
+      "エストロジェル",
+      "Oestrogel"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Estradiol Gel"
+  },
+  {
+    "id": "estradiol-monotherapy",
+    "term": "エストラジオール単独療法",
+    "category": "ホルモン療法",
+    "translations": {
+      "en": "Estradiol Monotherapy",
+      "zhHans": "单用雌激素",
+      "zhHant": "單用雌激素",
+      "es": "Monoterapia con Estradiol"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [
+      "单日雌"
+    ],
+    "notes": "单用雌激素不一定是日雌，日雌也不一定单用。",
+    "source": "Estradiol Monotherapy"
+  },
+  {
+    "id": "estradiol-hemihydrate",
+    "term": "エストラジオール半水和物",
+    "category": "ホルモン療法",
+    "wikidata": "Q27275885",
+    "translations": {
+      "en": "Estradiol Hemihydrate",
+      "zhHans": "半水合雌二醇",
+      "zhHant": "半水合雌二醇",
+      "es": "Hemihidrato de Estradiol"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Estradiol Hemihydrate"
+  },
+  {
+    "id": "estriol",
+    "term": "エストリオール",
+    "abbr": "E3",
+    "category": "ホルモン療法",
+    "wikidata": "Q409721",
+    "translations": {
+      "en": "Estriol",
+      "zhHans": "雌三醇",
+      "zhHant": "雌三醇",
+      "es": "Estriol"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "天然雌激素之一，现有指南一般不支持其用于 GAHT 替代雌二醇。",
+    "source": "Estriol (E3)"
+  },
+  {
+    "id": "estrogen",
+    "term": "エストロゲン",
+    "category": "ホルモン療法",
+    "wikidata": "Q277954",
+    "translations": {
+      "en": "Estrogen",
+      "zhHans": "雌激素",
+      "zhHant": "雌激素",
+      "es": "Estrógeno"
+    },
+    "aliases": [
+      "卵胞ホルモン"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "激素治疗语境中常用于统称雌二醇及其他雌激素类药物。",
+    "source": "Estrogen"
+  },
+  {
+    "id": "estrone",
+    "term": "エストロン",
+    "abbr": "E1",
+    "category": "ホルモン療法",
+    "wikidata": "Q414986",
+    "translations": {
+      "en": "Estrone",
+      "zhHans": "雌酮",
+      "zhHant": "雌酮",
+      "es": "Estrona"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "天然雌激素之一，激素监测和雌二醇代谢讨论中常见。",
+    "source": "Estrone (E1)"
+  },
+  {
+    "id": "ethinylestradiol",
+    "term": "エチニルエストラジオール",
+    "abbr": "EE",
+    "category": "ホルモン療法",
+    "wikidata": "Q415563",
+    "translations": {
+      "en": "Ethinylestradiol",
+      "zhHans": "乙炔雌二醇",
+      "zhHant": "乙炔雌二醇",
+      "es": "Etinilestradiol"
+    },
+    "aliases": [
+      "ダイアン-35（商品名）"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Ethinylestradiol (EE)"
+  },
+  {
+    "id": "estradiol-enanthate",
+    "term": "エナント酸エストラジオール",
+    "category": "ホルモン療法",
+    "wikidata": "Q5401763",
+    "translations": {
+      "en": "Estradiol Enanthate",
+      "zhHans": "庚酸雌二醇",
+      "zhHant": "庚酸雌二醇",
+      "es": "Enantato de Estradiol"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Estradiol Enanthate"
+  },
+  {
+    "id": "coming-out",
+    "term": "カミングアウト",
+    "abbr": "CO",
+    "category": "生活・社会",
+    "wikidata": "Q208099",
+    "translations": {
+      "en": "Coming Out",
+      "zhHans": "出柜",
+      "zhHant": "出櫃",
+      "es": "Salir del Clóset"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Coming Out",
+    "message": "昔の自分を、責め続けないであげてくださいね。あの子だって、何も見えない霧の中で、必死に迷っていたんだから。"
+  },
+  {
+    "id": "closeted",
+    "term": "クローゼット",
+    "category": "生活・社会",
+    "wikidata": "Q2574320",
+    "translations": {
+      "en": "In the Closet",
+      "zhHans": "深柜",
+      "zhHant": "深櫃",
+      "es": "En el Clóset"
+    },
+    "aliases": [],
+    "avoid": [
+      "脱圈"
+    ],
+    "disputed": [],
+    "source": "In the Closet"
+  },
+  {
+    "id": "clocking",
+    "term": "クロッキング",
+    "category": "生活・社会",
+    "translations": {
+      "en": "Clocking",
+      "zhHans": "被识破",
+      "zhHant": "被識破",
+      "es": "Ser Detectado"
+    },
+    "aliases": [
+      "バレる"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Clocking"
+  },
+  {
+    "id": "standards-of-care",
+    "term": "ケア基準",
+    "abbr": "SOC",
+    "category": "医療",
+    "translations": {
+      "en": "Standards of Care",
+      "zhHans": "照护标准",
+      "zhHant": "照護標準",
+      "es": "Estándares de Atención"
+    },
+    "aliases": [
+      "WPATH基準"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Standards of Care"
+  },
+  {
+    "id": "gatekeeping",
+    "term": "ゲートキーピング",
+    "category": "医療",
+    "translations": {
+      "en": "Gatekeeping",
+      "zhHans": "守门",
+      "zhHant": "守門",
+      "es": "Control de Acceso"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [
+      "把关"
+    ],
+    "notes": "\"指医疗或心理专业人员设立高门槛（如长时间的RLE、复杂的证明），限制跨性别者获取医疗资源的行为。WPATH SOC-8 致力于减少此现象，推行\"\"知情同意模式\"\"。\"",
+    "source": "Gatekeeping"
+  },
+  {
+    "id": "gonadotropins",
+    "term": "ゴナドトロピン",
+    "abbr": "LH/FSH",
+    "category": "検査",
+    "wikidata": "Q409770",
+    "translations": {
+      "en": "Gonadotropins",
+      "zhHans": "促性腺激素",
+      "zhHant": "促性腺激素",
+      "es": "Gonadotropinas"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Gonadotropins (LH/FSH)"
+  },
+  {
+    "id": "cisgender",
+    "term": "シスジェンダー",
+    "category": "性自認・属性",
+    "wikidata": "Q1093205",
+    "translations": {
+      "en": "Cisgender",
+      "zhHans": "顺性别",
+      "zhHant": "順性別",
+      "es": "Cisgénero"
+    },
+    "aliases": [
+      "シス"
+    ],
+    "avoid": [
+      "正常人",
+      "顺直"
+    ],
+    "disputed": [],
+    "source": "Cisgender"
+  },
+  {
+    "id": "cisgender-woman",
+    "term": "シスジェンダー女性",
+    "category": "性自認・属性",
+    "wikidata": "Q15145779",
+    "translations": {
+      "en": "Cisgender Woman",
+      "zhHans": "顺性别女性",
+      "zhHant": "順性別女性",
+      "es": "Mujer Cisgénero"
+    },
+    "aliases": [
+      "シス女性"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Cisgender Woman"
+  },
+  {
+    "id": "estradiol-cypionate",
+    "term": "シピオン酸エストラジオール",
+    "category": "ホルモン療法",
+    "wikidata": "Q5401760",
+    "translations": {
+      "en": "Estradiol Cypionate",
+      "zhHans": "环戊丙酸雌二醇",
+      "zhHant": "環戊丙酸雌二醇",
+      "es": "Cipionato de Estradiol"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Estradiol Cypionate"
+  },
+  {
+    "id": "dihydrotestosterone",
+    "term": "ジヒドロテストステロン",
+    "abbr": "DHT",
+    "category": "ホルモン療法",
+    "wikidata": "Q411054",
+    "translations": {
+      "en": "Dihydrotestosterone",
+      "zhHans": "双氢睾酮",
+      "zhHant": "雙氫睾酮",
+      "es": "Dihidrotestosterona"
+    },
+    "aliases": [
+      "DHT"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "强效雄激素，脱发和术后反雄讨论中常见。",
+    "source": "Dihydrotestosterone (DHT)"
+  },
+  {
+    "id": "stealth",
+    "term": "ステルス",
+    "category": "生活・社会",
+    "translations": {
+      "en": "Stealth",
+      "zhHans": "隐形",
+      "zhHant": "隱形",
+      "es": "Modo Sigiloso"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "\"指完全以目标性别生活，且不向周围人透露跨性别历史的状态。区别于\"\"深柜\"\"。\"",
+    "source": "Stealth"
+  },
+  {
+    "id": "spironolactone",
+    "term": "スピロノラクトン",
+    "category": "ホルモン療法",
+    "wikidata": "Q422188",
+    "translations": {
+      "en": "Spironolactone",
+      "zhHans": "螺内酯",
+      "zhHant": "螺內酯",
+      "es": "Espironolactona"
+    },
+    "aliases": [
+      "アルダクトン（商品名）",
+      "スピロ"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Spironolactone"
+  },
+  {
+    "id": "dilator",
+    "term": "ダイレーター",
+    "category": "医療",
+    "wikidata": "Q25091266",
+    "translations": {
+      "en": "Vaginal Dilator",
+      "zhHans": "阴道扩张器",
+      "zhHant": "陰道擴張器",
+      "es": "Dilatador Vaginal"
+    },
+    "aliases": [],
+    "avoid": [
+      "棒子"
+    ],
+    "disputed": [
+      "模具"
+    ],
+    "notes": "特指术后阴道扩张所用器具。",
+    "source": "Vaginal Dilator"
+  },
+  {
+    "id": "chaser",
+    "term": "チェイサー",
+    "category": "生活・社会",
+    "wikidata": "Q12972108",
+    "translations": {
+      "en": "Chaser",
+      "zhHans": "跨儿迷",
+      "zhHant": "跨兒迷",
+      "es": "Chaser"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Chaser"
+  },
+  {
+    "id": "dexamethasone",
+    "term": "デキサメタゾン",
+    "category": "ホルモン療法",
+    "wikidata": "Q422252",
+    "translations": {
+      "en": "Dexamethasone",
+      "zhHans": "地塞米松",
+      "zhHant": "地塞米松",
+      "es": "Dexametasona"
+    },
+    "aliases": [],
+    "avoid": [
+      "激素"
+    ],
+    "disputed": [],
+    "source": "Dexamethasone"
+  },
+  {
+    "id": "testosterone",
+    "term": "テストステロン",
+    "abbr": "T",
+    "category": "ホルモン療法",
+    "wikidata": "Q1318776",
+    "translations": {
+      "en": "Testosterone",
+      "zhHans": "睾酮",
+      "zhHant": "睾酮",
+      "es": "Testosterona"
+    },
+    "aliases": [
+      "アンドロゲン"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Testosterone (T)"
+  },
+  {
+    "id": "deadnaming",
+    "term": "デッドネーミング",
+    "category": "生活・社会",
+    "wikidata": "Q97107245",
+    "translations": {
+      "en": "Deadnaming",
+      "zhHans": "弃名错称",
+      "zhHant": "棄名錯稱",
+      "es": "Deadnaming"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "指称呼跨性别者曾用过但已废弃的名字（通常是出生名）。",
+    "source": "Deadnaming"
+  },
+  {
+    "id": "detransition",
+    "term": "デトランジション",
+    "category": "生活・社会",
+    "wikidata": "Q25396757",
+    "translations": {
+      "en": "Detransition",
+      "zhHans": "逆性别过渡",
+      "zhHant": "逆性別過渡",
+      "es": "Detransición"
+    },
+    "aliases": [
+      "デトランス"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "指停止或逆转性别过渡的过程",
+    "source": "Detransition"
+  },
+  {
+    "id": "dutasteride",
+    "term": "デュタステリド",
+    "category": "医療",
+    "wikidata": "Q424760",
+    "translations": {
+      "en": "Dutasteride",
+      "zhHans": "度他雄胺",
+      "zhHant": "度他雄胺",
+      "es": "Dutasterida"
+    },
+    "aliases": [
+      "ザガーロ",
+      "アボルブ"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "5α-还原酶抑制剂，用于脱发等与 DHT 相关的场景。",
+    "source": "Dutasteride"
+  },
+  {
+    "id": "bathroom-access",
+    "term": "トイレ使用権",
+    "category": "法律・制度",
+    "translations": {
+      "en": "Bathroom Access Rights",
+      "zhHans": "卫生间使用权",
+      "zhHant": "衛生間使用權",
+      "es": "Derechos de Acceso al Baño"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Bathroom access rights"
+  },
+  {
+    "id": "transgender",
+    "term": "トランスジェンダー",
+    "category": "性自認・属性",
+    "wikidata": "Q189125",
+    "translations": {
+      "en": "Transgender",
+      "zhHans": "跨性别",
+      "zhHant": "跨性別",
+      "es": "Transgénero"
+    },
+    "aliases": [
+      "トランス"
+    ],
+    "avoid": [
+      "变性人"
+    ],
+    "disputed": [],
+    "source": "Transgender",
+    "message": "昔の自分を、責め続けないであげてくださいね。あの子だって、何も見えない霧の中で、必死に迷っていたんだから。"
+  },
+  {
+    "id": "gender-identity",
+    "term": "性自認",
+    "category": "性自認・属性",
+    "translations": {
+      "en": "Gender identity",
+      "zhHans": "性别认同",
+      "zhHant": "性別認同"
+    },
+    "aliases": [
+      "ジェンダーアイデンティティ"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "自分の性別をどのように感じ、認識しているかという内面的な感覚。出生時に割り当てられた性別とは別に、自分自身が感じる性のあり方を指します。",
+    "source": "Gender identity"
+  },
+  {
+    "id": "questioning",
+    "term": "クエスチョニング",
+    "category": "性自認・属性",
+    "translations": {
+      "en": "Questioning",
+      "zhHans": "探索中",
+      "zhHant": "探索中"
+    },
+    "aliases": [
+      "模索中",
+      "自分の性のあり方を探している状態"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "自分の性自認や性的指向が、まだはっきりしていない、あるいは決めていない・決めない状態。迷いや探索のさなかにいることそのものを指す言葉で、結論を急ぐ必要はありません。",
+    "source": "Questioning (sexuality and gender)",
+    "message": "昔の自分を、責め続けないであげてくださいね。あの子だって、何も見えない霧の中で、必死に迷っていたんだから。"
+  },
+  {
+    "id": "transgender-woman",
+    "term": "トランスジェンダー女性",
+    "category": "性自認・属性",
+    "wikidata": "Q1052281",
+    "translations": {
+      "en": "Transgender Woman",
+      "zhHans": "跨性别女性",
+      "zhHant": "跨性別女性",
+      "es": "Mujer Transgénero"
+    },
+    "aliases": [
+      "MtF",
+      "トランス女性"
+    ],
+    "avoid": [
+      "人妖",
+      "伪娘 (混淆",
+      "冒犯)",
+      "木桶饭"
+    ],
+    "disputed": [],
+    "source": "Transgender Woman / MtF"
+  },
+  {
+    "id": "terf",
+    "term": "トランス排除的ラディカルフェミニスト",
+    "abbr": "TERF",
+    "category": "生活・社会",
+    "wikidata": "Q55961209",
+    "translations": {
+      "en": "TERF",
+      "zhHans": "排跨激进女权主义者",
+      "zhHant": "排跨激進女權主義者",
+      "es": "TERF"
+    },
+    "aliases": [],
+    "avoid": [
+      "田园女权"
+    ],
+    "disputed": [],
+    "source": "TERF"
+  },
+  {
+    "id": "triptorelin",
+    "term": "トリプトレリン",
+    "category": "ホルモン療法",
+    "wikidata": "Q1992452",
+    "translations": {
+      "en": "Triptorelin",
+      "zhHans": "曲普瑞林",
+      "zhHant": "曲普瑞林",
+      "es": "Triptorelina"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "GnRH 类似物之一，可用于青春期阻断或性腺轴抑制。",
+    "source": "Triptorelin"
+  },
+  {
+    "id": "non-binary",
+    "term": "ノンバイナリー",
+    "abbr": "NB",
+    "category": "性自認・属性",
+    "wikidata": "Q48270",
+    "translations": {
+      "en": "Non-binary",
+      "zhHans": "非二元性别",
+      "zhHant": "非二元性別",
+      "es": "No binario"
+    },
+    "aliases": [
+      "Xジェンダー"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Non-binary"
+  },
+  {
+    "id": "passing",
+    "term": "パッシング",
+    "category": "生活・社会",
+    "wikidata": "Q1558568",
+    "translations": {
+      "en": "Passing",
+      "zhHans": "过关",
+      "zhHant": "過關",
+      "es": "Pasar"
+    },
+    "aliases": [
+      "パス"
+    ],
+    "avoid": [],
+    "disputed": [
+      "怎么翻译"
+    ],
+    "source": "Pass/Passing"
+  },
+  {
+    "id": "bicalutamide",
+    "term": "ビカルタミド",
+    "category": "ホルモン療法",
+    "wikidata": "Q1988832",
+    "translations": {
+      "en": "Bicalutamide",
+      "zhHans": "比卡鲁胺",
+      "zhHant": "比卡魯胺",
+      "es": "Bicalutamida"
+    },
+    "aliases": [
+      "カソデックス（商品名）"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Bicalutamide"
+  },
+  {
+    "id": "finasteride",
+    "term": "フィナステリド",
+    "category": "医療",
+    "wikidata": "Q424167",
+    "translations": {
+      "en": "Finasteride",
+      "zhHans": "非那雄胺",
+      "zhHant": "非那雄胺",
+      "es": "Finasterida"
+    },
+    "aliases": [
+      "プロペシア"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "用于雄激素性脱发等场景的 5α-还原酶抑制剂。",
+    "source": "Finasteride"
+  },
+  {
+    "id": "progesterone",
+    "term": "プロゲステロン",
+    "abbr": "P4",
+    "category": "ホルモン療法",
+    "wikidata": "Q26963",
+    "translations": {
+      "en": "Progesterone",
+      "zhHans": "孕酮",
+      "zhHant": "孕酮",
+      "es": "Progesterona"
+    },
+    "aliases": [
+      "黄体ホルモン"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Progesterone"
+  },
+  {
+    "id": "progestogen",
+    "term": "プロゲストーゲン",
+    "category": "ホルモン療法",
+    "wikidata": "Q45071",
+    "translations": {
+      "en": "Progestogen",
+      "zhHans": "孕激素",
+      "zhHant": "孕激素",
+      "es": "Progestágeno"
+    },
+    "aliases": [
+      "プロゲスチン"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "包括天然孕酮和人工合成孕激素，部分药物同时具有抗雄作用。",
+    "source": "Progestogen"
+  },
+  {
+    "id": "prolactin",
+    "term": "プロラクチン",
+    "abbr": "PRL",
+    "category": "検査",
+    "wikidata": "Q192191",
+    "translations": {
+      "en": "Prolactin",
+      "zhHans": "泌乳素",
+      "zhHant": "泌乳素",
+      "es": "Prolactina"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Prolactin（PRL）"
+  },
+  {
+    "id": "misgendering",
+    "term": "ミスジェンダリング",
+    "category": "生活・社会",
+    "wikidata": "Q64737957",
+    "translations": {
+      "en": "Misgendering",
+      "zhHans": "性别错称",
+      "zhHant": "性別錯稱",
+      "es": "Misgendering"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Misgendering"
+  },
+  {
+    "id": "minoxidil",
+    "term": "ミノキシジル",
+    "category": "医療",
+    "wikidata": "Q424165",
+    "translations": {
+      "en": "Minoxidil",
+      "zhHans": "米诺地尔",
+      "zhHant": "米諾地爾",
+      "es": "Minoxidil"
+    },
+    "aliases": [
+      "リアップ"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "常用于脱发治疗的外用或口服药物。",
+    "source": "Minoxidil"
+  },
+  {
+    "id": "raloxifene",
+    "term": "ラロキシフェン",
+    "category": "ホルモン療法",
+    "wikidata": "Q425223",
+    "translations": {
+      "en": "Raloxifene",
+      "zhHans": "雷洛昔芬",
+      "zhHant": "雷洛昔芬",
+      "es": "Raloxifeno"
+    },
+    "aliases": [
+      "エビスタ"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "一种 SERM，资料中常作为非二元激素方案的可能选项讨论。",
+    "source": "Raloxifene"
+  },
+  {
+    "id": "laser-hair-removal",
+    "term": "レーザー脱毛",
+    "abbr": "LHR",
+    "category": "脱毛",
+    "wikidata": "Q783007",
+    "translations": {
+      "en": "Laser Hair Removal",
+      "zhHans": "激光脱毛",
+      "zhHant": "激光脫毛",
+      "es": "Depilación Láser"
+    },
+    "aliases": [
+      "脱毛"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Laser Hair Removal"
+  },
+  {
+    "id": "estradiol-benzoate",
+    "term": "安息香酸エストラジオール",
+    "abbr": "EB",
+    "category": "ホルモン療法",
+    "wikidata": "Q11450699",
+    "translations": {
+      "en": "Estradiol Benzoate",
+      "zhHans": "苯甲酸雌二醇",
+      "zhHant": "苯甲酸雌二醇",
+      "es": "Benzoato de Estradiol"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Estradiol Benzoate (EB)"
+  },
+  {
+    "id": "cross-dresser",
+    "term": "異性装者",
+    "abbr": "CD",
+    "category": "性自認・属性",
+    "wikidata": "Q431604",
+    "translations": {
+      "en": "Cross-dresser",
+      "zhHans": "异装者",
+      "zhHant": "異裝者",
+      "es": "Travesti"
+    },
+    "aliases": [
+      "女装者"
+    ],
+    "avoid": [
+      "易装癖",
+      "伪娘"
+    ],
+    "disputed": [],
+    "notes": "将女装视为「异装」",
+    "source": "Cross-dresser (CD)"
+  },
+  {
+    "id": "clitoris",
+    "term": "陰核",
+    "category": "手術",
+    "wikidata": "Q873072",
+    "translations": {
+      "en": "Clitoris",
+      "zhHans": "阴蒂",
+      "zhHant": "陰蒂",
+      "es": "Clítoris"
+    },
+    "aliases": [
+      "クリトリス"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "生殖器手术和性健康语境中的解剖术语。",
+    "source": "Clitoris"
+  },
+  {
+    "id": "penile-inversion-vaginoplasty",
+    "term": "陰茎反転腟形成術",
+    "abbr": "PIV",
+    "category": "手術",
+    "wikidata": "Q12205110",
+    "translations": {
+      "en": "Penile Inversion Vaginoplasty",
+      "zhHans": "皮瓣阴道成形术",
+      "zhHant": "皮瓣陰道成形術",
+      "es": "Vaginoplastia por Inversión Peneana"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Penile Inversion Vaginoplasty"
+  },
+  {
+    "id": "labia",
+    "term": "陰唇",
+    "category": "手術",
+    "wikidata": "Q1406501",
+    "translations": {
+      "en": "Labia",
+      "zhHans": "阴唇",
+      "zhHant": "陰唇",
+      "es": "Labios Vulvares"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "生殖器手术结果、护理和解剖说明中常见术语。",
+    "source": "Labia"
+  },
+  {
+    "id": "vocal-pitch",
+    "term": "音声ピッチ",
+    "category": "声",
+    "translations": {
+      "en": "Vocal Pitch",
+      "zhHans": "嗓音音高",
+      "zhHant": "嗓音音高",
+      "es": "Tono Vocal"
+    },
+    "aliases": [
+      "ピッチ"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Vocal Pitch"
+  },
+  {
+    "id": "voice-training",
+    "term": "音声訓練",
+    "abbr": "VT",
+    "category": "声",
+    "wikidata": "Q106776480",
+    "translations": {
+      "en": "Voice Training",
+      "zhHans": "嗓音训练",
+      "zhHant": "嗓音訓練",
+      "es": "Entrenamiento de Voz"
+    },
+    "aliases": [
+      "ボイトレ"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Voice Training"
+  },
+  {
+    "id": "voice-feminization-surgery",
+    "term": "音声女性化手術",
+    "abbr": "VFS",
+    "category": "声",
+    "wikidata": "Q139504047",
+    "translations": {
+      "en": "Voice Feminization Surgery",
+      "zhHans": "嗓音女性化手术",
+      "zhHant": "嗓音女性化手術",
+      "es": "Cirugía de Feminización Vocal"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Voice Feminization Surgery (VFS)"
+  },
+  {
+    "id": "domestic-violence-survivor",
+    "term": "家庭内暴力被害者",
+    "category": "生活・社会",
+    "wikidata": "Q21127520",
+    "translations": {
+      "en": "Domestic Violence Survivor",
+      "zhHans": "家庭暴力受害者",
+      "zhHant": "家庭暴力受害者",
+      "es": "Sobreviviente de Violencia Doméstica"
+    },
+    "aliases": [
+      "DV",
+      "ドメスティック・バイオレンス被害者"
+    ],
+    "avoid": [
+      "家暴党"
+    ],
+    "disputed": [],
+    "notes": "\"指因性别认同或表达而遭受家庭成员暴力的个体。\"\"家暴党\"\"为通俗用语，不建议使用。\"",
+    "source": "Domestic Violence"
+  },
+  {
+    "id": "vulvoplasty",
+    "term": "外陰部形成術",
+    "category": "手術",
+    "wikidata": "Q111593131",
+    "translations": {
+      "en": "Vulvoplasty",
+      "zhHans": "外阴成形术",
+      "zhHant": "外陰成形術",
+      "es": "Vulvoplastia"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [
+      "零深度阴道成形术（Zero-depth Vaginoplasty）"
+    ],
+    "notes": "社群常称的\"零深度\"实际涵盖阴茎切除、睾丸切除、尿道再造与外阴成形等多项手术，与单纯的 Vulvoplasty 概念是否完全一致存在争议。",
+    "source": "Vulvoplasty"
+  },
+  {
+    "id": "outpatient-records",
+    "term": "外来カルテ",
+    "category": "法律・制度",
+    "translations": {
+      "en": "Outpatient Medical Records",
+      "zhHans": "门诊病历",
+      "zhHant": "門診病歷",
+      "es": "Historial Médico Ambulatorio"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Outpatient medical records"
+  },
+  {
+    "id": "liver-function",
+    "term": "肝機能",
+    "category": "検査",
+    "wikidata": "Q1359801",
+    "translations": {
+      "en": "Liver Function",
+      "zhHans": "肝功能",
+      "zhHant": "肝功能",
+      "es": "Función Hepática"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Liver Function"
+  },
+  {
+    "id": "ffs",
+    "term": "顔面女性化手術",
+    "abbr": "FFS",
+    "category": "手術",
+    "wikidata": "Q1969172",
+    "translations": {
+      "en": "Facial Feminization Surgery",
+      "zhHans": "面部女性化手术",
+      "zhHant": "面部女性化手術",
+      "es": "Cirugía de Feminización Facial"
+    },
+    "aliases": [
+      "顔面女性化"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Facial Feminization Surgery (FFS)"
+  },
+  {
+    "id": "fundamental-frequency",
+    "term": "基本周波数",
+    "abbr": "F0",
+    "category": "声",
+    "wikidata": "Q1331774",
+    "translations": {
+      "en": "Fundamental Frequency",
+      "zhHans": "基频",
+      "zhHant": "基頻",
+      "es": "Frecuencia Fundamental"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "嗓音训练中用于描述声带振动频率，常与音高相关。",
+    "source": "Fundamental Frequency (F0)"
+  },
+  {
+    "id": "estradiol-valerate",
+    "term": "吉草酸エストラジオール",
+    "abbr": "EV",
+    "category": "ホルモン療法",
+    "wikidata": "Q5401768",
+    "translations": {
+      "en": "Estradiol Valerate",
+      "zhHans": "戊酸雌二醇",
+      "zhHant": "戊酸雌二醇",
+      "es": "Valerato de Estradiol"
+    },
+    "aliases": [
+      "プロギノン"
+    ],
+    "avoid": [
+      "补子",
+      "国补",
+      "糖",
+      "补"
+    ],
+    "disputed": [],
+    "source": "Estradiol Valerate (EV)"
+  },
+  {
+    "id": "estradiol-valerate-injection",
+    "term": "吉草酸エストラジオール注射液",
+    "category": "ホルモン療法",
+    "translations": {
+      "en": "Estradiol Valerate Injection",
+      "zhHans": "戊酸雌二醇注射液",
+      "zhHant": "戊酸雌二醇注射液",
+      "es": "Inyección de Valerato de Estradiol"
+    },
+    "aliases": [
+      "プロギノン・デポー"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Estradiol Valerate Injection"
+  },
+  {
+    "id": "resonance",
+    "term": "共鳴",
+    "category": "声",
+    "translations": {
+      "en": "Resonance",
+      "zhHans": "共鸣",
+      "zhHant": "共鳴",
+      "es": "Resonancia"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Resonance"
+  },
+  {
+    "id": "conjugated-estrogens",
+    "term": "結合型エストロゲン",
+    "category": "ホルモン療法",
+    "wikidata": "Q4118295",
+    "translations": {
+      "en": "Conjugated Estrogens",
+      "zhHans": "结合雌激素",
+      "zhHant": "結合雌激素",
+      "es": "Estrógenos Conjugados"
+    },
+    "aliases": [
+      "プレマリン（商品名）"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Conjugated Estrogens"
+  },
+  {
+    "id": "colovaginoplasty",
+    "term": "結腸腟形成術",
+    "category": "手術",
+    "wikidata": "Q2385499",
+    "translations": {
+      "en": "Colovaginoplasty",
+      "zhHans": "结肠阴道成形术",
+      "zhHant": "結腸陰道成形術",
+      "es": "Colovaginoplastia"
+    },
+    "aliases": [
+      "結腸法"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Colovaginoplasty"
+  },
+  {
+    "id": "thromboembolism",
+    "term": "血栓塞栓症",
+    "abbr": "VTE",
+    "category": "検査",
+    "wikidata": "Q891391",
+    "translations": {
+      "en": "Thromboembolism",
+      "zhHans": "血栓栓塞",
+      "zhHant": "血栓栓塞",
+      "es": "Tromboembolismo"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Thromboembolism"
+  },
+  {
+    "id": "ymmv",
+    "term": "個人差あり",
+    "abbr": "YMMV",
+    "category": "その他",
+    "translations": {
+      "en": "Your Mileage May Vary",
+      "zhHans": "效果因人而异",
+      "zhHant": "效果因人而異",
+      "es": "Los Resultados Varían"
+    },
+    "aliases": [
+      "個人差"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Your Mileage May Vary (YMMV)"
+  },
+  {
+    "id": "employment-discrimination",
+    "term": "雇用差別",
+    "category": "法律・制度",
+    "wikidata": "Q2606784",
+    "translations": {
+      "en": "Employment Discrimination",
+      "zhHans": "就业歧视",
+      "zhHant": "就業歧視",
+      "es": "Discriminación Laboral"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Employment Discrimination"
+  },
+  {
+    "id": "antiandrogen",
+    "term": "抗アンドロゲン薬",
+    "abbr": "AA",
+    "category": "ホルモン療法",
+    "wikidata": "Q574820",
+    "translations": {
+      "en": "Antiandrogen",
+      "zhHans": "抗雄激素",
+      "zhHant": "抗雄激素",
+      "es": "Antiandrógeno"
+    },
+    "aliases": [
+      "アンチアンドロゲン"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "用于降低雄激素作用的药物类别。",
+    "source": "Antiandrogen"
+  },
+  {
+    "id": "tracheal-shave",
+    "term": "甲状軟骨形成術",
+    "category": "手術",
+    "wikidata": "Q1968653",
+    "translations": {
+      "en": "Tracheal Shave",
+      "zhHans": "甲状软骨成形术",
+      "zhHant": "甲狀軟骨成形術",
+      "es": "Rasurado Traqueal"
+    },
+    "aliases": [
+      "のどぼとけ手術"
+    ],
+    "avoid": [
+      "割喉"
+    ],
+    "disputed": [
+      "喉结削切术"
+    ],
+    "source": "Tracheal Shave"
+  },
+  {
+    "id": "hyperkalemia",
+    "term": "高カリウム血症",
+    "category": "検査",
+    "wikidata": "Q605259",
+    "translations": {
+      "en": "Hyperkalemia",
+      "zhHans": "高钾血症",
+      "zhHant": "高鉀血症",
+      "es": "Hiperpotasemia"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "螺内酯等保钾药物相关的重要安全风险。",
+    "source": "Hyperkalemia"
+  },
+  {
+    "id": "osteoporosis",
+    "term": "骨粗鬆症",
+    "category": "医療",
+    "wikidata": "Q165328",
+    "translations": {
+      "en": "Osteoporosis",
+      "zhHans": "骨质疏松症",
+      "zhHant": "骨質疏鬆症",
+      "es": "Osteoporosis"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "长期睾酮过低或雌激素不足相关的骨骼健康风险。",
+    "source": "Osteoporosis"
+  },
+  {
+    "id": "bone-metabolism",
+    "term": "骨代謝",
+    "category": "検査",
+    "wikidata": "Q830714",
+    "translations": {
+      "en": "Bone Metabolism",
+      "zhHans": "骨代谢",
+      "zhHant": "骨代謝",
+      "es": "Metabolismo Óseo"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "长期 GAHT 相关骨骼健康监测中常见指标。",
+    "source": "Bone Metabolism"
+  },
+  {
+    "id": "bone-mineral-density",
+    "term": "骨密度",
+    "abbr": "BMD",
+    "category": "検査",
+    "wikidata": "Q2304401",
+    "translations": {
+      "en": "Bone Mineral Density",
+      "zhHans": "骨密度",
+      "zhHant": "骨密度",
+      "es": "Densidad Mineral Ósea"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Bone Mineral Density (BMD)"
+  },
+  {
+    "id": "puberty-blocker",
+    "term": "思春期ブロッカー",
+    "category": "ホルモン療法",
+    "wikidata": "Q7257264",
+    "translations": {
+      "en": "Puberty Blocker",
+      "zhHans": "青春期阻断剂",
+      "zhHant": "青春期阻斷劑",
+      "es": "Bloqueador de la Pubertad"
+    },
+    "aliases": [
+      "ホルモンブロッカー"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "临床上常使用 GnRH 类似物实现青春期抑制。",
+    "source": "Puberty Blocker"
+  },
+  {
+    "id": "assigned-gender",
+    "term": "指定性別",
+    "abbr": "AGAB",
+    "category": "性自認・属性",
+    "wikidata": "Q20474187",
+    "translations": {
+      "en": "Assigned Gender",
+      "zhHans": "指派性别",
+      "zhHant": "指派性別",
+      "es": "Género Asignado"
+    },
+    "aliases": [
+      "出生時に割り当てられた性別",
+      "出生時の指定性別"
+    ],
+    "avoid": [
+      "生理性别",
+      "原生性别",
+      "出生性别"
+    ],
+    "disputed": [],
+    "source": "Assigned Gender/Assigned Sex at Birth"
+  },
+  {
+    "id": "self-acceptance",
+    "term": "自己受容",
+    "category": "生活・社会",
+    "wikidata": "Q2267564",
+    "translations": {
+      "en": "Self-acceptance",
+      "zhHans": "自我接纳",
+      "zhHant": "自我接納",
+      "es": "Autoaceptación"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Self-acceptance"
+  },
+  {
+    "id": "diy-hrt",
+    "term": "自己投薬",
+    "abbr": "DIY",
+    "category": "生活・社会",
+    "translations": {
+      "en": "DIY HRT",
+      "zhHans": "自行激素治疗",
+      "zhHant": "自行激素治療",
+      "es": "HRT Casero"
+    },
+    "aliases": [
+      "フラホル",
+      "自己判断で服薬"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "DIY HRT"
+  },
+  {
+    "id": "rle",
+    "term": "実生活体験",
+    "abbr": "RLE",
+    "category": "医療",
+    "wikidata": "Q7300770",
+    "translations": {
+      "en": "Real Life Experience",
+      "zhHans": "实际生活体验",
+      "zhHant": "實際生活體驗",
+      "es": "Experiencia de Vida Real"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [
+      "真实生活体验"
+    ],
+    "source": "Real Life Experience (RLE)"
+  },
+  {
+    "id": "afab",
+    "term": "出生時に女性と割り当てられた者",
+    "abbr": "AFAB",
+    "category": "性自認・属性",
+    "wikidata": "Q56315990",
+    "translations": {
+      "en": "Assigned Female at Birth",
+      "zhHans": "出生时指派女性",
+      "zhHant": "出生時指派女性",
+      "es": "Asignada mujer al nacer"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "出生时性别被医生指派为女性，不论其性别认同",
+    "source": "Assigned Female at Birth (AFAB)"
+  },
+  {
+    "id": "amab",
+    "term": "出生時に男性と割り当てられた者",
+    "abbr": "AMAB",
+    "category": "性自認・属性",
+    "wikidata": "Q25388691",
+    "translations": {
+      "en": "Assigned Male at Birth",
+      "zhHans": "出生时指派男性",
+      "zhHant": "出生時指派男性",
+      "es": "Asignado hombre al nacer"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "出生时性别被医生指派为男性，不论其性别认同",
+    "source": "Assigned Male at Birth (AMAB)"
+  },
+  {
+    "id": "psychological-counseling",
+    "term": "心理カウンセリング",
+    "category": "医療",
+    "wikidata": "Q12183744",
+    "translations": {
+      "en": "Psychological Counseling",
+      "zhHans": "心理咨询",
+      "zhHant": "心理諮詢",
+      "es": "Consejería Psicológica"
+    },
+    "aliases": [
+      "カウンセリング"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Psychological Counseling"
+  },
+  {
+    "id": "diagnosis-certificate",
+    "term": "診断書",
+    "category": "法律・制度",
+    "translations": {
+      "en": "Diagnosis Certificate",
+      "zhHans": "诊断证明",
+      "zhHant": "診斷證明",
+      "es": "Certificado Diagnóstico"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "中文语境常用于指就医、手术或证件变更所需的诊断类证明材料。",
+    "source": "Diagnosis Certificate"
+  },
+  {
+    "id": "cyproterone-acetate",
+    "term": "酢酸シプロテロン",
+    "abbr": "CPA",
+    "category": "ホルモン療法",
+    "wikidata": "Q426185",
+    "translations": {
+      "en": "Cyproterone Acetate",
+      "zhHans": "醋酸环丙孕酮",
+      "zhHant": "醋酸環丙孕酮",
+      "es": "Acetato de Ciproterona"
+    },
+    "aliases": [
+      "アンドロキュール（商品名）"
+    ],
+    "avoid": [
+      "色谱龙",
+      "土色",
+      "色"
+    ],
+    "disputed": [],
+    "source": "Cyproterone Acetate (CPA)"
+  },
+  {
+    "id": "medroxyprogesterone-acetate",
+    "term": "酢酸メドロキシプロゲステロン",
+    "abbr": "MPA",
+    "category": "ホルモン療法",
+    "wikidata": "Q2823834",
+    "translations": {
+      "en": "Medroxyprogesterone Acetate",
+      "zhHans": "醋酸甲羟孕酮",
+      "zhHant": "醋酸甲羥孕酮",
+      "es": "Acetato de Medroxiprogesterona"
+    },
+    "aliases": [
+      "メドロキシプロゲステロン酢酸エステル"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "一种人工孕激素，部分 GAHT 资料会讨论其乳房发育、精神状态和风险影响。",
+    "source": "Medroxyprogesterone Acetate (MPA)"
+  },
+  {
+    "id": "meningioma",
+    "term": "髄膜腫",
+    "category": "医療",
+    "wikidata": "Q369157",
+    "translations": {
+      "en": "Meningioma",
+      "zhHans": "脑膜瘤",
+      "zhHant": "腦膜瘤",
+      "es": "Meningioma"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "醋酸环丙孕酮长期或高剂量使用相关风险之一。",
+    "source": "Meningioma"
+  },
+  {
+    "id": "sex-hormone",
+    "term": "性ホルモン",
+    "category": "ホルモン療法",
+    "wikidata": "Q3140642",
+    "translations": {
+      "en": "Sex Hormone",
+      "zhHans": "性激素",
+      "zhHant": "性激素",
+      "es": "Hormona Sexual"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "包括雌激素、孕激素和雄激素等。",
+    "source": "Sex Hormone"
+  },
+  {
+    "id": "shbg",
+    "term": "性ホルモン結合グロブリン",
+    "abbr": "SHBG",
+    "category": "検査",
+    "wikidata": "Q419613",
+    "translations": {
+      "en": "Sex Hormone-Binding Globulin",
+      "zhHans": "性激素结合球蛋白",
+      "zhHant": "性激素結合球蛋白",
+      "es": "Globulina Fijadora de Hormonas Sexuales"
+    },
+    "aliases": [
+      "SHBG"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "影响游离雌二醇、睾酮水平解读的血浆蛋白。",
+    "source": "Sex Hormone-Binding Globulin (SHBG)"
+  },
+  {
+    "id": "genital-surgery",
+    "term": "性器手術",
+    "category": "手術",
+    "translations": {
+      "en": "Genital Surgery",
+      "zhHans": "生殖器手术",
+      "zhHant": "生殖器手術",
+      "es": "Cirugía Genital"
+    },
+    "aliases": [
+      "SRS"
+    ],
+    "avoid": [],
+    "disputed": [
+      "可以使用 SRS 特指生殖器手术吗？"
+    ],
+    "notes": "中文语境常使用 SRS 特指",
+    "source": "Genital surgery"
+  },
+  {
+    "id": "transsexualism",
+    "term": "性転換症",
+    "category": "性自認・属性",
+    "wikidata": "Q190965",
+    "translations": {
+      "en": "Transsexualism",
+      "zhHans": "易性症",
+      "zhHant": "易性症",
+      "es": "Transexualismo"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "过时的病理化标签，但在当前中国法律框架下仍使用，使用时需注明",
+    "source": "Transsexualism"
+  },
+  {
+    "id": "transgender-certificate",
+    "term": "性転換症診断書",
+    "category": "法律・制度",
+    "translations": {
+      "en": "Transgender Certificate",
+      "zhHans": "易性症诊断证明书",
+      "zhHant": "易性症診斷證明書",
+      "es": "Certificado de Diagnóstico Transgénero"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Transgender Certificate"
+  },
+  {
+    "id": "gender-dysphoria",
+    "term": "性別違和",
+    "abbr": "GD",
+    "category": "性自認・属性",
+    "wikidata": "Q1049021",
+    "translations": {
+      "en": "Gender Dysphoria",
+      "zhHans": "性别不安",
+      "zhHant": "性別不安",
+      "es": "Disforia de Género"
+    },
+    "aliases": [
+      "性別違和感",
+      "性同一性障害",
+      "ジェンダーディスフォリア"
+    ],
+    "avoid": [
+      "性别认同障碍"
+    ],
+    "disputed": [
+      "性别焦虑（在特定语境可以使用？）"
+    ],
+    "notes": "ICD-11已更新为性别不一致，但在描述心理痛苦时仍常使用性别焦虑",
+    "source": "Gender Dysphoria",
+    "message": "昔の自分を、責め続けないであげてくださいね。あの子だって、何も見えない霧の中で、必死に迷っていたんだから。"
+  },
+  {
+    "id": "gender-transition",
+    "term": "性別移行",
+    "category": "生活・社会",
+    "translations": {
+      "en": "Gender transition",
+      "zhHans": "性别过渡",
+      "zhHant": "性別過渡"
+    },
+    "aliases": [
+      "トランジション",
+      "移行"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "自分の性のあり方に合わせて、呼び名・服装・社会生活、必要に応じて医療や法的手続きなどを変えていくこと。社会的・医療的・法的な側面があり、どこまで行うかは人によって異なります。すべてを行う必要はありません。",
+    "source": "Transitioning (transgender)"
+  },
+  {
+    "id": "gaht",
+    "term": "性別適合ホルモン療法",
+    "abbr": "GAHT",
+    "category": "ホルモン療法",
+    "wikidata": "Q5903802",
+    "translations": {
+      "en": "Gender-Affirming Hormone Therapy",
+      "zhHans": "性别肯定激素治疗",
+      "zhHant": "性別肯定激素治療",
+      "es": "Terapia Hormonal de Afirmación de Género"
+    },
+    "aliases": [
+      "HRT",
+      "ホルモン補充療法",
+      "トランスジェンダー・ホルモン療法"
+    ],
+    "avoid": [],
+    "disputed": [
+      "激素替代疗法",
+      "激素肯定疗法"
+    ],
+    "notes": "\"SOC-8 推荐使用\"\"肯定 (Affirming)\"\"而非\"\"替代 (Replacement)\"\"。HRT 隐含\"\"由于缺陷而替代\"\"的病理意味，GAHT 强调对自我认同的肯定。但中文语境常使用 HRT\"",
+    "source": "Gender-Affirming Hormone Therapy(GAHT)"
+  },
+  {
+    "id": "gas",
+    "term": "性別適合手術",
+    "abbr": "GAS",
+    "category": "手術",
+    "wikidata": "Q1053501",
+    "translations": {
+      "en": "Gender Affirmation Surgery",
+      "zhHans": "性别肯定手术",
+      "zhHant": "性別肯定手術",
+      "es": "Cirugía de Afirmación de Género"
+    },
+    "aliases": [
+      "SRS",
+      "GCS"
+    ],
+    "avoid": [
+      "变性手术",
+      "切除手术"
+    ],
+    "disputed": [
+      "性别重置手术 (SRS)"
+    ],
+    "notes": "SOC-8 推荐用语",
+    "source": "Gender Affirmation Surgery (GAS)"
+  },
+  {
+    "id": "sex-reassignment-certificate",
+    "term": "性別適合証明書",
+    "abbr": "SRC",
+    "category": "法律・制度",
+    "translations": {
+      "en": "Sex Reassignment Certificate",
+      "zhHans": "性别重置证明书",
+      "zhHant": "性別重置證明書",
+      "es": "Certificado de Reasignación Sexual"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [
+      "性别鉴定证明"
+    ],
+    "notes": "\"《户口居民身份证管理工作规范（试行）》使用\"\"三级医院出具的性别鉴定证明\"\"一称；与术后诊断证明书（\"\"易性症诊断证明书\"\"）应区分。具体用词待讨论。\"",
+    "source": "Sex Reassignment Certificate"
+  },
+  {
+    "id": "gender-expression",
+    "term": "性別表現",
+    "category": "性自認・属性",
+    "wikidata": "Q1496967",
+    "translations": {
+      "en": "Gender Expression",
+      "zhHans": "性别表达",
+      "zhHant": "性別表達",
+      "es": "Expresión de Género"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "指个体通过外貌、衣着、行为、姿态等方式表现性别认同的方式。",
+    "source": "Gender Expression"
+  },
+  {
+    "id": "gender-incongruence",
+    "term": "性別不合",
+    "abbr": "GI",
+    "category": "性自認・属性",
+    "wikidata": "Q56314793",
+    "translations": {
+      "en": "Gender Incongruence",
+      "zhHans": "性别不一致",
+      "zhHant": "性別不一致",
+      "es": "Incongruencia de Género"
+    },
+    "aliases": [],
+    "avoid": [
+      "异性症",
+      "异性癖"
+    ],
+    "disputed": [
+      "性别不合"
+    ],
+    "notes": "\"ICD-11 诊断标准名称，去病化。\"\"异性症/异性癖\"\"为旧用法或电脑输入法误字（如411医院病历），应避免使用。\"",
+    "source": "Gender Incongruence"
+  },
+  {
+    "id": "legal-gender-recognition",
+    "term": "性別変更",
+    "abbr": "LGR",
+    "category": "法律・制度",
+    "wikidata": "Q105555588",
+    "translations": {
+      "en": "Legal Gender Recognition",
+      "zhHans": "性别变更",
+      "zhHant": "性別變更",
+      "es": "Reconocimiento Legal de Género"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Legal Gender Recognition"
+  },
+  {
+    "id": "orchiectomy",
+    "term": "精巣摘除術",
+    "category": "手術",
+    "wikidata": "Q1806228",
+    "translations": {
+      "en": "Orchiectomy",
+      "zhHans": "睾丸切除术",
+      "zhHant": "睪丸切除術",
+      "es": "Orquiectomía"
+    },
+    "aliases": [
+      "去勢"
+    ],
+    "avoid": [
+      "阉割"
+    ],
+    "disputed": [],
+    "source": "Orchiectomy"
+  },
+  {
+    "id": "vocal-folds",
+    "term": "声帯",
+    "category": "声",
+    "wikidata": "Q215558",
+    "translations": {
+      "en": "Vocal Folds",
+      "zhHans": "声带",
+      "zhHant": "聲帶",
+      "es": "Cuerdas Vocales"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "嗓音训练和嗓音女性化手术中的核心解剖术语。",
+    "source": "Vocal Folds"
+  },
+  {
+    "id": "glottoplasty",
+    "term": "声帯短縮術",
+    "category": "声",
+    "wikidata": "Q116184264",
+    "translations": {
+      "en": "Glottoplasty",
+      "zhHans": "声带缩短术",
+      "zhHant": "聲帶縮短術",
+      "es": "Glotoplastia"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [
+      "声带截短术"
+    ],
+    "source": "Glottoplasty"
+  },
+  {
+    "id": "serm",
+    "term": "選択的エストロゲン受容体モジュレーター",
+    "abbr": "SERM",
+    "category": "ホルモン療法",
+    "wikidata": "Q903917",
+    "translations": {
+      "en": "Selective Estrogen Receptor Modulator",
+      "zhHans": "选择性雌激素受体调节剂",
+      "zhHant": "選擇性雌激素受體調節劑",
+      "es": "Modulador Selectivo del Receptor de Estrógeno"
+    },
+    "aliases": [
+      "SERM"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "在非二元或低女性化需求的激素方案讨论中出现。",
+    "source": "Selective Estrogen Receptor Modulator (SERM)"
+  },
+  {
+    "id": "prostate",
+    "term": "前立腺",
+    "category": "医療",
+    "wikidata": "Q9625",
+    "translations": {
+      "en": "Prostate",
+      "zhHans": "前列腺",
+      "zhHant": "前列腺",
+      "es": "Próstata"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "跨女性健康、泌尿系统和生殖器手术说明中常见术语。",
+    "source": "Prostate"
+  },
+  {
+    "id": "hair-loss",
+    "term": "脱毛症",
+    "category": "医療",
+    "wikidata": "Q2697787",
+    "translations": {
+      "en": "Hair Loss",
+      "zhHans": "脱发",
+      "zhHant": "脫髮",
+      "es": "Pérdida de Cabello"
+    },
+    "aliases": [
+      "薄毛"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "常见于头发护理、FFS 和抗雄激素相关讨论。",
+    "source": "Hair Loss"
+  },
+  {
+    "id": "conversion-therapy",
+    "term": "転向療法",
+    "category": "生活・社会",
+    "wikidata": "Q1538947",
+    "translations": {
+      "en": "Conversion Therapy",
+      "zhHans": "扭转治疗",
+      "zhHant": "扭轉治療",
+      "es": "Terapia de Conversión"
+    },
+    "aliases": [
+      "修復療法"
+    ],
+    "avoid": [
+      "修复疗法"
+    ],
+    "disputed": [],
+    "source": "Conversion Therapy"
+  },
+  {
+    "id": "electrolysis",
+    "term": "電気脱毛",
+    "category": "脱毛",
+    "wikidata": "Q2915857",
+    "translations": {
+      "en": "Electrology",
+      "zhHans": "电解脱毛",
+      "zhHant": "電解脫毛",
+      "es": "Electrólisis"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "source": "Electrolysis"
+  },
+  {
+    "id": "endocrinology",
+    "term": "内分泌科",
+    "category": "医療",
+    "wikidata": "Q162606",
+    "translations": {
+      "en": "Endocrinology",
+      "zhHans": "内分泌科",
+      "zhHant": "內分泌科",
+      "es": "Endocrinología"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "激素治疗就诊和随访常见科室。",
+    "source": "Endocrinology"
+  },
+  {
+    "id": "breast-cancer",
+    "term": "乳癌",
+    "category": "医療",
+    "wikidata": "Q128581",
+    "translations": {
+      "en": "Breast Cancer",
+      "zhHans": "乳腺癌",
+      "zhHant": "乳癌",
+      "es": "Cáncer de Mama"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "激素治疗风险评估和常规筛查中常见术语。",
+    "source": "Breast Cancer"
+  },
+  {
+    "id": "breast-development",
+    "term": "乳房発育",
+    "category": "ホルモン療法",
+    "translations": {
+      "en": "Breast Development",
+      "zhHans": "乳房发育",
+      "zhHant": "乳房發育",
+      "es": "Desarrollo Mamario"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "女性化激素治疗的常见预期效果之一。",
+    "source": "Breast Development"
+  },
+  {
+    "id": "urethra",
+    "term": "尿道",
+    "category": "手術",
+    "wikidata": "Q9386",
+    "translations": {
+      "en": "Urethra",
+      "zhHans": "尿道",
+      "zhHant": "尿道",
+      "es": "Uretra"
+    },
+    "aliases": [],
+    "avoid": [],
+    "disputed": [],
+    "notes": "生殖器手术和术后护理中常见解剖术语。",
+    "source": "Urethra"
+  },
+  {
+    "id": "peritoneal-vaginoplasty",
+    "term": "腹膜腟形成術",
+    "abbr": "PPV",
+    "category": "手術",
+    "wikidata": "Q116755376",
+    "translations": {
+      "en": "Peritoneal Vaginoplasty",
+      "zhHans": "腹膜阴道成形术",
+      "zhHant": "腹膜陰道成形術",
+      "es": "Vaginoplastia Peritoneal"
+    },
+    "aliases": [
+      "腹膜法"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Peritoneal Vaginoplasty"
+  },
+  {
+    "id": "breast-augmentation",
+    "term": "豊胸術",
+    "abbr": "BA",
+    "category": "手術",
+    "wikidata": "Q3851652",
+    "translations": {
+      "en": "Breast Augmentation",
+      "zhHans": "隆乳术",
+      "zhHant": "隆乳術",
+      "es": "Aumento de Senos"
+    },
+    "aliases": [
+      "豊胸"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Breast Augmentation"
+  },
+  {
+    "id": "mtf-wiki",
+    "term": "本サイト",
+    "category": "その他",
+    "translations": {
+      "en": "This site",
+      "zhHans": "本站",
+      "zhHant": "本站",
+      "es": "Este sitio"
+    },
+    "aliases": [],
+    "avoid": [
+      "本wiki",
+      "wiki"
+    ],
+    "disputed": [
+      "我们"
+    ],
+    "notes": "统一指代 MtF.wiki 网站本身",
+    "source": "MtF.wiki"
+  },
+  {
+    "id": "vaginoplasty",
+    "term": "腟形成術",
+    "category": "手術",
+    "wikidata": "Q1537534",
+    "translations": {
+      "en": "Vaginoplasty",
+      "zhHans": "阴道成形术",
+      "zhHant": "陰道成形術",
+      "es": "Vaginoplastia"
+    },
+    "aliases": [
+      "SRS",
+      "腟形成"
+    ],
+    "avoid": [
+      "阴道成型术"
+    ],
+    "disputed": [],
+    "source": "Vaginoplasty"
+  }
+]

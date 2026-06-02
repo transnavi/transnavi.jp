@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import clinicsData from '../../data/clinics.json';
+import type { Clinic } from '../../types/clinic';
+import { splitClinicUrls } from '../../utils/clinic-links';
+
+export function getStaticPaths() {
+  const clinics = clinicsData as Clinic[];
+  return clinics.map((clinic) => ({ params: { id: clinic.id }, props: { clinic } }));
+}
+
+const { clinic } = Astro.props as { clinic: Clinic };
+const links = splitClinicUrls(clinic.urls);
+---
+
+<BaseLayout title={`${clinic.name} - とらんすナビ`} description={`${clinic.displayName}の医療機関情報。`}>
+  <article class="article-shell">
+    <div class="eyebrow">医療機関</div>
+    <h1>{clinic.name}</h1>
+    <p class="lead">{clinic.displayName}</p>
+
+    <dl class="clinic-detail">
+      <div>
+        <dt>地域</dt>
+        <dd>{[clinic.prefecture, clinic.city].filter(Boolean).join(' / ')}</dd>
+      </div>
+      {clinic.address && (
+        <div>
+          <dt>住所</dt>
+          <dd>{clinic.address}</dd>
+        </div>
+      )}
+      {clinic.phone && (
+        <div>
+          <dt>電話</dt>
+          <dd>{clinic.phone}</dd>
+        </div>
+      )}
+      <div>
+        <dt>掲載項目</dt>
+        <dd>{clinic.services.join('、')}</dd>
+      </div>
+      <div>
+        <dt>情報の確認</dt>
+        <dd>{clinic.verificationStatus}</dd>
+      </div>
+      {links.officialUrls.length > 0 && (
+        <div>
+          <dt>公式サイト</dt>
+          <dd>
+            <ul>
+              {links.officialUrls.map((url) => (
+                <li><a href={url} target="_blank" rel="noreferrer">{url}</a></li>
+              ))}
+            </ul>
+          </dd>
+        </div>
+      )}
+      {links.relatedUrls.length > 0 && (
+        <div>
+          <dt>関連ページ</dt>
+          <dd>
+            <ul>
+              {links.relatedUrls.map((url) => (
+                <li><a href={url} target="_blank" rel="noreferrer">{url}</a></li>
+              ))}
+            </ul>
+          </dd>
+        </div>
+      )}
+    </dl>
+
+    <section class="notice" aria-labelledby="clinic-warning">
+      <h2 id="clinic-warning">受診前の確認</h2>
+      <p>診療内容、費用、予約方法、診断書の要否は変わることがあります。受診前に必ず医療機関へ確認してください。このページは、特定の医療機関をすすめるものではありません。</p>
+    </section>
+
+    <section aria-labelledby="source-note">
+      <h2 id="source-note">出典</h2>
+      <p>{clinic.source.project} / {clinic.source.path}（{clinic.source.license}）。取り込み元に口コミ、体験談、主観的評価が含まれる場合も、医療機関ページには確認できる項目を優先して掲載しています。</p>
+    </section>
+  </article>
+</BaseLayout>

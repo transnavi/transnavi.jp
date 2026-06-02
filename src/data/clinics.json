@@ -1,0 +1,2087 @@
+[
+  {
+    "id": "hrt-ibaraki-mito",
+    "name": "水戸中央クリニック",
+    "displayName": "水戸市・水戸中央クリニック",
+    "prefecture": "茨城県",
+    "city": "水戸市",
+    "address": "茨城県水戸市宮町 1-3-38 駅前中村ビル 8F",
+    "urls": [
+      "http://www.mito-biyou.com/index.php"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/ibaraki/mito.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "美容外科\n\n- 茨城県水戸市宮町 1-3-38 駅前中村ビル 8F\n- フリーダイヤル：0120-005-129\n- <http://www.mito-biyou.com/index.php>\n\n※**完全予約制**。HP にホルモン注射の記載あり。（要電話確認）"
+  },
+  {
+    "id": "hrt-iwate-oohinata",
+    "name": "大日向医院",
+    "displayName": "盛岡市・大日向医院",
+    "prefecture": "岩手県",
+    "city": "盛岡市",
+    "address": "岩手県盛岡市高松２丁目９-９",
+    "phone": "019-662-5530",
+    "urls": [
+      "https://www.oohinataclinic.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/iwate/oohinata.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "泌尿器科\n\n- 岩手県盛岡市高松２丁目９-９\n- TEL 019-662-5530\n- HP <https://www.oohinataclinic.com/>\n\n性同一性障害の方へのホルモン注射治療を行っております。\n\nGID の診断書を持参いただければ、当日より治療開始させて頂いてます。  \n使用するホルモン剤はテストステロンデポー（男性ホルモン剤）、プロゲステロンデポー（女性ホルモン剤）、ペラニンデポー（女性ホルモン剤）となります。  \n自費診療で 1 回 1000 円から 2000 円程度となります（診察代別）。"
+  },
+  {
+    "id": "hrt-miyagi-hanew",
+    "name": "羽二生クリニック",
+    "displayName": "仙台市・羽二生クリニック",
+    "prefecture": "宮城県",
+    "city": "仙台市",
+    "phone": "022-273-1182",
+    "urls": [
+      "http://hanew-cl.com/index.html"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/miyagi/hanew.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 仙台市青葉区柏木 2-2-14\n- TEL：022-273-1182\n- <http://hanew-cl.com/index.html>\n\n特徴／小児から成人までを幅広く診療する内分泌疾患専門の診療所\n\n## MTF さんからの報告\n\nホルモン注射には、定期的な血液検査と治療への同意書のほか、専門医による性同一性障害の診断書が必要です。  \nプライバシーへの配慮も行き届いており、ＭＴＦ、ＦＴＭともすでに複数名通院しているとのこと。"
+  },
+  {
+    "id": "hrt-miyagi-igarashi",
+    "name": "五十嵐産婦人科医院",
+    "displayName": "仙台市・五十嵐産婦人科医院",
+    "prefecture": "宮城県",
+    "city": "仙台市",
+    "phone": "022-223-3404",
+    "urls": [
+      "http://www.igarashi-gyne.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/miyagi/igarashi.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 仙台市青葉区本町 2-8-24\n- 電話：022-223-3404\n- <http://www.igarashi-gyne.com/>"
+  },
+  {
+    "id": "hrt-miyagi-nagai",
+    "name": "向仁会永井産婦人科",
+    "displayName": "仙台市・向仁会永井産婦人科",
+    "prefecture": "宮城県",
+    "city": "仙台市",
+    "address": "宮城県仙台市青葉区支倉町 4 番 3 号",
+    "phone": "022-222-5582",
+    "urls": [
+      "http://www.nagai-obgyne.com/index.html"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/miyagi/nagai.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 宮城県仙台市青葉区支倉町 4 番 3 号\n- 電話：022-222-5582\n- <http://www.nagai-obgyne.com/index.html>\n\n駐車場：玄関前第 1 駐車場に 5 台程度、西公園通り沿いの第 2 駐車場に 8 台程度設けております。"
+  },
+  {
+    "id": "psyco-miyagi-aoba",
+    "name": "青葉心理クリニック",
+    "displayName": "仙台市・青葉心理クリニック",
+    "prefecture": "宮城県",
+    "city": "仙台市",
+    "phone": "022-215-3525",
+    "urls": [
+      "http://www.aobashinriclinic.jp/"
+    ],
+    "services": [
+      "精神科・診断"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/psyco/miyagi/aoba.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "心療内科・内科\n\n- 仙台市青葉区上杉 1 丁目 17-30 ロイヤルヒルズ上杉 II 601 号\n- 電話：022-215-3525\n  【診療時間】午前 10 時～午後 8 時まで\n- <http://www.aobashinriclinic.jp/>\n\n※GID の診療はあるが、注射はできないっぽい"
+  },
+  {
+    "id": "hrt-miyagi-sendai",
+    "name": "仙台中央クリニック",
+    "displayName": "仙台市・仙台中央クリニック",
+    "prefecture": "宮城県",
+    "city": "仙台市",
+    "address": "宮城県仙台市青葉区中央 3-6-8 JTB ビル 7F",
+    "urls": [
+      "http://www.kirei-kirei-sendai.jp/index.php"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/miyagi/sendai.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "美容外科\n\n- 宮城県仙台市青葉区中央 3-6-8 JTB ビル 7F\n- フリーダイヤル：0120-077-106\n- <http://www.kirei-kirei-sendai.jp/index.php>\n\n※**完全予約制**。HP にホルモン注射の記載あり。\n（要電話確認）"
+  },
+  {
+    "id": "hrt-gunma-umeyama",
+    "name": "うめやま医院",
+    "displayName": "高崎市・うめやま医院",
+    "prefecture": "群馬県",
+    "city": "高崎市",
+    "address": "群馬県高崎市連雀町 133",
+    "phone": "027-328-5500",
+    "urls": [
+      "http://www.umeyama.jp/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/gunma/umeyama.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "泌尿器科、性病科\n\n- 群馬県高崎市連雀町 133\n- 電話：027-328-5500\n- <http://www.umeyama.jp/>\n\n休診日：水曜・土曜の午後、日曜祝日  \n最寄り駅「JR 高崎駅」\n\n## みさきのコメント\n\nMTF さんから情報提供して頂きました  \n内科、外科もやっている泌尿器科です"
+  },
+  {
+    "id": "hrt-gunma-cosmo-ladies",
+    "name": "こすもレディースクリニック",
+    "displayName": "高崎市・こすもレディースクリニック",
+    "prefecture": "群馬県",
+    "city": "高崎市",
+    "address": "群馬県高崎市旭町 113-7",
+    "phone": "027-330-2215",
+    "urls": [
+      "https://www.cosmo-ladies.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/gunma/cosmo-ladies.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- <https://www.cosmo-ladies.com/>\n- 電話：027-330-2215\n- 群馬県高崎市旭町 113-7\n\n## 診療時間\n\n9:30 - 13:00、15:00 - 20:00  \n休診日：水曜午前、土曜午後、日曜、祝日\n\n## コメント\n\n群馬県在住の MTF さんから教えていただきました。とても親切な先生で、女性ホルモン、血液検査、などもやってくれるようです。  \nホルモン注射ではなく、貼り薬になる可能性もあります事前に病院にご相談ください。  \n女性ホルモン投与には、GID 診断書が必要になる可能性もあります。受診前にかならずご確認ください"
+  },
+  {
+    "id": "hrt-gunma-kyoritsu",
+    "name": "共立美容外科高崎院",
+    "displayName": "高崎市・共立美容外科高崎院",
+    "prefecture": "群馬県",
+    "city": "高崎市",
+    "phone": "027-310-7011",
+    "urls": [
+      "http://www.kyoritsu-biyo.com/clinic/takasaki/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/gunma/kyoritsu.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "美容外科\n\n- 高崎市八島町 65 明石屋ビル 2 階\n- フリーダイヤル：0120-500-340\n- 電話：027-310-7011\n- <http://www.kyoritsu-biyo.com/clinic/takasaki/>\n\n※年中無休（土・日・祝日も診療中）\n\n※**完全予約制**\n\n※各種カード・ローン可\n\n※駐車場完備  \n注射代：1A 3240 円"
+  },
+  {
+    "id": "hrt-gunma-shiromoto",
+    "name": "城本クリニック高崎院",
+    "displayName": "高崎市・城本クリニック高崎院",
+    "prefecture": "群馬県",
+    "city": "高崎市",
+    "address": "群馬県高崎市栄町 1-10 サンライズビル 4F",
+    "phone": "027-320-1131",
+    "urls": [
+      "http://www.shiromoto.to/clinic/takasaki.php"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/gunma/shiromoto.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 群馬県高崎市栄町 1-10 サンライズビル 4F\n- 電話：027-320-1131\n- フリーダイヤル：0120-107-929\n- <http://www.shiromoto.to/clinic/takasaki.php>\n\n## 診療時間\n\n10:00 ～ 19:00\n\n※ **完全予約制**\n\n※土曜・日曜・祝日も診療\n\n注射：1 回 5400 円  \n血液検査：5400 円\n\n※MTF さんから情報提供して頂きました。ありがとうございます。"
+  },
+  {
+    "id": "hrt-saitama-kashiwazaki",
+    "name": "かしわざき産婦人科",
+    "displayName": "さいたま市・かしわざき産婦人科",
+    "prefecture": "埼玉県",
+    "city": "さいたま市",
+    "address": "埼玉県さいたま市大宮区上小町 604-4",
+    "phone": "048-641-8077",
+    "urls": [
+      "http://www.kashiwazaki.ne.jp/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/saitama/kashiwazaki.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 埼玉県さいたま市大宮区上小町 604-4\n- 電話：048-641-8077\n- <http://www.kashiwazaki.ne.jp/>\n\nプロギノンデポー  \n1A 2160 円（税込み）  \n2A 4320 円（税込み）\n\n## 診療時間\n\n9 ～ 12 時（午前）16 ～ 18 時 30 分（午後）  \n休診日：木曜、土曜の午後、日祝\n\n※駐車場、駐輪場あり\n\n## みさきのコメント\n\n個人でやっているクリニックですが、入院、出産施設もあり、4 階建てのビルのとても大きい病院です。  \nおそらく鉄筋コンクリート造なんでしょうが、見た目はオシャレなビル  \n入ってすぐに受け付けがあり、待合室も広く（大きい水槽がキレイです）、比較的いつも混んでいます。  \n女性やお子さん連れのお母さん、旦那さんと二人で来ている人もいます。  \nGID 当事者も少ないですが、この病院リストの影響もあり MTF さんが少し通院されています  \n始めての場合、先生と面談があり、その後注射をします。（プロギノンデポー 1A で 2160 円）  \n初回は血液検査を進められますが、戸籍が男性の内は保険適用にならないので、もし別の病院で血液検査をやれるのであれば、必ずしもやる必要はありません\n（そのばあい、つい先日血液検査したばかりだと言えばいいでしょう）  \n初回は先生との面談もあり、１～ 2 時間ほどかかりますが、2 回目以降は注射だけで先生との面談もないので比較的スムーズに注射できると思います。  \nトランスを始めたばかりの人は、初回以外にも先生との面談が何度かあるかもしれません。  \n女性ホルモン注射にあたり、GID の診断書などは必要なく、私の場合は初めて行った時に注射することができました。"
+  },
+  {
+    "id": "hrt-saitama-shinozaki",
+    "name": "しのざき脳神経外科産婦人科",
+    "displayName": "さいたま市・しのざき脳神経外科産婦人科",
+    "prefecture": "埼玉県",
+    "city": "さいたま市",
+    "address": "埼玉県さいたま市南区南浦和 3-28-7",
+    "phone": "048-887-1881",
+    "urls": [
+      "http://www.shinozaki-c.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/saitama/shinozaki.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 埼玉県さいたま市南区南浦和 3-28-7\n- 電話：048-887-1881\n- <http://www.shinozaki-c.com/>\n\n## スザンヌみさきのコメント\n\nペラニンデポー 1500 円（全部込み）くらい  \n戸籍変更した人でも 1500 円。大学病院の診断書が無いとダメ。（面倒くさい）"
+  },
+  {
+    "id": "hrt-saitama-saika",
+    "name": "彩花クリニック",
+    "displayName": "深谷市・彩花クリニック",
+    "prefecture": "埼玉県",
+    "city": "深谷市",
+    "address": "〒 369-1246 埼玉県深谷市小前田 2533-1",
+    "phone": "048-584-7205",
+    "urls": [
+      "https://www.saika-clinic.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/saitama/saika.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 〒 369-1246 埼玉県深谷市小前田 2533-1\n- 電話 048-584-7205\n- <https://www.saika-clinic.com/>\n\n駐車場敷地内に専用駐車場有\n\n## 受付時間\n\n新患の方：平日は 18 時 30 分まで、土曜は 16 時 30 分までとなります。  \n新患以外の方：平日は 18 時 45 分まで、土曜は 16 時 45 分までとなります。  \n休診日木曜・日曜・祝日\n\n## MTF さんのクチコミ\n\n気軽に女性ホルモン注射可能との口コミです"
+  },
+  {
+    "id": "hrt-saitama-ishii",
+    "name": "石井クリニック",
+    "displayName": "さいたま市・石井クリニック",
+    "prefecture": "埼玉県",
+    "city": "さいたま市",
+    "address": "埼玉県さいたま市浦和区北浦和 4-3-8",
+    "phone": "048-833-0010",
+    "urls": [
+      "http://www.ishii-clinic.jp/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/saitama/ishii.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "泌尿器科\n\n- 埼玉県さいたま市浦和区北浦和 4-3-8\n- 電話：048-833-0010\n- <http://www.ishii-clinic.jp/>\n\n※前の病院の紹介状があれば大丈夫かもしれないが、先生と要相談"
+  },
+  {
+    "id": "hrt-saitama-sekishin",
+    "name": "赤心クリニック",
+    "displayName": "川越市・赤心クリニック",
+    "prefecture": "埼玉県",
+    "city": "川越市",
+    "address": "埼玉県川越市脇田本町 25-18",
+    "phone": "049-242-8601",
+    "urls": [
+      "http://www.sekishindo.or.jp/clinic/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/saitama/sekishin.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 埼玉県川越市脇田本町 25-18\n- 電話：049-242-8601\n- <http://www.sekishindo.or.jp/clinic/>\n\n## スザンヌみさきのコメント\n\n紹介状があれば大丈夫ですが、新規患者は受け付けていないそうです。  \n女性ホルモン注射やってくれるそうですが、事前に血液検査が必要。  \nなによりも面倒なのが、待ち時間 5 時間以上かかるということ。11：30 に受付して、診察したの 17：30 くらいでした。通院は非常に厳しいと私は感じました。微妙\n\n## 読者さんのコメント\n\n赤心クリニックは週に一回ペラニン 1A か張り薬のエストラーナか飲み薬のプレマリンのどれかを選択です。  \nちなみにここの先生は、２週に一度のペラニン 2A はやって貰えません｡  \n赤心クリニックのホルモン注射の料金は、一回 1242 円です"
+  },
+  {
+    "id": "hrt-saitama-omiyachuuou",
+    "name": "大宮中央クリニック",
+    "displayName": "さいたま市・大宮中央クリニック",
+    "prefecture": "埼玉県",
+    "city": "さいたま市",
+    "address": "埼玉県さいたま市大宮区宮町 1-5 大宮銀座ビル 4F",
+    "urls": [
+      "http://www.shinbijin.jp/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/saitama/omiyachuuou.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "美容外科\n\n- 埼玉県さいたま市大宮区宮町 1-5 大宮銀座ビル 4F\n- フリーダイヤル：0120-077-645\n- <http://www.shinbijin.jp/>\n\n## スザンヌみさきのコメント\n\nGID 診断書など必要はないそうですが、GID 当事者のみに女性ホルモン注射をしているそうです。  \n初回時に血液検査が必要となり、19,800 円かかります。  \nそれ以降は、1 回の注射につき 2,980 円。  \nアンプル剤を箱買い（10A）すると割引になり  \n10 回分で 14,800 円になる。（1 回あたり 1480 円）  \nということなので、恐らく 1 アンプルあたり 2980 円なんだと思う。  \n中央クリニックは全国展開なので、全国の中央クリニックも同じようなシステムだと思います"
+  },
+  {
+    "id": "hrt-yamanashi-yabusaki",
+    "name": "やぶさき泌尿器科クリニック",
+    "displayName": "甲府市・やぶさき泌尿器科クリニック",
+    "prefecture": "山梨県",
+    "city": "甲府市",
+    "address": "山梨県甲府市下石田 2 丁目 16-6",
+    "phone": "055-227-1212",
+    "urls": [
+      "http://www.yabusaki-uro.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/yamanashi/yabusaki.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 山梨県甲府市下石田 2 丁目 16-6\n- TEL：055-227-1212\n- <http://www.yabusaki-uro.com/>"
+  },
+  {
+    "id": "hrt-akita-e-alve",
+    "name": "医療法人藤盛レィディーズクリニック",
+    "displayName": "秋田市・医療法人藤盛レィディーズクリニック",
+    "prefecture": "秋田県",
+    "city": "秋田市",
+    "address": "〒 010-8506 秋田市東通仲町 4-1 アルヴェ４Ｆ",
+    "phone": "018-884-3939",
+    "urls": [
+      "http://www.e-alve.com/floor/111"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/akita/e-alve.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "内科・産婦人科\n\n※要診断書\n\n- 〒 010-8506 秋田市東通仲町 4-1 アルヴェ４Ｆ\n- 電話：018-884-3939\n- <http://www.e-alve.com/floor/111>\n\n## 診療時間\n\n月・火・木・金（9:00 ～ 12:00 14:30 ～ 16:00）\n\n水・土（9:00 ～ 12:00）\n\n受付は診療終了時間 30 分前までにお願いします (ご都合により相談に応じます)\n\n休診日：日曜・祝日／お盆／年末年始／学会出張時他\n\nMTF さんからの情報でホルモン注射に対応しているとのこと"
+  },
+  {
+    "id": "hrt-niigata-matsui",
+    "name": "松井女性クリニック",
+    "displayName": "新潟市・松井女性クリニック",
+    "prefecture": "新潟県",
+    "city": "新潟市",
+    "address": "新潟県新潟市中央区西堀前通 6 番町 899 シス西堀 1 Ｆ",
+    "phone": "25-222-7878",
+    "urls": [
+      "http://www.matsui-ladiesclinic.jp/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/niigata/matsui.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 新潟県新潟市中央区西堀前通 6 番町 899 シス西堀 1 Ｆ\n- <http://www.matsui-ladiesclinic.jp/>\n- 電話 25-222-7878\n\n休診日：火曜、祝日土日午後\n\n※MTF さんから直接連絡頂きました。"
+  },
+  {
+    "id": "hrt-niigata-watanabe-kinen",
+    "name": "渡辺記念クリニック",
+    "displayName": "新潟市・渡辺記念クリニック",
+    "prefecture": "新潟県",
+    "city": "新潟市",
+    "address": "新潟県新潟市上大川前 8 番町 1291",
+    "phone": "025-228-5235",
+    "urls": [
+      "http://www.watanabekinen-cl.jp/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/niigata/watanabe-kinen.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "産科・婦人科・内科・麻酔科\n\n- 新潟県新潟市上大川前 8 番町 1291\n- 電話：025-228-5235\n- <http://www.watanabekinen-cl.jp/>"
+  },
+  {
+    "id": "hrt-niigata-bandai",
+    "name": "万代レディースクリニック",
+    "displayName": "新潟市・万代レディースクリニック",
+    "prefecture": "新潟県",
+    "city": "新潟市",
+    "phone": "025-245-1735",
+    "urls": [
+      "http://www.bandai-lc.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/niigata/bandai.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "内科・婦人科・性病科\n\n新潟市中央区万代 1-2-3 コープ野村万代 2F\n\n- 電話：025-245-1735\n- <http://www.bandai-lc.com/>"
+  },
+  {
+    "id": "hrt-kanagawa-saito",
+    "name": "クリニック斎藤",
+    "displayName": "平塚市・クリニック斎藤",
+    "prefecture": "神奈川県",
+    "city": "平塚市",
+    "phone": "0463-37-5525",
+    "urls": [
+      "http://clinic-saito.jp/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/kanagawa/saito.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "内科・消化器科、人間ドック\n\n- 電話：0463-37-5525\n- <http://clinic-saito.jp/>\n\n注射代：1400 円～\n\n## スザンヌみさきのコメント\n\nわたし、スザンヌみさきが通っていた病院。  \n先生は髭面でパット見怖い印象ですが、実際話してみると本当に患者のことを考えている人だなと伝わってきます。  \n実力も十分で、呼吸器、循環器科の医者が発見できなかった私の「百日咳」を検査と診察で見つけてくれた先生です。非常に腕が立つお医者さんです。（ひげづらだけど）  \n注射の前に一度先生とのカウンセリングをして今後の方針やどのペースで注射を打っていくかなど相談できます。  \n薬剤は自分で買うシステムなので、初回診察時に注射はできませんが、薬剤が届く 1 週間後からは注射ができます。  \n薬剤代：約 3000 円+税  \n注射代：1080 円  \n初回診察時に初診料+薬剤代を支払うので 5000 円前後必要になりますが、次回からは注射代の 1080 円だけで OK  \nホルモン値の検査も言えばやってくれます。  \n血栓症などの心配があれば、血液凝固系の検査も保険適用でやってくれます。  \n初診時に「わさだなお」からの紹介で来ましたと先生に伝えれば話が早いです。"
+  },
+  {
+    "id": "hrt-kanagawa-sky",
+    "name": "スカイビル腎・泌尿器科クリニック",
+    "displayName": "横浜市・スカイビル腎・泌尿器科クリニック",
+    "prefecture": "神奈川県",
+    "city": "横浜市",
+    "address": "神奈川県横浜市西区高島２丁目１９?１２スカイビル 9F",
+    "phone": "045-441-0040",
+    "urls": [
+      "http://sky-uro-clinic.com/hormone.php"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/kanagawa/sky.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 神奈川県横浜市西区高島２丁目１９?１２スカイビル 9F\n- 電話：045-441-0040\n- <http://sky-uro-clinic.com/hormone.php>\n\n注射代：未確認\n【卵胞】プロギノンデポー、ペラニンデポー\n【黄体】プロゲデポー、プロゲストンデポーなどがあります\n\n※HP にしっかり GID 当事者向けページがあります。\n\n## 病院からのコメント\n\nスカイビル腎・泌尿器科クリニックです。  \n今回ご連絡頂きました件ですが、性同一性障害のホルモン療法は自費診療となり、注射の薬剤の種類によって異なりますが、1 回の診察で約 2,000 円前後のお会計が発生いたします。  \nまた初診時にはホルモンや全身の状態把握の為、血液検査をさせて頂くことがあり、その際には別途 6,000 円前後の費用が発生致しますのでご了承ください。  \n当院で性同一性障害の治療を受けて頂くには、精神科で性同一性障害と診断された診断書が必要となりますので、お忘れなくお持ちください。  \n診断書をお持ち頂けなかった場合は治療を受けて頂けない場合がございますのでご了承ください。  \nその他にもご質問等ございましたら、お気軽にご相談下さい。  \nスカイビル腎・泌尿器科クリニック  \n佐藤"
+  },
+  {
+    "id": "hrt-kanagawa-white",
+    "name": "ホワイトレディースクリニック",
+    "displayName": "ホワイトレディースクリニック",
+    "prefecture": "神奈川県",
+    "address": "神奈川県横浜市青葉区美しが丘西 2-6-2",
+    "phone": "045-905-1181",
+    "urls": [
+      "http://www.white-lc.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/kanagawa/white.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "婦人科\n\n- 神奈川県横浜市青葉区美しが丘西 2-6-2\n- 電話：045-905-1181\n- <http://www.white-lc.com/>\n\n注射代：2000 円～\n\n## スザンヌみさきのコメント\n\nかつてスザンヌみさきが通っていたクリニック。先生は 50 代前半くらいの男性。  \nアンチエイジングや美容にも力を入れている病院のようです。待ち時間が少し長いですが、予約なしでも注射できたはず。  \n注射代は 1 アンプル 2000 円程度。  \n診察室で注射するので、先生の隣で注射されるのが少し恥ずかしかったですが、先生も気を使ってくれるので、変な人ではないみたい。"
+  },
+  {
+    "id": "hrt-kanagawa-maki",
+    "name": "医療法人社団慶真会真木クリニック",
+    "displayName": "川崎市・医療法人社団慶真会真木クリニック",
+    "prefecture": "神奈川県",
+    "city": "川崎市",
+    "address": "神奈川県川崎市川崎区砂子 2-11-20 加瀬ビル 133 4 階",
+    "phone": "044-245-8802",
+    "urls": [
+      "http://www.makiclinic.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/kanagawa/maki.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 神奈川県川崎市川崎区砂子 2-11-20 加瀬ビル 133 4 階\n- 電話：044-245-8802\n- <http://www.makiclinic.com/>\n\n※MTF さんから情報提供して頂きました  \n詳しくは直接病院にお尋ねください"
+  },
+  {
+    "id": "hrt-kanagawa-yokohama-mc",
+    "name": "横浜メンタルクリニック戸塚",
+    "displayName": "横浜市・横浜メンタルクリニック戸塚",
+    "prefecture": "神奈川県",
+    "city": "横浜市",
+    "address": "神奈川県横浜市戸塚区上倉田町 494-8 CROSS ROAD2 5 階",
+    "phone": "045-869-0707",
+    "urls": [
+      "http://www.myclinic.ne.jp/yokohama_mct/pc/",
+      "http://www.yokohama-mc.or.jp/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/kanagawa/yokohama-mc.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 神奈川県横浜市戸塚区上倉田町 494-8 CROSS ROAD2 5 階\n- 電話：045-869-0707\n- <http://www.myclinic.ne.jp/yokohama_mct/pc/> 旧 HP  \n<http://www.yokohama-mc.or.jp/> 新 HP\n\n## 読者さんからのコメント\n\n戸塚駅から戸塚 5 分です！  \nここではカウンセリングと診察も行えてホルモン注射もできます！  \n私の場合川崎中央クリニックでやってたのでそのままペラニンデポー 20mg を打ってもらってますが、初めての方は医師と相談できます！  \n医師は優しく気さくな方です  \nカウンセラーの方も優しく丁寧ですね！  \n一番のオススメは診断書がわりかし早めにでます！私は 3 月から通いましたが 7 月に GID の診断書が出ました！  \n戸塚メンタルクリニックには提携してる  \nもう１つのクリニックが近所にあってセカンドオピニオンで受診してその日に診断書がでます！  \nなので自分の過去をレポートに書いたりなんかしなかったですね笑  \n私の場合なので他の方はわかりませんが…ホルモン注射はペラニンデポー 20mg で 2000 ちょいで安いです！待合室はオープンなかんじです！"
+  },
+  {
+    "id": "hrt-kanagawa-yokohama-chuuou",
+    "name": "横浜中央クリニック",
+    "displayName": "横浜市・横浜中央クリニック",
+    "prefecture": "神奈川県",
+    "city": "横浜市",
+    "address": "神奈川県横浜市西区北幸 1-2-13 横浜西共同ビル 10F",
+    "urls": [
+      "http://www.yokohamachuoh-biyou.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/kanagawa/yokohama-chuuou.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "美容外科\n\n- 神奈川県横浜市西区北幸 1-2-13 横浜西共同ビル 10F\n- フリーダイヤル：0120-072-545\n- <http://www.yokohamachuoh-biyou.com/>\n\n## スザンヌみさきのコメント\n\n※**完全予約制**。\n中央クリニックグループの HP に女性ホルモン注射についての言及があるので、女性ホルモン注射もやっていると考えられるが、横浜院の HP に記載はないので要電話確認。"
+  },
+  {
+    "id": "hrt-kanagawa-shinjukubiyou",
+    "name": "新宿美容外科クリニック横浜院",
+    "displayName": "横浜市・新宿美容外科クリニック横浜院",
+    "prefecture": "神奈川県",
+    "city": "横浜市",
+    "address": "〒 220-0023 神奈川県横浜市西区平沼１丁目３８-３横浜 MS ビル 6F",
+    "urls": [
+      "https://www.shinjukubiyou.com/introduction/yokohama/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/kanagawa/shinjukubiyou.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 〒 220-0023 神奈川県横浜市西区平沼１丁目３８-３横浜 MS ビル 6F\n- <https://www.shinjukubiyou.com/introduction/yokohama/>\n\n## 信息ソース\n\n全部横浜でやるならここで診断書出せば血液検査やった後で注射出来るので診断書も出してくれるけど余りいい病院ではないそうです。  \nこの病院は私は行ったことないですけど、ちょっと詐欺の臭いが有る病院らしいです。  \nプロギノンデポまとめ買いさせて予約取れないそうです。なので、利用するだけならいいかも!"
+  },
+  {
+    "id": "hrt-kanagawa-nishiwakisan",
+    "name": "西脇医院 (旧産婦人科)",
+    "displayName": "相模原市・西脇医院 (旧産婦人科)",
+    "prefecture": "神奈川県",
+    "city": "相模原市",
+    "address": "神奈川県相模原市緑区橋本 4-5-12",
+    "phone": "042-771-5255",
+    "urls": [
+      "http://nishiwakisan.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/kanagawa/nishiwakisan.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 神奈川県相模原市緑区橋本 4-5-12\n- 電話：042-771-5255\n- <http://nishiwakisan.com/>\n\n## 読者さんからのコメント\n\n初回に軽くカウンセリングがありました。  \n血液検査や健康の相談にも乗って頂けます。予約制。ペラニンデポー 10mg1A で 1500 円。 2A で 2000 円。"
+  },
+  {
+    "id": "hrt-kanagawa-ishikawa",
+    "name": "石川産婦人科",
+    "displayName": "厚木市・石川産婦人科",
+    "prefecture": "神奈川県",
+    "city": "厚木市",
+    "address": "神奈川県厚木市林 2-25-50",
+    "phone": "046-223-0161",
+    "urls": [
+      "http://www.baby-ishikawa.jp/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/kanagawa/ishikawa.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 神奈川県厚木市林 2-25-50\n- 電話：046-223-0161\n- <http://www.baby-ishikawa.jp/>\n\n## 読者さんからのコメント\n\n私が一番初めに行った病院。診察とか検査無しでも注射してくれます。血液検査も保険適用でやって頂けました。ただし、先生は高齢で名前とか余り覚えてくれません(^\\_^;)  \n時々私を女性だと思い込み、違う薬剤を取り出した事があります (汗)奥さん？が居ればキチンと処方してくれます。希望を言うとホルモン剤も変えてくれました。  \nプロギノンデポー 10mg1A で 3000 円予約不要。"
+  },
+  {
+    "id": "hrt-kanagawa-kawasaki",
+    "name": "川崎中央クリニック（美容外科）",
+    "displayName": "川崎市・川崎中央クリニック（美容外科）",
+    "prefecture": "神奈川県",
+    "city": "川崎市",
+    "address": "神奈川県川崎市川崎区駅前本町 1-3 本田ビル 3F",
+    "phone": "0120-190-929",
+    "urls": [
+      "https://www.kawasaki-biyou.com/",
+      "http://www.kawasaki-mens.com/mtf/index.html"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/kanagawa/kawasaki.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 神奈川県川崎市川崎区駅前本町 1-3 本田ビル 3F\n- 電話：0120-190-929\n- <https://www.kawasaki-biyou.com/>\n  MTF 向けページ：<http://www.kawasaki-mens.com/mtf/index.html>\n\n注射代：2A 4200 円 1A 2100 円（ペラニンデポー）\n\n※睾丸摘出手術もやってます。\n\n## 読者さんのコメント\n\n川崎駅徒歩 3 分  \n美容形成外科もあるので脱毛もやってます！他に MTF の方も通っていますね！  \n対応は丁寧でフレンドリーです笑  \nただ他のお客さんと顔が合ってしまうこともあるので秘密厳守でやってる方はちょっと困るのではないかな？という印象です！  \nペラニンデポー 20mg を 2 週に一回筋肉注射してますが量は自己調節できます！  \n値段は 4000 円ちょいですね！  \n注射部位は三角筋か大臀筋で選べますよ！"
+  },
+  {
+    "id": "hrt-kanagawa-maeda",
+    "name": "前田産婦人科",
+    "displayName": "平塚市・前田産婦人科",
+    "prefecture": "神奈川県",
+    "city": "平塚市",
+    "address": "神奈川県平塚市松風町 13-37",
+    "phone": "0463-27-2322",
+    "urls": [
+      "http://www.dr-maeda.co.jp/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/kanagawa/maeda.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 神奈川県平塚市松風町 13-37\n  注射代：2000 円～\n- 電話：0463-27-2322\n- <http://www.dr-maeda.co.jp/>\n\n◆直接行ったことはないですが、ここの看護師さんとは話したことあります。  \n平塚のニューハーフクラブで働いていた時に、お客さんとして前田産婦人科の皆さんが遊びにきてくれました。  \nMTF などトランスジェンダーにも理解がある人が比較的多い病院だと思いますし、女性ホルモン注射も 1 アンプル 2000 円前後でやってくれるそうです。  \n詳しくは前田産婦人科に直接お尋ね下さい"
+  },
+  {
+    "id": "hrt-kanagawa-aioi23",
+    "name": "相生 23 クリニック",
+    "displayName": "横浜市・相生 23 クリニック",
+    "prefecture": "神奈川県",
+    "city": "横浜市",
+    "address": "〒 231-0012 神奈川県横浜市中区相生町１丁目３モア・グランド関内ビル 1F",
+    "urls": [
+      "https://www.aioi23clinic.com/index.shtml"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/kanagawa/aioi23.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 〒 231-0012 神奈川県横浜市中区相生町１丁目３モア・グランド関内ビル 1F\n- <https://www.aioi23clinic.com/index.shtml>\n\n## コメント\n\n診察料 1300 円ぐらいで  \nプロギノンデポ 10mg×2 で 860 円(税込) 男性でも MTF なら女性扱いで保険適用値段  \nただし 1 度でも他の病院で注射打って紹介状出して貰わないと受診出来ません。  \nMTF 診断書も必要!  \n先生優しいし、看護師さんも MTF だからとても安心の病院です。"
+  },
+  {
+    "id": "hrt-kanagawa-mj",
+    "name": "武蔵小杉 J こころのクリニック",
+    "displayName": "川崎市・武蔵小杉 J こころのクリニック",
+    "prefecture": "神奈川県",
+    "city": "川崎市",
+    "address": "神奈川県川崎市中原区新丸子東 2-924 服部ビル 2F",
+    "phone": "044-430-0310",
+    "urls": [
+      "http://www.mj-kokoro.com/pc/index.html"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/kanagawa/mj.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "心療内科,精神科\n\n- 神奈川県川崎市中原区新丸子東 2-924 服部ビル 2F\n- 電話: 044-430-0310\n- <http://www.mj-kokoro.com/pc/index.html>\n\n## 読者さんのコメント\n\n武蔵小杉駅近くの、武蔵小杉 J 心のクリニックもホルモン注射をやってるので、赤心からこっちに変えようかなと思ってます。  \nちなみにここはホルモン療法で判断がつかない場合赤心クリニックを紹介してくれます。"
+  },
+  {
+    "id": "hrt-aomori-aomori-coop",
+    "name": "あおもり協立病院・協立クリニック",
+    "displayName": "青森市・あおもり協立病院・協立クリニック",
+    "prefecture": "青森県",
+    "city": "青森市",
+    "address": "〒 030-0847 青森県青森市東大野２丁目２-２",
+    "phone": "017-762-5511",
+    "urls": [
+      "https://www.aomori-h-coop.com/kyoritsu/visit-hospital/outpatient/outpatient-clinic.html"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/aomori/aomori-coop.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 〒 030-0847 青森県青森市東大野２丁目２-２\n- 電話 017-762-5511\n- <https://www.aomori-h-coop.com/kyoritsu/visit-hospital/outpatient/outpatient-clinic.html>\n\n## コメント\n\nMTF さんから情報提供ありました。女性ホルモン対応とのことですが診断書が必要かどうかは\n\n問い合わせて確認してください"
+  },
+  {
+    "id": "hrt-aomori-hirosaki",
+    "name": "弘前レディスクリニック",
+    "displayName": "弘前市・弘前レディスクリニック",
+    "prefecture": "青森県",
+    "city": "弘前市",
+    "address": "〒 036-8003 青森県弘前市駅前町８-１",
+    "urls": [
+      "http://www.oc-hirosaki.com/hlc.html"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/aomori/hirosaki.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 〒 036-8003 青森県弘前市駅前町８-１\n- 大町タウンビル 3F\n- <http://www.oc-hirosaki.com/hlc.html>\n\n休診日：日曜、祝日・水曜午後、土曜午後\n\n## コメント\n\nMTF さんから情報提供ありました。女性ホルモン対応とのことですが診断書が必要かどうかは問い合わせて確認してください"
+  },
+  {
+    "id": "hrt-aomori-hachinohe",
+    "name": "八戸クリニック産婦人科",
+    "displayName": "八戸市・八戸クリニック産婦人科",
+    "prefecture": "青森県",
+    "city": "八戸市",
+    "address": "青森県八戸市柏崎１丁目 8-32",
+    "phone": "0178-22-7725",
+    "urls": [
+      "http://www.hachinohe.jp/byouinch/byo.hachi.c.san.html"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/aomori/hachinohe.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 青森県八戸市柏崎１丁目 8-32\n- <http://www.hachinohe.jp/byouinch/byo.hachi.c.san.html>\n- 電話：0178-22-7725\n\n## 受付時間\n\n［平日］9:00~12:00 / 15:00~17:30（火曜、木曜午後は休診）\n\n［土曜日］9:00~13:00\n\n休診日:日曜、祝日\n\nMTF さんからメールで連絡頂きました。\n\n実際に病院に直接お電話などで注射できるか、診断書が必要か？などをご確認ください。"
+  },
+  {
+    "id": "hrt-aomori-mami",
+    "name": "麻美レディースクリニック",
+    "displayName": "八戸市・麻美レディースクリニック",
+    "prefecture": "青森県",
+    "city": "八戸市",
+    "address": "〒 039-1166 青森県八戸市根城 5-1-2",
+    "phone": "0178-80-7123",
+    "urls": [
+      "http://www.mami-ladies.jp/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/aomori/mami.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 〒 039-1166 青森県八戸市根城 5-1-2\n- 電話: 0178-80-7123\n- <http://www.mami-ladies.jp/>\n\n## 受付時間\n\n月火水金 9:00-12:00 14:30-18:00（新患受付 17:00 まで）  \n木土 9:00-12:00（新患受付 11:30 まで）  \n木曜日は予約外来および妊婦健診とさせていただきます  \n日曜，祝日は休診とさせていただきます\n\n## コメント\n\nMTF さんから情報提供ありました。女性ホルモン対応とのことですが診断書が必要かどうかは問い合わせて確認してください"
+  },
+  {
+    "id": "hrt-ishikawa-fairy",
+    "name": "フェアリークリニック",
+    "displayName": "金沢市・フェアリークリニック",
+    "prefecture": "石川県",
+    "city": "金沢市",
+    "address": "石川県金沢市此花町５?６ライフ金沢第一ビル 3F",
+    "phone": "076-224-2292",
+    "urls": [
+      "http://www.fairy-clinic.jp/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/ishikawa/fairy.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 石川県金沢市此花町５?６ライフ金沢第一ビル 3F\n- 電話：076-224-2292\n- <http://www.fairy-clinic.jp/>\n\n※金沢駅から徒歩 1 分\n\n## みさきのコメント\n\nMTF の方から情報いただきました。  \nフェアリークリニックは 1A 1500 円程度だそうです。"
+  },
+  {
+    "id": "hrt-ishikawa-gussuri",
+    "name": "金沢駅前ぐっすりクリニック",
+    "displayName": "金沢市・金沢駅前ぐっすりクリニック",
+    "prefecture": "石川県",
+    "city": "金沢市",
+    "address": "石川県金沢市本町 2 丁目 12-16（ホテル日航金沢の正面）【休診日】水曜、日祝",
+    "phone": "076-265-7225",
+    "urls": [
+      "http://www.gussuri.jp/kanazawa-index.html"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/ishikawa/gussuri.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 石川県金沢市本町 2 丁目 12-16（ホテル日航金沢の正面）【休診日】水曜、日祝\n- 電話 076-265-7225\n- <http://www.gussuri.jp/kanazawa-index.html>\n\n## みさきのコメント\n\nMTF の方から情報いただきました。  \n１アンプル 1900 円程度で注射できるとのことです。"
+  },
+  {
+    "id": "hrt-ishikawa-kanazawa",
+    "name": "金沢中央クリニック（美容外科）",
+    "displayName": "金沢市・金沢中央クリニック（美容外科）",
+    "prefecture": "石川県",
+    "city": "金沢市",
+    "address": "石川県金沢市広岡 1 丁目 1 番 26 号 TRL ビル 3 階",
+    "urls": [
+      "http://www.kanazawa-chuoh-clinic.com/cosmetic/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/ishikawa/kanazawa.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 石川県金沢市広岡 1 丁目 1 番 26 号 TRL ビル 3 階\n- フリーダイヤル：0120-088-726\n- <http://www.kanazawa-chuoh-clinic.com/cosmetic/>\n\n※**完全予約制**。\n中央クリニックグループの HP に女性ホルモン注射についての言及があるので、女性ホルモン注射もやっていると考えられるが、金沢院の HP に記載はないので要電話確認。"
+  },
+  {
+    "id": "hrt-ishikawa-fukae",
+    "name": "深江レディースクリニック",
+    "displayName": "野々市・深江レディースクリニック",
+    "prefecture": "石川県",
+    "city": "野々市",
+    "phone": "076-294-3336",
+    "urls": [
+      "http://www.fukae.or.jp/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/ishikawa/fukae.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 住所：石川県野々市市郷町 260 番地\n- 電話：076-294-3336\n- <http://www.fukae.or.jp/>\n\n最寄り駅：JR 北陸本線「松任駅」\n休診日：火・木・金・土曜の午後、日曜祝日\n\n## MTF さんからのコメント\n\n深江レディースクリニック（野々市市、ののいちし）で、染色体検査やホルモン注射をしてもらえます。  \nしかし、通院によるホルモン注射なので、薬剤等をもらって自分で注射したければ we 富山へ行くことになります。  \nまずはさぶりクリニック（金沢市）で診断書をもらってからになります。  \n次に、かとうクリニック（金沢市）でも診断書をもらってからになります。  \nまたは、谷野医院（富山市）で診断書をもらうこともできます"
+  },
+  {
+    "id": "hrt-chiba-hs",
+    "name": "HS クリニック",
+    "displayName": "千葉市・HS クリニック",
+    "prefecture": "千葉県",
+    "city": "千葉市",
+    "address": "千葉県千葉市中央区本千葉町 1-11",
+    "phone": "043-202-3135",
+    "urls": [
+      "http://hs-c.ne.jp"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/chiba/hs.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 千葉県千葉市中央区本千葉町 1-11\n- 電話:043-202-3135\n- <http://hs-c.ne.jp>\n\n※休診日：水、日曜日"
+  },
+  {
+    "id": "hrt-chiba-abe",
+    "name": "あべメンタルクリニック",
+    "displayName": "浦安市・あべメンタルクリニック",
+    "prefecture": "千葉県",
+    "city": "浦安市",
+    "address": "千葉県浦安市猫実 4-18-27-6F",
+    "phone": "047-355-5335",
+    "urls": [
+      "http://www008.upp.so-net.ne.jp/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/chiba/abe.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 千葉県浦安市猫実 4-18-27-6F\n- <http://www008.upp.so-net.ne.jp/>\n- 電話 047-355-5335\n\n休診日：木曜、土曜日午後、日祝\n\n## コメント\n\n最近ドクハラがいろいろと話題になってますので、病院通ってみて、なにか疑問を感じるようなことがあれば「それって本当に必要なんですか？」と先生に尋ねるようにしてみましょうまた、自分が嫌なことは先生の言うことであったとしても従わないようにしましょう。\nあべメンタルクリニックは診断書が必要になる可能性があるので直接ご自身でご確認ください"
+  },
+  {
+    "id": "hrt-chiba-muneta",
+    "name": "宗田マタニティクリニック",
+    "displayName": "市原市・宗田マタニティクリニック",
+    "prefecture": "千葉県",
+    "city": "市原市",
+    "address": "千葉県市原市根田 320-7",
+    "phone": "0436-24-4103",
+    "urls": [
+      "http://muneta.org/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/chiba/muneta.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 千葉県市原市根田 320-7\n- TEL：0436-24-4103\n- <http://muneta.org/>\n\n## 診察時間\n\n9:30 ～ 12:00／15:00 ～ 16:30 （土曜日 16:00 迄）  \n休診日： 木曜日日曜日\n\n## スザンヌみさきのコメント\n\n知人のおじさまが宗田マタニティクリニック勤務で、この病院を教えて頂きました。  \n先生から「OK」は頂いていますが、料金などは直接お電話にてお問い合せお願いします。"
+  },
+  {
+    "id": "hrt-chiba-chiba",
+    "name": "千葉中央クリニック",
+    "displayName": "千葉市・千葉中央クリニック",
+    "prefecture": "千葉県",
+    "city": "千葉市",
+    "address": "千葉県千葉市中央区富士見 2-2-3 吉田興業第一ビル 7 階",
+    "urls": [
+      "http://www.chiba-biyo.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/chiba/chiba.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "美容外科\n\n- 千葉県千葉市中央区富士見 2-2-3 吉田興業第一ビル 7 階\n- フリーダイヤル：0120-159-147\n- <http://www.chiba-biyo.com/>\n\n※**完全予約制**。HP にホルモン注射の記載あり。\n（要電話確認）"
+  },
+  {
+    "id": "hrt-chiba-funa",
+    "name": "船橋中央クリニック",
+    "displayName": "船橋市・船橋中央クリニック",
+    "prefecture": "千葉県",
+    "city": "船橋市",
+    "address": "千葉県船橋市本町 6－4－15 グラン大誠ビル２ F",
+    "phone": "0120-118-242",
+    "urls": [
+      "http://www.funa-biyou.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/chiba/funa.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 千葉県船橋市本町 6－4－15 グラン大誠ビル２ F\n- 電話：0120-118-242\n- <http://www.funa-biyou.com/>\n\n## 読者さんからのコメント\n\n1. 船橋中央クリニック、自費です。\\\n   最初に３万。二回目以降は千円～。\\\n   事務の人が感じ悪くて、行ってはいません。\n1. 美容外科なので保険指定がなく\\\n   初診時の料金が高い(23000 円ほど)のですが日曜日も開院しています。\\\n   ここで脱毛のついでに注射をしてもらっています。ホルモン剤の種類はペラニンデポーです。\\\n   保険適用外医院なので戸変前、\\\n   戸変後ともにペラニンデポー 2A の場合、自費扱いで 1620 円です。\n1. 2019/4/2 の情報現在新しい料金体系が追加になり\\\n   ８回セットで 11340 円が追加になりました。一回分お得になっています(^^♪"
+  },
+  {
+    "id": "psyco-osaka-hagamen",
+    "name": "はたらく人・学生のメンタルクリニック",
+    "displayName": "大阪市・はたらく人・学生のメンタルクリニック",
+    "prefecture": "大阪府",
+    "city": "大阪市",
+    "address": "〒541-0053 大阪市中央区本町1丁目5-6 大阪山甚ビル3階",
+    "phone": "06-6484-5562",
+    "urls": [
+      "https://hagamen.jp/"
+    ],
+    "services": [
+      "精神科・診断"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/psyco/osaka/hagamen/index.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "精神科・心療内科\n\n- 〒541-0053 大阪市中央区本町1丁目5-6 大阪山甚ビル3階\n- 電話：06-6484-5562\n- <https://hagamen.jp/>\n\n- 保険証かマイナンバーカードの携帯が必要\n- 現金払いのみ\n- 性別違和（GD）やLGBTなどに関するの診療は院長院長外来のみ対応可能\n※（初診）性別違和に関する診療は電話で「性別違和」と伝えた上で院長先生を指名して予約してください（オンライン予約は不可）  \n*診断書の発行は少なくとも2回以上の診療が必要\n\n- 親権者（両親）の同意書（写真参照）があればホルモン注射できる病院を紹介してくれる（親権者の同意が難しい場合は自分で探せば良いとのこと）\n- 性別違和の診断書を発行するには誓約書に記入する必要がある（写真参照）\n\n診断書<br>\n<image src=\"proof.jpg\" alt=\"診断書\" width=\"50%\" height=\"50%\" title=\"診断書\" />\n\n誓約書<br>\n<image src=\"pledge.jpg\" alt=\"誓約書\" width=\"50%\" height=\"50%\" title=\"誓約書\" />\n\n同意書<br>\n<image src=\"agreement_form.jpg\" alt=\"同意書\" width=\"50%\" height=\"50%\" title=\"同意書\" />"
+  },
+  {
+    "id": "hrt-tokyo-kabukicho",
+    "name": "MY クリニック歌舞伎町",
+    "displayName": "新宿区・MY クリニック歌舞伎町",
+    "prefecture": "東京都",
+    "city": "新宿区",
+    "address": "東京都新宿区歌舞伎町 1-12-16 歌舞伎町ビル 4F A 室",
+    "urls": [
+      "http://www.myclinic-kabukicho.jp/index.html"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/kabukicho.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "東京都新宿区歌舞伎町 1-12-16 歌舞伎町ビル 4F A 室\n【電話】03-5287-3331\n【休診日】水曜、日祝\n【診療時間】16:00~23:00 ※受付 22:30 まで\n<http://www.myclinic-kabukicho.jp/index.html>\n\n## みさきのコメント\n\nMTF の方から情報いただきました。\n美容外科のようなので、女性ホルモンなどにも対応できるかと思います。"
+  },
+  {
+    "id": "hrt-tokyo-athena",
+    "name": "アテナクリニック",
+    "displayName": "中央区・アテナクリニック",
+    "prefecture": "東京都",
+    "city": "中央区",
+    "address": "東京都中央区銀座 7-10-5 DUPLEX 銀座 3F",
+    "phone": "0120-169-263",
+    "urls": [
+      "http://www.athenaclinic.net/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/athena.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "美容外科・GID\n\n東京都中央区銀座 7-10-5 DUPLEX 銀座 3F\n電話：0120-169-263\n<http://www.athenaclinic.net/>\n\n注射代：2A で 5000 円\n\n## スザンヌみさきのコメント\n\nGID に対するホルモン注射や手術を行っている美容外科です。私の知人 MTF さんもここで睾丸摘出手術をされています。聞いた話でしかありませんが、クリニックの雰囲気も落ち着いていてキレイだそうです。\n睾丸摘出手術後は患部を包帯でぐるぐるにされて、身動きが取りにくいらしいです。\n※陰嚢に水が溜まったという報告はありません。安心できると思います"
+  },
+  {
+    "id": "hrt-tokyo-ozaki",
+    "name": "オザキクリニック LUXE 新宿院",
+    "displayName": "新宿区・オザキクリニック LUXE 新宿院",
+    "prefecture": "東京都",
+    "city": "新宿区",
+    "address": "東京都新宿区新宿歌舞伎町 1-1-17 エキニア新宿 7F",
+    "urls": [
+      "https://www.ozaki-clinic.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/ozaki.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "東京都新宿区新宿歌舞伎町 1-1-17 エキニア新宿 7F\n【診療時間】平日 11:00~22:00 土日祝：10:00~18:00\n【電話】0120-565-449 03-5155-0449\n<https://www.ozaki-clinic.com/>\n\nMTF さんの情報提供をいただきました。\n1A 1300 円ほどだそうです"
+  },
+  {
+    "id": "hrt-tokyo-oyama",
+    "name": "おやまクリニック",
+    "displayName": "日野市・おやまクリニック",
+    "prefecture": "東京都",
+    "city": "日野市",
+    "address": "東京都日野市高幡 328 森久保医療モール 202",
+    "phone": "042-592-4976",
+    "urls": [
+      "http://www.oyama-uro.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/oyama.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "男性・婦人・小児泌尿器科・在宅医療\n東京都日野市高幡 328 森久保医療モール 202\nTEL：042-592-4976\n<http://www.oyama-uro.com/>"
+  },
+  {
+    "id": "hrt-tokyo-komuro",
+    "name": "コムロ美容外科東京院",
+    "displayName": "中央区・コムロ美容外科東京院",
+    "prefecture": "東京都",
+    "city": "中央区",
+    "address": "東京都中央区銀座 1-6-8 DEAR GINZA 8F",
+    "phone": "0120-566-105",
+    "urls": [
+      "http://komuro-biyougeka.jp/medical/5cfd063c79fed1676a0937002aeca870.html"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/komuro.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "東京都中央区銀座 1-6-8 DEAR GINZA 8F\n電話：0120-566-105\nGID の相談など：{{< telephone 0120-566-315>}}\n<http://komuro-biyougeka.jp/medical/5cfd063c79fed1676a0937002aeca870.html>\n\n料金：1100 円～\n\n## 読者さんからのコメント\n\n2 週間くらいに 1 回ペラニンデポー 2 単位とラエンネック 1 単位でお世話になっています。完全予約制なので待ち時間も少なく、スタッフの皆さんもフレンドリーです。\n友達にも紹介しました。\n【読者さんのコメント 2】\n完全予約制でとてもきれいで、対応も最高で、値段も安く、半年ごとの血液検査も 3,000 円です。"
+  },
+  {
+    "id": "hrt-tokyo-chiaki",
+    "name": "ちあきクリニック",
+    "displayName": "目黒区・ちあきクリニック",
+    "prefecture": "東京都",
+    "city": "目黒区",
+    "address": "東京都目黒区自由が丘 2-8-30",
+    "phone": "03-5726-8715",
+    "urls": [
+      "http://chiakiclinic.littlestar.jp/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/chiaki.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 東京都目黒区自由が丘 2-8-30\n- 電話：03-5726-8715\n- <http://chiakiclinic.littlestar.jp/>\n\n## 読者さんのコメント\n\n私は、現在、自由が丘にある、ちあきクリニックでホルモン治療を受けていて、そこで、ペラニンデポーとプロゲデポーを注射してもらってます。\nGID に関しては、基本、ガイドラインに沿っての治療なので、ちょっと、注射だけって訳にはいかないかもしれませんが、ご参考まで。\nちなみに、院長の松永千秋先生は、MTF 当事者ですので、行きやすいと思いますよ。"
+  },
+  {
+    "id": "hrt-tokyo-nagumo",
+    "name": "ナグモクリニック",
+    "displayName": "品川区・ナグモクリニック",
+    "prefecture": "東京都",
+    "city": "品川区",
+    "address": "東京都品川区大崎 1-11-2 ゲートシティ大崎イーストタワー 1F",
+    "urls": [],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/nagumo.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "東京都品川区大崎 1-11-2 ゲートシティ大崎イーストタワー 1F\n【電話】03-3490-0555\n\n## みさきのコメント\n\nMTF さんから情報頂いたのですが HP が確認できませんでした。口コミサイトには情報が載っていました。\nナグモクリニック東京院は千代田区にあるので、ここは東京院なのか？\nすこし情報が足りてません\n確認された方いらっしゃいましたら、情報提供お願いします"
+  },
+  {
+    "id": "hrt-tokyo-harima",
+    "name": "はりまメンタルクリニック",
+    "displayName": "千代田区・はりまメンタルクリニック",
+    "prefecture": "東京都",
+    "city": "千代田区",
+    "address": "東京都千代田区神田小川町 3-24-1 カスタリア御茶の水 102",
+    "phone": "03-5281-4800",
+    "urls": [
+      "http://www.harimamental.com/gid.html"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/harima.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "東京都千代田区神田小川町 3-24-1 カスタリア御茶の水 102\n電話：03-5281-4800\n<http://www.harimamental.com/gid.html>\n\n## 読者さんからのコメント\n\nGID 診断の大御所ですが平日しか開院していません(T_T)/~~~ FTM は不明ですが MtF の場合、戸籍変更前は自費、戸籍変更後は保険扱いで注射してくれます。\n血液検査も一部保険扱いで行っています。\nホルモン剤の種類はプロギノンデポーです。\n平日に通うのがきついためホルモンの料金はわかりませんが、血液検査は 5000 円弱です。\n18 時以降に行くと夜間休日加算料金が発生します。"
+  },
+  {
+    "id": "hrt-tokyo-maruhashi",
+    "name": "まるはし女性応援クリニック",
+    "displayName": "立川市・まるはし女性応援クリニック",
+    "prefecture": "東京都",
+    "city": "立川市",
+    "urls": [
+      "http://www.marugyne.com/gid/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/maruhashi.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "【住所】東京都立川市曙町 2-9-5 野口ビル 3F\n【HP】 <http://www.marugyne.com/gid/>\n【電話】 042-512-8736\n\n【休診日】金曜、土曜、祝祭日（日曜は 15 時まで）\n【診療時間】11:00~14:00 / 16:00~19:00\n\n## みさきのコメント\n\nMTF の方から連絡頂きました。ありがとうございます院長先生は GID 学会に所属されている方で、\nGID のガイドラインに沿ったホルモン治療をしてくれるようです。\n詳しくは HP をご確認ください"
+  },
+  {
+    "id": "hrt-tokyo-yasumi",
+    "name": "ヤスミクリニック（美容外科）",
+    "displayName": "豊島区・ヤスミクリニック（美容外科）",
+    "prefecture": "東京都",
+    "city": "豊島区",
+    "address": "東京都豊島区巣鴨 1-18-11 十一屋ビル 5F",
+    "phone": "03-3943-8888",
+    "urls": [
+      "http://www.dr-kimura.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/yasumi.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "東京都豊島区巣鴨 1-18-11 十一屋ビル 5F\n電話：03-3943-8888\n<http://www.dr-kimura.com/>\n\n注射代：5000 円@1 回\n\n※SRS 手術もやってます。詳しくはヤスミクリニック HP で院長ブログを御覧ください。\nけっこう厳しい事書いています"
+  },
+  {
+    "id": "hrt-tokyo-ritz",
+    "name": "リッツメディカルクリニック青山院",
+    "displayName": "港区・リッツメディカルクリニック青山院",
+    "prefecture": "東京都",
+    "city": "港区",
+    "address": "東京都港区北青山 3-11-7 Ao（アオ）7F",
+    "phone": "03-3797-3911",
+    "urls": [
+      "http://test.ritz-medical.com/care/gender-identity-disorder.html"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/ritz.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "美容外科\n\n東京都港区北青山 3-11-7 Ao（アオ）7F\nTEL：03-3797-3911\n<http://test.ritz-medical.com/care/gender-identity-disorder.html>\n※ホルモン関係料金は HP に記載あり。"
+  },
+  {
+    "id": "hrt-tokyo-lumiere",
+    "name": "ルミエールクリニック",
+    "displayName": "八王子市・ルミエールクリニック",
+    "prefecture": "東京都",
+    "city": "八王子市",
+    "address": "東京都八王子市南大沢 2-17-7",
+    "phone": "042-670-2220",
+    "urls": [
+      "http://www.myclinic.ne.jp/lumiere/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/lumiere.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "婦人科、産科、内科\n\n東京都八王子市南大沢 2-17-7\n電話：042-670-2220\n<http://www.myclinic.ne.jp/lumiere/>\n\n## 読者さんのコメント\n\n相談だけ行きました。\n初めにカウンセリングと診療についての同意書へのサインを求められました。\n私の行った中では一番堅い感じでした。余り経験が無いようで、探り探りの様子。\nオバホルモン 5mg 2A で 2000 円、プロギノンデポー 10mg 3000 円と言われましたが、\n私の前病院での値段と合わせた感じでしたので、もう少し値段交渉の余地はあるかも。"
+  },
+  {
+    "id": "hrt-tokyo-hanazono",
+    "name": "花園医院（GID 外来やってます）",
+    "displayName": "新宿区・花園医院（GID 外来やってます）",
+    "prefecture": "東京都",
+    "city": "新宿区",
+    "address": "東京都新宿区新宿 1-30-6",
+    "phone": "03-3351-6957",
+    "urls": [
+      "http://www.hanazono-c.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/hanazono.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "東京都新宿区新宿 1-30-6\n電話：03-3351-6957\n<http://www.hanazono-c.com/>\n\n\nMtF.wikiの読者に確認済み。\n\n\n## 診療料金\n\nプロギノンデポー1A 2200円（税込）\n\n※初診時のみ別途初診料がかかります（ HPで記載されたは1100 円（税込）ですが、実は約300点です）\n\n## 診療時間\n\n月・火・木・金・土（10:00 ～ 13:00, 15:00 ～ 19:00）\n\n休診日：水曜・日曜／祝日／お盆／年末年始／ゴールデンウイーク\n\n初診受付は診療終了時間 30 分前まで（再診は10分前です）\n\n## メルマガ読者さんからのコメント\n\n1. 初診時は保険証や免許証などの身分証明書を持参して、診療終了時間の３０分前頃までに行けば OK。\n   新宿の NH さんも利用しているようなので、安心かなと。\n\n2. 外国語の対応できません、翻訳者と一緒に来院して対応できない場合もございます。"
+  },
+  {
+    "id": "hrt-tokyo-ebisutgclinic",
+    "name": "恵比寿TGクリニック",
+    "displayName": "恵比寿TGクリニック",
+    "prefecture": "東京都",
+    "address": "東京都渋谷区東3-23-4-2F",
+    "urls": [
+      "https://ebisutgclinic.com/",
+      "https://www.youtube.com/watch?v=5Q9zOaG08I8",
+      "http://g-pit.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/ebisutgclinic.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "※MTF/FTM(X)でHRTによる治療が可能。\n\n東京都渋谷区東3-23-4-2F\n【電話】03-6805-0192\n<https://ebisutgclinic.com/>\n\n- 完全予約制・APP/WEB予約OK・初診外来OK（月曜日のみ）・クレジットカード支払いOK・男女ホルモン治療・ホルモン剤郵送+自己注射可能。\n\n- 自己注射について：\n  - APPで予約→来院→医師と会話→同意書サイン→当面で注射指導→一回分持ち帰り、後はオンライン注文（実際1時間ですらかかりません）。\n  - APPで予約→オンライン診療（LINEのビデオ通話で診療）→郵送で同意書をサイン→ビデオ通話で注射指導 →二回目以降オンライン注文でも構いません。\n\n- 初診来院の料金について：\n  - 初診料2750円、自己注射指導別料金かかります（2750円）。\n  - 他には医療廃棄物ゴミ箱（ディスポ針ボックス）は770円でうります。\n  - 最初は２回分のホルモン剤を売りますので、女性ホルモンの場合は4400円かかります。つまり11,000円ぐらい準備したら大丈夫と思います。\n  - 初診の血液検査などは強制ではありませんので、ご安心ください。\n\n※GID証明書必要ですか？\n持参したが確認しなかった。\n\n※保険証適用しますか？\n日本は戸籍男性に女性ホルモンは保険不適用なので、事前にご了承ください。\n\n- オンライン注文料金について：\n  - 送料・事務手数料 2470円\n  - 男性ホルモン（テスチノンデポー）125mg 2200円\n  - 男性ホルモン (テスチノンデポー）250mg 2750円\n  - 男性ホルモン（エナルモンデポー）125mg 2310円\n  - 男性ホルモン（エナルモンデポー）250mg 2970円\n  - 女性ホルモン 10mg 2200円\n\n## 読者さんのコメント\n\n- 情報の信憑性は、私自身の実体験に基づくものです（2023年3月）。\n- フェミニンホルモン10mg 2200円\n- ↑ 自分も購入（2023年3月20日）しましたが、ホールディダ製薬のペラニンデポー筋注10mg（製造中止、製造年月日から推定2021年6月ロット、それ以降は交換されるかは不明）として届きました。\n- 送料・手数料は東京インナースミで2470円です。\n- 送付方法は、注射器、注射針2本（注射用、描画用）、バンドエイド、注射用滅菌綿の計6枚を同封して、月曜日に統一して送付します。\n- 更新ありがとうございました！\n- この通販注射サポートのもう一つの情報源は、個人的にはytbのこの動画<https://www.youtube.com/watch?v=5Q9zOaG08I8>で入手しました。\n- このytbは、G-pitというトランスサポートの会社がサポートしており、そのホームページも添付<http://g-pit.com/>されているので、おそらく他の情報もあると思います。"
+  },
+  {
+    "id": "hrt-tokyo-mc",
+    "name": "自由が丘 MC クリニック",
+    "displayName": "目黒区・自由が丘 MC クリニック",
+    "prefecture": "東京都",
+    "city": "目黒区",
+    "address": "東京都目黒区自由が丘１丁目 3-17",
+    "phone": "03-3717-3514",
+    "urls": [
+      "http://www.gid-mcclinic.com/mtfcarefulqa/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/mc.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "東京都目黒区自由が丘１丁目 3-17\n電話：03-3717-3514\n<http://www.gid-mcclinic.com/mtfcarefulqa/>\n\n注射代：2000 円～\n※HP を見たところ GID も専門で診ている所のようです。睾丸摘出手術もやってます。"
+  },
+  {
+    "id": "hrt-tokyo-plaza-f",
+    "name": "主婦会館クリニック",
+    "displayName": "千代田区・主婦会館クリニック",
+    "prefecture": "東京都",
+    "city": "千代田区",
+    "address": "東京都千代田区六番町１５",
+    "urls": [
+      "http://plaza-f.or.jp/clinic-plazaf/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/plaza-f.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "東京都千代田区六番町１５\n<http://plaza-f.or.jp/clinic-plazaf/>\n【TEL】03-3265-8110\n【休診】土日\n\nMTF さんからの情報提供\n詳細はご自身でお調べ下さい"
+  },
+  {
+    "id": "hrt-tokyo-akiba",
+    "name": "秋葉原中央クリニック（美容外科）",
+    "displayName": "千代田区・秋葉原中央クリニック（美容外科）",
+    "prefecture": "東京都",
+    "city": "千代田区",
+    "address": "東京都千代田区神田佐久間町 2 丁目 20 番地翔和秋葉原ビル 2F",
+    "urls": [
+      "http://www.akiba-biyou.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/akiba.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 東京都千代田区神田佐久間町 2 丁目 20 番地翔和秋葉原ビル 2F\n- フリーダイヤル：0120-119-877\n- <http://www.akiba-biyou.com/>\n\n※完全予約制。HP に記載あり。\n（要電話確認）"
+  },
+  {
+    "id": "hrt-tokyo-takano",
+    "name": "新宿高野ビルクリニック",
+    "displayName": "新宿区・新宿高野ビルクリニック",
+    "prefecture": "東京都",
+    "city": "新宿区",
+    "address": "東京都新宿区新宿 4-1-6 高野ビル 4F",
+    "phone": "03-5919-0182",
+    "urls": [
+      "http://www.takano-bldg-clinic.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/takano.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "東京都新宿区新宿 4-1-6 高野ビル 4F\nTEL 03-5919-0182\n<http://www.takano-bldg-clinic.com/>\n※土日もやっているクリニックです\n\n## コメント\n\nMTF さんからの情報提供で教えてもらったクリニックです注射できるかどうかは、実際にご自身で電話してご確認くださいあまり良くないウワサもあるようなので、診療される場合は細心の注意を払って、ドクハラに合わないようにご注意しましょう\n\n## MTF さんからのコメント\n\n宮川クリニックの噂と変わりません、正直。\n改名前の下の名前で呼ばれたのでいい思い出はありません"
+  },
+  {
+    "id": "hrt-tokyo-shinjukuchuuou",
+    "name": "新宿中央クリニック（美容外科）",
+    "displayName": "新宿区・新宿中央クリニック（美容外科）",
+    "prefecture": "東京都",
+    "city": "新宿区",
+    "address": "東京都新宿区西新宿１丁目 19-5 新宿幸容ビル 6F",
+    "urls": [
+      "http://www.0120669980.com"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/shinjukuchuuou.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "東京都新宿区西新宿１丁目 19-5 新宿幸容ビル 6F\nフリーダイヤル：0120-669-980\n<http://www.0120669980.com>\n\n注射代：2000 円\n初診料 3000 円、血液検査 3000 円（半年毎）が別途かかります。と、HP に記載あり。\n※完全予約制。\n\n## 読者さんのコメント\n\n新宿中央クリニックでホルモン注射を始めました。ドクターの簡単な問診の後、すぐに注射して頂け、それ以降も完全予約制で、きれいなクリニックで、スタッフの対応もよかったです。"
+  },
+  {
+    "id": "hrt-tokyo-riumachi",
+    "name": "新宿南リウマチ膠原病クリニック",
+    "displayName": "渋谷区・新宿南リウマチ膠原病クリニック",
+    "prefecture": "東京都",
+    "city": "渋谷区",
+    "urls": [
+      "https://goo.gl/maps/EWcgdAhYaMU1hJ866",
+      "https://shinjuku-ra.jp"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/riumachi.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- [〒 151-0053 東京都渋谷区代々木２丁目１０ −8 ケイアイ新宿ビル 8F](https://goo.gl/maps/EWcgdAhYaMU1hJ866)\n- HP: <https://shinjuku-ra.jp>\n- 電話番号：03-3370-5100\n\n- 診断が必要\n- 初診の場合は、まず血液検査が必要\n\n読者コメント 早稲田通り心のクリニックの先生から勧められた病院です"
+  },
+  {
+    "id": "hrt-tokyo-shinjukubiyou",
+    "name": "新宿美容外科クリニック",
+    "displayName": "新宿区と立川市・新宿美容外科クリニック",
+    "prefecture": "東京都",
+    "city": "新宿区と立川市",
+    "address": "東京都新宿区新宿 4-3-22 安藤ビル 3F",
+    "phone": "0120-4390-17",
+    "urls": [
+      "http://www.shinjukubiyou.com/list/gender/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/shinjukubiyou.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "ホームページ：<http://www.shinjukubiyou.com/list/gender/>\n\n## 新宿院\n\n東京都新宿区新宿 4-3-22 安藤ビル 3F\n電話：0120-4390-17\n注射代：2000 円～\n\n## 立川院\n\n東京都立川市曙町 2-7-19 MA ビル 5F\n電話：0120-4390-18\n注射代：2000 円～"
+  },
+  {
+    "id": "hrt-tokyo-aoyamaceles",
+    "name": "青山セレスクリニック",
+    "displayName": "港区・青山セレスクリニック",
+    "prefecture": "東京都",
+    "city": "港区",
+    "address": "東京都港区北青山 2-7-26 ヒューリック外苑前ビル 7F (旧フジビル 28 ）",
+    "phone": "03-3405-7357",
+    "urls": [
+      "http://www.aoyamaceles.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/aoyamaceles.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "美容外科\n\n- <http://www.aoyamaceles.com/>\n- 東京都港区北青山 2-7-26 ヒューリック外苑前ビル 7F (旧フジビル 28 ）\n  （東京メトロ外苑前駅から徒歩 5 分程度）\n- 電話：03-3405-7357(携帯・PHS からも OK)\n- フリーダイヤル：0120－010-099>(携帯・PHS からも OK)\n\n診療時間：年中無休（正月三賀日のみ休み）\n平日：11 ～ 20 時\n祝祭日：10 ～ 19 時\n\n女性ホルモン注射：1000 ～ 1500 円\n血液検査（肝臓機能）3500 円\n血中ホルモン濃度検査：6000 ～ 18000 円\n※ただし初診料 5000 円かかります\n\n## みさきのコメント\n\nHP の診療料金一覧のページに「性同一性障害外来」の記載あり。"
+  },
+  {
+    "id": "psyco-tokyo-waseda",
+    "name": "早稲田通り心のクリニック",
+    "displayName": "東京・早稲田通り心のクリニック",
+    "prefecture": "東京都",
+    "city": "東京",
+    "address": "東京都新宿区西早稲田 3-28-1 RICOS ビル 3F",
+    "phone": "03-5292-2855",
+    "urls": [
+      "http://kokoronoclinic.web.fc2.com/",
+      "http://blog.goo.ne.jp/ogurixx"
+    ],
+    "services": [
+      "精神科・診断"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/psyco/tokyo/waseda.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "MtF.wikiの読者に確認済み。\n\n\n- 東京都新宿区西早稲田 3-28-1 RICOS ビル 3F\n- 電話：03-5292-2855\n- HP <http://kokoronoclinic.web.fc2.com/>\n- ブログ <http://blog.goo.ne.jp/ogurixx>\n\n- 保険証の携帯が必要\n- 現金払いのみ\n- 完全予約制（約 2 週間）\n\n- 先生が GID に大変理解があるクリニック。\n- GID 診断書も１日で取得できます。\n- タイで SRS する際の英文での推薦状（診断書）作成の相談もお気軽にとブログにも書いてあります。\n- 注射してくれる病院を紹介してもらえるらしい"
+  },
+  {
+    "id": "hrt-tokyo-metropolitan",
+    "name": "池袋メトロポリタンクリニック",
+    "displayName": "豊島区・池袋メトロポリタンクリニック",
+    "prefecture": "東京都",
+    "city": "豊島区",
+    "address": "東京都豊島区西池袋 1-11-1 ルミネ 10F",
+    "phone": "03-5954-1266",
+    "urls": [
+      "http://www.metropolitan-clinic.com/index.html"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/metropolitan.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "東京都豊島区西池袋 1-11-1 ルミネ 10F\n<http://www.metropolitan-clinic.com/index.html>\nTEL:03-5954-1266\n\n※MTF さんから情報提供して頂きました\n詳しくは病院に直接お尋ねください"
+  },
+  {
+    "id": "hrt-tokyo-gender-clinic",
+    "name": "東京ジェンダークリニック",
+    "displayName": "品川区・東京ジェンダークリニック",
+    "prefecture": "東京都",
+    "city": "品川区",
+    "address": "東京都品川区南大井 3-30-8 第 8 三井ビル 2F",
+    "phone": "03-6404-9635",
+    "urls": [
+      "http://gid-cli.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/gender-clinic.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "GID・美容外科\n\n- 東京都品川区南大井 3-30-8 第 8 三井ビル 2F\n- 電話：03-6404-9635 > <http://gid-cli.com/>\n\n混合ホルモン 3000 円\nプラセンタ注射１アンプル 1700 円\n\n> スザンヌみさきのコメント\n> 知人の MTF さんがここで睾丸摘出手術したのですが、麻酔が完全に効いていない中、本人が痛がっているのにもかかわらず、かまわず手術を続行したとの意見を頂いています。\n> 私が手術を受けたワケではないので、本当の所はわかりませんが、「変だな？」と思ったら別の病院も検討してみましょう。\n> ちなみに東京ジェンダークリニックで睾丸摘出手術をした人のうち、２名の方から、手術後に陰嚢（金玉ぶくろ）に水が溜まったという報告を受けています。\n> 止血が弱いのでしょうか・・・・\n> それ以外は特に報告は受けていません。\n>\n> 読者さんのコメント 2\n> 睾丸摘出もやりましたが、予算の無い方向けと言っておきますね！少しでも予算があるなら他をお勧めします。\n> うちの場合、陰嚢に水は溜まりませんでしたが傷口の治りに 2 カ月を要しましたね^ ^；\n> SRS 関係は主に岡山大学と提携してますね、各種料金はホームページの記載通りです。"
+  },
+  {
+    "id": "hrt-tokyo-hihara",
+    "name": "日原医院",
+    "displayName": "新宿区・日原医院",
+    "prefecture": "東京都",
+    "city": "新宿区",
+    "urls": [
+      "http://www.hihara-iin.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/hihara.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "新宿区新宿３丁目 32-5 日原ビル 1F\n<http://www.hihara-iin.com/>\n【TEL】03-3352-6687\n【休診日】水、土曜午後、日曜祝日\n\n## コメント\n\nMTF さんからの情報提供頂いた病院です。\n女性ホルモン注射が実際にできるかはご自身でご確認ください"
+  },
+  {
+    "id": "hrt-tokyo-fukushima",
+    "name": "福島医院",
+    "displayName": "新宿区・福島医院",
+    "prefecture": "東京都",
+    "city": "新宿区",
+    "address": "東京都新宿区高田馬場 2 丁目 13-15",
+    "urls": [
+      "http://fukushimaiin.plimo.jp/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/fukushima.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "産婦人科\n\n東京都新宿区高田馬場 2 丁目 13-15\n【電話】03-3209-1301（産婦人科） 03-3209-2025（内科）\n【休診日】水曜、日祝日\n<http://fukushimaiin.plimo.jp/>\n\n## みさきのコメント\n\nMTF の方から情報いただきました。\n「戸籍の性別が女性になってないと厳しいかもしれない」とのことでした。\n戸籍は男性だけど、見た目の女度には自信がある！という場合は直接病院に行って交渉するのもアリかもしれませんね"
+  },
+  {
+    "id": "hrt-tokyo-hayashi",
+    "name": "林クリニック（内科・アンチエイジング）",
+    "displayName": "渋谷区・林クリニック（内科・アンチエイジング）",
+    "prefecture": "東京都",
+    "city": "渋谷区",
+    "address": "東京都渋谷区代々木 2-10-8 ケイアイ新宿ビル 8 階",
+    "phone": "03-3370-5100",
+    "urls": [
+      "http://www.hayashi-shinjuku.jp/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/hayashi.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "東京都渋谷区代々木 2-10-8 ケイアイ新宿ビル 8 階\n電話：03-3370-5100\n<http://www.hayashi-shinjuku.jp/>\n\n## 読者さんからのコメント\n\n卵胞のみで黄体はやっていません。\n銘柄は不明。\n医師曰く「意味がないから」だそうです。\n週 2A までやってくれます。\n1A が 1000 円と消費税です。\n※早稲田の紹介があればやってくれます。"
+  },
+  {
+    "id": "hrt-tochigi-kyoritsu",
+    "name": "共立美容外科宇都宮院",
+    "displayName": "宇都宮市・共立美容外科宇都宮院",
+    "prefecture": "栃木県",
+    "city": "宇都宮市",
+    "address": "栃木県宇都宮市駅前通り 2-3-5 ユニマットビル 3F",
+    "urls": [
+      "http://www.kyoritsu-u.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tochigi/kyoritsu.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 栃木県宇都宮市駅前通り 2-3-5 ユニマットビル 3F\n- フリーダイヤル：0120-128-999\n- <http://www.kyoritsu-u.com/>\n  1 回 12,000 円\n\n## 読者さんからのコメント\n\n特にＧＩＤ診断書などは必要なし。  \n一回でこの値段ということで、とても割高かと思います。\n\n## みさきのコメント\n\nニューハーフタレントのはるな愛さんと共立美容外科はコラボレーションしてますんで、もしかして全国の共立美容外科系列院は女性ホルモン注射してくれる可能性があります。にしても高いですね…"
+  },
+  {
+    "id": "hrt-toyama-we-toyama",
+    "name": "女性クリニック We! TOYAMA",
+    "displayName": "富山市・女性クリニック We! TOYAMA",
+    "prefecture": "富山県",
+    "city": "富山市",
+    "address": "富山県富山市根塚町 1-5-1",
+    "phone": "076-493-5580",
+    "urls": [
+      "http://www.we-toyama.jp/",
+      "http://www.wakeikai.com/tanino/",
+      "http://www.hosp.u-toyama.ac.jp/guide/index.html"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/toyama/we-toyama.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 富山県富山市根塚町 1-5-1\n- 電話：076-493-5580\n- <http://www.we-toyama.jp/>\n\n## 読者さんからのコメント\n\nまず最初に谷野医院（<http://www.wakeikai.com/tanino/> ）で診察して貰って下さい。  \n女性の医院長先生に紹介して貰って富山付属大学病院（<http://www.hosp.u-toyama.ac.jp/guide/index.html> ）  \nで精神科で診察して貰ってから（紹介状が無いと診察料金が高くなります。）  \n③女性クリニック We! TOYAMA に行きます。  \nWe は谷野医院の医院長先生が紹介状を書いてくれます。 We でホルモン注射をしてくれます。  \n谷野医院の医院長先生は北陸地方のMTF/FTM の審査委員なので医院長先生の指示に従って下さい。  \n谷野医院の医院長先生も女性クリニック We の先生も大学病院の精神科の先生も理解力がある優しい先生ばかりです。  \n富山のジェンダークリニックは最近出来たばかりです。"
+  },
+  {
+    "id": "hrt-fukui-hosokawa",
+    "name": "細川泌尿器科",
+    "displayName": "福井市・細川泌尿器科",
+    "prefecture": "福井県",
+    "city": "福井市",
+    "address": "〒 918-8014 福井県福井市花堂中２丁目１８-２",
+    "phone": "0776-36-3200",
+    "urls": [
+      "http://www.hosokawaiin.jp/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/fukui/hosokawa.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 〒 918-8014 福井県福井市花堂中２丁目１８-２\n- 電話：0776-36-3200\n- <http://www.hosokawaiin.jp/>\n\n※上記の通り、金沢の「かとうクリニック」でセカンドオピニオンを取った後に、福井市の「福井病院」から紹介を受けるとホルモン注射可能とのことでした。\n詳しくは、かとうクリニック、福井病院、細川泌尿器科にお尋ねください"
+  },
+  {
+    "id": "psyco-fukui-fukui-byouin",
+    "name": "福井病院",
+    "displayName": "福井市・福井病院",
+    "prefecture": "福井県",
+    "city": "福井市",
+    "address": "福井県福井市江上町 55-20-4",
+    "phone": "0776-59-6600",
+    "urls": [
+      "http://www.f-gh.jp/fh/fh.htm"
+    ],
+    "services": [
+      "精神科・診断"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/psyco/fukui/fukui-byouin.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 福井県福井市江上町 55-20-4\n- 電話：0776-59-6600\n- <http://www.f-gh.jp/fh/fh.htm>\n\n読者さんからの連絡によると、女性ホルモン注射は行っていないとのことでした。\n\n- ただ、石川県金沢市のかとうクリニックさんでセカンド取った後、福井病院の先生から紹介状をもらい、福井市の細川泌尿器科さんで出来る事を聞きました。"
+  },
+  {
+    "id": "hrt-fukushima-noguchi",
+    "name": "のぐち形成外科クリニック",
+    "displayName": "いわき市・のぐち形成外科クリニック",
+    "prefecture": "福島県",
+    "city": "いわき市",
+    "address": "福島県いわき市自由ヶ丘 37-10",
+    "phone": "0246-46-2311",
+    "urls": [
+      "http://www.noguchi-keisei.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/fukushima/noguchi.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "（形成外科・美容外科・美容皮膚科）\n\n- 福島県いわき市自由ヶ丘 37-10\n- 電話：0246-46-2311（予約必須）\n- <http://www.noguchi-keisei.com/>\n\n注射代：2A 3250 円（プロギノンデポー）\n\n※ネットで調べた情報によるとホルモン療法ありとのこと。メルマガ読者さんからも情報頂きました。詳しくは電話でご確認下さい。"
+  },
+  {
+    "id": "hrt-hyogo-klady",
+    "name": "川口レディースクリニック",
+    "displayName": "川口レディースクリニック",
+    "prefecture": "兵庫県",
+    "address": "〒657-0846 兵庫県神戸市灘区岩屋北町7-1-30 ラ・メルベーユビル2F",
+    "phone": "078-881-8208",
+    "urls": [
+      "https://klady-clinic.gr.jp/",
+      "https://ssc.doctorqube.com/klady/",
+      "https://primary-care.sysmex.co.jp/speed-search/index.cgi?c=speed_search-2&pk=228",
+      "https://primary-care.sysmex.co.jp/speed-search/index.cgi?c=speed_search-2&pk=225"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/hyogo/klady.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "婦人科\n\n- 〒657-0846 兵庫県神戸市灘区岩屋北町7-1-30 ラ・メルベーユビル2F\n- 予約電話：078-881-8208\n- <https://klady-clinic.gr.jp/>\n\n- 保険証かマイナンバーカードの携帯が必要\n- 現金払いのみ\n\n## コメント\n\nGD・GID の診断書があればホルモン注射が可能  \nとても人気のある婦人科なので初回は3時間以上待つこともあり（筆者は4時間も待った）、余裕を持って行くのがベスト  \n2回目以降は電話やWEBで予約できる <https://ssc.doctorqube.com/klady/>  \n※ホルモン注射のみであれば予約は不要\n\n契約駐車場2台分有\n\n1回の注射は1,100円程度+再診料  \nホルモン検査（E2＋テストステロン）は4,700円程度  \n注射部位は三角筋か大臀筋で選べる  \n※初回はホルモン検査が必要らしい、採血がスムーズになるように水分補給を忘れずにしましょう\n\n検査結果の単位及び基準値について  \nテストステロン：単位：ng/dl, [テストステロン基準値の参考](https://primary-care.sysmex.co.jp/speed-search/index.cgi?c=speed_search-2&pk=228 \"テストステロン基準値\")  \nE2：単位：pg/ml, [E2 基準値の参考](https://primary-care.sysmex.co.jp/speed-search/index.cgi?c=speed_search-2&pk=225 \"エストラジオール基準値\")"
+  },
+  {
+    "id": "hrt-hokkaido-chuuou-bihadahime",
+    "name": "旭川皮フ科形成外科クリニック",
+    "displayName": "旭川市・旭川皮フ科形成外科クリニック",
+    "prefecture": "北海道",
+    "city": "旭川市",
+    "address": "北海道旭川市 4 条通 8 右 2 号ヒサコーポレーションビル 2F",
+    "phone": "0166-74-8921",
+    "urls": [
+      "http://bihadahime.com/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/hokkaido/chuuou/bihadahime.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 北海道旭川市 4 条通 8 右 2 号ヒサコーポレーションビル 2F\n- 電話：0166-74-8921\n- <http://bihadahime.com/>\n\n## 診療時間\n\n午前：9:00 ～ 13:00\n午後：15:00 ～ 18:45\n\n※最終受付は 15 分前です。\n\n### 休診日\n\n不定休\n\n## 詳細\n\n電話で直接問い合わせてみたところ、女性ホルモン注射可能とのお返事でした。  \nホルモン注射するにあたって、特に条件などはないそうです。  \nまずは一度、診察に来て先生とカウンセリングしてくださいとのことでした。  \nちなみに、注射薬剤は3500 円（ペラニンデポー）です  \n初回は初診料の 870 円が別にかかります。  \n**完全予約制**なので、まずはご予約お願いしますとのこと"
+  },
+  {
+    "id": "hrt-hokkaido-dotou-oe-hospital",
+    "name": "医療法人社団博仁会大江病院",
+    "displayName": "帯広市・医療法人社団博仁会大江病院",
+    "prefecture": "北海道",
+    "city": "帯広市",
+    "address": "北海道帯広市西 20 条南 2 丁目 5 番 3 号",
+    "phone": "0155-36-2100",
+    "urls": [
+      "http://www.oe-hospital.or.jp/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/hokkaido/dotou/oe-hospital.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 北海道帯広市西 20 条南 2 丁目 5 番 3 号\n- 電話：0155-36-2100\n- <http://www.oe-hospital.or.jp/>\n\n※ネットの情報によると GID も受け付けているらしい。先生は「大江徹」先生"
+  },
+  {
+    "id": "hrt-hokkaido-chuuou-sapmed",
+    "name": "札幌医科大学付属病院",
+    "displayName": "札幌医科大学付属病院",
+    "prefecture": "北海道",
+    "phone": "011-611-9674",
+    "urls": [
+      "http://web.sapmed.ac.jp/hospital/guide/mumhv60000002vz7.html"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/hokkaido/chuuou/sapmed.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 札幌市中央区南 1 条西 16 丁目 291 番地\n- 電話：011-611-9674\n- <http://web.sapmed.ac.jp/hospital/guide/mumhv60000002vz7.html>\n\n※HP に GID 外来の記載あり。  \n大きい病院なので待ち時間が長くなると予想される\n\n## コメント\n\n「２０１６年から郵送による抽選診療に変わりました。また GID 審議会を通過しないと診察もしてくれません。ハードルが更に上がりました。」"
+  },
+  {
+    "id": "hrt-hokkaido-chuuou-kaguuro",
+    "name": "神楽岡泌尿器科",
+    "displayName": "旭川市・神楽岡泌尿器科",
+    "prefecture": "北海道",
+    "city": "旭川市",
+    "address": "北海道旭川市神楽岡５条５丁目１-２５",
+    "phone": "0166-60-8580",
+    "urls": [
+      "http://www.kagu-uro.or.jp/women/gid_160810/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/hokkaido/chuuou/kaguuro.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 北海道旭川市神楽岡５条５丁目１-２５\n- 電話：0166-60-8580\n- <http://www.kagu-uro.or.jp/women/gid_160810/>\n\n## 詳細\n\n電話で確認した所、性同一性障害の診断（ホルモン療法についての言及）が必要とのこと。  \nまたは、現在通院している病院の紹介状があれば OKとのこと。  \n2018 年 10 月 31 日現在で GID 患者は 25 名通院されているとのこと。  \nGoogle マップに病院のレビューがあるので確認してみましょう。  \n先生はちょっと高圧的らしいです（汗）  \nでも、腕は確かなんだと思う"
+  },
+  {
+    "id": "hrt-hokkaido-dotou-obihiro-chuoh",
+    "name": "帯広中央クリニック（美容外科）",
+    "displayName": "帯広市・帯広中央クリニック（美容外科）",
+    "prefecture": "北海道",
+    "city": "帯広市",
+    "address": "北海道帯広市西 4 条南 10 丁目 34",
+    "urls": [
+      "http://www.obihiro-chuoh-biyo.com/index.html"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/hokkaido/dotou/obihiro-chuoh.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 北海道帯広市西 4 条南 10 丁目 34\n- フリーダイヤル：0120-112-294\n- <http://www.obihiro-chuoh-biyo.com/index.html>\n\n※**完全予約制**。HP にホルモン注射の記載あり。（要電話確認）"
+  },
+  {
+    "id": "hrt-hokkaido-chuuou-chuoh-clinic",
+    "name": "中央クリニック札幌院",
+    "displayName": "札幌市・中央クリニック札幌院",
+    "prefecture": "北海道",
+    "city": "札幌市",
+    "address": "北海道札幌市中央区大通西 2 丁目 5 番地都心ビル 4F",
+    "phone": "0120-013-909",
+    "urls": [
+      "https://www.chuoh-clinic.co.jp/care/care-2255/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/hokkaido/chuuou/chuoh-clinic.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "美容外科\n\n- 北海道札幌市中央区大通西 2 丁目 5 番地都心ビル 4F\n- 電話：0120-013-909\n- <https://www.chuoh-clinic.co.jp/care/care-2255/>\n\n※HP にホルモン注射の記載あり。\n（要電話確認）"
+  },
+  {
+    "id": "hrt-hokkaido-chuuou-tabata-sanfujinka",
+    "name": "田畑産婦人科",
+    "displayName": "札幌市・田畑産婦人科",
+    "prefecture": "北海道",
+    "city": "札幌市",
+    "phone": "011-531-7770",
+    "urls": [
+      "http://www.tabata-sanfujinka.com/sp/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/hokkaido/chuuou/tabata-sanfujinka.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 札幌市中央区南５条西２丁目 6 番地\n- 電話：011-531-7770\n- <http://www.tabata-sanfujinka.com/sp/>\n\n## 読者さんのコメント\n\n豊水すすきの駅そばなので訳ありのひとがゾロゾロときます。 FTM さん MTF さんともに見かけます。\n\n診断書不用ですが、戸籍変更してないと 4000 から 6000 円くらい掛かります。\n\n受け付けから会計まで番号で呼ばれるので改名前の人は気楽ですね。でも高い…のが難点です。"
+  },
+  {
+    "id": "hrt-hokkaido-dotou-kitami",
+    "name": "日本赤十字社北見赤十字病院",
+    "displayName": "北見市・日本赤十字社北見赤十字病院",
+    "prefecture": "北海道",
+    "city": "北見市",
+    "phone": "0157-24-3115",
+    "urls": [
+      "http://www.kitami.jrc.or.jp/"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/hokkaido/dotou/kitami.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 北見市北 6 条東 2 丁目\n- 電話：0157-24-3115\n- <http://www.kitami.jrc.or.jp/>\n\n※注射、診断できるかは微妙。  \n心療内科にてまずは相談にのるとのこと"
+  },
+  {
+    "id": "hrt-hokkaido-chuuou-hayashi-lc",
+    "name": "林レディースクリニック",
+    "displayName": "札幌市・林レディースクリニック",
+    "prefecture": "北海道",
+    "city": "札幌市",
+    "address": "北海道札幌市中央区南二条西 3-11-1 エルセントロ札幌 3F",
+    "urls": [
+      "http://www.spmed.jp/medi-map/detail/923"
+    ],
+    "services": [
+      "ホルモン療法"
+    ],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/hokkaido/chuuou/hayashi-lc.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "要確認",
+    "importedAt": "2026-05-31",
+    "notes": "- 北海道札幌市中央区南二条西 3-11-1 エルセントロ札幌 3F\n- <http://www.spmed.jp/medi-map/detail/923>\n\n最寄駅：大通駅から徒歩 2 分\n\n## コメント\n\n料金が 1A で 1890 円との事です。  \nここは早稲田心のクリニックの小栗先生に教えて頂いた病院です。  \nハヤシレディースは電話して予約したらすぐ注射できるとの事でした｡"
+  }
+]

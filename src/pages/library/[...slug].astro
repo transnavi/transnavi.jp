@@ -1,0 +1,30 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('imported');
+  return pages.map((page) => ({ params: { slug: page.id }, props: { page } }));
+}
+
+const { page } = Astro.props;
+const { Content } = await render(page);
+---
+
+<BaseLayout title={`${page.data.title} - とらんすナビ`} description={page.data.description}>
+  <article class="article-shell">
+    <div class="eyebrow">{page.data.sourceCategory}</div>
+    <h1>{page.data.title}</h1>
+    <div class="article-meta">
+      <span class="pill">出典: {page.data.sourceProject}</span>
+      <span class="pill">確認: 要確認</span>
+    </div>
+    <div class="prose">
+      <Content />
+    </div>
+    <section class="notice" aria-labelledby="source-info">
+      <h2 id="source-info">出典</h2>
+      <p>{page.data.sourcePath} から取り込みました。出典元のライセンスは {page.data.sourceLicense} です。</p>
+    </section>
+  </article>
+</BaseLayout>
