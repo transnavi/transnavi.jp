@@ -3,21 +3,6 @@ import { glob } from 'astro/loaders';
 
 const reviewStatus = z.enum(['draft', 'needs-review', 'reviewed']);
 
-const articles = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/articles' }),
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    category: z.enum(['start', 'medical', 'legal', 'life', 'safety', 'international', 'editing']),
-    audience: z.array(z.string()).default([]),
-    tags: z.array(z.string()).default([]),
-    reviewStatus: reviewStatus.default('draft'),
-    medicalReviewRequired: z.boolean().default(false),
-    lastVerifiedAt: z.coerce.date().optional(),
-    updatedAt: z.coerce.date(),
-  }),
-});
-
 const resources = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/resources' }),
   schema: z.object({
@@ -70,4 +55,4 @@ const imported = defineCollection({
   }),
 });
 
-export const collections = { articles, resources, glossary, regions, imported };
+export const collections = { resources, glossary, regions, imported };

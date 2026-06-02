@@ -160,15 +160,18 @@ test('文芸作品データベースに 2345.LGBT 由来の作品を掲載する
   await expect(page.locator('body')).toContainText('三浦部長、本日付けで女性になります。');
 });
 
-test('旧 cultural-works ページは /works/ へ誘導する', async ({ page }) => {
+test('旧 /articles/ の URL は移行先へ誘導する', async ({ page }) => {
   // 本番（静的）では meta refresh、開発サーバーでは HTTP リダイレクトになる。
-  const res = await page.request.get('/articles/cultural-works/', { maxRedirects: 0 });
-  if (res.status() >= 300 && res.status() < 400) {
-    expect(res.headers()['location']).toMatch(/\/works/);
-  } else {
-    expect(await res.text()).toMatch(/refresh[\s\S]*?\/works/i);
-  }
-
-  await page.goto('/articles/');
-  await expect(page.getByRole('link', { name: /文化作品/ })).toHaveCount(0);
+  const expectRedirect = async (from: string, to: RegExp) => {
+    const res = await page.request.get(from, { maxRedirects: 0 });
+    if (res.status() >= 300 && res.status() < 400) {
+      expect(res.headers()['location']).toMatch(to);
+    } else {
+      expect(await res.text()).toMatch(new RegExp(`refresh[\\s\\S]*?${to.source}`, 'i'));
+    }
+  };
+  await expectRedirect('/articles/cultural-works/', /\/works/);
+  await expectRedirect('/articles/start-here/', /\/start/);
+  await expectRedirect('/articles/editorial-policy/', /\/about/);
+  await expectRedirect('/articles/international-resources/', /\/resources/);
 });

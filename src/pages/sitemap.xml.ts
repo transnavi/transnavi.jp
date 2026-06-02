@@ -10,7 +10,6 @@ function escapeXml(value: string) {
 }
 
 export const GET: APIRoute = async ({ site }) => {
-  const articles = await getCollection('articles');
   const imported = await getCollection('imported');
   const clinics = clinicsData as Clinic[];
   const glossary = glossaryData as GlossaryEntry[];
@@ -37,14 +36,12 @@ export const GET: APIRoute = async ({ site }) => {
     '/works/',
     '/bibliography/',
     '/about/',
-    '/articles/',
     '/clinics/',
     '/edit/',
     '/glossary/',
     '/legal/',
     '/library/',
     '/resources/',
-    ...articles.map((article) => `/articles/${article.id}/`),
     ...clinics.map((clinic) => `/clinics/${clinic.id}/`),
     ...glossary.map((entry) => `/glossary/${entry.id}/`),
     ...imported.map((page) => `/library/${page.id}/`),

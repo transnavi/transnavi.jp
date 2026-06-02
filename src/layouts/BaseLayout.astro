@@ -49,7 +49,6 @@ let section: { label: string; href: string } | null = null;
 if (learnPages.has(pathname)) section = { label: '知る・学ぶ', href: '/learn/' };
 else if (pathname.startsWith('/glossary/') && pathname !== '/glossary/') section = { label: '用語集', href: '/glossary/' };
 else if (pathname.startsWith('/clinics/') && pathname !== '/clinics/') section = { label: '医療機関', href: '/clinics/' };
-else if (pathname.startsWith('/articles/') && pathname !== '/articles/') section = { label: '記事', href: '/articles/' };
 else if (pathname.startsWith('/library/') && pathname !== '/library/') section = { label: '資料集', href: '/library/' };
 const breadcrumbTrail = [{ label: 'ホーム', href: '/' }, ...(section ? [section] : [])];
 const showBreadcrumb = pathname !== '/';
@@ -117,9 +116,11 @@ const breadcrumbLd = showBreadcrumb
       </a>
       <nav class="site-nav" aria-label="主要なページ">
         <a href="/start/">はじめての方へ</a>
-        <a href="/support/">相談先</a>
+        <a href="/dysphoria/">性別違和を知る</a>
+        <a href="/glossary/">用語集</a>
         <a href="/clinics/">医療機関</a>
-        <a href="/learn/">知る</a>
+        <a href="/support/">相談先</a>
+        <a href="/learn/">知る（一覧）</a>
         <a href="/resources/">リンク</a>
       </nav>
     </header>
