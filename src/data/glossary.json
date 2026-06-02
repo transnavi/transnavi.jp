@@ -17,7 +17,8 @@
     ],
     "avoid": [],
     "disputed": [],
-    "source": "17β-Estradiol"
+    "source": "17β-Estradiol",
+    "notes": "ヒトの体内で分泌される主要なエストロゲンで、エストロゲン製剤の活性成分として性別適合ホルモン療法（GAHT）に用いられる。"
   },
   {
     "id": "gnrh-analogues",
@@ -37,7 +38,8 @@
     ],
     "avoid": [],
     "disputed": [],
-    "source": "GnRH Analogues"
+    "source": "GnRH Analogues",
+    "notes": "性腺刺激ホルモン放出ホルモン（GnRH）の作用を抑え、性ホルモンの分泌を抑制する薬剤。思春期ブロッカーや抗アンドロゲン目的で用いられる。"
   },
   {
     "id": "force-outing",
@@ -53,7 +55,8 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "source": "Force Outing"
+    "source": "Force Outing",
+    "notes": "本人の同意なく、その性自認や性的指向などを第三者に暴露する行為のこと。"
   },
   {
     "id": "informed-consent",
@@ -71,7 +74,8 @@
     ],
     "avoid": [],
     "disputed": [],
-    "source": "Informed Consent Model"
+    "source": "Informed Consent Model",
+    "notes": "リスクや効果について十分な説明を受けたうえで、本人の同意に基づいてホルモン療法などの医療を開始する考え方。精神科などによる事前の診断・許可を必須とせず、本人の自己決定を尊重する。"
   },
   {
     "id": "estradiol-gel",
@@ -89,7 +93,8 @@
     ],
     "avoid": [],
     "disputed": [],
-    "source": "Estradiol Gel"
+    "source": "Estradiol Gel",
+    "notes": "エストラジオールを皮膚に塗布して経皮吸収させるゲル状の製剤のこと。"
   },
   {
     "id": "estradiol-monotherapy",
@@ -104,7 +109,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "エストロゲン単剤の使用が必ずしもエストラジオールを指すとは限らず、エストラジオール単独療法も必ずしも単剤使用とは限らない。",
+    "notes": "抗アンドロゲン薬を併用せず、エストラジオール（エストロゲン）のみで行うホルモン療法を指す。投与方法（注射・経口・経皮など）とは別の概念で、単独療法だからといって特定の剤形・投与間隔に限られるわけではない。",
     "source": "Estradiol Monotherapy"
   },
   {
@@ -121,7 +126,8 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "source": "Estradiol Hemihydrate"
+    "source": "Estradiol Hemihydrate",
+    "notes": "エストラジオールの水和物の一種。製剤（経皮ゲルや錠剤など）に用いられるエストラジオールの形態を指す。"
   },
   {
     "id": "estriol",
@@ -138,7 +144,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "天然エストロゲンの一つ。現行のガイドラインでは、性別適合ホルモン療法（GAHT）においてエストラジオールの代替として用いることは一般に支持されていない。",
+    "notes": "天然の女性ホルモン（エストロゲン）の一つ。作用が弱く、現行のガイドラインでは性別適合ホルモン療法（GAHT）でエストラジオールの代替として用いることは一般に推奨されていない。",
     "source": "Estriol (E3)"
   },
   {
@@ -157,7 +163,7 @@
     ],
     "avoid": [],
     "disputed": [],
-    "notes": "ホルモン療法の文脈で、エストラジオールをはじめとするエストロゲン製剤の総称として用いられる。",
+    "notes": "卵胞ホルモンとも呼ばれる女性ホルモンの総称。ホルモン療法（HRT）の文脈では、エストラジオールをはじめとするエストロゲン製剤を指して用いられることが多い。",
     "source": "Estrogen"
   },
   {
@@ -175,7 +181,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "天然エストロゲンの一つ。ホルモン値のモニタリングやエストラジオール代謝に関する議論で見られる。",
+    "notes": "天然のエストロゲンの一つ。エストロン（E1）と呼ばれ、ホルモン療法（HRT）におけるホルモンモニタリングやエストラジオールの代謝に関連して言及される。",
     "source": "Estrone (E1)"
   },
   {
@@ -195,7 +201,8 @@
     ],
     "avoid": [],
     "disputed": [],
-    "source": "Ethinylestradiol (EE)"
+    "source": "Ethinylestradiol (EE)",
+    "notes": "合成エストロゲンの一つ。血栓症などのリスクが高いため、現在の性別適合ホルモン療法（GAHT）では一般にエストラジオールが推奨され、用いられることは少ない。"
   },
   {
     "id": "estradiol-enanthate",
@@ -211,7 +218,8 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "source": "Estradiol Enanthate"
+    "source": "Estradiol Enanthate",
+    "notes": "エストラジオールのエステルの一つで、注射剤に用いられる持続型のエストロゲン製剤を指す。"
   },
   {
     "id": "coming-out",
@@ -229,7 +237,8 @@
     "avoid": [],
     "disputed": [],
     "source": "Coming Out",
-    "message": "話すかどうか、誰に・いつ話すかは、いつだってあなたが選んでいい。あなたの安全が、いちばんです。"
+    "message": "話すかどうか、誰に・いつ話すかは、いつだってあなたが選んでいい。あなたの安全が、いちばんです。",
+    "notes": "自分の性自認や性的指向を、自らの意思で他者に開示すること。誰に・いつ・どこまで伝えるかは本人が選べる。"
   },
   {
     "id": "closeted",
@@ -245,7 +254,8 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "source": "In the Closet"
+    "source": "In the Closet",
+    "notes": "自身のトランスジェンダーであることや性自認を、家族・職場・周囲などに公表せず隠している状態のこと。「カミングアウト」の対義的な状態を指す。"
   },
   {
     "id": "clocking",
@@ -262,7 +272,8 @@
     ],
     "avoid": [],
     "disputed": [],
-    "source": "Clocking"
+    "source": "Clocking",
+    "notes": "相手がトランスジェンダーだと、見た目などから気づかれて（見抜かれて）しまうこと。"
   },
   {
     "id": "standards-of-care",
@@ -295,7 +306,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "医療や心理の専門職が高い門戸（長期のRLEや複雑な証明書類など）を設け、トランスジェンダーが医療を受けにくくする行為のこと。WPATH SOC-8はこの解消を目指し、「インフォームド・コンセント・モデル」を推進している。",
+    "notes": "医療者や精神科の専門職が、長期間の実生活体験（RLE）や煩雑な診断書の要求など高いハードルを設け、トランスジェンダー当事者が医療資源にアクセスするのを制限する行為を指す。WPATH SOC-8 はこうした傾向の緩和を目指し、インフォームド・コンセント（自己決定）モデルの普及を進めている。",
     "source": "Gatekeeping"
   },
   {
@@ -313,7 +324,8 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "source": "Gonadotropins (LH/FSH)"
+    "source": "Gonadotropins (LH/FSH)",
+    "notes": "下垂体から分泌され性腺を刺激するホルモンの総称で、黄体形成ホルモン（LH）と卵胞刺激ホルモン（FSH）を指す。ホルモン療法の効果判定などで測定される。"
   },
   {
     "id": "cisgender",
@@ -331,7 +343,8 @@
     ],
     "avoid": [],
     "disputed": [],
-    "source": "Cisgender"
+    "source": "Cisgender",
+    "notes": "出生時に割り当てられた性別と性自認が一致している人のこと。トランスジェンダーの対義語として用いられる。"
   },
   {
     "id": "cisgender-woman",
@@ -349,7 +362,8 @@
     ],
     "avoid": [],
     "disputed": [],
-    "source": "Cisgender Woman"
+    "source": "Cisgender Woman",
+    "notes": "出生時に女性を割り当てられ、性自認も女性である人のこと。シスジェンダーである女性を指す。"
   },
   {
     "id": "estradiol-cypionate",
@@ -365,7 +379,8 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "source": "Estradiol Cypionate"
+    "source": "Estradiol Cypionate",
+    "notes": "エストラジオールのエステル製剤の一つで、注射によるホルモン療法（HRT）に用いられる。"
   },
   {
     "id": "dihydrotestosterone",
@@ -384,7 +399,7 @@
     ],
     "avoid": [],
     "disputed": [],
-    "notes": "強力なアンドロゲンの一つ。脱毛や術後の抗アンドロゲン療法に関する議論でよく取り上げられる。",
+    "notes": "テストステロンが5α還元酵素により変換されて生じる強力なアンドロゲン。男性型脱毛（AGA）や術後の抗アンドロゲン管理に関連して話題になることが多い。",
     "source": "Dihydrotestosterone (DHT)"
   },
   {
@@ -400,7 +415,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "完全に望む性別で生活し、周囲にトランスジェンダーである過去を明かさない状態のこと。性自認を隠したままでいる「クローゼット」の状態とは区別される。",
+    "notes": "性自認に沿った性別で生活し、周囲にトランスジェンダーであることを明かさずに過ごしている状態のこと。トランスであることを秘めつつも自認していないクローゼット（非公表）とは区別される。",
     "source": "Stealth"
   },
   {
@@ -420,7 +435,8 @@
     ],
     "avoid": [],
     "disputed": [],
-    "source": "Spironolactone"
+    "source": "Spironolactone",
+    "notes": "抗アンドロゲン作用を持つ薬剤で、性別適合ホルモン療法（GAHT）においてテストステロンの作用を抑える目的で用いられる。本来はカリウム保持性利尿薬。"
   },
   {
     "id": "dilator",
@@ -436,7 +452,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "術後の腟の拡張に用いる器具を指す。",
+    "notes": "性別適合手術（造腟術）後に、造設した腟が癒着・収縮しないよう、挿入して一定の深さと幅を保つために用いる拡張器具のこと。",
     "source": "Vaginal Dilator"
   },
   {
@@ -453,7 +469,8 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "source": "Chaser"
+    "source": "Chaser",
+    "notes": "トランスジェンダー（特にトランス女性）に性的・恋愛的な関心を向ける人を指す語。フェティッシュ的な対象化を含意することがあり、文脈によっては否定的に受け取られる。"
   },
   {
     "id": "dexamethasone",
@@ -467,11 +484,10 @@
       "es": "Dexametasona"
     },
     "aliases": [],
-    "avoid": [
-      "激素"
-    ],
+    "avoid": [],
     "disputed": [],
-    "source": "Dexamethasone"
+    "source": "Dexamethasone",
+    "notes": "副腎皮質ステロイド（合成糖質コルチコイド）の一つ。先天性副腎過形成などで男性ホルモンの過剰産生を抑える目的などに用いられる。"
   },
   {
     "id": "testosterone",
@@ -490,7 +506,8 @@
     ],
     "avoid": [],
     "disputed": [],
-    "source": "Testosterone (T)"
+    "source": "Testosterone (T)",
+    "notes": "精巣などで主に分泌される代表的なアンドロゲン（男性ホルモン）。トランス女性のホルモン療法では、抗アンドロゲン薬などによってこの作用を抑えることが目標の一つとなる。"
   },
   {
     "id": "deadnaming",
@@ -506,7 +523,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "指称呼跨性别者曾用过但已废弃的名字（通常是出生名）。",
+    "notes": "トランスジェンダーの人が以前使っていたが現在は使わなくなった名前（多くは出生時の名前）で、その人を呼んだり言及したりすること。",
     "source": "Deadnaming"
   },
   {
@@ -525,7 +542,7 @@
     ],
     "avoid": [],
     "disputed": [],
-    "notes": "指停止或逆转性别过渡的过程",
+    "notes": "性別移行を中断したり、元の方向へ戻したりすること、またその過程を指す。",
     "source": "Detransition",
     "message": "進む道も、立ち止まる道も、引き返す道も、ぜんぶあなたのものです。どんな選択も、責められるものではありません。"
   },
@@ -546,7 +563,7 @@
     ],
     "avoid": [],
     "disputed": [],
-    "notes": "5α-还原酶抑制剂，用于脱发等与 DHT 相关的场景。",
+    "notes": "5α還元酵素阻害薬の一つ。テストステロンからDHTへの変換を抑え、男性型脱毛症などの治療に用いられる。",
     "source": "Dutasteride"
   },
   {
@@ -562,7 +579,8 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "source": "Bathroom access rights"
+    "source": "Bathroom access rights",
+    "notes": "自分の性自認に合ったトイレを使えること、またその権利をめぐる話題。"
   },
   {
     "id": "transgender",
@@ -585,7 +603,8 @@
     ],
     "disputed": [],
     "source": "Transgender",
-    "message": "どんなあり方でも、あなたがあなたであることは、誰にも否定できません。"
+    "message": "どんなあり方でも、あなたがあなたであることは、誰にも否定できません。",
+    "notes": "出生時に割り当てられた性別と性自認が一致しない人を指す総称。性別移行をするかどうかや、その方法は人によって異なる。"
   },
   {
     "id": "gender-identity",
@@ -643,7 +662,8 @@
       "おかま"
     ],
     "disputed": [],
-    "source": "Transgender Woman / MtF"
+    "source": "Transgender Woman / MtF",
+    "notes": "出生時に男性と割り当てられたが、性自認が女性であるトランスジェンダーのこと。MtF（Male to Female）とも呼ばれる。"
   },
   {
     "id": "terf",
@@ -658,11 +678,10 @@
       "es": "TERF"
     },
     "aliases": [],
-    "avoid": [
-      "田园女权"
-    ],
+    "avoid": [],
     "disputed": [],
-    "source": "TERF"
+    "source": "TERF",
+    "notes": "「トランス排除的ラディカルフェミニスト（Trans-Exclusionary Radical Feminist）」の略。フェミニズムの立場をとりながら、トランスジェンダー、とくにトランス女性を女性として認めない主張をする人々を指す。"
   },
   {
     "id": "triptorelin",
@@ -678,7 +697,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "GnRH 类似物之一，可用于青春期阻断或性腺轴抑制。",
+    "notes": "GnRH（性腺刺激ホルモン放出ホルモン）アナログの一つ。思春期ブロッカーや性腺軸の抑制に用いられる。",
     "source": "Triptorelin"
   },
   {
@@ -699,7 +718,8 @@
     "avoid": [],
     "disputed": [],
     "source": "Non-binary",
-    "message": "どちらか一つを選ばなくても、あなたはちゃんと、あなたのままでいられます。"
+    "message": "どちらか一つを選ばなくても、あなたはちゃんと、あなたのままでいられます。",
+    "notes": "性自認が男性・女性という二分法のいずれにも当てはまらない、あるいはその枠組みにとらわれないあり方を指す。"
   },
   {
     "id": "passing",
@@ -716,10 +736,9 @@
       "パス"
     ],
     "avoid": [],
-    "disputed": [
-      "怎么翻译"
-    ],
-    "source": "Pass/Passing"
+    "disputed": [],
+    "source": "Pass/Passing",
+    "notes": "服装や振る舞いなどを通して、自認する性別の人として周囲に自然に認識される状態のこと。"
   },
   {
     "id": "bicalutamide",
@@ -755,7 +774,7 @@
     ],
     "avoid": [],
     "disputed": [],
-    "notes": "用于雄激素性脱发等场景的 5α-还原酶抑制剂。",
+    "notes": "男性型脱毛症などに用いられる5α還元酵素阻害薬。テストステロンからDHTへの変換を抑える。",
     "source": "Finasteride"
   },
   {
@@ -793,7 +812,7 @@
     ],
     "avoid": [],
     "disputed": [],
-    "notes": "包括天然孕酮和人工合成孕激素，部分药物同时具有抗雄作用。",
+    "notes": "天然の黄体ホルモン（プロゲステロン）と合成黄体ホルモンを含むホルモンの総称。製剤によっては抗アンドロゲン作用を併せ持つものもある。",
     "source": "Progestogen"
   },
   {
@@ -827,7 +846,8 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "source": "Misgendering"
+    "source": "Misgendering",
+    "notes": "その人の性自認とは違う性別で扱ったり、呼んだりすること（わざとかどうかを問わず）。"
   },
   {
     "id": "minoxidil",
@@ -845,7 +865,7 @@
     ],
     "avoid": [],
     "disputed": [],
-    "notes": "常用于脱发治疗的外用或口服药物。",
+    "notes": "脱毛症の治療に用いられる外用または内服の薬剤。",
     "source": "Minoxidil"
   },
   {
@@ -864,7 +884,7 @@
     ],
     "avoid": [],
     "disputed": [],
-    "notes": "一种 SERM，资料中常作为非二元激素方案的可能选项讨论。",
+    "notes": "SERM（選択的エストロゲン受容体モジュレーター）の一つ。ノンバイナリー向けのホルモン療法の選択肢として言及されることがある。",
     "source": "Raloxifene"
   },
   {
@@ -919,11 +939,11 @@
       "女装者"
     ],
     "avoid": [
-      "易装癖",
-      "伪娘"
+      "女装癖",
+      "異性装症"
     ],
     "disputed": [],
-    "notes": "将女装视为「异装」",
+    "notes": "出生時に割り当てられた性別とは異なる性別の服装を身につけること、またその人を指す。性自認や性的指向とは必ずしも結びつかず、性別移行を意図するとは限らない。",
     "source": "Cross-dresser (CD)"
   },
   {
@@ -942,7 +962,7 @@
     ],
     "avoid": [],
     "disputed": [],
-    "notes": "生殖器手术和性健康语境中的解剖术语。",
+    "notes": "性器手術や性の健康に関する文脈で用いられる解剖学用語。陰核のこと。",
     "source": "Clitoris"
   },
   {
@@ -976,7 +996,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "生殖器手术结果、护理和解剖说明中常见术语。",
+    "notes": "性器手術の結果やケア、解剖の説明でよく用いられる用語。陰唇のこと。",
     "source": "Labia"
   },
   {
@@ -1047,11 +1067,9 @@
       "DV",
       "ドメスティック・バイオレンス被害者"
     ],
-    "avoid": [
-      "家暴党"
-    ],
+    "avoid": [],
     "disputed": [],
-    "notes": "\"指因性别认同或表达而遭受家庭成员暴力的个体。\"\"家暴党\"\"为通俗用语，不建议使用。\"",
+    "notes": "性自認や性別表現を理由に、家族など家庭内の成員から暴力を受けた人のこと。",
     "source": "Domestic Violence"
   },
   {
@@ -1068,9 +1086,9 @@
     "aliases": [],
     "avoid": [],
     "disputed": [
-      "零深度阴道成形术（Zero-depth Vaginoplasty）"
+      "ゼロデプス腟形成術（Zero-depth Vaginoplasty）"
     ],
-    "notes": "社群常称的\"零深度\"实际涵盖阴茎切除、睾丸切除、尿道再造与外阴成形等多项手术，与单纯的 Vulvoplasty 概念是否完全一致存在争议。",
+    "notes": "いわゆる「ゼロデプス」と呼ばれるものは、実際には陰茎切除・精巣摘出・尿道形成・外陰形成など複数の術式を含み、外陰部形成術（Vulvoplasty）と完全に一致するかどうかは議論がある。",
     "source": "Vulvoplasty"
   },
   {
@@ -1138,7 +1156,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "嗓音训练中用于描述声带振动频率，常与音高相关。",
+    "notes": "声帯が振動する速さを表す数値。声の高さ（ピッチ）と関係し、ボイストレーニングで用いられる。",
     "source": "Fundamental Frequency (F0)"
   },
   {
@@ -1156,14 +1174,10 @@
     "aliases": [
       "プロギノン"
     ],
-    "avoid": [
-      "补子",
-      "国补",
-      "糖",
-      "补"
-    ],
+    "avoid": [],
     "disputed": [],
-    "source": "Estradiol Valerate (EV)"
+    "source": "Estradiol Valerate (EV)",
+    "notes": "エストラジオールのエステル製剤の一つで、女性化を目的としたホルモン療法（HRT）で用いられるエストロゲン製剤を指す。"
   },
   {
     "id": "estradiol-valerate-injection",
@@ -1282,7 +1296,8 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "source": "Employment Discrimination"
+    "source": "Employment Discrimination",
+    "notes": "性のあり方などを理由に、採用や職場で不利に扱われること。"
   },
   {
     "id": "antiandrogen",
@@ -1301,7 +1316,7 @@
     ],
     "avoid": [],
     "disputed": [],
-    "notes": "用于降低雄激素作用的药物类别。",
+    "notes": "アンドロゲン（男性ホルモン）の作用を抑えるために用いられる薬剤の総称。",
     "source": "Antiandrogen"
   },
   {
@@ -1318,13 +1333,10 @@
     "aliases": [
       "のどぼとけ手術"
     ],
-    "avoid": [
-      "割喉"
-    ],
-    "disputed": [
-      "喉结削切术"
-    ],
-    "source": "Tracheal Shave"
+    "avoid": [],
+    "disputed": [],
+    "source": "Tracheal Shave",
+    "notes": "甲状軟骨（喉仏）の突出を削って目立たなくする手術のこと。顔の女性化を目的に行われることがある。"
   },
   {
     "id": "hyperkalemia",
@@ -1340,7 +1352,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "螺内酯等保钾药物相关的重要安全风险。",
+    "notes": "血液中のカリウムが高くなりすぎた状態。スピロノラクトンなど、カリウムを体にためやすい薬を使うときに注意が必要なリスク。",
     "source": "Hyperkalemia"
   },
   {
@@ -1357,7 +1369,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "长期睾酮过低或雌激素不足相关的骨骼健康风险。",
+    "notes": "テストステロンの低値やエストロゲンの不足が長期間続くことに関連する骨の健康リスク。",
     "source": "Osteoporosis"
   },
   {
@@ -1374,7 +1386,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "长期 GAHT 相关骨骼健康监测中常见指标。",
+    "notes": "骨が作られたり壊されたりする働き。長期のホルモン療法（GAHT）では、骨の健康のために確認されることがある。",
     "source": "Bone Metabolism"
   },
   {
@@ -1410,7 +1422,7 @@
     ],
     "avoid": [],
     "disputed": [],
-    "notes": "临床上常使用 GnRH 类似物实现青春期抑制。",
+    "notes": "思春期の進行を抑えるために用いられる薬剤。臨床ではGnRHアゴニスト（GnRH類似体）が用いられることが多い。",
     "source": "Puberty Blocker"
   },
   {
@@ -1430,11 +1442,14 @@
       "出生時の指定性別"
     ],
     "avoid": [
+      "生理的性別",
       "本来の性別",
-      "生まれつきの性別"
+      "生まれつきの性別",
+      "出生時の性別"
     ],
     "disputed": [],
-    "source": "Assigned Gender/Assigned Sex at Birth"
+    "source": "Assigned Gender/Assigned Sex at Birth",
+    "notes": "出生時に身体的特徴などに基づいて割り当てられた性別のこと。性自認と一致するとは限らない。"
   },
   {
     "id": "self-acceptance",
@@ -1451,7 +1466,8 @@
     "avoid": [],
     "disputed": [],
     "source": "Self-acceptance",
-    "message": "昔の自分を、責め続けないであげてくださいね。あの子だって、何も見えない霧の中で、必死に迷っていたんだから。"
+    "message": "昔の自分を、責め続けないであげてくださいね。あの子だって、何も見えない霧の中で、必死に迷っていたんだから。",
+    "notes": "ありのままの自分を、自分で受け入れていくこと。"
   },
   {
     "id": "diy-hrt",
@@ -1486,10 +1502,9 @@
     },
     "aliases": [],
     "avoid": [],
-    "disputed": [
-      "真实生活体验"
-    ],
-    "source": "Real Life Experience (RLE)"
+    "disputed": [],
+    "source": "Real Life Experience (RLE)",
+    "notes": "性別移行を進める前または途中に、望む性別での社会生活を一定期間実際に送ること。かつて医療の前提条件として求められたが、現在のガイドラインでは必須とはされない傾向にある。"
   },
   {
     "id": "afab",
@@ -1506,7 +1521,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "出生时性别被医生指派为女性，不论其性别认同",
+    "notes": "出生時に女性と割り当てられた人のこと。性自認とは関係なく、医師により出生時に指定された性別を指す。AFAB（Assigned Female At Birth）の訳語。",
     "source": "Assigned Female at Birth (AFAB)"
   },
   {
@@ -1524,7 +1539,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "出生时性别被医生指派为男性，不论其性别认同",
+    "notes": "出生時に男性と割り当てられた人のこと。性自認とは関係なく、医師により出生時に指定された性別を指す。AMAB（Assigned Male At Birth）の訳語。",
     "source": "Assigned Male at Birth (AMAB)"
   },
   {
@@ -1558,7 +1573,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "中文语境常用于指就医、手术或证件变更所需的诊断类证明材料。",
+    "notes": "医療機関で受診・治療を受けた事実や診断結果を証明する書類のこと。ホルモン療法や手術、各種手続きの際に必要となることがある。",
     "source": "Diagnosis Certificate"
   },
   {
@@ -1576,13 +1591,10 @@
     "aliases": [
       "アンドロキュール（商品名）"
     ],
-    "avoid": [
-      "色谱龙",
-      "土色",
-      "色"
-    ],
+    "avoid": [],
     "disputed": [],
-    "source": "Cyproterone Acetate (CPA)"
+    "source": "Cyproterone Acetate (CPA)",
+    "notes": "抗アンドロゲン作用とプロゲストーゲン作用を併せ持つ薬剤で、性別適合ホルモン療法（GAHT）でアンドロゲン抑制のために用いられることがある。"
   },
   {
     "id": "medroxyprogesterone-acetate",
@@ -1601,7 +1613,7 @@
     ],
     "avoid": [],
     "disputed": [],
-    "notes": "一种人工孕激素，部分 GAHT 资料会讨论其乳房发育、精神状态和风险影响。",
+    "notes": "合成プロゲスチンの一つ。女性化ホルモン療法（GAHT）に関する資料では、乳房の発達や精神面への影響、リスクとの関連が議論されることがある。",
     "source": "Medroxyprogesterone Acetate (MPA)"
   },
   {
@@ -1618,7 +1630,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "醋酸环丙孕酮长期或高剂量使用相关风险之一。",
+    "notes": "脳や脊髄を覆う髄膜から生じる腫瘍。酢酸シプロテロンの長期・高用量使用に関連するリスクの一つとして知られる。",
     "source": "Meningioma"
   },
   {
@@ -1635,7 +1647,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "包括雌激素、孕激素和雄激素等。",
+    "notes": "エストロゲン、黄体ホルモン（プロゲストーゲン）、アンドロゲンなど、性に関わるホルモンの総称。",
     "source": "Sex Hormone"
   },
   {
@@ -1655,7 +1667,7 @@
     ],
     "avoid": [],
     "disputed": [],
-    "notes": "影响游离雌二醇、睾酮水平解读的血浆蛋白。",
+    "notes": "遊離エストラジオールやテストステロンの値の解釈に影響する血漿タンパク質。",
     "source": "Sex Hormone-Binding Globulin (SHBG)"
   },
   {
@@ -1672,10 +1684,8 @@
       "SRS"
     ],
     "avoid": [],
-    "disputed": [
-      "可以使用 SRS 特指生殖器手术吗？"
-    ],
-    "notes": "中文语境常使用 SRS 特指",
+    "disputed": [],
+    "notes": "性器の形態を性自認に合わせて変える外科手術の総称。腟形成術や精巣摘除術、陰茎形成術などを含む。性別適合手術（SRS）の一部として行われることが多い。",
     "source": "Genital surgery"
   },
   {
@@ -1692,7 +1702,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "性自認と出生時に割り当てられた性別が一致しない状態を指す、かつての病理的な診断名。現在では脱病理化された「性別不合」などに置き換えられた古い用語。",
+    "notes": "性自認と身体の性が一致せず、医療的な性別移行を望む状態を指した、過去の病理化された診断名。現在は脱病理化が進み、ICD-11では「性別不合」に置き換えられている。",
     "source": "Transsexualism"
   },
   {
@@ -1708,7 +1718,8 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "source": "Transgender Certificate"
+    "source": "Transgender Certificate",
+    "notes": "性別違和（性同一性障害）の診断を証明する書類のこと。医療機関で発行され、ホルモン療法や手術、法的手続きなどの場面で求められることがある。"
   },
   {
     "id": "gender-dysphoria",
@@ -1731,7 +1742,7 @@
       "性同一性障害（同義語としては避けたい）"
     ],
     "disputed": [],
-    "notes": "性別と性自認の不一致から生じる持続的な違和感や心理的な苦痛のこと。ICD-11では「性別不合（gender incongruence）」へと脱病理化されたが、心理的な苦痛を表す語として性別違和は今も用いられる。",
+    "notes": "出生時に割り当てられた性別と性自認との不一致から生じる、心理的な苦痛や違和感のこと。ICD-11では「性別不合（性別不一致）」へと脱病理化されたが、心理的な苦痛そのものを指す語として「性別違和」も引き続き用いられる。",
     "source": "Gender Dysphoria",
     "message": "その違和感は、わがままではありません。ちゃんと意味のある、大切な感覚です。"
   },
@@ -1771,11 +1782,8 @@
       "トランスジェンダー・ホルモン療法"
     ],
     "avoid": [],
-    "disputed": [
-      "激素替代疗法",
-      "激素肯定疗法"
-    ],
-    "notes": "\"SOC-8 推荐使用\"\"肯定 (Affirming)\"\"而非\"\"替代 (Replacement)\"\"。HRT 隐含\"\"由于缺陷而替代\"\"的病理意味，GAHT 强调对自我认同的肯定。但中文语境常使用 HRT\"",
+    "disputed": [],
+    "notes": "性別適合ホルモン療法（Gender-Affirming Hormone Therapy）のこと。性自認に沿った身体的特徴を得るために行うホルモン療法を指す。SOC-8では「替代（Replacement）」より「肯定（Affirming）」の語が推奨されており、欠陥を補うという病理的含意を避ける観点から、HRTに代えてGAHTが用いられる。",
     "source": "Gender-Affirming Hormone Therapy(GAHT)"
   },
   {
@@ -1795,13 +1803,10 @@
       "GCS"
     ],
     "avoid": [
-      "变性手术",
-      "切除手术"
+      "性転換手術"
     ],
-    "disputed": [
-      "性别重置手术 (SRS)"
-    ],
-    "notes": "SOC-8 推荐用语",
+    "disputed": [],
+    "notes": "性自認に合わせて身体的特徴を変えるための外科手術の総称。性器手術や顔面・胸部の手術などを含み、必要とする内容や範囲は人によって異なる。WHO・WPATHのケア基準（SOC-8）では「性別適合手術」という呼称が用いられる。",
     "source": "Gender Affirmation Surgery (GAS)"
   },
   {
@@ -1817,10 +1822,8 @@
     },
     "aliases": [],
     "avoid": [],
-    "disputed": [
-      "性别鉴定证明"
-    ],
-    "notes": "\"《户口居民身份证管理工作规范（试行）》使用\"\"三级医院出具的性别鉴定证明\"\"一称；与术后诊断证明书（\"\"易性症诊断证明书\"\"）应区分。具体用词待讨论。\"",
+    "disputed": [],
+    "notes": "性別の移行や法的な性別変更などの手続きにおいて求められることのある、医療機関が発行する証明書類のこと。求められる書類の種類や名称は国や制度によって異なる。",
     "source": "Sex Reassignment Certificate"
   },
   {
@@ -1837,7 +1840,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "指个体通过外貌、衣着、行为、姿态等方式表现性别认同的方式。",
+    "notes": "外見・服装・髪型・振る舞い・言葉づかいなどを通して、自分の性のあり方を外に表すこと。性自認や指定性別とは別の概念で、必ずしも一致するとは限らない。",
     "source": "Gender Expression"
   },
   {
@@ -1854,13 +1857,10 @@
     },
     "aliases": [],
     "avoid": [
-      "异性症",
-      "异性癖"
+      "性同一性障害（旧称・病理化された用語）"
     ],
-    "disputed": [
-      "性别不合"
-    ],
-    "notes": "\"ICD-11 诊断标准名称，去病化。\"\"异性症/异性癖\"\"为旧用法或电脑输入法误字（如411医院病历），应避免使用。\"",
+    "disputed": [],
+    "notes": "ICD-11で用いられる、性自認と出生時に割り当てられた性別との不一致を表す診断名。脱病理化された呼称であり、かつての病理的な診断名「性同一性障害」に置き換わるものとして位置づけられる。",
     "source": "Gender Incongruence"
   },
   {
@@ -1878,7 +1878,8 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "source": "Legal Gender Recognition"
+    "source": "Legal Gender Recognition",
+    "notes": "戸籍など、法律上の性別を変える手続き。"
   },
   {
     "id": "orchiectomy",
@@ -1895,10 +1896,11 @@
       "去勢"
     ],
     "avoid": [
-      "阉割"
+      "去勢手術"
     ],
     "disputed": [],
-    "source": "Orchiectomy"
+    "source": "Orchiectomy",
+    "notes": "精巣を摘出する手術。性別適合手術の一環として、または抗アンドロゲン薬の代替として行われることがある。"
   },
   {
     "id": "vocal-folds",
@@ -1914,7 +1916,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "嗓音训练和嗓音女性化手术中的核心解剖术语。",
+    "notes": "ボイストレーニングや声の女性化手術における中心的な解剖学用語。声帯のこと。",
     "source": "Vocal Folds"
   },
   {
@@ -1930,10 +1932,9 @@
     },
     "aliases": [],
     "avoid": [],
-    "disputed": [
-      "声带截短术"
-    ],
-    "source": "Glottoplasty"
+    "disputed": [],
+    "source": "Glottoplasty",
+    "notes": "声帯の前方を癒着させて声帯の振動長を短くし、声の高さを上げる手術のこと。声の女性化を目的に行われることがある。"
   },
   {
     "id": "serm",
@@ -1952,7 +1953,7 @@
     ],
     "avoid": [],
     "disputed": [],
-    "notes": "在非二元或低女性化需求的激素方案讨论中出现。",
+    "notes": "エストロゲン受容体に選択的に作用する薬剤の総称。ノンバイナリーの人や、女性化の程度を抑えたいホルモン療法の選択肢として検討されることがある。",
     "source": "Selective Estrogen Receptor Modulator (SERM)"
   },
   {
@@ -1969,7 +1970,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "跨女性健康、泌尿系统和生殖器手术说明中常见术语。",
+    "notes": "膀胱の下にある男性の生殖器官のひとつ。トランス女性の健康管理、泌尿器系、性別適合手術の説明などで言及される解剖学的部位。",
     "source": "Prostate"
   },
   {
@@ -1988,7 +1989,7 @@
     ],
     "avoid": [],
     "disputed": [],
-    "notes": "常见于头发护理、FFS 和抗雄激素相关讨论。",
+    "notes": "頭髪が抜けて薄くなる状態のこと。男性型脱毛症（AGA）を含み、トランス女性ではホルモン療法（HRT）や抗アンドロゲン薬による改善、FFS（顔の女性化手術）に関連して話題になることが多い。",
     "source": "Hair Loss"
   },
   {
@@ -2005,11 +2006,10 @@
     "aliases": [
       "修復療法"
     ],
-    "avoid": [
-      "修复疗法"
-    ],
+    "avoid": [],
     "disputed": [],
-    "source": "Conversion Therapy"
+    "source": "Conversion Therapy",
+    "notes": "性的指向や性自認を変えようとする心理的・宗教的な介入の総称。科学的根拠がなく有害とされ、近年は法的に規制する動きが広がっている。コンバージョン療法とも呼ばれる。"
   },
   {
     "id": "electrolysis",
@@ -2041,7 +2041,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "激素治疗就诊和随访常见科室。",
+    "notes": "ホルモンや内分泌に関わる病気を扱う診療科のこと。ホルモン療法（HRT）の受診や経過観察で関わることが多い。",
     "source": "Endocrinology"
   },
   {
@@ -2058,7 +2058,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "激素治疗风险评估和常规筛查中常见术语。",
+    "notes": "乳房にできる悪性腫瘍。ホルモン療法のリスク評価や定期的な検診（スクリーニング）で話題になることが多い。",
     "source": "Breast Cancer"
   },
   {
@@ -2074,7 +2074,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "女性化激素治疗的常见预期效果之一。",
+    "notes": "乳腺組織が発達し乳房が大きくなること。女性化を目的としたホルモン療法（GAHT）で期待される効果の一つ。",
     "source": "Breast Development"
   },
   {
@@ -2091,7 +2091,7 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "notes": "生殖器手术和术后护理中常见解剖术语。",
+    "notes": "膀胱から体外へ尿を導く管のこと。性別適合手術（性器の手術）やその術後ケアで扱われる解剖学的部位。",
     "source": "Urethra"
   },
   {
@@ -2133,22 +2133,6 @@
     "source": "Breast Augmentation"
   },
   {
-    "id": "mtf-wiki",
-    "term": "本サイト",
-    "category": "その他",
-    "translations": {
-      "en": "This site",
-      "zhHans": "本站",
-      "zhHant": "本站",
-      "es": "Este sitio"
-    },
-    "aliases": [],
-    "avoid": [],
-    "disputed": [],
-    "notes": "",
-    "source": "MtF.wiki"
-  },
-  {
     "id": "vaginoplasty",
     "term": "腟形成術",
     "category": "手術",
@@ -2163,10 +2147,9 @@
       "SRS",
       "腟形成"
     ],
-    "avoid": [
-      "阴道成型术"
-    ],
+    "avoid": [],
     "disputed": [],
-    "source": "Vaginoplasty"
+    "source": "Vaginoplasty",
+    "notes": "腟を形成する外科手術。トランスジェンダー女性に対する性別適合手術（SRS）の一つで、造腟術とも呼ばれる。"
   }
 ]

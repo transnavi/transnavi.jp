@@ -129,8 +129,8 @@ test('用語集を検索できる', async ({ page }) => {
 
   await page.getByLabel('用語を検索').fill('インフォームドコンセントモデル');
 
-  await expect(page.getByRole('link', { name: /インフォームドコンセントモデル/ })).toBeVisible();
-  await expect(page.getByRole('link', { name: /カミングアウト/ })).toBeHidden();
+  await expect(page.locator('.glossary-card', { hasText: 'インフォームドコンセントモデル' })).toBeVisible();
+  await expect(page.locator('.glossary-card', { hasText: 'カミングアウト' })).toBeHidden();
   await expect(page.locator('[data-filter-count]')).toHaveText('1');
 });
 
