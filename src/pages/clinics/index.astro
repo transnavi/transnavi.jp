@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Mascot from '../../components/Mascot.astro';
 import clinicsData from '../../data/clinics.json';
 import type { Clinic } from '../../types/clinic';
 import { splitClinicUrls } from '../../utils/clinic-links';
@@ -132,6 +133,7 @@ const groupedClinics = prefectures.map((prefecture) => ({
 <BaseLayout title="医療機関 - とらんすナビ" description="ホルモン療法や診断に関する医療機関。">
   <article class="article-shell">
     <div class="eyebrow">医療機関</div>
+    <Mascot name="doctor" />
     <h1>医療機関</h1>
     <p class="lead">
       ホルモン療法や診断に関する医療機関。受診条件、診断書の要否、費用、診療内容は変わることがあります。

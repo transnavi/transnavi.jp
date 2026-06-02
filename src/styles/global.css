@@ -1537,6 +1537,39 @@ ul {
   box-shadow: inset 0 0 0 1px var(--line);
 }
 
+/* --- Mascot spot illustrations --- */
+.mascot {
+  line-height: 0;
+  pointer-events: none;
+}
+
+.mascot svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.mascot-spot {
+  float: right;
+  width: 150px;
+  max-width: 38%;
+  margin: -4px -4px 6px 16px;
+}
+
+.mascot-hero {
+  width: 200px;
+  max-width: 56%;
+  margin: 0 auto 6px;
+}
+
+@media (max-width: 640px) {
+  .mascot-spot {
+    float: none;
+    width: 124px;
+    margin: 0 auto 4px;
+  }
+}
+
 /* --- Map (/map/) --- */
 .map-canvas {
   position: relative;

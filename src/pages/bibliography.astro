@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Mascot from '../components/Mascot.astro';
 import bibData from '../data/bibliography.json';
 import { bibCategoryMeta, type BibEntry } from '../types/bibliography';
 
@@ -21,6 +22,7 @@ const sections = bibCategoryMeta
 >
   <article class="article-shell">
     <div class="eyebrow">知る</div>
+    <Mascot name="reading" />
     <h1>文献（書籍・論文）</h1>
     <p class="lead">
       もっと深く、正確に知りたい人へ。トランスジェンダーに関する学術的な書籍や論文、診療ガイドラインをまとめています。小説・映画・漫画などは<a href="/works/">文芸作品</a>へ。

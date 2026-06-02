@@ -135,9 +135,15 @@ const SET = {
   'calm':         { hair: 'mint', hairStyle: 'spiky', skin: 'pale', body: 'lilac', expr: 'happy', scene: 'none', id: 'c' },
 };
 if (process.argv[1] && process.argv[1].endsWith('mascot.mjs') && process.argv.includes('--write')) {
-  const dir = resolve(dirname(fileURLToPath(import.meta.url)), 'art');
+  const here = dirname(fileURLToPath(import.meta.url));
+  const dir = resolve(here, 'art');
+  const map = {};
   for (const [name, opts] of Object.entries(SET)) {
-    writeFileSync(resolve(dir, `${name}.svg`), mascot(opts) + '\n');
+    const svg = mascot(opts);
+    writeFileSync(resolve(dir, `${name}.svg`), svg + '\n');
+    map[name] = svg;
   }
+  // Importable module for the <Mascot> Astro component (inline SVG, themeable).
+  writeFileSync(resolve(here, '..', 'src', 'data', 'mascots.json'), JSON.stringify(map, null, 0) + '\n');
   console.log('wrote', Object.keys(SET).join(', '));
 }
