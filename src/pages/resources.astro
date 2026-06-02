@@ -5,6 +5,10 @@ import organizations from '../data/organizations.json';
 
 const resources = await getCollection('resources');
 
+// Predefined search chips — common tags/regions, so people can filter by tapping
+// instead of typing (clicking sets the search box; see public/filter-index.js).
+const searchTags = ['相談', 'MtF', 'FtM', 'ノンバイナリー', '医療', 'ホルモン療法', 'SRS', '当事者会', '居場所', 'ブログ', '体験談', '法制度', '若者支援', '英語', '東京', '関西'];
+
 const sectionDefinitions = [
   { key: 'guide', title: '入門・読みもの', tab: '入門', description: 'はじめて調べるときの解説や、個人・団体による情報発信。' },
   { key: 'media', title: '発信・メディア', tab: 'メディア', description: '当事者による YouTube・SNS・ポッドキャスト・ブログなどの発信。' },
@@ -73,7 +77,12 @@ const langLabels: Record<string, string> = {
     <form class="index-search" role="search" data-filter-form>
       <label for="resource-search">サイトを検索</label>
       <input id="resource-search" name="q" type="search" autocomplete="off" placeholder="例: 相談、MtF、大阪、大学" data-filter-input />
-      <p id="resource-search-help">名前、タグ、地域で絞り込めます。</p>
+      <p id="resource-search-help">名前、タグ、地域で絞り込めます。下のタグから選ぶこともできます。</p>
+      <div class="filter-tag-chips" aria-label="よく使うタグ">
+        {searchTags.map((tag) => (
+          <button type="button" class="filter-tag-chip" data-filter-set={tag} aria-pressed="false">{tag}</button>
+        ))}
+      </div>
     </form>
 
     {sections.map((section) => (

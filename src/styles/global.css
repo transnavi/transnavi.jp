@@ -1217,6 +1217,37 @@ ul {
   margin: 0;
 }
 
+/* Predefined search chips (tap to filter). */
+.filter-tag-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 4px;
+}
+
+.filter-tag-chip {
+  min-height: 32px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.filter-tag-chip:hover {
+  border-color: var(--line-hover);
+}
+
+.filter-tag-chip[aria-pressed='true'] {
+  border-color: var(--line-hover);
+  background: linear-gradient(90deg, rgba(153, 216, 253, 0.32), rgba(255, 195, 213, 0.5));
+  color: var(--ink-heading);
+}
+
 .clinic-name-row {
   display: flex;
   align-items: center;

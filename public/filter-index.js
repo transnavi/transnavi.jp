@@ -62,6 +62,25 @@ for (const form of document.querySelectorAll('[data-filter-form]')) {
 
   input.addEventListener('input', update);
 
+  // Predefined tag chips: clicking sets (or clears) the search box.
+  const chips = [...root.querySelectorAll('[data-filter-set]')];
+  const syncChips = () => {
+    const v = input.value.trim();
+    for (const chip of chips) {
+      chip.setAttribute('aria-pressed', chip.dataset.filterSet === v ? 'true' : 'false');
+    }
+  };
+  for (const chip of chips) {
+    chip.addEventListener('click', () => {
+      const term = chip.dataset.filterSet ?? '';
+      input.value = input.value.trim() === term ? '' : term;
+      update();
+      syncChips();
+      input.focus();
+    });
+  }
+  input.addEventListener('input', syncChips);
+
   for (const dim of dims) {
     for (const tab of dim.tabs) {
       tab.addEventListener('click', () => {
