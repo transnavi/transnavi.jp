@@ -571,6 +571,12 @@ ul {
   line-height: 1.7;
 }
 
+.concept-card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+}
+
 .concept-more {
   font-size: 0.82rem;
   font-weight: 700;

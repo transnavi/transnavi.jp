@@ -1,0 +1,101 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const hrtOverview = '/library/mtf-wiki-ja/docs/medicine/hrt-overview/';
+
+const sides = [
+  {
+    name: '社会的な移行',
+    body: '名前や呼ばれ方、代名詞、服装や髪型を、自分に合うものに変えていくこと。カミングアウトもここに含まれます。お金や医療がなくても始められる部分が多くあります。',
+    links: [
+      { href: '/glossary/coming-out/', label: 'カミングアウト' },
+      { href: '/allies/', label: '周囲の人へ' },
+    ],
+  },
+  {
+    name: '医療的な移行',
+    body: 'ホルモン療法や手術など。受けるかどうか、どこまで行うかは自分で選べます。医療的な移行をしないトランスの人もたくさんいます。',
+    links: [
+      { href: hrtOverview, label: 'ホルモン療法の基礎' },
+      { href: '/clinics/', label: '医療機関を探す' },
+    ],
+  },
+  {
+    name: '法的な移行',
+    body: '改名（家庭裁判所での手続き）や、戸籍の性別の変更など。日本では一定の要件があり、変わりつつあります。',
+    links: [
+      { href: '/resources/', label: '改名・手続きの体験談' },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="性別移行を知る - とらんすナビ"
+  description="性別移行（トランジション）とは何か。社会的・医療的・法的な側面と、「正解はない・急がなくていい」という考え方。"
+>
+  <article class="article-shell">
+    <div class="eyebrow">知る</div>
+    <h1>性別移行を知る</h1>
+    <p class="lead">
+      <a href="/dysphoria/">性別違和</a>を和らげ、自分らしく暮らしていくための方法のひとつが、<a href="/glossary/gender-transition/">性別移行</a>（トランジション）です。何を、どこまで行うかは、人によって本当にさまざまです。
+    </p>
+
+    <section aria-labelledby="no-right-way">
+      <h2 id="no-right-way">移行に「正解」はありません</h2>
+      <p>
+        すべてを行う必要も、決まった順番もありません。<strong>医療的な移行をしてもしなくても、あなたはあなたです。</strong>「ここまでやらないと本物ではない」ということはありません。
+      </p>
+      <p>
+        大切なのは、自分が少しでも生きやすくなること。そして、<strong>安全であること</strong>です。
+      </p>
+    </section>
+
+    <section aria-labelledby="sides-heading">
+      <h2 id="sides-heading">移行には、いくつかの側面がある</h2>
+      <p class="resource-section-intro">どれか一つだけでも、組み合わせても、まったく行わなくてもかまいません。</p>
+      <div class="concept-grid">
+        {sides.map((side) => (
+          <div class="concept-card">
+            <h3>{side.name}</h3>
+            <p>{side.body}</p>
+            <div class="concept-card-links">
+              {side.links.map((link) => (
+                <a class="concept-more" href={link.href}>{link.label} →</a>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section aria-labelledby="legal-note">
+      <h2 id="legal-note">日本の制度について</h2>
+      <p>
+        日本では、戸籍上の性別を変えるための要件が「性同一性障害者の性別の取扱いの特例に関する法律」で定められています。2023年には、要件のうち生殖機能をなくす手術を求める規定について、最高裁判所が憲法違反と判断しました。制度は今も動いている途中です。
+      </p>
+      <p>
+        手続きの実際や費用、最新の状況は変わることがあります。<a href="/clinics/">医療機関</a>や公的な窓口、<a href="/resources/">関連サイト</a>で確認してください。
+      </p>
+    </section>
+
+    <aside class="entry-message" role="note" aria-label="読んでいるあなたへ">
+      <p>急がなくて大丈夫です。今すぐ何かを決めなくても、知っておくだけでいい日もあります。あなたのペースで進んでいけます。</p>
+    </aside>
+
+    <nav class="word-chips entry-related" aria-label="関連ページ">
+      <a class="word-chip" href="/dysphoria/">性別違和を知る</a>
+      <a class="word-chip" href="/support/">相談先</a>
+      <a class="word-chip" href="/clinics/">医療機関</a>
+      <a class="word-chip" href="/glossary/">用語集</a>
+    </nav>
+
+    <p class="source-note">
+      医療的な情報は
+      {' '}<a href="https://transfemscience.org/" target="_blank" rel="noreferrer">Transfeminine Science</a>
+      や
+      {' '}<a href="https://mtf.wiki/ja/" target="_blank" rel="noreferrer">MtF.wiki</a>
+      なども参考になります（海外の情報は日本の制度・医療と異なる点に注意）。最終的な判断は専門職や公的窓口とあわせて確認してください。
+    </p>
+  </article>
+</BaseLayout>
