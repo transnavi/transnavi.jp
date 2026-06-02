@@ -1,0 +1,18 @@
+---
+title: "The Gender Dysphoria Bible（性別違和バイブル）"
+description: "性別違和の種類や仕組みを、やさしく深く解説する英語の解説書です。"
+url: https://genderdysphoria.fyi/
+language: en
+region: global
+category: guide
+tags:
+  - 性別違和
+  - 解説
+  - 英語
+  - ユーフォリア
+  - 当事者
+reviewStatus: needs-review
+updatedAt: 2026-06-02
+---
+
+身体的・対人的・社会的など、性別違和のさまざまな形や、性別高揚感について丁寧に解説しています。日本語訳が進行中です。
