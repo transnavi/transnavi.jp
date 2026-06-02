@@ -98,8 +98,25 @@ const days = [
   { date: '11月20日', name: 'トランスジェンダー追悼の日（TDOR）', note: '嫌悪や暴力によって命を奪われたトランスの人々を追悼する日。' },
 ];
 
+// 時期が決まっている近日のイベント（過ぎたら見直してください）。
+const upcoming = [
+  {
+    date: '2026年6月4日（木）',
+    name: 'プライドデモ（渋谷）',
+    place: '東京・渋谷',
+    note: '渋谷で行われるプライドのデモ行進。集合時間や経路などの最新情報は、主催者の案内をご確認ください。',
+  },
+  {
+    date: '2026年6月6日（土）〜7日（日）',
+    name: 'Tokyo Pride 2026',
+    place: '東京・渋谷／代々木公園周辺',
+    note: 'テーマは「多様性と平等がひらく未来」。パレード（デモ行進）は6月7日に行われます。',
+    url: 'https://pride.tokyo/',
+  },
+];
+
 const japanEvents = [
-  { when: '例年 4〜5月ごろ', name: '東京レインボープライド（TRP）', note: '東京・代々木などで開催される、国内最大級のプライドイベント。' },
+  { when: '例年 春〜初夏ごろ', name: '東京レインボープライド（Tokyo Pride）', note: '東京・渋谷／代々木などで開催される、国内最大級のプライドイベント。' },
   { when: '例年 5月ごろ', name: 'K.G. Rainbow Week（関西学院大学）', note: 'IDAHOBIT に合わせて関西学院大学で開かれる、性の多様性に関する年次イベント。' },
   { when: '例年 秋ごろ', name: '関西レインボーフェスタ', note: '大阪で開催されるプライドイベント。' },
 ];
@@ -115,6 +132,26 @@ const japanEvents = [
     <p class="lead">
       旗や記念日には、ここまで歩いてきた人たちの思いと、「あなたは一人じゃない」という願いが込められています。ぜんぶ覚えなくて大丈夫。気になったものから、のぞいてみてください。
     </p>
+
+    {upcoming.length > 0 && (
+      <section aria-labelledby="upcoming-heading">
+        <h2 id="upcoming-heading">近日のイベント</h2>
+        <ul class="day-list">
+          {upcoming.map((event) => (
+            <li class="day-item day-item-upcoming">
+              <span class="day-date">{event.date}</span>
+              <div class="day-body">
+                <span class="day-name">
+                  {event.url ? <a href={event.url} target="_blank" rel="noreferrer">{event.name}</a> : event.name}
+                </span>
+                <span class="day-note">{event.place} ／ {event.note}</span>
+              </div>
+            </li>
+          ))}
+        </ul>
+        <p class="resource-section-intro">日時や場所は変わることがあります。参加する前に主催者の最新情報を確認してください。</p>
+      </section>
+    )}
 
     <section aria-labelledby="flags-heading">
       <h2 id="flags-heading">プライドフラッグ</h2>

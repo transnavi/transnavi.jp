@@ -1307,6 +1307,11 @@ ul {
   background: var(--paper);
 }
 
+.day-item-upcoming {
+  border-left: 4px solid var(--accent-strong);
+  background: var(--pink-soft);
+}
+
 .day-date {
   flex: none;
   width: 150px;
