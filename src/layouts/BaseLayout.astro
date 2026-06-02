@@ -43,7 +43,7 @@ const pageName = title.split(' - ')[0].trim();
 const learnPages = new Set([
   '/gender/', '/dysphoria/', '/transition/', '/hrt-effects/', '/fertility/',
   '/voice/', '/hair-removal/', '/surgery/', '/legal-change/', '/coming-out/',
-  '/safety/', '/puberty-blockers/', '/pride/', '/works/', '/bibliography/',
+  '/safety/', '/puberty-blockers/', '/flags/', '/pride/', '/works/', '/bibliography/',
 ]);
 let section: { label: string; href: string } | null = null;
 if (learnPages.has(pathname)) section = { label: '知る・学ぶ', href: '/learn/' };
@@ -163,7 +163,8 @@ const breadcrumbLd = showBreadcrumb
             <a href="/transition/">性別移行を知る</a>
             <a href="/hrt-effects/">ホルモン療法で起きること</a>
             <a href="/glossary/">用語集</a>
-            <a href="/pride/">フラッグと記念日</a>
+            <a href="/flags/">プライドフラッグ</a>
+            <a href="/pride/">記念日・イベント</a>
             <a href="/resources/">リンク</a>
           </div>
           <div class="footer-col">
