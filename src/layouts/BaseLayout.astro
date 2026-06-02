@@ -36,6 +36,35 @@ const structuredData = {
     },
   ],
 };
+
+// Breadcrumbs (auto-derived from the path; no per-page props needed).
+const pathname = Astro.url.pathname;
+const pageName = title.split(' - ')[0].trim();
+const learnPages = new Set([
+  '/gender/', '/dysphoria/', '/transition/', '/hrt-effects/', '/fertility/',
+  '/voice/', '/hair-removal/', '/surgery/', '/legal-change/', '/coming-out/',
+  '/safety/', '/puberty-blockers/', '/pride/', '/works/', '/bibliography/',
+]);
+let section: { label: string; href: string } | null = null;
+if (learnPages.has(pathname)) section = { label: '知る・学ぶ', href: '/learn/' };
+else if (pathname.startsWith('/glossary/') && pathname !== '/glossary/') section = { label: '用語集', href: '/glossary/' };
+else if (pathname.startsWith('/clinics/') && pathname !== '/clinics/') section = { label: '医療機関', href: '/clinics/' };
+else if (pathname.startsWith('/articles/') && pathname !== '/articles/') section = { label: '記事', href: '/articles/' };
+else if (pathname.startsWith('/library/') && pathname !== '/library/') section = { label: '資料集', href: '/library/' };
+const breadcrumbTrail = [{ label: 'ホーム', href: '/' }, ...(section ? [section] : [])];
+const showBreadcrumb = pathname !== '/';
+const breadcrumbLd = showBreadcrumb
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [...breadcrumbTrail, { label: pageName, href: pathname }].map((item, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: item.label,
+        item: new URL(item.href, Astro.site).toString(),
+      })),
+    }
+  : null;
 ---
 
 <!doctype html>
@@ -62,6 +91,7 @@ const structuredData = {
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
     <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+    {breadcrumbLd && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />}
     <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" hreflang="ja" href={canonicalUrl} />
     <link rel="alternate" hreflang="ja-JP" href={canonicalUrl} />
@@ -77,7 +107,7 @@ const structuredData = {
     <title>{title}</title>
   </head>
   <body>
-    <header class="site-header">
+    <header class="site-header" id="top">
       <a class="brand" href="/" aria-label="とらんすナビ ホーム">
         <img class="brand-mark" src="/favicon.svg" alt="" width="44" height="44" />
         <span>
@@ -94,7 +124,19 @@ const structuredData = {
       </nav>
     </header>
     <main>
+      {showBreadcrumb && (
+        <nav class="breadcrumbs" aria-label="パンくずリスト">
+          {breadcrumbTrail.map((item) => (
+            <>
+              <a href={item.href}>{item.label}</a>
+              <span class="bc-sep" aria-hidden="true">›</span>
+            </>
+          ))}
+          <span aria-current="page">{pageName}</span>
+        </nav>
+      )}
       <slot />
+      {showBreadcrumb && <a class="back-top" href="#top">↑ ページの先頭へ</a>}
     </main>
     <footer class="site-footer">
       <div class="footer-main">

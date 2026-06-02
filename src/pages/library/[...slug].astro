@@ -23,7 +23,7 @@ const siblings = all
 ---
 
 <BaseLayout title={`${page.data.title} - とらんすナビ`} description={page.data.description}>
-  <article class="article-shell" id="top">
+  <article class="article-shell">
     <div class="eyebrow">{page.data.sourceCategory}</div>
     <h1>{page.data.title}</h1>
     <div class="article-meta">
@@ -52,8 +52,6 @@ const siblings = all
     <div class="prose">
       <Content />
     </div>
-
-    <p class="back-to-top"><a href="#top">↑ ページの先頭へ</a></p>
 
     {siblings.length > 0 && (
       <nav class="word-chips entry-related" aria-label="関連ページ">

@@ -33,7 +33,7 @@ test.describe('レイアウトの一貫性', () => {
   for (const path of contentPages) {
     test(`${path} のメインカードはフッターと同じ幅・左端`, async ({ page }) => {
       await page.goto(path);
-      const card = page.locator('main > *').first();
+      const card = page.locator('main > .article-shell, main > .intro').first();
       const footer = page.locator('.site-footer');
       const c = await card.boundingBox();
       const f = await footer.boundingBox();

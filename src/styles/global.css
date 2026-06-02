@@ -672,6 +672,54 @@ ul {
   font-size: 0.9rem;
 }
 
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 6px;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.breadcrumbs a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.breadcrumbs [aria-current='page'] {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.bc-sep {
+  color: var(--line-strong);
+}
+
+.back-top {
+  justify-self: center;
+  margin-top: 4px;
+  padding: 8px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  box-shadow: var(--shadow-soft);
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: border-color 120ms ease, transform 120ms ease;
+}
+
+.back-top:hover {
+  border-color: var(--line-hover);
+  transform: translateY(-1px);
+}
+
 .bib-section {
   margin-top: 28px;
 }
