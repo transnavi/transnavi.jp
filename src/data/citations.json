@@ -311,6 +311,43 @@
       "id": "apa-the-evidence-against"
     }
   ],
+  "/cost/": [
+    {
+      "title": "名の変更許可（家事事件の手続案内）",
+      "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_20/index.html",
+      "publisher": "裁判所（最高裁判所）",
+      "lang": "ja",
+      "id": "courts-2"
+    },
+    {
+      "title": "性別の取扱いの変更（家事事件の手続案内）",
+      "url": "https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_23/index.html",
+      "publisher": "裁判所（最高裁判所）",
+      "lang": "ja",
+      "id": "courts"
+    },
+    {
+      "title": "手術に係わる認定施設一覧（保険適用の前提となる認定施設）",
+      "url": "http://www.gi-soc.jp/ninteishisetsuichiran.html",
+      "publisher": "日本GI（性別不合）学会",
+      "lang": "ja",
+      "id": "gi-soc"
+    },
+    {
+      "title": "高額療養費制度を利用される皆さまへ",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/juuyou/kougakuiryou/index.html",
+      "publisher": "厚生労働省",
+      "lang": "ja",
+      "id": "mhlw-high-cost"
+    },
+    {
+      "title": "No.1122 医療費控除の対象となる医療費",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1122.htm",
+      "publisher": "国税庁",
+      "lang": "ja",
+      "id": "nta-medical-deduction"
+    }
+  ],
   "/intersex/": [
     {
       "title": "Intersex",

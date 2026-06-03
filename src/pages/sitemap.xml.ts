@@ -35,6 +35,7 @@ export const GET: APIRoute = async ({ site }) => {
     '/presentation/',
     '/hair-removal/',
     '/surgery/',
+    '/cost/',
     '/legal-change/',
     '/coming-out/',
     '/everyday/',

@@ -25,6 +25,7 @@ const NODES = {
   '/presentation/': { label: '見た目', group: 'medical' },
   '/hair-removal/': { label: '脱毛', group: 'medical' },
   '/surgery/': { label: '手術', group: 'medical' },
+  '/cost/': { label: '費用', group: 'medical' },
   '/support/': { label: '相談先', group: 'support' },
   '/clinics/': { label: '医療機関', group: 'support' },
   '/map/': { label: '地図', group: 'support' },

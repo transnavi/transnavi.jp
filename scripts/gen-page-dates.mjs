@@ -8,7 +8,7 @@ import fs from 'node:fs';
 const ROUTES = [
   '/start/', '/basics/', '/gender/', '/orientation/', '/intersex/', '/dysphoria/', '/transition/',
   '/hrt-effects/', '/hrt-medications/', '/fertility/', '/puberty-blockers/', '/voice/',
-  '/presentation/', '/hair-removal/', '/surgery/', '/legal-change/', '/coming-out/',
+  '/presentation/', '/hair-removal/', '/surgery/', '/cost/', '/legal-change/', '/coming-out/',
   '/everyday/', '/allies/', '/safety/', '/guidelines/', '/detransition/', '/about/', '/legal/', '/data/',
 ];
 

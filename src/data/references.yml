@@ -349,6 +349,12 @@ mhlw-5:
   title: 職場におけるパワーハラスメント対策等
   type: web
   url: https://www.mhlw.go.jp/content/11900000/001338359.pdf
+mhlw-high-cost:
+  lang: ja
+  publisher: 厚生労働省
+  title: 高額療養費制度を利用される皆さまへ
+  type: web
+  url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/juuyou/kougakuiryou/index.html
 moj:
   lang: ja
   publisher: 法務省（人権擁護局）
@@ -418,6 +424,12 @@ no-harassment-sogi:
   title: あかるい職場応援団（ハラスメント・SOGIハラ・アウティングの防止）
   type: web
   url: https://www.no-harassment.mhlw.go.jp/
+nta-medical-deduction:
+  lang: ja
+  publisher: 国税庁
+  title: No.1122 医療費控除の対象となる医療費
+  type: web
+  url: https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1122.htm
 ohchr-fact-sheet-intersex:
   lang: en
   publisher: 国連人権高等弁務官事務所（OHCHR）／UN Free & Equal
