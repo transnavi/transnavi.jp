@@ -2,6 +2,31 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Mascot from '../components/Mascot.astro';
 
+// Verified national hotlines (free, anonymous). Numbers/hours confirmed 2026-06.
+const hotlines = [
+  {
+    name: 'よりそいホットライン',
+    detail: 'どんな悩みでも。セクシュアル・マイノリティ専門の回線もあります（音声ガイダンスで選べます）。無料・匿名。',
+    tel: '0120-279-338',
+    hours: '24時間',
+    url: 'https://www.since2011.net/yorisoi/',
+  },
+  {
+    name: '#いのちSOS（ライフリンク）',
+    detail: '「死にたい」「消えたい」「生きるのに疲れた」と感じるとき。無料・秘密厳守。',
+    tel: '0120-061-338',
+    hours: '24時間・365日',
+    url: 'https://www.lifelink.or.jp/inochisos/',
+  },
+  {
+    name: 'チャイルドライン',
+    detail: '18歳まで。名前は言わなくて大丈夫。話すのがつらくなったら、途中で切っても大丈夫。',
+    tel: '0120-99-7777',
+    hours: '毎日 16:00〜21:00',
+    url: 'https://childline.or.jp/tel',
+  },
+];
+
 // Ordered from the most accessible / lowest-stakes toward the more formal.
 const steps = [
   {
@@ -46,6 +71,32 @@ const steps = [
       相談できる相手は、身近な人から専門の窓口まで、いろいろあります。まずは、いちばん話しやすそうなところから考えてみてください。
     </p>
     <p>まだ気持ちがはっきりしないときは、<a href="/start/">はじめての方へ</a>から読んでみても大丈夫です。</p>
+
+    <section class="notice hotlines" aria-labelledby="now-heading">
+      <h2 id="now-heading">つらくて、今すぐ話したいとき</h2>
+      <p class="resource-section-intro">電話は匿名で大丈夫です。番号をタップするとかけられます。つながらないときは、少し時間をおいてかけ直してみてください。</p>
+      <ul class="hotline-list">
+        {hotlines.map((h) => (
+          <li class="hotline-item">
+            <div class="hotline-head">
+              <span class="hotline-name">{h.name}</span>
+              <span class="hotline-hours">{h.hours}</span>
+            </div>
+            <p class="hotline-detail">{h.detail}</p>
+            <div class="hotline-actions">
+              <a class="hotline-tel" href={`tel:${h.tel.replace(/-/g, '')}`} aria-label={`${h.name}に電話する ${h.tel}`}>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M6.6 10.8a15.3 15.3 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1Z"/></svg>
+                {h.tel}
+              </a>
+              <a class="hotline-site" href={h.url} target="_blank" rel="noreferrer">公式サイト</a>
+            </div>
+          </li>
+        ))}
+      </ul>
+      <p class="resource-section-intro">
+        電話より文字がよいときは、LINE などの<a href="https://www.mhlw.go.jp/mamorouyokokoro/" target="_blank" rel="noreferrer">SNS相談（厚労省「まもろうよ こころ」）</a>もあります。<strong>いますぐ命が危ないと感じたら、110（警察）・119（救急）に電話してください。</strong>
+      </p>
+    </section>
 
     <ol class="step-list">
       {steps.map((step, index) => (

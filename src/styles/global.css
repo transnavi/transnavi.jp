@@ -1870,6 +1870,76 @@ ul {
   color: var(--muted);
 }
 
+/* Crisis / support hotlines (/support/). */
+.hotline-list {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.hotline-item {
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--paper-strong);
+}
+
+.hotline-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+}
+
+.hotline-name {
+  font-weight: 800;
+  color: var(--ink-heading);
+}
+
+.hotline-hours {
+  flex-shrink: 0;
+  padding: 1px 9px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--ink-heading);
+}
+
+.hotline-detail {
+  margin: 6px 0 10px;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.hotline-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+}
+
+.hotline-tel {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.hotline-tel:hover {
+  background: var(--accent-strong);
+  color: #fff;
+}
+
 /* Per-page freshness line (date derived from git history). */
 .page-updated {
   max-width: 980px;
