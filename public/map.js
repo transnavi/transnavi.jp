@@ -77,8 +77,13 @@
   }
 
   map.on('load', () => {
+    // Frame Japan on load. Overseas pins (e.g. SRS hospitals abroad) are still
+    // on the map and reachable by zooming/panning out, but don't pull the
+    // initial view away from Japan.
     const bounds = new maplibregl.LngLatBounds();
-    for (const p of [...clinics, ...pois]) bounds.extend([p.lng, p.lat]);
+    for (const p of [...clinics, ...pois]) {
+      if (p.lat > 24 && p.lat < 46 && p.lng > 122 && p.lng < 154) bounds.extend([p.lng, p.lat]);
+    }
     if (!bounds.isEmpty()) map.fitBounds(bounds, { padding: 48, maxZoom: 9 });
   });
 })();
