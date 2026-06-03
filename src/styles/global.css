@@ -218,10 +218,16 @@ h1 {
   letter-spacing: -0.03em;
 }
 
-/* The homepage hero headline uses the full width (text-wrap: pretty fills each
-   line and only tidies the last one, rather than balancing into short lines). */
+/* The homepage hero headline and lead are centred (matching the centred mascot
+   row above them); text-wrap: balance keeps the wrapped lines evenly sized. */
 .hero h1 {
   max-width: none;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.hero .lead {
+  text-align: center;
   text-wrap: pretty;
 }
 
