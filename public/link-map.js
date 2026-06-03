@@ -1,29 +1,31 @@
 // Interactive pseudo-3D map of the site's internal links, drawn into #link-map
 // on /sitemap/ from /link-map.json. Hand-rolled (no library): a 3D force layout,
-// perspective projection, gentle auto-rotation, glossy spheres, drag-to-orbit,
-// click/tap a node to open that page. Pauses when scrolled out of view.
+// perspective projection, gentle auto-rotation, soft "bubble" nodes, and
+// drag-to-orbit / wheel-or-pinch-to-zoom / shift-or-two-finger-to-pan. Tap a
+// node to open that page. Pauses when scrolled out of view.
 (function () {
   'use strict';
   var SVGNS = 'http://www.w3.org/2000/svg';
   var COLORS = {
-    start: '#4ba8ea',
-    medical: '#e8589b',
-    support: '#36b37e',
-    society: '#f2994a',
-    reference: '#8a6dc6',
-    site: '#8d97ad',
+    start: '#5bb0ee',
+    medical: '#ff8fc4',
+    support: '#5cc99a',
+    society: '#ffb06b',
+    reference: '#a98ee0',
+    site: '#aab2c8',
   };
   var FOCAL = 760;
-  var AUTO = 0.0022; // auto-rotation speed (rad/frame)
+  var AUTO = 0.0021; // auto-rotation speed (rad/frame)
 
   function el(name, attrs) {
     var n = document.createElementNS(SVGNS, name);
     for (var k in attrs) n.setAttribute(k, attrs[k]);
     return n;
   }
-  function shade(hex, f) {
+  function tint(hex, f) {
     var n = parseInt(hex.slice(1), 16);
-    return 'rgb(' + Math.round(((n >> 16) & 255) * f) + ',' + Math.round(((n >> 8) & 255) * f) + ',' + Math.round((n & 255) * f) + ')';
+    function m(c) { return Math.round(c + (255 - c) * f); }
+    return 'rgb(' + m((n >> 16) & 255) + ',' + m((n >> 8) & 255) + ',' + m(n & 255) + ')';
   }
 
   async function init() {
@@ -61,11 +63,14 @@
     var svg = el('svg', { viewBox: '0 0 ' + W + ' ' + H, class: 'link-map-svg', role: 'img', 'aria-label': 'サイト内のページのつながりの3D図' });
     var defs = el('defs', {});
     svg.appendChild(defs);
+    // Soft pastel "bubble" gradient per group: bright highlight, soft body, the
+    // group colour only at the rim (no dark edge).
     Object.keys(COLORS).forEach(function (g) {
-      var grad = el('radialGradient', { id: 'lmg-' + g, cx: '35%', cy: '32%', r: '75%' });
-      grad.appendChild(el('stop', { offset: '0%', 'stop-color': '#ffffff', 'stop-opacity': '0.8' }));
-      grad.appendChild(el('stop', { offset: '38%', 'stop-color': COLORS[g] }));
-      grad.appendChild(el('stop', { offset: '100%', 'stop-color': shade(COLORS[g], 0.62) }));
+      var grad = el('radialGradient', { id: 'lmg-' + g, cx: '36%', cy: '30%', r: '78%' });
+      grad.appendChild(el('stop', { offset: '0%', 'stop-color': '#ffffff' }));
+      grad.appendChild(el('stop', { offset: '30%', 'stop-color': tint(COLORS[g], 0.55) }));
+      grad.appendChild(el('stop', { offset: '78%', 'stop-color': COLORS[g] }));
+      grad.appendChild(el('stop', { offset: '100%', 'stop-color': tint(COLORS[g], 0.12) }));
       defs.appendChild(grad);
     });
     var gEdges = el('g', { class: 'lm-edges' });
@@ -77,21 +82,22 @@
     var edgeEls = links.map(function () { var line = el('line', { class: 'lm-edge' }); gEdges.appendChild(line); return line; });
     nodes.forEach(function (n) {
       var g = el('g', { class: 'lm-node', tabindex: '0', role: 'link', 'aria-label': n.label });
-      n._r = 6 + Math.min(7, n.deg);
+      n._r = 7 + Math.min(7, n.deg);
       n._c = el('circle', { r: n._r, fill: 'url(#lmg-' + n.group + ')' });
+      // a little glossy "shine" dot, like a bubble
+      var shine = el('ellipse', { class: 'lm-shine', cx: -n._r * 0.3, cy: -n._r * 0.34, rx: n._r * 0.3, ry: n._r * 0.2 });
       n._t = el('text', { class: 'lm-label', x: 0, y: n._r + 13 });
       n._t.textContent = n.label;
       g.appendChild(n._c);
+      g.appendChild(shine);
       g.appendChild(n._t);
       gNodes.appendChild(g);
       n._g = g;
       g.addEventListener('keydown', function (e) { if (e.key === 'Enter') location.href = n.id; });
     });
 
-    // Camera (orbit) angles.
-    var rotY = 0.4;
-    var rotX = -0.32;
-    var alpha = 1;
+    // Camera: orbit (rotX/rotY), zoom, pan.
+    var rotY = 0.4, rotX = -0.3, zoom = 1, panX = 0, panY = 0, alpha = 1;
 
     function physics() {
       for (var i = 0; i < nodes.length; i++) {
@@ -102,9 +108,8 @@
           var d2 = dx * dx + dy * dy + dz * dz || 0.01;
           var d = Math.sqrt(d2);
           var f = (3400 / d2) * alpha;
-          var fx = (dx / d) * f, fy = (dy / d) * f, fz = (dz / d) * f;
-          a.vx += fx; a.vy += fy; a.vz += fz;
-          b.vx -= fx; b.vy -= fy; b.vz -= fz;
+          a.vx += (dx / d) * f; a.vy += (dy / d) * f; a.vz += (dz / d) * f;
+          b.vx -= (dx / d) * f; b.vy -= (dy / d) * f; b.vz -= (dz / d) * f;
         }
       }
       links.forEach(function (l) {
@@ -129,22 +134,21 @@
       var cosX = Math.cos(rotX), sinX = Math.sin(rotX);
       var y1 = n.y * cosX - z1 * sinX;
       var z2 = n.y * sinX + z1 * cosX;
-      var s = FOCAL / (FOCAL + z2);
-      return { sx: cx + x1 * s, sy: cy + y1 * s, s: s, z: z2 };
+      var s = (FOCAL / (FOCAL + z2)) * zoom;
+      return { sx: cx + panX + x1 * s, sy: cy + panY + y1 * s, s: s, z: z2 };
     }
 
     function render() {
       var P = {};
       nodes.forEach(function (n) { P[n.id] = project(n); });
-      // depth sort: far (large z) first
-      var order = nodes.slice().sort(function (a, b) { return P[b.id].z - P[a.id].z; });
-      order.forEach(function (n) { gNodes.appendChild(n._g); });
+      nodes.slice().sort(function (a, b) { return P[b.id].z - P[a.id].z; })
+        .forEach(function (n) { gNodes.appendChild(n._g); });
       nodes.forEach(function (n) {
         var p = P[n.id];
-        var op = 0.45 + 0.55 * (1 - Math.min(1, Math.max(0, (p.z + 200) / 400)));
+        var op = 0.5 + 0.5 * (1 - Math.min(1, Math.max(0, (p.z + 200) / 400)));
         n._g.setAttribute('transform', 'translate(' + p.sx.toFixed(1) + ',' + p.sy.toFixed(1) + ') scale(' + p.s.toFixed(3) + ')');
         n._g.style.opacity = op.toFixed(2);
-        n._t.style.opacity = op > 0.8 ? '1' : op > 0.62 ? '0.55' : '0';
+        n._t.style.opacity = op > 0.82 ? '1' : op > 0.64 ? '0.5' : '0';
         n._px = p.sx; n._py = p.sy; n._pr = n._r * p.s;
       });
       links.forEach(function (l, i) {
@@ -152,47 +156,96 @@
         var e = edgeEls[i];
         e.setAttribute('x1', a.sx.toFixed(1)); e.setAttribute('y1', a.sy.toFixed(1));
         e.setAttribute('x2', b.sx.toFixed(1)); e.setAttribute('y2', b.sy.toFixed(1));
-        e.style.opacity = (0.18 + 0.34 * (1 - Math.min(1, Math.max(0, ((a.z + b.z) / 2 + 200) / 400)))).toFixed(2);
+        e.style.opacity = (0.16 + 0.32 * (1 - Math.min(1, Math.max(0, ((a.z + b.z) / 2 + 200) / 400)))).toFixed(2);
       });
     }
 
-    // Drag to orbit; tap without drag opens the node under the pointer.
-    var dragging = false, moved = false, lx = 0, ly = 0, downNode = null;
-    function ptHit(e) {
-      var rect = svg.getBoundingClientRect();
-      var mx = ((e.clientX - rect.left) / rect.width) * W;
-      var my = ((e.clientY - rect.top) / rect.height) * H;
+    function vb(clientX, clientY) {
+      var r = svg.getBoundingClientRect();
+      return { x: ((clientX - r.left) / r.width) * W, y: ((clientY - r.top) / r.height) * H, k: W / r.width };
+    }
+    function zoomAt(mx, my, factor) {
+      var nz = Math.max(0.45, Math.min(3.2, zoom * factor));
+      var f = nz / zoom;
+      panX = panX * f + (mx - cx) * (1 - f);
+      panY = panY * f + (my - cy) * (1 - f);
+      zoom = nz;
+      if (!running) render();
+    }
+    function ptHit(mx, my) {
       var best = null, bd = 1e9;
       nodes.forEach(function (n) {
         var d = Math.hypot(n._px - mx, n._py - my);
-        if (d < Math.max(11, n._pr + 5) && d < bd) { bd = d; best = n; }
+        if (d < Math.max(12, n._pr + 6) && d < bd) { bd = d; best = n; }
       });
       return best;
     }
+
+    var pointers = new Map();
+    var moved = false, lx = 0, ly = 0, downNode = null, pinchDist = 0, pinchMid = null;
+    function twoPointers() {
+      var a = [];
+      pointers.forEach(function (p) { a.push(p); });
+      return a;
+    }
     svg.addEventListener('pointerdown', function (e) {
-      dragging = true; moved = false; lx = e.clientX; ly = e.clientY; downNode = ptHit(e);
       svg.setPointerCapture(e.pointerId);
+      pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      if (pointers.size === 1) {
+        moved = false; lx = e.clientX; ly = e.clientY;
+        var v = vb(e.clientX, e.clientY); downNode = ptHit(v.x, v.y);
+      } else if (pointers.size === 2) {
+        var ps = twoPointers();
+        pinchDist = Math.hypot(ps[0].x - ps[1].x, ps[0].y - ps[1].y);
+        pinchMid = { x: (ps[0].x + ps[1].x) / 2, y: (ps[0].y + ps[1].y) / 2 };
+        downNode = null;
+      }
     });
     svg.addEventListener('pointermove', function (e) {
-      if (!dragging) return;
+      if (!pointers.has(e.pointerId)) return;
+      pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      if (pointers.size >= 2) {
+        var ps = twoPointers();
+        var dist = Math.hypot(ps[0].x - ps[1].x, ps[0].y - ps[1].y);
+        var mid = { x: (ps[0].x + ps[1].x) / 2, y: (ps[0].y + ps[1].y) / 2 };
+        var v = vb(mid.x, mid.y);
+        if (pinchDist) zoomAt(v.x, v.y, dist / pinchDist);
+        if (pinchMid) { var k = vb(0, 0).k; panX += (mid.x - pinchMid.x) * k; panY += (mid.y - pinchMid.y) * k; }
+        pinchDist = dist; pinchMid = mid; moved = true;
+        if (!running) render();
+        return;
+      }
       var dx = e.clientX - lx, dy = e.clientY - ly;
       if (Math.abs(dx) + Math.abs(dy) > 3) moved = true;
-      rotY += dx * 0.008;
-      rotX = Math.max(-1.2, Math.min(1.2, rotX + dy * 0.006));
       lx = e.clientX; ly = e.clientY;
-      if (!running) { render(); }
+      if (e.shiftKey) {
+        var k2 = vb(0, 0).k; panX += dx * k2; panY += dy * k2;
+      } else {
+        rotY += dx * 0.008;
+        rotX = Math.max(-1.2, Math.min(1.2, rotX + dy * 0.006));
+      }
+      if (!running) render();
     });
-    svg.addEventListener('pointerup', function (e) {
-      dragging = false;
-      if (!moved && downNode) location.href = downNode.id;
-      downNode = null;
-    });
+    function endPointer(e) {
+      if (!pointers.has(e.pointerId)) return;
+      var wasSingle = pointers.size === 1;
+      pointers.delete(e.pointerId);
+      if (pointers.size === 1) { var rp = twoPointers()[0]; lx = rp.x; ly = rp.y; pinchMid = null; pinchDist = 0; }
+      if (pointers.size === 0 && wasSingle && !moved && downNode) location.href = downNode.id;
+    }
+    svg.addEventListener('pointerup', endPointer);
+    svg.addEventListener('pointercancel', endPointer);
+    svg.addEventListener('wheel', function (e) {
+      e.preventDefault();
+      var v = vb(e.clientX, e.clientY);
+      zoomAt(v.x, v.y, Math.exp(-e.deltaY * 0.0015));
+    }, { passive: false });
+    svg.addEventListener('dblclick', function () { zoom = 1; panX = 0; panY = 0; if (!running) render(); });
 
-    // Run loop; pause when off-screen.
     var raf = null, running = false;
     function loop() {
       if (alpha > 0.03) { physics(); alpha *= 0.985; }
-      if (!dragging) rotY += AUTO;
+      if (pointers.size === 0) rotY += AUTO;
       render();
       raf = requestAnimationFrame(loop);
     }

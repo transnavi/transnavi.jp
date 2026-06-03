@@ -707,8 +707,14 @@ ul {
 }
 
 .lm-node circle {
-  stroke: rgba(0, 0, 0, 0.12);
-  stroke-width: 0.6;
+  stroke: rgba(0, 0, 0, 0.08);
+  stroke-width: 0.5;
+}
+
+.lm-shine {
+  fill: #fff;
+  opacity: 0.7;
+  pointer-events: none;
 }
 
 .lm-node:hover circle,
