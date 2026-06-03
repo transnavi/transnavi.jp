@@ -1,5 +1,5 @@
 ---
-title: "The Trevor Project — Gender Identity（英語）"
+title: "The Trevor Project: Gender Identity（英語）"
 description: "性自認や代名詞、カミングアウトを支える、LGBTQ 若者向けの英語の資料集です。"
 url: https://www.thetrevorproject.org/resources/category/gender-identity/
 language: en
