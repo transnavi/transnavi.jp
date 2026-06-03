@@ -676,37 +676,45 @@ ul {
   margin-top: 8px;
   border: 1px solid var(--line);
   border-radius: 20px;
-  background: var(--paper);
+  /* A soft radial backdrop adds depth behind the rotating cloud. */
+  background:
+    radial-gradient(circle at 50% 42%, var(--accent-soft), transparent 70%),
+    var(--paper);
   box-shadow: var(--shadow-soft);
   overflow: hidden;
   touch-action: none;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.link-map:active {
+  cursor: grabbing;
 }
 
 .link-map-svg {
   width: 100%;
   height: 100%;
   display: block;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .lm-edge {
   stroke: var(--line-strong);
-  stroke-width: 1.2;
-  opacity: 0.5;
-}
-
-.lm-node {
-  cursor: pointer;
+  stroke-width: 1.1;
 }
 
 .lm-node circle {
-  stroke: var(--paper-strong);
-  stroke-width: 2;
-  transition: r 100ms ease;
+  stroke: rgba(0, 0, 0, 0.12);
+  stroke-width: 0.6;
 }
 
 .lm-node:hover circle,
 .lm-node:focus circle {
   stroke: var(--ink-heading);
+  stroke-width: 1.6;
 }
 
 .lm-node:focus {
@@ -722,6 +730,9 @@ ul {
   stroke: var(--paper-strong);
   stroke-width: 3px;
   pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: opacity 180ms ease;
 }
 
 .link-map-legend {
