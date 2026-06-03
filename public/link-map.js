@@ -100,11 +100,11 @@
     terms.forEach(function (n) {
       var g = el('g', { class: 'lm-term-node', tabindex: '0', role: 'link', 'aria-label': n.label });
       n._r = 4;
-      var d = el('polygon', { points: '0,-4 4,0 0,4 -4,0', fill: 'url(#lmg-term)' });
+      var hit = el('circle', { class: 'lm-term-hit', r: 8 }); // bigger invisible hover/tap target
+      n._poly = el('polygon', { points: '0,-4 4,0 0,4 -4,0', fill: 'url(#lmg-term)' });
       n._t = el('text', { class: 'lm-term-label', x: 0, y: n._r + 8 });
       n._t.textContent = n.label;
-      var title = el('title', {}); title.textContent = n.label;
-      g.appendChild(d); g.appendChild(title); g.appendChild(n._t);
+      g.appendChild(hit); g.appendChild(n._poly); g.appendChild(n._t);
       gTerms.appendChild(g); n._g = g;
       g.addEventListener('keydown', function (e) { if (e.key === 'Enter') location.href = n.id; });
     });
@@ -187,9 +187,9 @@
           var p = project(n); P[n.id] = p;
           var op = 0.4 + 0.45 * (1 - Math.min(1, Math.max(0, (p.z + 230) / 460)));
           n._g.setAttribute('transform', 'translate(' + p.sx.toFixed(1) + ',' + p.sy.toFixed(1) + ') scale(' + p.s.toFixed(3) + ')');
-          n._g.style.opacity = op.toFixed(2);
-          // Only label the front-facing terms, so the cloud stays readable.
-          n._t.style.opacity = op > 0.74 ? '1' : '0';
+          // Fade the diamond by depth, but keep the group opaque so a hovered
+          // label is always crisp (labels show on hover only — see CSS).
+          n._poly.style.opacity = op.toFixed(2);
           n._px = p.sx; n._py = p.sy; n._pr = n._r * p.s;
         });
         termLinks.forEach(function (l, i) {
@@ -265,10 +265,16 @@
     var toggle = document.getElementById('link-map-terms');
     if (toggle) toggle.addEventListener('change', function () { setTerms(toggle.checked); });
 
+    // Pause the gentle auto-rotation while the pointer is over the map, so a
+    // node stays under the cursor long enough to hover, read or click it.
+    var hovering = false;
+    svg.addEventListener('pointerenter', function () { hovering = true; });
+    svg.addEventListener('pointerleave', function () { hovering = false; });
+
     var raf = null, running = false;
     function loop() {
       if (alpha > 0.03) { physics(); alpha *= 0.985; }
-      if (pointers.size === 0) rotY += AUTO;
+      if (pointers.size === 0 && !hovering) rotY += AUTO;
       render();
       raf = requestAnimationFrame(loop);
     }

@@ -742,18 +742,35 @@ ul {
   opacity: 0.25;
 }
 
+.lm-term-hit {
+  fill: transparent;
+  pointer-events: all;
+}
+
+/* Term labels appear only on hover/focus, so the cloud stays clean and it is
+   obvious which one you are pointing at. */
 .lm-term-label {
-  fill: var(--muted);
-  font-size: 7.5px;
-  font-weight: 600;
+  fill: var(--ink-heading);
+  font-size: 8px;
+  font-weight: 700;
   text-anchor: middle;
   paint-order: stroke;
   stroke: var(--paper-strong);
-  stroke-width: 2.4px;
+  stroke-width: 3px;
   pointer-events: none;
   user-select: none;
   -webkit-user-select: none;
-  transition: opacity 180ms ease;
+  opacity: 0;
+  transition: opacity 120ms ease;
+}
+
+.lm-term-node:hover .lm-term-label,
+.lm-term-node:focus .lm-term-label {
+  opacity: 1;
+}
+
+.lm-term-node:hover .lm-term-hit {
+  fill: var(--accent-soft);
 }
 
 .link-map-toggle {
