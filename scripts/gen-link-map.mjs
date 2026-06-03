@@ -12,6 +12,7 @@ const NODES = {
   '/basics/': { label: '基本のことば', group: 'start' },
   '/gender/': { label: '性別の多様性', group: 'start' },
   '/orientation/': { label: '性的指向', group: 'start' },
+  '/intersex/': { label: 'インターセックス', group: 'start' },
   '/dysphoria/': { label: '性別違和', group: 'start' },
   '/learn/': { label: '知る・学ぶ', group: 'start' },
   '/transition/': { label: '性別移行', group: 'medical' },

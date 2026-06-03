@@ -24,6 +24,7 @@ export const GET: APIRoute = async ({ site }) => {
     '/allies/',
     '/basics/',
     '/gender/',
+    '/intersex/',
     '/dysphoria/',
     '/transition/',
     '/detransition/',

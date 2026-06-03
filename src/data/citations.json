@@ -311,6 +311,50 @@
       "id": "apa-the-evidence-against"
     }
   ],
+  "/intersex/": [
+    {
+      "title": "Intersex",
+      "url": "https://my.clevelandclinic.org/health/articles/16324-intersex",
+      "publisher": "Cleveland Clinic（クリーブランド・クリニック）",
+      "lang": "en",
+      "id": "my-intersex"
+    },
+    {
+      "title": "性分化疾患（一般の皆様へ）",
+      "url": "https://jspe.umin.jp/public/seibunka.html",
+      "publisher": "日本小児内分泌学会",
+      "lang": "ja",
+      "id": "jspe"
+    },
+    {
+      "title": "性分化疾患｜一般の皆様へ",
+      "url": "https://www.j-endo.jp/modules/patient/index.php?content_id=85",
+      "publisher": "日本内分泌学会",
+      "lang": "ja",
+      "id": "j-endo"
+    },
+    {
+      "title": "DSDs：体の性の様々な発達（性分化疾患）とは？",
+      "url": "https://www.nexdsd.com/dsd",
+      "publisher": "ネクスDSDジャパン（日本性分化疾患患者家族会連絡会）",
+      "lang": "ja",
+      "id": "nexdsd-dsd"
+    },
+    {
+      "title": "Fact Sheet: Intersex",
+      "url": "https://www.ohchr.org/sites/default/files/Documents/Issues/Discrimination/LGBT/FactSheets/UNFE_FactSheet_Intersex_EN.pdf",
+      "publisher": "国連人権高等弁務官事務所（OHCHR）／UN Free & Equal",
+      "lang": "en",
+      "id": "ohchr-fact-sheet-intersex"
+    },
+    {
+      "title": "What's the difference between being transgender or transsexual and having an intersex condition?",
+      "url": "https://isna.org/faq/transgender/",
+      "publisher": "Intersex Society of North America（北米インターセックス協会, ISNA）",
+      "lang": "en",
+      "id": "isna-what-s-the"
+    }
+  ],
   "/basics/": [
     {
       "title": "Understanding transgender people, gender identity and gender expression",

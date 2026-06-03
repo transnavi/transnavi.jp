@@ -31,6 +31,7 @@ const P: Record<string, Link> = {
   legal: { href: '/legal-change/', label: '戸籍と名前の変更' },
   clinics: { href: '/clinics/', label: '医療機関を探す' },
   start: { href: '/start/', label: 'はじめての方へ' },
+  intersex: { href: '/intersex/', label: 'インターセックス・性分化疾患（DSD）のこと' },
 };
 const termPages: Record<string, Link[]> = {
   'transgender': [P.basics], 'cisgender': [P.basics],
@@ -43,6 +44,7 @@ const termPages: Record<string, Link[]> = {
   'gaht': [P.hrt, P.meds], 'diy-hrt': [P.meds], 'puberty-blocker': [P.blockers],
   'coming-out': [P.comingout], 'force-outing': [P.comingout, P.safety],
   'passing': [P.presentation], 'rle': [P.presentation],
+  'intersex': [P.intersex, P.gender],
 };
 const knowledgePages: Record<string, Link> = {
   'ホルモン療法': P.hrt, '検査': P.hrt, '医療': P.transition,

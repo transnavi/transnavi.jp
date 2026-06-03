@@ -5,15 +5,19 @@
   },
   "/basics/": {
     "created": "2026-06-02",
-    "updated": "2026-06-03"
+    "updated": "2026-06-04"
   },
   "/gender/": {
     "created": "2026-06-02",
-    "updated": "2026-06-03"
+    "updated": "2026-06-04"
   },
   "/orientation/": {
     "created": "2026-06-02",
     "updated": "2026-06-03"
+  },
+  "/intersex/": {
+    "created": "2026-06-04",
+    "updated": "2026-06-04"
   },
   "/dysphoria/": {
     "created": "2026-06-02",
@@ -81,7 +85,7 @@
   },
   "/detransition/": {
     "created": "2026-06-03",
-    "updated": "2026-06-03"
+    "updated": "2026-06-04"
   },
   "/about/": {
     "created": "2026-06-02",
