@@ -19,7 +19,8 @@
     "import:mtf-clinics": "node scripts/import-mtf-clinics.mjs",
     "import:mtf-content": "node scripts/import-mtf-ja-content.mjs",
     "import:terminology": "node scripts/import-terminology.mjs",
-    "import:mtf": "npm run import:mtf-clinics && npm run import:mtf-content && npm run import:terminology"
+    "import:mtf": "npm run import:mtf-clinics && npm run import:mtf-content && npm run import:terminology",
+    "coverage": "node scripts/citation-coverage.mjs"
   },
   "dependencies": {
     "astro": "^5",
