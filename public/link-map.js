@@ -101,8 +101,10 @@
       var g = el('g', { class: 'lm-term-node', tabindex: '0', role: 'link', 'aria-label': n.label });
       n._r = 4;
       var d = el('polygon', { points: '0,-4 4,0 0,4 -4,0', fill: 'url(#lmg-term)' });
+      n._t = el('text', { class: 'lm-term-label', x: 0, y: n._r + 8 });
+      n._t.textContent = n.label;
       var title = el('title', {}); title.textContent = n.label;
-      g.appendChild(d); g.appendChild(title);
+      g.appendChild(d); g.appendChild(title); g.appendChild(n._t);
       gTerms.appendChild(g); n._g = g;
       g.addEventListener('keydown', function (e) { if (e.key === 'Enter') location.href = n.id; });
     });
@@ -186,6 +188,8 @@
           var op = 0.4 + 0.45 * (1 - Math.min(1, Math.max(0, (p.z + 230) / 460)));
           n._g.setAttribute('transform', 'translate(' + p.sx.toFixed(1) + ',' + p.sy.toFixed(1) + ') scale(' + p.s.toFixed(3) + ')');
           n._g.style.opacity = op.toFixed(2);
+          // Only label the front-facing terms, so the cloud stays readable.
+          n._t.style.opacity = op > 0.74 ? '1' : '0';
           n._px = p.sx; n._py = p.sy; n._pr = n._r * p.s;
         });
         termLinks.forEach(function (l, i) {

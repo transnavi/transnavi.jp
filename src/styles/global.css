@@ -742,6 +742,20 @@ ul {
   opacity: 0.25;
 }
 
+.lm-term-label {
+  fill: var(--muted);
+  font-size: 7.5px;
+  font-weight: 600;
+  text-anchor: middle;
+  paint-order: stroke;
+  stroke: var(--paper-strong);
+  stroke-width: 2.4px;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: opacity 180ms ease;
+}
+
 .link-map-toggle {
   display: inline-flex;
   align-items: center;
