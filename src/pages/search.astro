@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Popular starting points, shown as tappable chips.
+const examples = ['ホルモン療法', '性別違和', '相談', 'カミングアウト', '改名 戸籍', 'SRS', '声', '脱毛', '思春期ブロッカー'];
+---
+
+<BaseLayout
+  title="サイト内検索 - とらんすナビ"
+  description="とらんすナビのページ、用語、医療機関、文芸作品、リンクをまとめて検索できます。ひらがな・カタカナや少しのゆらぎ、似たことばにも対応しています。"
+>
+  <article class="article-shell">
+    <div class="eyebrow">サイト内検索</div>
+    <h1>サイト内を検索</h1>
+    <p class="lead">
+      ページ、用語集、医療機関、文芸作品、リンクをまとめて探せます。ひらがな・カタカナの違いや、少しの打ちまちがい、似たことばにもなるべく対応します。
+    </p>
+
+    <form class="index-search search-box" role="search" action="/search/" method="get" onsubmit="return false">
+      <label for="search-input">検索</label>
+      <input
+        id="search-input"
+        name="q"
+        type="search"
+        autocomplete="off"
+        autocapitalize="off"
+        spellcheck="false"
+        placeholder="例: ホルモン療法、性別違和、相談、改名"
+        aria-describedby="search-status"
+      />
+      <p class="search-hint">キーワードを入力すると、入力に合わせて結果が出ます。スペースで区切ると複数のことばで絞り込めます。</p>
+      <div class="filter-tag-chips" aria-label="よく使う検索">
+        {examples.map((ex) => (
+          <button type="button" class="filter-tag-chip" data-search-example={ex}>{ex}</button>
+        ))}
+      </div>
+    </form>
+
+    <p id="search-status" class="search-status" role="status" aria-live="polite"></p>
+    <div id="search-results" class="search-results"></div>
+
+    <noscript>
+      <p class="resource-section-intro">検索には JavaScript が必要です。<a href="/sitemap/">サイトマップ</a>からも、すべてのページをたどれます。</p>
+    </noscript>
+
+    <p class="source-note">
+      探しているものが見つからないときは、<a href="/sitemap/">サイトマップ</a>や<a href="/glossary/">用語集</a>、<a href="/clinics/">医療機関</a>、<a href="/resources/">リンク</a>もどうぞ。
+    </p>
+  </article>
+
+  <script is:inline>
+    // Tappable example chips fill the search box.
+    document.addEventListener('click', (e) => {
+      const chip = e.target.closest('[data-search-example]');
+      if (!chip) return;
+      const input = document.getElementById('search-input');
+      input.value = chip.dataset.searchExample;
+      input.dispatchEvent(new Event('input', { bubbles: true }));
+      input.focus();
+    });
+  </script>
+  <script is:inline src="/search.js" defer></script>
+</BaseLayout>

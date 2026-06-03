@@ -184,3 +184,17 @@ test('旧 /articles/ の URL は移行先へ誘導する', async ({ page }) => {
   await expectRedirect('/articles/editorial-policy/', /\/about/);
   await expectRedirect('/articles/international-resources/', /\/resources/);
 });
+
+test('サイト内検索がひらがな入力でカタカナの内容にヒットする', async ({ page }) => {
+  // ?q= で初期化され、ひらがな「ほるもん」がカタカナ「ホルモン」のページに当たる
+  // （カナ正規化＋あいまい一致が効いていること）。
+  await page.goto('/search/?q=ほるもん');
+  const results = page.locator('#search-results');
+  await expect(results.locator('.search-result').first()).toBeVisible();
+  await expect(results).toContainText('ホルモン療法');
+
+  // ヘッダーの検索フォームはどのページにも出ている（モバイルではアイコンのみ）。
+  await page.goto('/basics/');
+  await expect(page.locator('.header-search')).toBeVisible();
+  await expect(page.locator('.header-search')).toHaveAttribute('action', '/search/');
+});

@@ -110,13 +110,21 @@ const breadcrumbLd = showBreadcrumb
   </head>
   <body>
     <header class="site-header" id="top">
-      <a class="brand" href="/" aria-label="とらんすナビ ホーム">
-        <img class="brand-mark" src="/favicon.svg" alt="" width="44" height="44" />
-        <span>
-          <span class="brand-name">とらんすナビ</span>
-          <span class="brand-subtitle">{subtitle}</span>
-        </span>
-      </a>
+      <div class="header-top">
+        <a class="brand" href="/" aria-label="とらんすナビ ホーム">
+          <img class="brand-mark" src="/favicon.svg" alt="" width="44" height="44" />
+          <span>
+            <span class="brand-name">とらんすナビ</span>
+            <span class="brand-subtitle">{subtitle}</span>
+          </span>
+        </a>
+        <form class="header-search" role="search" action="/search/" method="get">
+          <input type="search" name="q" aria-label="サイト内を検索" placeholder="検索…" autocomplete="off" />
+          <button type="submit" aria-label="検索する">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m21 21-4.3-4.3" /></svg>
+          </button>
+        </form>
+      </div>
       {pathname !== '/' && (
         <nav class="site-nav" aria-label="主要なページ">
           <a href="/start/">はじめての方へ</a>
@@ -186,6 +194,7 @@ const breadcrumbLd = showBreadcrumb
             <a href="/edit/">情報を送る</a>
             <a href="/about/">このサイトについて</a>
             <a href="/data/">データの引用・二次利用</a>
+            <a href="/search/">サイト内検索</a>
             <a href="/sitemap/">サイトマップ</a>
             <a href="/legal/">掲載について</a>
           </div>

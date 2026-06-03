@@ -141,6 +141,7 @@ main {
   letter-spacing: -0.03em;
   line-height: 1.15;
   color: #2b90e7;
+  white-space: nowrap;
 }
 
 .brand-subtitle,
@@ -189,6 +190,163 @@ main {
 .site-nav a:hover {
   border-color: var(--line-hover);
   background: rgba(255, 245, 250, 0.98);
+}
+
+/* Header: brand on the left, a compact always-visible search box on the right. */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 1;
+  min-width: 0;
+  padding: 3px 4px 3px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper-strong);
+  box-shadow: var(--shadow-soft);
+}
+
+.header-search input {
+  width: 150px;
+  max-width: 40vw;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.95rem;
+}
+
+.header-search input:focus {
+  outline: none;
+}
+
+.header-search input::placeholder {
+  color: var(--muted);
+}
+
+.header-search button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+  transition: background 120ms ease;
+}
+
+.header-search button:hover {
+  background: var(--accent-soft);
+}
+
+.header-search svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* --- Site search page (/search/) --- */
+.search-box .search-hint {
+  margin: 8px 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.search-status {
+  margin: 18px 0 6px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.search-results {
+  display: grid;
+  gap: 12px;
+}
+
+.search-result {
+  display: grid;
+  gap: 4px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--paper);
+  box-shadow: var(--shadow-soft);
+  text-decoration: none;
+  color: var(--ink);
+  transition: transform 120ms ease, border-color 120ms ease;
+}
+
+.search-result:hover {
+  transform: translateY(-2px);
+  border-color: var(--line-hover);
+}
+
+.search-result-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.search-result-kind {
+  flex-shrink: 0;
+  padding: 1px 9px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-strong, var(--ink-heading));
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.search-result-title {
+  color: var(--ink-heading);
+  font-weight: 700;
+}
+
+.search-result-snip {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.search-result-snip mark {
+  background: var(--accent-soft);
+  color: var(--ink-heading);
+  border-radius: 4px;
+  padding: 0 2px;
+}
+
+/* On phones the brand is large, so collapse the header search to a tidy icon
+   button that taps through to /search/ (which auto-focuses its own input). */
+@media (max-width: 600px) {
+  .header-search {
+    padding: 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+  }
+  .header-search input {
+    display: none;
+  }
+  .header-search button {
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--line);
+    background: var(--paper-strong);
+    box-shadow: var(--shadow-soft);
+  }
 }
 
 main {
