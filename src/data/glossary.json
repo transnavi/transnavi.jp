@@ -3064,5 +3064,24 @@
       "en": "https://en.wikipedia.org/wiki/Phalloplasty",
       "es": "https://es.wikipedia.org/wiki/Faloplastia"
     }
+  },
+  {
+    "id": "sogi",
+    "term": "SOGI",
+    "category": "性同一性・属性",
+    "translations": {
+      "en": "SOGI",
+      "zhHans": "性倾向与性别认同",
+      "zhHant": "性傾向與性別認同"
+    },
+    "aliases": [
+      "ソジ",
+      "性的指向・性自認",
+      "性的指向と性自認"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "source": "Sexual orientation and gender identity",
+    "notes": "Sexual Orientation and Gender Identity（性的指向と性自認）の頭文字。LGBTのように特定の少数者を指すのではなく、すべての人がもつ属性として性のあり方をとらえる言い方。性表現（Gender Expression）を加えて SOGIE と書くこともある。"
   }
 ]
