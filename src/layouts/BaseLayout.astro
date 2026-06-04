@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import pageDates from '../data/page-dates.json';
+import { ogCardFor } from '../data/og-routes.mjs';
 
 interface Props {
   title?: string;
@@ -14,12 +15,10 @@ const {
   description = 'トランスジェンダー、ノンバイナリー、Xジェンダー、ジェンダーを探索中の人のための医療・制度・生活・地域情報。',
 } = Astro.props;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
-// Per-page Open Graph card (generated in postbuild by gen-og-images.mjs for
-// every page-dates route + home); pages without one fall back to /og-image.png.
-const ogPath = Astro.url.pathname;
-const ogHasCard = ogPath === '/' || Object.prototype.hasOwnProperty.call(pageDates, ogPath);
-const ogSlug = ogPath === '/' ? 'home' : ogPath.replace(/^\/|\/$/g, '').replace(/\//g, '-');
-const ogImage = new URL(ogHasCard ? `/og/${ogSlug}.png` : '/og-image.png', Astro.site).toString();
+// Per-page Open Graph card (generated in postbuild by gen-og-images.mjs). The
+// homepage and any unmapped route keep the hand-made /og-image.png.
+const ogCard = ogCardFor(Astro.url.pathname);
+const ogImage = new URL(ogCard ? `/og/${ogCard.slug}.png` : '/og-image.png', Astro.site).toString();
 const siteUrl = Astro.site?.toString() ?? 'https://transnavi.jp/';
 
 const structuredData = {
