@@ -68,10 +68,27 @@ function rubyToken(surface, readingKata) {
   return esc(prefix) + `<ruby>${esc(s)}<rt aria-hidden="true">${esc(r)}</rt></ruby>` + esc(suffix);
 }
 
-const cache = new Map();
-function furigana(text) {
-  if (!isKanji(text)) return null;
-  if (cache.has(text)) return cache.get(text);
+// Curated meaning-glosses: hard katakana/loanwords whose ruby should be a plain
+// Japanese hint of the *meaning* (e.g. サイトマップ → すべてを見る), not a phonetic
+// reading. Edited in scripts/furigana-glosses.json; keys starting with _ are
+// ignored (comments). Matched longest-first so e.g. a longer term wins over a
+// prefix of it.
+const GLOSSES = (() => {
+  try {
+    const raw = JSON.parse(fs.readFileSync('scripts/furigana-glosses.json', 'utf8'));
+    return Object.fromEntries(Object.entries(raw).filter(([k]) => !k.startsWith('_')));
+  } catch { return {}; }
+})();
+const glossKeys = Object.keys(GLOSSES).sort((a, b) => b.length - a.length);
+const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const glossRe = glossKeys.length ? new RegExp(glossKeys.map(escapeRe).join('|'), 'g') : null;
+const hasGloss = (t) => glossKeys.some((k) => t.includes(k));
+function glossRuby(term) {
+  return `<ruby>${esc(term)}<rt aria-hidden="true">${esc(GLOSSES[term])}</rt></ruby>`;
+}
+
+// Ruby-wrap the kanji runs in a plain segment (one that holds no curated term).
+function kanjiRuby(text) {
   let out = '';
   let changed = false;
   for (const tk of tokenizer.tokenize(text)) {
@@ -80,6 +97,30 @@ function furigana(text) {
     if (piece.includes('<ruby>')) changed = true;
     out += piece;
   }
+  return { out, changed };
+}
+
+const cache = new Map();
+function furigana(text) {
+  if (cache.has(text)) return cache.get(text);
+  // Nothing to do unless the text has kanji to read or a curated term to gloss.
+  if (!isKanji(text) && !(glossRe && hasGloss(text))) { cache.set(text, null); return null; }
+  let out = '';
+  let changed = false;
+  let last = 0;
+  if (glossRe) {
+    glossRe.lastIndex = 0;
+    let m;
+    while ((m = glossRe.exec(text)) !== null) {
+      const seg = text.slice(last, m.index);
+      if (seg) { const r = kanjiRuby(seg); out += r.out; changed = changed || r.changed; }
+      out += glossRuby(m[0]);
+      changed = true;
+      last = m.index + m[0].length;
+    }
+  }
+  const tail = text.slice(last);
+  if (tail) { const r = kanjiRuby(tail); out += r.out; changed = changed || r.changed; }
   const result = changed ? out : null;
   cache.set(text, result);
   return result;
