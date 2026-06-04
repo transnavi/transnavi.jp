@@ -40,7 +40,10 @@ test.describe('レイアウトの一貫性', () => {
   for (const path of contentPages) {
     test(`${path} のメインカードはフッターと同じ幅・左端`, async ({ page }) => {
       await page.goto(path);
-      const card = page.locator('main > .article-shell, main > .intro').first();
+      // .main-body wraps the content (and, on wide screens, the TOC sidebar); it
+      // is the full-width block that should line up with the footer. The visible
+      // .article-shell lives inside it.
+      const card = page.locator('main > .main-body').first();
       const footer = page.locator('.site-footer');
       const c = await card.boundingBox();
       const f = await footer.boundingBox();

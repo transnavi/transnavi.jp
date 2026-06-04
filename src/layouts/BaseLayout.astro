@@ -249,13 +249,21 @@ const pageLd = pageDate
           <span aria-current="page">{pageName}</span>
         </nav>
       )}
-      <slot />
-      {pageDate && (
-        <p class="page-updated">
-          このページは <time datetime={pageDate.updated}>{pageDate.updated}</time> に更新しました（{pageDate.created} 公開）。情報は変わることがあります。とくに医療・制度・費用は、最新の内容を各機関の公式情報でご確認ください。
-        </p>
-      )}
-      {showBreadcrumb && <a class="back-top" href="#top">↑ ページの先頭へ</a>}
+      <div class="main-body">
+        {/* Filled client-side from the article's <h2> headings (page-toc.js).
+            Hidden until then; becomes a sticky sidebar on wide screens and a
+            collapsible 目次 box on small ones. */}
+        <nav id="page-toc" class="page-toc" aria-label="目次" hidden></nav>
+        <div class="main-col">
+          <slot />
+          {pageDate && (
+            <p class="page-updated">
+              このページは <time datetime={pageDate.updated}>{pageDate.updated}</time> に更新しました（{pageDate.created} 公開）。情報は変わることがあります。とくに医療・制度・費用は、最新の内容を各機関の公式情報でご確認ください。
+            </p>
+          )}
+          {showBreadcrumb && <a class="back-top" href="#top">↑ ページの先頭へ</a>}
+        </div>
+      </div>
     </main>
     <footer class="site-footer">
       <div class="footer-main">
@@ -310,6 +318,7 @@ const pageLd = pageDate
       </div>
     </footer>
     <script is:inline src="/event-banner.js" defer></script>
+    <script is:inline src="/page-toc.js" defer></script>
     <script is:inline>
       (function () {
         var el = document.documentElement;
