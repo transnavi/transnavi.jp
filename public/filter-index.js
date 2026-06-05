@@ -1,9 +1,43 @@
-const normalize = (value) => value.normalize('NFKC').toLocaleLowerCase('ja-JP');
+// Japanese-aware normaliser for the list filters (glossary / clinics / works /
+// resources): NFKC + lowercase + katakana->hiragana + strip long-vowel marks,
+// middle dots, punctuation and spaces — so 「ジェンダー」「ｼﾞｪﾝﾀﾞｰ」「じぇんだー」
+// and an alias typed any of those ways all match. Mirrors public/search.js.
+const norm = (value) => {
+  if (!value) return '';
+  let s = value.normalize('NFKC').toLowerCase();
+  s = s.replace(/[ァ-ヶ]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0x60));
+  s = s.replace(/[ー゛゜・･\s　.,、。!?！？"'「」『』（）()\[\]【】〜~_\-/]/g, '');
+  return s;
+};
+
+const bigrams = (s) => {
+  if (!s) return [];
+  if (s.length < 2) return [s];
+  const out = [];
+  for (let i = 0; i < s.length - 1; i++) out.push(s.slice(i, i + 2));
+  return out;
+};
+
+// Coverage = share of the query's bigrams found in the item's text. Independent
+// of item length (unlike Dice), so it survives a typo or a missing char without
+// over-matching. Used only as a fallback when the substring match misses.
+const coverage = (queryGrams, itemGramSet) => {
+  if (!queryGrams.length || !itemGramSet.size) return 0;
+  let hit = 0;
+  for (const g of queryGrams) if (itemGramSet.has(g)) hit++;
+  return hit / queryGrams.length;
+};
 
 for (const form of document.querySelectorAll('[data-filter-form]')) {
   const input = form.querySelector('[data-filter-input]');
   const root = form.closest('article') ?? document;
-  const items = [...root.querySelectorAll('[data-filter-item]')];
+  // Opt-in fuzzy (typo-tolerant) matching — only forms that ask for it, so the
+  // clinic/works exact-narrowing behaviour (and its tests) stay strict.
+  const fuzzy = form.hasAttribute('data-filter-fuzzy');
+  const items = [...root.querySelectorAll('[data-filter-item]')].map((el) => {
+    const hay = norm(el.dataset.search ?? el.textContent ?? '');
+    return { el, hay, grams: fuzzy ? new Set(bigrams(hay)) : null };
+  });
   const groups = [...root.querySelectorAll('[data-filter-group]')];
   const count = root.querySelector('[data-filter-count]');
   const empty = root.querySelector('[data-filter-empty]');
@@ -22,20 +56,21 @@ for (const form of document.querySelectorAll('[data-filter-form]')) {
   });
 
   const update = () => {
-    const query = normalize(input.value.trim());
+    const query = norm(input.value.trim());
+    const queryGrams = fuzzy && query.length >= 4 ? bigrams(query) : null;
     let visible = 0;
 
     for (const item of items) {
-      const haystack = normalize(item.dataset.search ?? item.textContent ?? '');
-      const matchesQuery = query === '' || haystack.includes(query);
+      let matchesQuery = query === '' || item.hay.includes(query);
+      if (!matchesQuery && queryGrams) matchesQuery = coverage(queryGrams, item.grams) >= 0.75;
       const matchesDims = dims.every((dim) => {
         if (dim.active === '') return true;
-        const values = (item.dataset[dim.key] ?? '').split(',').filter(Boolean);
+        const values = (item.el.dataset[dim.key] ?? '').split(',').filter(Boolean);
         return values.includes(dim.active);
       });
       const matches = matchesQuery && matchesDims;
 
-      item.hidden = !matches;
+      item.el.hidden = !matches;
       if (matches) visible += 1;
     }
 
