@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import glossaryData from '../../data/glossary.json';
+import pageTags from '../../data/page-tags.json';
+import { TAGS, FACETS } from '../../data/tag-taxonomy';
+import type { GlossaryEntry } from '../../types/glossary';
+
+const entries = glossaryData as GlossaryEntry[];
+const pt = pageTags as Record<string, { title: string; tags: string[] }>;
+const countOf = (label: string) =>
+  entries.filter((e) => (e.tags ?? []).includes(label)).length +
+  Object.values(pt).filter((v) => v.tags.includes(label)).length;
+---
+
+<BaseLayout
+  title="タグの地図 - とらんすナビ"
+  description="用語集の言葉とサイトのページのタグを、話題・対象・言葉の種類で整理したタグの地図（多分木）。"
+>
+  <article class="article-shell">
+    <div class="eyebrow">タグ</div>
+    <h1>タグの地図</h1>
+    <p class="lead">
+      用語集の言葉とサイトのページには、いくつかの観点からタグをつけています。下の木をたどると、同じタグがついた用語やページをまとめて見られます。タグは複数の枝にまたがることもあります。
+    </p>
+
+    <div class="tag-tree">
+      {FACETS.map((facet) => (
+        <section class="tag-facet" aria-labelledby={`facet-${facet.key}`}>
+          <h2 id={`facet-${facet.key}`} class="tag-facet-label">{facet.label}</h2>
+          <p class="tag-facet-desc">{facet.desc}</p>
+          <div class="tag-branches">
+            {facet.branches.map((branch) => (
+              <div class="tag-branch">
+                {facet.branches.length > 1 && <span class="tag-branch-label">{branch.label}</span>}
+                <div class="tag-cloud">
+                  {branch.tags.map((t) => TAGS[t] && (
+                    <a class="tag-node" href={`/tags/${TAGS[t].slug}/`}>
+                      <span class="tag-node-label">{t}</span>
+                      <span class="tag-node-count">{countOf(t)}</span>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  </article>
+</BaseLayout>

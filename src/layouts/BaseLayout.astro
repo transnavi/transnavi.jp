@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css';
 import pageDates from '../data/page-dates.json';
+import pageTags from '../data/page-tags.json';
+import { tagSlug } from '../data/tag-taxonomy';
 import { ogCardFor } from '../data/og-routes.mjs';
 
 interface Props {
@@ -46,6 +48,9 @@ const structuredData = {
 // Breadcrumbs (auto-derived from the path; no per-page props needed).
 const pathname = Astro.url.pathname;
 const pageDate = (pageDates as Record<string, { created: string; updated: string }>)[pathname];
+// Tags for this page (content pages only; src/data/page-tags.json), shown as a
+// row of chips linking to /tags/<slug>/ so pages join the site-wide tag system.
+const currentTags = (pageTags as Record<string, { title: string; tags: string[] }>)[pathname]?.tags ?? [];
 const pageName = title.split(' - ')[0].trim();
 const learnPages = new Set([
   '/basics/', '/gender/', '/orientation/', '/intersex/', '/dysphoria/', '/transition/', '/hrt-effects/', '/hrt-medications/', '/fertility/',
@@ -256,6 +261,14 @@ const pageLd = pageDate
         <nav id="page-toc" class="page-toc" aria-label="目次" hidden></nav>
         <div class="main-col">
           <slot />
+          {currentTags.length > 0 && (
+            <nav class="page-tags" aria-label="このページのタグ">
+              <span class="page-tags-label">タグ</span>
+              {currentTags.map((t) => tagSlug(t) && (
+                <a class="page-tag" href={`/tags/${tagSlug(t)}/`}>{t}</a>
+              ))}
+            </nav>
+          )}
           {pageDate && (
             <p class="page-updated">
               このページは <time datetime={pageDate.updated}>{pageDate.updated}</time> に更新しました（{pageDate.created} 公開）。情報は変わることがあります。とくに医療・制度・費用は、最新の内容を各機関の公式情報でご確認ください。
@@ -303,6 +316,7 @@ const pageLd = pageDate
             <a href="/hrt-effects/">ホルモン療法で起きること</a>
             <a href="/presentation/">見た目と、毎日のこと</a>
             <a href="/glossary/">用語集</a>
+            <a href="/tags/">タグの地図</a>
             <a href="/flags/">プライドフラッグ</a>
             <a href="/pride/">記念日・イベント</a>
             <a href="/resources/">リンク</a>

@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import glossaryData from '../../data/glossary.json';
+import { tagSlug } from '../../data/tag-taxonomy';
 import type { GlossaryEntry } from '../../types/glossary';
 
 export function getStaticPaths() {
@@ -134,7 +135,7 @@ const termLd = {
     {entry.tags && entry.tags.length > 0 && (
       <ul class="glossary-tags" aria-label="タグ">
         {entry.tags.map((t) => (
-          <li><a class="glossary-tag" href={`/glossary/?q=${encodeURIComponent(t)}`}>{t}</a></li>
+          <li><a class="glossary-tag" href={tagSlug(t) ? `/tags/${tagSlug(t)}/` : `/glossary/?q=${encodeURIComponent(t)}`}>{t}</a></li>
         ))}
       </ul>
     )}

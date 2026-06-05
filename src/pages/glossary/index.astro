@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Mascot from '../../components/Mascot.astro';
 import glossaryData from '../../data/glossary.json';
 import glossaryReadings from '../../data/glossary-readings.json';
+import { tagSlug } from '../../data/tag-taxonomy';
 import type { GlossaryEntry } from '../../types/glossary';
 
 const entries = glossaryData as GlossaryEntry[];
@@ -96,15 +97,14 @@ const aliasPreview = (entry: GlossaryEntry) => {
         <p class="resource-section-intro">{section.desc}</p>
         <div class="glossary-list">
           {section.items.map((entry) => (
-            <a
+            <div
               class="glossary-card"
-              href={`/glossary/${entry.id}/`}
               data-filter-item
               data-categories={entry.category}
               data-search={[entry.term, entry.abbr, entry.category, ...(entry.tags ?? []), entry.translations.en, ...entry.aliases, readings[entry.id]].filter(Boolean).join(' ')}
             >
               <span class="glossary-card-head">
-                <span class="clinic-name">{entry.term}{entry.abbr ? `（${entry.abbr}）` : ''}</span>
+                <a class="clinic-name glossary-card-link" href={`/glossary/${entry.id}/`}>{entry.term}{entry.abbr ? `（${entry.abbr}）` : ''}</a>
                 {entry.translations.en && <span class="glossary-en" lang="en">{entry.translations.en}</span>}
               </span>
               {entry.notes && <span class="glossary-meaning">{meaningOf(entry)}</span>}
@@ -113,11 +113,15 @@ const aliasPreview = (entry: GlossaryEntry) => {
               )}
               {entry.tags && entry.tags.length > 0 && (
                 <span class="glossary-card-tags">
-                  {entry.tags.map((t) => <span class="glossary-card-tag">{t}</span>)}
+                  {entry.tags.map((t) => (
+                    tagSlug(t)
+                      ? <a class="glossary-card-tag" href={`/tags/${tagSlug(t)}/`}>{t}</a>
+                      : <span class="glossary-card-tag">{t}</span>
+                  ))}
                 </span>
               )}
               <span class="glossary-match-hint" data-filter-hint hidden></span>
-            </a>
+            </div>
           ))}
         </div>
       </details>

@@ -91,14 +91,14 @@ a:hover {
 
 /* Glossary/term links read like dictionary terms: a distinct purple with a
    dotted underline, so they're visibly different from ordinary links. */
-.article-shell a[href^='/glossary/']:not(.hero-button):not(.word-chip):not(.glossary-tag),
-.intro a[href^='/glossary/']:not(.hero-button):not(.word-chip):not(.glossary-tag) {
+.article-shell a[href^='/glossary/']:not(.hero-button):not(.word-chip):not(.glossary-tag):not(.glossary-card-link),
+.intro a[href^='/glossary/']:not(.hero-button):not(.word-chip):not(.glossary-tag):not(.glossary-card-link) {
   color: var(--accent-term);
   text-decoration-style: dotted;
 }
 
-.article-shell a[href^='/glossary/']:not(.hero-button):not(.word-chip):not(.glossary-tag):hover,
-.intro a[href^='/glossary/']:not(.hero-button):not(.word-chip):not(.glossary-tag):hover {
+.article-shell a[href^='/glossary/']:not(.hero-button):not(.word-chip):not(.glossary-tag):not(.glossary-card-link):hover,
+.intro a[href^='/glossary/']:not(.hero-button):not(.word-chip):not(.glossary-tag):not(.glossary-card-link):hover {
   color: var(--accent-strong);
 }
 
@@ -1845,6 +1845,8 @@ ul {
 }
 
 .glossary-card-tag {
+  position: relative; /* sit above the card's stretched link so it's clickable */
+  z-index: 1;
   padding: 0 8px;
   border-radius: 999px;
   border: 1px solid var(--line);
@@ -1853,6 +1855,154 @@ ul {
   font-size: 0.66rem;
   line-height: 1.7;
   white-space: nowrap;
+  text-decoration: none;
+}
+
+a.glossary-card-tag:hover {
+  border-color: var(--line-hover);
+  color: var(--ink-heading);
+}
+
+/* Stretched-link card: the whole card is clickable via the term-name link's
+   ::after overlay, while the tag chips above (z-index) stay independently
+   clickable. Lets the card be a link AND hold real tag links. */
+.glossary-card {
+  position: relative;
+}
+
+.glossary-card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.glossary-card-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.glossary-card-link:hover {
+  color: var(--ink-heading);
+}
+
+/* Tag map (/tags/): a drawn taxonomy — facet cards, each branching (left rule)
+   into tag-node chips that carry an item count and link to /tags/<slug>/. */
+.tag-tree {
+  display: grid;
+  gap: 20px;
+  margin-top: 8px;
+}
+
+.tag-facet {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--paper);
+  padding: 18px 20px;
+}
+
+.tag-facet-label {
+  margin: 0;
+}
+
+.tag-facet-desc {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 4px 0 14px;
+}
+
+.tag-branches {
+  display: grid;
+  gap: 14px;
+}
+
+.tag-branch {
+  border-left: 3px solid var(--line);
+  padding-left: 14px;
+}
+
+.tag-branch-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-node {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 13px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--accent-soft);
+  color: var(--ink-heading);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.86rem;
+}
+
+.tag-node:hover {
+  border-color: var(--line-hover);
+}
+
+.tag-node-count {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--muted);
+  background: var(--paper-strong);
+  border-radius: 999px;
+  padding: 0 7px;
+}
+
+.tag-page-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.tag-page-list a {
+  font-weight: 600;
+}
+
+/* Tag chips at the bottom of a content page (BaseLayout), linking into /tags/. */
+.page-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 28px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--line);
+}
+
+.page-tags-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.page-tag {
+  padding: 2px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--accent-soft);
+  color: var(--ink-heading);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.page-tag:hover {
+  border-color: var(--line-hover);
 }
 
 .glossary-match-hint[hidden] {
