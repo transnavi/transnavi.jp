@@ -382,7 +382,8 @@
     ],
     "avoid": [],
     "disputed": [],
-    "source": "Standards of Care"
+    "source": "Standards of Care",
+    "notes": "トランスジェンダーの人へのケアの、国際的なよりどころとなる指針。WPATH（世界トランスジェンダー・ヘルス専門家協会）が定める「SOC（Standards of Care）」が代表的で、ホルモン療法や手術の進め方の参考にされる。"
   },
   {
     "id": "gatekeeping",
@@ -1104,7 +1105,8 @@
       "es": "https://es.wikipedia.org/wiki/Bicalutamida",
       "zhHans": "https://zh.wikipedia.org/zh-hans/比卡魯胺",
       "zhHant": "https://zh.wikipedia.org/zh-hant/比卡魯胺"
-    }
+    },
+    "notes": "前立腺がんなどに使われる抗アンドロゲン薬の一つ。男性ホルモン（テストステロン）のはたらきを抑える目的で、女性化ホルモン療法に用いられることがある。肝機能への影響に注意が必要。"
   },
   {
     "id": "finasteride",
@@ -1162,7 +1164,8 @@
       "es": "https://es.wikipedia.org/wiki/Progesterona",
       "zhHans": "https://zh.wikipedia.org/zh-hans/孕酮",
       "zhHant": "https://zh.wikipedia.org/zh-hant/孕酮"
-    }
+    },
+    "notes": "黄体ホルモンとも呼ばれる性ホルモンの一つ。女性化ホルモン療法で使う人もいるが、必須ではなく、効果や使い方については見解が分かれている。"
   },
   {
     "id": "progestogen",
@@ -1212,7 +1215,8 @@
     "source": "Prolactin（PRL）",
     "wikipedia": {
       "ja": "https://ja.wikipedia.org/wiki/プロラクチン"
-    }
+    },
+    "notes": "脳の下垂体から分泌されるホルモンの一つ。エストロゲンの影響などで高くなることがあり、ホルモン療法中の血液検査で確認する項目。"
   },
   {
     "id": "misgendering",
@@ -1318,7 +1322,8 @@
       "ja": "https://ja.wikipedia.org/wiki/レーザー脱毛",
       "en": "https://en.wikipedia.org/wiki/Laser_hair_removal",
       "es": "https://es.wikipedia.org/wiki/Depilación_láser"
-    }
+    },
+    "notes": "レーザーの光で毛根にはたらきかけ、毛を減らしていく脱毛方法。広い範囲を比較的短時間で処理しやすい。白髪や産毛には効きにくく、医療機関で行う。"
   },
   {
     "id": "estradiol-benzoate",
@@ -1339,7 +1344,8 @@
     "wikipedia": {
       "ja": "https://ja.wikipedia.org/wiki/安息香酸エストラジオール",
       "en": "https://en.wikipedia.org/wiki/Estradiol_benzoate"
-    }
+    },
+    "notes": "エストロゲン（エストラジオール）の注射剤の一つ。作用する時間が短めで、ほかのエストラジオール製剤と使い分けられることがある。"
   },
   {
     "id": "cross-dresser",
@@ -1422,7 +1428,8 @@
     ],
     "avoid": [],
     "disputed": [],
-    "source": "Penile Inversion Vaginoplasty"
+    "source": "Penile Inversion Vaginoplasty",
+    "notes": "陰茎や陰嚢の皮膚を用いて腟を形成する、代表的な造腟（腟形成）の方法の一つ。MtFの性別適合手術で広く行われている。"
   },
   {
     "id": "labia",
@@ -1467,7 +1474,8 @@
     ],
     "avoid": [],
     "disputed": [],
-    "source": "Vocal Pitch"
+    "source": "Vocal Pitch",
+    "notes": "声の高さのこと。声の印象を左右する要素の一つだが、高さだけでなく、共鳴や話し方も印象に大きく関わる。ボイストレーニングで調整できる。"
   },
   {
     "id": "voice-training",
@@ -1489,7 +1497,8 @@
     "source": "Voice Training",
     "wikipedia": {
       "en": "https://en.wikipedia.org/wiki/Voice_training"
-    }
+    },
+    "notes": "声の高さ・共鳴・話し方などを、練習によって望む方向に近づけていく取り組み。お金や医療がなくても自宅で始められる部分が多い。言語聴覚士などの指導を受ける方法もある。"
   },
   {
     "id": "voice-feminization-surgery",
@@ -1512,7 +1521,8 @@
     "source": "Voice Feminization Surgery (VFS)",
     "wikipedia": {
       "en": "https://en.wikipedia.org/wiki/Voice_feminization_surgery"
-    }
+    },
+    "notes": "声を高く・女性的にすることを目的とした手術の総称（声帯短縮術など）。手術で変えられるのはおもに高さで、共鳴や話し方はトレーニングが必要なことが多い。"
   },
   {
     "id": "domestic-violence-survivor",
@@ -1572,7 +1582,8 @@
     "aliases": [],
     "avoid": [],
     "disputed": [],
-    "source": "Outpatient medical records"
+    "source": "Outpatient medical records",
+    "notes": "外来診療での記録（カルテ）のこと。ホルモン療法や診断の経過が記録され、ほかの医療機関にかかるときの参考にもなる。"
   },
   {
     "id": "liver-function",
@@ -1599,7 +1610,8 @@
       "th": "https://th.wikipedia.org/wiki/การตรวจการทำงานของตับ",
       "zhHans": "https://zh.wikipedia.org/zh-hans/肝功能測試",
       "zhHant": "https://zh.wikipedia.org/zh-hant/肝功能測試"
-    }
+    },
+    "notes": "肝臓のはたらきの状態。ホルモン剤などの薬は肝臓で処理されるため、ホルモン療法中は血液検査（AST・ALTなど）で定期的に確認する。"
   },
   {
     "id": "ffs",
@@ -1626,7 +1638,8 @@
       "es": "https://es.wikipedia.org/wiki/Cirugía_de_feminización_facial",
       "zhHans": "https://zh.wikipedia.org/zh-hans/面部女性化手术",
       "zhHant": "https://zh.wikipedia.org/zh-hant/面部女性化手术"
-    }
+    },
+    "notes": "額・鼻・あご・のどぼとけなど、顔の骨格や輪郭を女性的な印象に近づける手術の総称（FFS）。部位や方法はさまざまで、希望に応じて選べる。"
   },
   {
     "id": "fundamental-frequency",
@@ -1698,7 +1711,8 @@
     ],
     "avoid": [],
     "disputed": [],
-    "source": "Estradiol Valerate Injection"
+    "source": "Estradiol Valerate Injection",
+    "notes": "エストロゲン（エストラジオール）の注射剤の一つ。吉草酸エストラジオールを油に溶かしたもので、効果が比較的長く続く。"
   },
   {
     "id": "resonance",
@@ -1716,7 +1730,8 @@
     "source": "Resonance",
     "wikipedia": {
       "ja": "https://ja.wikipedia.org/wiki/共鳴"
-    }
+    },
+    "notes": "声が体（のどや口）のなかで響くこと。声の印象は高さだけでなく、この共鳴のしかたにも大きく左右される。ボイストレーニングで調整できる。"
   },
   {
     "id": "conjugated-estrogens",
@@ -1739,7 +1754,8 @@
       "en": "https://en.wikipedia.org/wiki/Conjugated_estrogens",
       "zhHans": "https://zh.wikipedia.org/zh-hans/結合型雌激素",
       "zhHant": "https://zh.wikipedia.org/zh-hant/結合型雌激素"
-    }
+    },
+    "notes": "複数のエストロゲンを混ぜた製剤（プレマリンなど）。古くから使われてきたが、現在はエストラジオール製剤が選ばれることが多い。"
   },
   {
     "id": "colovaginoplasty",
@@ -1757,7 +1773,8 @@
     ],
     "avoid": [],
     "disputed": [],
-    "source": "Colovaginoplasty"
+    "source": "Colovaginoplasty",
+    "notes": "腸（結腸・S状結腸）の一部を用いて腟を形成する造腟の方法の一つ。皮膚が足りない場合などに選ばれることがある。"
   },
   {
     "id": "thromboembolism",
@@ -1782,7 +1799,8 @@
       "ja": "https://ja.wikipedia.org/wiki/血栓塞栓症",
       "en": "https://en.wikipedia.org/wiki/Thromboembolism",
       "ko": "https://ko.wikipedia.org/wiki/혈전색전증"
-    }
+    },
+    "notes": "血管のなかで血のかたまり（血栓）ができ、血流をふさいでしまう状態。エストロゲン製剤で起こりやすくなることがあり、ホルモン療法で注意したい重要なリスクの一つ。"
   },
   {
     "id": "ymmv",
@@ -1800,7 +1818,8 @@
     ],
     "avoid": [],
     "disputed": [],
-    "source": "Your Mileage May Vary (YMMV)"
+    "source": "Your Mileage May Vary (YMMV)",
+    "notes": "効果や変化のあらわれ方は人によって大きく違う、ということ（英語の Your Mileage May Vary から）。このサイトの目安も、あくまで参考です。"
   },
   {
     "id": "employment-discrimination",
@@ -1984,7 +2003,8 @@
       "es": "https://es.wikipedia.org/wiki/Densidad_mineral_ósea",
       "zhHans": "https://zh.wikipedia.org/zh-hans/骨密度",
       "zhHant": "https://zh.wikipedia.org/zh-hant/骨密度"
-    }
+    },
+    "notes": "骨の強さ・量の指標。性ホルモンには骨を保つはたらきがあり、思春期ブロッカーやホルモンの状況によっては、骨密度の確認が大切になる。"
   },
   {
     "id": "puberty-blocker",
@@ -2085,7 +2105,8 @@
     ],
     "avoid": [],
     "disputed": [],
-    "source": "DIY HRT"
+    "source": "DIY HRT",
+    "notes": "医療機関を通さず、自分で薬を入手して行うホルモン療法（フラホルとも）。安く始めやすく見えても、量の調整や副作用の確認がむずかしく、健康上のリスクがある。"
   },
   {
     "id": "rle",
@@ -2179,7 +2200,8 @@
     "source": "Psychological Counseling",
     "wikipedia": {
       "ja": "https://ja.wikipedia.org/wiki/カウンセリング"
-    }
+    },
+    "notes": "専門家と話しながら、気持ちや悩みを整理していく支援。診断のためだけでなく、不安や生きづらさをやわらげる助けにもなる。"
   },
   {
     "id": "diagnosis-certificate",
@@ -2819,7 +2841,8 @@
     "source": "Electrolysis",
     "wikipedia": {
       "en": "https://en.wikipedia.org/wiki/Electrology"
-    }
+    },
+    "notes": "毛穴に細い針を入れ、電気で毛根を処理していく脱毛方法（ニードル脱毛）。白髪や産毛にも効き、永久的な脱毛が期待できる一方、時間がかかる。"
   },
   {
     "id": "endocrinology",
@@ -2938,7 +2961,8 @@
     ],
     "avoid": [],
     "disputed": [],
-    "source": "Peritoneal Vaginoplasty"
+    "source": "Peritoneal Vaginoplasty",
+    "notes": "おなかの中の膜（腹膜）を用いて腟を形成する造腟の方法の一つ。比較的新しい方法。"
   },
   {
     "id": "breast-augmentation",
@@ -2967,7 +2991,8 @@
       "es": "https://es.wikipedia.org/wiki/Mamoplastia_de_aumento",
       "zhHans": "https://zh.wikipedia.org/zh-hans/隆乳",
       "zhHant": "https://zh.wikipedia.org/zh-hant/隆乳"
-    }
+    },
+    "notes": "胸をふくらませる手術（シリコンなどの挿入や脂肪注入）。女性化ホルモン療法だけでは十分な発育が得られない場合に選ばれることがある。"
   },
   {
     "id": "vaginoplasty",
