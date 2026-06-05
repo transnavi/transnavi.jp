@@ -74,7 +74,7 @@ for (const file of walk(DIST)) {
 const glossary = JSON.parse(fs.readFileSync('src/data/glossary.json', 'utf8'));
 const glossaryReadings = JSON.parse(fs.readFileSync('src/data/glossary-readings.json', 'utf8'));
 for (const g of glossary) {
-  const keywords = [g.abbr, ...(g.aliases || []), g.translations?.en, g.translations?.zhHans, g.term, glossaryReadings[g.id]]
+  const keywords = [g.abbr, ...(g.aliases || []), ...(g.tags || []), g.translations?.en, g.translations?.zhHans, g.term, glossaryReadings[g.id]]
     .filter(Boolean)
     .join(' ');
   entries.push({ u: `/glossary/${g.id}/`, t: g.term, k: '用語', a: keywords, x: (g.notes || '').slice(0, 400) });

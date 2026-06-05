@@ -91,14 +91,14 @@ a:hover {
 
 /* Glossary/term links read like dictionary terms: a distinct purple with a
    dotted underline, so they're visibly different from ordinary links. */
-.article-shell a[href^='/glossary/']:not(.hero-button):not(.word-chip),
-.intro a[href^='/glossary/']:not(.hero-button):not(.word-chip) {
+.article-shell a[href^='/glossary/']:not(.hero-button):not(.word-chip):not(.glossary-tag),
+.intro a[href^='/glossary/']:not(.hero-button):not(.word-chip):not(.glossary-tag) {
   color: var(--accent-term);
   text-decoration-style: dotted;
 }
 
-.article-shell a[href^='/glossary/']:not(.hero-button):not(.word-chip):hover,
-.intro a[href^='/glossary/']:not(.hero-button):not(.word-chip):hover {
+.article-shell a[href^='/glossary/']:not(.hero-button):not(.word-chip):not(.glossary-tag):hover,
+.intro a[href^='/glossary/']:not(.hero-button):not(.word-chip):not(.glossary-tag):hover {
   color: var(--accent-strong);
 }
 
@@ -1697,6 +1697,34 @@ ul {
 .glossary-back:hover {
   color: var(--accent-strong);
   text-decoration: underline;
+}
+
+/* Tag chips on a glossary detail page; each links to the glossary list filtered
+   to that tag (/glossary/?q=<tag>). Excluded from the dotted glossary-link
+   styling above via :not(.glossary-tag). */
+.glossary-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 14px 0 0;
+  padding: 0;
+}
+
+.glossary-tag {
+  display: inline-block;
+  padding: 2px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--accent-soft);
+  color: var(--ink-heading);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.glossary-tag:hover {
+  border-color: var(--line-hover);
 }
 
 .glossary-def {

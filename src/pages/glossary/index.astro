@@ -101,7 +101,7 @@ const aliasPreview = (entry: GlossaryEntry) => {
               href={`/glossary/${entry.id}/`}
               data-filter-item
               data-categories={entry.category}
-              data-search={[entry.term, entry.abbr, entry.category, entry.translations.en, ...entry.aliases, readings[entry.id]].filter(Boolean).join(' ')}
+              data-search={[entry.term, entry.abbr, entry.category, ...(entry.tags ?? []), entry.translations.en, ...entry.aliases, readings[entry.id]].filter(Boolean).join(' ')}
             >
               <span class="glossary-card-head">
                 <span class="clinic-name">{entry.term}{entry.abbr ? `（${entry.abbr}）` : ''}</span>

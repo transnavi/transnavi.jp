@@ -22,6 +22,9 @@ export interface GlossaryEntry {
     es?: string;
   };
   aliases: string[];
+  /** Cross-cutting labels from a controlled vocabulary (topic / population /
+   *  register), in addition to the single primary `category`. */
+  tags: string[];
   avoid: string[];
   disputed: string[];
   notes?: string;

@@ -315,5 +315,13 @@ for (const form of document.querySelectorAll('[data-filter-form]')) {
     });
   }
 
+  // Deep-link: a ?q= in the URL pre-fills the filter, so a tag chip linking to
+  // /glossary/?q=<tag> opens the list already narrowed to that tag.
+  const initialQuery = new URLSearchParams(location.search).get('q');
+  if (initialQuery && input) {
+    input.value = initialQuery;
+    syncChips();
+  }
+
   update();
 }

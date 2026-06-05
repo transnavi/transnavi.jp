@@ -131,6 +131,14 @@ const termLd = {
 
     {entry.notes && <p class="glossary-def">{entry.notes}</p>}
 
+    {entry.tags && entry.tags.length > 0 && (
+      <ul class="glossary-tags" aria-label="タグ">
+        {entry.tags.map((t) => (
+          <li><a class="glossary-tag" href={`/glossary/?q=${encodeURIComponent(t)}`}>{t}</a></li>
+        ))}
+      </ul>
+    )}
+
     <dl class="clinic-detail glossary-detail">
       {entry.aliases.length > 0 && (
         <div>
