@@ -1355,7 +1355,9 @@
       "ko": "크로스드레싱"
     },
     "aliases": [
-      "女装者"
+      "女装者",
+      "クロスドレッサー",
+      "トランスヴェスタイト"
     ],
     "avoid": [
       "女装癖",
@@ -3201,7 +3203,8 @@
       "アセクシュアル",
       "エース",
       "Aセクシュアル",
-      "ace"
+      "ace",
+      "アセクシャル"
     ],
     "avoid": [],
     "disputed": [],
@@ -3376,6 +3379,420 @@
     "wikipedia": {
       "ja": "https://ja.wikipedia.org/wiki/性役割",
       "en": "https://en.wikipedia.org/wiki/Gender_role"
+    }
+  },
+  {
+    "id": "queer",
+    "term": "クィア",
+    "category": "性同一性・属性",
+    "translations": {
+      "en": "Queer"
+    },
+    "aliases": [
+      "Queer"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "性のあり方が、社会で「ふつう」とされる枠（異性愛・シスジェンダー）にあてはまらない人を広く指す言葉。既存の枠組みそのものに異議をとなえるニュアンスでも使われる。もともとは侮蔑語だったのを、当事者が肯定的に取り戻した（リクレイムした）言葉でもあり、LGBTQ＋の「Q」にあたる。",
+    "source": "Queer",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Queer"
+    }
+  },
+  {
+    "id": "sexual-orientation",
+    "term": "性的指向",
+    "category": "性的指向",
+    "translations": {
+      "en": "Sexual orientation",
+      "ko": "성적 지향"
+    },
+    "aliases": [
+      "Sexual orientation"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "どんな性別の人に恋愛的・性的に惹かれるか、という方向性。異性愛・同性愛・両性愛・無性愛などがある。自分の性別（性同一性）とは別のものさしで、「だれを好きになるか」と「自分がどんな性別か」は混同されやすいが別のもの。",
+    "source": "Sexual orientation",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Sexual_orientation"
+    }
+  },
+  {
+    "id": "romantic-orientation",
+    "term": "恋愛的指向",
+    "category": "性的指向",
+    "translations": {
+      "en": "Romantic orientation"
+    },
+    "aliases": [
+      "Romantic orientation"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "どんな性別の人に恋愛的に惹かれるか、という方向性。性的に惹かれる方向（性的指向）とは分けて考えることがあり（スプリット・アトラクション・モデル）、たとえば「恋愛的には惹かれるが性的には惹かれない」人もいる。",
+    "source": "Romantic orientation",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Romantic_orientation"
+    }
+  },
+  {
+    "id": "split-attraction-model",
+    "term": "スプリット・アトラクション・モデル",
+    "category": "性的指向",
+    "translations": {
+      "en": "Split attraction model"
+    },
+    "aliases": [
+      "SAM",
+      "惹かれの分離"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "人への「惹かれ」を、性的な惹かれと恋愛的な惹かれに分けてとらえる考え方。この二つは必ずしも一致せず、向く相手がちがうこともある。アセクシュアル・アロマンティックの文脈でよく使われる。",
+    "source": "Split attraction model"
+  },
+  {
+    "id": "pansexual",
+    "term": "パンセクシュアル",
+    "category": "性的指向",
+    "translations": {
+      "en": "Pansexual"
+    },
+    "aliases": [
+      "パンセクシャル",
+      "パン",
+      "Pansexual"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "相手の性別にとらわれずに、人に惹かれるあり方。両性愛（バイセクシュアル）と重なる部分もあるが、「性別を問わない」点を強調するときに使われる。",
+    "source": "Pansexuality",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Pansexuality"
+    }
+  },
+  {
+    "id": "agender",
+    "term": "アジェンダー",
+    "category": "性同一性・属性",
+    "translations": {
+      "en": "Agender"
+    },
+    "aliases": [
+      "Aジェンダー",
+      "無性別",
+      "agender"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "自分には性別（ジェンダー）がない、または性別という枠組みにあてはまらないと感じるあり方。ノンバイナリーの一つとされることが多い。",
+    "source": "Agender"
+  },
+  {
+    "id": "genderqueer",
+    "term": "ジェンダークィア",
+    "category": "性同一性・属性",
+    "translations": {
+      "en": "Genderqueer"
+    },
+    "aliases": [
+      "Genderqueer"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "性別が、男女の二元的な枠の外にあるあり方。ノンバイナリーとほぼ同じ意味で使われることが多い。",
+    "source": "Genderqueer",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Genderqueer"
+    }
+  },
+  {
+    "id": "bigender",
+    "term": "バイジェンダー",
+    "category": "性同一性・属性",
+    "translations": {
+      "en": "Bigender"
+    },
+    "aliases": [
+      "Bigender"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "二つの性別（たとえば男性と女性）をあわせ持つ、または行き来するあり方。",
+    "source": "Bigender"
+  },
+  {
+    "id": "demigender",
+    "term": "デミジェンダー",
+    "category": "性同一性・属性",
+    "translations": {
+      "en": "Demigender"
+    },
+    "aliases": [
+      "デミガール",
+      "デミボーイ",
+      "Demigender"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "ある性別に部分的につながりを感じるあり方（例：デミガール、デミボーイ）。完全にその性別というわけではない。",
+    "source": "Demigender"
+  },
+  {
+    "id": "neutrois",
+    "term": "ニュートロワ",
+    "category": "性同一性・属性",
+    "translations": {
+      "en": "Neutrois"
+    },
+    "aliases": [
+      "Neutrois"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "性別が中立的、またはないと感じるあり方。アジェンダーと近いが、より「中立」を志向するニュアンスで使われることがある。",
+    "source": "Neutrois"
+  },
+  {
+    "id": "xenogender",
+    "term": "ゼノジェンダー",
+    "category": "性同一性・属性",
+    "translations": {
+      "en": "Xenogender"
+    },
+    "aliases": [
+      "Xenogender"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "男女という枠では言い表しにくい自分の性別を、別のイメージ（色・自然・概念など）になぞらえて表すあり方。おもにオンラインのコミュニティで使われる。",
+    "source": "Xenogender"
+  },
+  {
+    "id": "genderflux",
+    "term": "ジェンダーフラックス",
+    "category": "性同一性・属性",
+    "translations": {
+      "en": "Genderflux"
+    },
+    "aliases": [
+      "Genderflux"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "性別の感じ方の「強さ」が時間とともに変化するあり方。種類のあいだで動くジェンダーフルイドに対し、こちらは濃さ・薄さが変わるイメージ。",
+    "source": "Genderflux"
+  },
+  {
+    "id": "androgynous",
+    "term": "アンドロジナス",
+    "category": "性同一性・属性",
+    "translations": {
+      "en": "Androgynous"
+    },
+    "aliases": [
+      "アンドロジーン",
+      "中性的",
+      "androgynous",
+      "androgyne"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "男性的とも女性的とも言いきれない、中性的な見た目やあり方。見た目（性別表現）について使われることも、アイデンティティについて使われることもある。",
+    "source": "Androgyny",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Androgyny"
+    }
+  },
+  {
+    "id": "gender-nonconforming",
+    "term": "ジェンダー・ノンコンフォーミング",
+    "category": "性同一性・属性",
+    "translations": {
+      "en": "Gender nonconforming"
+    },
+    "aliases": [
+      "ジェンダー・ダイバース",
+      "ジェンダー・バリアント",
+      "GNC",
+      "gender nonconforming"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "社会が期待する「男らしさ・女らしさ」にあてはまらない見た目やふるまいをする人の総称。ジェンダー・ダイバース、ジェンダー・バリアントとも。トランスかどうかとは別の話で、シスの人もふくむ。",
+    "source": "Gender variance"
+  },
+  {
+    "id": "transfeminine",
+    "term": "トランスフェミニン",
+    "category": "性同一性・属性",
+    "translations": {
+      "en": "Transfeminine"
+    },
+    "aliases": [
+      "トランスフェム",
+      "transfeminine"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "出生時に男性と割り当てられ、より女性的な方向にあるトランスの人を広く指す言葉。トランス女性だけでなく、その方向のノンバイナリーの人をふくむこともある。",
+    "source": "Transfeminine"
+  },
+  {
+    "id": "transmasculine",
+    "term": "トランスマスキュリン",
+    "category": "性同一性・属性",
+    "translations": {
+      "en": "Transmasculine"
+    },
+    "aliases": [
+      "トランスマスク",
+      "transmasculine"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "出生時に女性と割り当てられ、より男性的な方向にあるトランスの人を広く指す言葉。トランス男性だけでなく、その方向のノンバイナリーの人をふくむこともある。",
+    "source": "Transmasculine"
+  },
+  {
+    "id": "transphobia",
+    "term": "トランスフォビア",
+    "category": "生活・社会",
+    "translations": {
+      "en": "Transphobia"
+    },
+    "aliases": [
+      "トランス嫌悪",
+      "transphobia"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "トランスジェンダーの人への偏見・嫌悪・差別。あからさまな攻撃だけでなく、無視や決めつけ、制度的な締め出しもふくむ。問題があるのは差別の側であって、あなたの存在ではありません。",
+    "source": "Transphobia",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Transphobia"
+    }
+  },
+  {
+    "id": "homophobia",
+    "term": "ホモフォビア",
+    "category": "生活・社会",
+    "translations": {
+      "en": "Homophobia"
+    },
+    "aliases": [
+      "同性愛嫌悪",
+      "homophobia"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "同性愛者や、同性に惹かれる人への偏見・嫌悪・差別。両性愛の人への差別はバイフォビアと呼ばれる。",
+    "source": "Homophobia",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Homophobia"
+    }
+  },
+  {
+    "id": "heteronormativity",
+    "term": "ヘテロノーマティビティ",
+    "category": "生活・社会",
+    "translations": {
+      "en": "Heteronormativity"
+    },
+    "aliases": [
+      "異性愛規範",
+      "heteronormativity"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "「だれもが異性愛者である」ことを当然の前提とする、社会のものの見方や仕組み。シスノーマティビティ（だれもがシスである前提）と並ぶ考え方で、当てはまらない人を見えにくくする。",
+    "source": "Heteronormativity",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Heteronormativity"
+    }
+  },
+  {
+    "id": "cisgenderism",
+    "term": "シスジェンダリズム",
+    "category": "生活・社会",
+    "translations": {
+      "en": "Cisgenderism"
+    },
+    "aliases": [
+      "cisgenderism"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "性別は出生時のもので決まり、二つしかない、という前提を当然とし、トランスやノンバイナリーのあり方を否定・軽視する考え方や制度のこと。",
+    "source": "Cisgenderism"
+  },
+  {
+    "id": "gender-critical",
+    "term": "ジェンダー・クリティカル",
+    "category": "生活・社会",
+    "translations": {
+      "en": "Gender critical"
+    },
+    "aliases": [
+      "GC",
+      "gender critical"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "おもにトランスジェンダーの権利に反対する立場が自称する言葉。実際にはトランス排除的な主張をさすことが多く、当事者からはトランス差別的だと批判される。TERFと近い。",
+    "source": "Gender critical"
+  },
+  {
+    "id": "transgenderism",
+    "term": "トランスジェンダリズム",
+    "category": "生活・社会",
+    "translations": {
+      "en": "Transgenderism"
+    },
+    "aliases": [
+      "transgenderism"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "もともとは中立的な語だったが、近年はおもに、トランスジェンダーを「イデオロギー」であるかのように否定的に扱う差別的な文脈で使われるため、当事者側では使用が避けられている。",
+    "source": "Transgenderism"
+  },
+  {
+    "id": "microaggression",
+    "term": "マイクロアグレッション",
+    "category": "生活・社会",
+    "translations": {
+      "en": "Microaggression"
+    },
+    "aliases": [
+      "microaggression"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "悪意がないつもりの何気ない言動が、くり返されることで相手を傷つける、小さな差別。「ほんとはどっちの性別？」「男っぽいね」のような言葉もふくまれる。",
+    "source": "Microaggression",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Microaggression"
+    }
+  },
+  {
+    "id": "drag-queen",
+    "term": "ドラァグクイーン",
+    "category": "生活・社会",
+    "translations": {
+      "en": "Drag queen"
+    },
+    "aliases": [
+      "ドラァグ",
+      "drag queen"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "エンターテインメントとして、誇張した女性らしさを表現するパフォーマンス、またその表現者。性別やアイデンティティとは別の「表現・芸能」であり、トランスジェンダーとはちがう（重なる人もいる）。",
+    "source": "Drag queen",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Drag_queen"
     }
   }
 ]
