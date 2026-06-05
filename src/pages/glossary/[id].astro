@@ -84,6 +84,14 @@ const wikipedia = [
   ['Español', entry.wikipedia?.es],
 ].filter(([, href]) => href) as [string, string][];
 
+// Real per-page meta description from the definition (not a generic template),
+// trimmed to ~150 chars at a clause boundary so search snippets read cleanly.
+const metaDescription = entry.notes
+  ? entry.notes.length <= 150
+    ? entry.notes
+    : entry.notes.slice(0, 150).replace(/[、。][^、。]*$/, '') + '…'
+  : `${entry.term}（${entry.translations.en ?? ''}）の意味を、やさしく説明します。`;
+
 const canonical = new URL(`/glossary/${entry.id}/`, Astro.site).toString();
 const alt = [entry.abbr, ...(entry.aliases ?? [])].filter(Boolean);
 const termLd = {
@@ -104,7 +112,7 @@ const termLd = {
 };
 ---
 
-<BaseLayout title={`${entry.term} - とらんすナビ`} description={`${entry.term}に関する用語説明です。`}>
+<BaseLayout title={`${entry.term} - とらんすナビ`} description={metaDescription}>
   <script type="application/ld+json" set:html={JSON.stringify(termLd)} />
   <article class="article-shell">
     <a href="/glossary/" class="glossary-back" data-glossary-back>← 用語集にもどる</a>
