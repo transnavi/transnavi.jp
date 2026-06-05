@@ -53,6 +53,14 @@ for (const path of pages) {
   });
 }
 
+test('全ページのフッターに今すぐの相談先（タップできる電話番号）がある', async ({ page }) => {
+  // 取り乱した利用者がどのページからでも、画面遷移なしで 24時間の番号に届くこと。
+  await page.goto('/basics/');
+  const tel = page.locator('.footer-crisis a[href^="tel:"]');
+  await expect(tel).toHaveAttribute('href', 'tel:0120279338');
+  await expect(tel).toContainText('0120-279-338');
+});
+
 test('医療機関ページは主観的コメント欄を表示しない', async ({ page }) => {
   await page.goto('/clinics/hrt-tokyo-gender-clinic/');
 
