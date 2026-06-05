@@ -180,36 +180,36 @@ import { norm, bigrams, expand, prepare, search, addSynonyms } from '/search-cor
     }
     const qbg = new Set();
     for (const t of terms) for (const g of bigrams(t)) qbg.add(g);
+    // Highlight the query terms AND their synonyms (性自認 → also 性同一性), so a
+    // result shows every name of the concept it matched, not only the one typed.
+    // Drop 1-char synonyms so a stray abbreviation letter doesn't speckle prose.
+    const hlTerms = [...new Set([...terms, ...synTerms.filter((t) => t.length >= 2)])];
     els.status.textContent = `${results.length} 件`;
     els.results.innerHTML = results
       .map(({ e }) => {
         const ext = e.ext ? ' target="_blank" rel="noreferrer"' : '';
-        let titleHtml = highlight(e.t, terms);
-        let snipHtml = snippet(e.x, terms, null);
+        let titleHtml = highlight(e.t, hlTerms);
+        let snipHtml = snippet(e.x, hlTerms, null);
         let marked = titleHtml.includes('<mark>') || snipHtml.includes('<mark>');
         // (1) hidden-field hit: surface the matched alias/abbr, highlighted.
         let aliasHtml = '';
         if (!marked) {
-          const kw = matchedKeywords(e.a, terms).filter((k) => !norm(e.t).includes(norm(k)));
+          const kw = matchedKeywords(e.a, hlTerms).filter((k) => !norm(e.t).includes(norm(k)));
           if (kw.length) {
             aliasHtml =
               `<span class="search-result-alias"><span class="search-result-alias-label">別名</span><span>${kw
-                .map((k) => highlight(k, terms))
+                .map((k) => highlight(k, hlTerms))
                 .join('、')}</span></span>`;
             marked = true;
           }
         }
-        // (2) fuzzy / synonym hit: mark the synonym occurrence, else the soft
-        //     (shared-bigram) overlap, so every shown result reveals its match.
+        // (2) fuzzy hit: light up the shared-bigram overlap so even a result with
+        //     no exact term/synonym occurrence still reveals why it matched.
         if (!marked) {
-          const st = highlight(e.t, synTerms);
-          const t2 = st.includes('<mark>') ? st : softText(e.t, qbg);
-          const s2 = snippet(e.x, synTerms, qbg);
-          if ((t2 && t2.includes('<mark>')) || s2.includes('<mark>')) {
-            if (t2 && t2.includes('<mark>')) titleHtml = t2;
-            snipHtml = s2;
-            marked = true;
-          }
+          const st = softText(e.t, qbg);
+          if (st) titleHtml = st;
+          const ss = snippet(e.x, [], qbg);
+          if (ss.includes('<mark>')) snipHtml = ss;
         }
         return (
           `<a class="search-result" href="${esc(e.u)}"${ext}>` +
