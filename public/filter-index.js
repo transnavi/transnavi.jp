@@ -13,10 +13,12 @@ const norm = (value) => {
 const esc = (s) =>
   (s || '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
-// Per-character normalise keeping a map from each normalised char back to the
-// source char, so a match found in normalised space (kana-folded, NFKC,
-// punctuation-stripped) can be highlighted on the original card text. Mirrors
-// public/search.js so 「ほるもん」highlights 「ホルモン」on the cards too.
+// Per-character normalise keeping a map from each normalised UTF-16 code unit
+// back to its source code-point index, so a match found in normalised space
+// (kana-folded, NFKC, punctuation-stripped) can be highlighted on the original
+// card text. The map is pushed per code unit (not per code point) so it stays
+// aligned with String#indexOf (UTF-16), keeping astral chars from skewing it.
+// Mirrors public/search.js so 「ほるもん」highlights 「ホルモン」on the cards too.
 const normMapped = (text) => {
   const chars = [...text];
   let n = '';
@@ -25,28 +27,14 @@ const normMapped = (text) => {
     let c = chars[i].normalize('NFKC').toLowerCase();
     c = c.replace(/[ァ-ヶ]/g, (k) => String.fromCharCode(k.charCodeAt(0) - 0x60));
     c = c.replace(/[ー゛゜・･\s　.,、。!?！？"'「」『』（）()\[\]【】〜~_\-/]/g, '');
-    for (const ch of c) {
-      n += ch;
-      map.push(i);
-    }
+    for (let u = 0; u < c.length; u++) map.push(i);
+    n += c;
   }
   return { chars, n, map };
 };
 
-const highlight = (text, terms) => {
-  if (!text) return '';
-  const { chars, n, map } = normMapped(text);
-  const ranges = [];
-  for (const t of terms) {
-    if (!t) continue;
-    let from = 0;
-    let idx;
-    while ((idx = n.indexOf(t, from)) !== -1) {
-      ranges.push([map[idx], map[idx + t.length - 1] + 1]);
-      from = idx + t.length;
-    }
-  }
-  if (!ranges.length) return esc(text);
+const renderRanges = (chars, ranges) => {
+  if (!ranges.length) return null;
   ranges.sort((a, b) => a[0] - b[0]);
   const merged = [];
   for (const r of ranges) {
@@ -63,16 +51,67 @@ const highlight = (text, terms) => {
   return out + esc(chars.slice(pos).join(''));
 };
 
+const termRanges = (n, map, terms) => {
+  const ranges = [];
+  for (const t of terms) {
+    if (!t) continue;
+    let from = 0;
+    let idx;
+    while ((idx = n.indexOf(t, from)) !== -1) {
+      ranges.push([map[idx], map[idx + t.length - 1] + 1]);
+      from = idx + t.length;
+    }
+  }
+  return ranges;
+};
+
+// Soft fallback ranges: contiguous runs whose character bigrams all occur in the
+// query, so the shared part of a fuzzy hit lights up with no exact term match.
+// Runs shorter than 3 chars are dropped so a single common bigram (どう, せい) in
+// unrelated text isn't spuriously marked (which would also suppress the hint).
+const softRanges = (n, map, qbg) => {
+  const ranges = [];
+  let runStart = -1;
+  const close = (lastBigram) => {
+    if (lastBigram + 1 - runStart + 1 >= 3) ranges.push([map[runStart], map[lastBigram + 1] + 1]);
+    runStart = -1;
+  };
+  for (let k = 0; k < n.length - 1; k++) {
+    if (qbg.has(n.slice(k, k + 2))) {
+      if (runStart < 0) runStart = k;
+    } else if (runStart >= 0) {
+      close(k - 1);
+    }
+  }
+  if (runStart >= 0) close(n.length - 2);
+  return ranges;
+};
+
+const highlight = (text, terms) => {
+  if (!text) return '';
+  const { chars, n, map } = normMapped(text);
+  return renderRanges(chars, termRanges(n, map, terms)) ?? esc(text);
+};
+
+// Soft (shared-bigram) highlight; null when nothing overlaps.
+const softText = (text, qbg) => {
+  if (!text || !qbg.size) return null;
+  const { chars, n, map } = normMapped(text);
+  const html = renderRanges(chars, softRanges(n, map, qbg));
+  return html && html.includes('<mark>') ? html : null;
+};
+
 // Which of an item's searchable tokens (data-search: term/alias/reading/category
-// /English) a query term matched — surfaced when nothing visible on the card got
-// marked, so a matched card always shows WHY (e.g. せいどういつせい → 性同一性).
+// /English) CONTAIN a query term — surfaced when nothing visible on the card got
+// marked, so a matched card shows WHY (e.g. せいどういつせい → 性同一性). Only tokens
+// that contain a term are returned, so the token can actually be highlighted.
 const matchedTokens = (tokens, terms) => {
   const out = [];
   const seen = new Set();
   for (const tok of tokens) {
     const tn = norm(tok);
     if (!tn || seen.has(tok)) continue;
-    if (terms.some((t) => tn.includes(t) || t.includes(tn))) {
+    if (terms.some((t) => tn.includes(t))) {
       seen.add(tok);
       out.push(tok);
     }
@@ -143,6 +182,8 @@ for (const form of document.querySelectorAll('[data-filter-form]')) {
     const query = norm(input.value.trim());
     const queryGrams = fuzzy && query.length >= 4 ? bigrams(query) : null;
     const hlTerms = highlightOn ? input.value.trim().split(/[\s　]+/).map(norm).filter(Boolean) : [];
+    const qbg = new Set();
+    for (const t of hlTerms) for (const g of bigrams(t)) qbg.add(g);
     let visible = 0;
 
     for (const item of items) {
@@ -159,20 +200,34 @@ for (const form of document.querySelectorAll('[data-filter-form]')) {
       if (matches) visible += 1;
 
       if (highlightOn) {
+        const active = matches && hlTerms.length;
         let marked = false;
+        const nodeText = [];
         for (const { node, text } of item.hlNodes) {
-          if (matches && hlTerms.length) {
+          if (active) {
             const html = highlight(text, hlTerms);
             if (html.includes('<mark>')) marked = true;
             node.innerHTML = html;
           } else {
             node.textContent = text;
           }
+          nodeText.push({ node, text });
         }
-        // Card matched but nothing visible got marked (matched on a reading,
-        // category, or an alias not shown in the preview): show why, highlighted.
+        // Fuzzy hit with nothing exactly marked: light up the shared part of the
+        // visible text (e.g. ジェンダー in アジェンダー) so the match is still shown.
+        if (active && !marked && qbg.size) {
+          for (const { node, text } of nodeText) {
+            const soft = softText(text, qbg);
+            if (soft) {
+              node.innerHTML = soft;
+              marked = true;
+            }
+          }
+        }
+        // Still nothing visible (matched on a reading, category, or an alias not
+        // shown in the preview): surface the matched token in a 「一致」hint line.
         if (item.hint) {
-          const hints = matches && hlTerms.length && !marked ? matchedTokens(item.searchTokens, hlTerms) : [];
+          const hints = active && !marked ? matchedTokens(item.searchTokens, hlTerms) : [];
           if (hints.length) {
             item.hint.innerHTML =
               `<span class="glossary-aliases-label">一致</span><span>${hints.map((t) => highlight(t, hlTerms)).join('、')}</span>`;
