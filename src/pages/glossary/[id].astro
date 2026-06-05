@@ -107,6 +107,7 @@ const termLd = {
 <BaseLayout title={`${entry.term} - とらんすナビ`} description={`${entry.term}に関する用語説明です。`}>
   <script type="application/ld+json" set:html={JSON.stringify(termLd)} />
   <article class="article-shell">
+    <a href="/glossary/" class="glossary-back" data-glossary-back>← 用語集にもどる</a>
     <div class="eyebrow">用語集 ・ {entry.category}</div>
     <h1>{entry.term}{entry.abbr ? `（${entry.abbr}）` : ''}</h1>
 
@@ -174,4 +175,19 @@ const termLd = {
       <a class="word-chip" href="/glossary/">用語集の一覧</a>
     </nav>
   </article>
+  <script is:inline>
+    // If the reader came from the 用語集 list, "もどる" goes back in history so the
+    // list reopens at the same scroll position (and filter), instead of jumping to
+    // the top. Otherwise it stays a normal link to /glossary/.
+    (function () {
+      var a = document.querySelector('[data-glossary-back]');
+      if (!a) return;
+      try {
+        var ref = document.referrer ? new URL(document.referrer) : null;
+        if (ref && ref.origin === location.origin && ref.pathname === '/glossary/') {
+          a.addEventListener('click', function (e) { e.preventDefault(); history.back(); });
+        }
+      } catch (e) {}
+    })();
+  </script>
 </BaseLayout>

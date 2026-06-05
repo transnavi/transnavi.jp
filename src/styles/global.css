@@ -387,7 +387,12 @@ main {
 }
 
 .site-nav a {
-  display: inline-block;
+  /* inline-flex + align-items:center vertically centres the label in the pill
+     regardless of the line-box leading that <ruby> reserves. Safe now that
+     gen-furigana wraps the whole label in one .furi span (one flex item), so the
+     ruby can't split it into per-fragment flex items. */
+  display: inline-flex;
+  align-items: center;
   margin: 0 8px 8px 0;
   padding: 8px 14px;
   line-height: 1.45;
@@ -1544,6 +1549,22 @@ ul {
 }
 
 /* Glossary: meaning-first entry pages + friendlier cards */
+/* "← 用語集にもどる" at the top of a term page; returns to the list's scroll
+   position when the reader came from there (see the inline script). */
+.glossary-back {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.glossary-back:hover {
+  color: var(--accent-strong);
+  text-decoration: underline;
+}
+
 .glossary-def {
   margin: 6px 0 18px;
   padding: 14px 18px;
@@ -3190,6 +3211,14 @@ rp {
 }
 :root[data-furigana='on'] rt {
   display: revert;
+}
+
+/* When furigana is off (the default), collapse <ruby> to plain inline text so it
+   reserves NO annotation space above the line. Otherwise that empty over-space
+   makes short labels (nav chips, word-chips) sit high / off-centre inside their
+   fixed-height pills. With furigana on, ruby returns to its normal layout. */
+:root:not([data-furigana='on']) ruby {
+  display: inline;
 }
 
 /* On the vivid gradient buttons (はじめての方へ, Discord…) the label is white, so
