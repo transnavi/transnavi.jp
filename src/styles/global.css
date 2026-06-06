@@ -3241,8 +3241,30 @@ a.glossary-card-tag:hover {
   white-space: nowrap;
 }
 
-.map-popup-sub { color: var(--muted); font-size: 0.85em; }
+.map-popup-sub { color: var(--muted); font-size: 0.85em; margin: 2px 0; }
 .maplibregl-popup-content { border-radius: 12px; font-family: inherit; }
+
+/* Tag chips inside a map popup (clinic capabilities / POI type). */
+.map-popup-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 5px 0 7px;
+}
+.map-popup-tag {
+  padding: 0 7px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--accent-soft);
+  color: var(--ink-heading);
+  font-size: 0.72em;
+  line-height: 1.7;
+  white-space: nowrap;
+}
+.map-popup-link {
+  display: inline-block;
+  font-weight: 600;
+}
 
 /* --- 参考文献 (References) --- */
 .references {

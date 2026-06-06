@@ -38,6 +38,15 @@
   const escapeHtml = (s) =>
     String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
+  // A label for each POI type, shown as a tag in the popup (colour alone isn't
+  // accessible). Clinics carry their own `tags` (capabilities) from the page.
+  const POI_TYPE_LABEL = { org: '団体・拠点', circle: '学生サークル', desk: '相談窓口', event: 'イベント', surgery: '海外SRS病院' };
+  function tagsHtml(tags) {
+    const list = (tags || []).filter(Boolean);
+    if (!list.length) return '';
+    return '<div class="map-popup-tags">' + list.map((t) => '<span class="map-popup-tag">' + escapeHtml(t) + '</span>').join('') + '</div>';
+  }
+
   const markers = [];
   function addMarker(lng, lat, type, html) {
     const el = document.createElement('div');
@@ -51,19 +60,19 @@
 
   for (const c of clinics) {
     const html =
-      '<strong>' + escapeHtml(c.name) + '</strong><br>' +
-      '<span class="map-popup-sub">' + escapeHtml(c.area || '') + (c.approx ? '（おおよそ）' : '') + '</span><br>' +
-      '<a href="/clinics/' + encodeURIComponent(c.id) + '/">掲載ページ →</a>';
-    // On the clinics page, pins are coloured by 診療区分 (c.genre); elsewhere
-    // they fall back to a generic clinic pin.
+      '<strong>' + escapeHtml(c.name) + '</strong>' +
+      '<div class="map-popup-sub">' + escapeHtml(c.area || '') + (c.approx ? '（おおよそ）' : '') + '</div>' +
+      tagsHtml(c.tags) +
+      '<a class="map-popup-link" href="/clinics/' + encodeURIComponent(c.id) + '/">掲載ページ →</a>';
+    // Pins are coloured by 診療区分 (c.genre) on both maps.
     addMarker(c.lng, c.lat, c.genre || 'clinic', html);
   }
   for (const p of pois) {
     const isInternal = typeof p.url === 'string' && p.url.startsWith('/');
     const link = isInternal
-      ? '<a href="' + escapeHtml(p.url) + '">ひらく →</a>'
-      : '<a href="' + escapeHtml(p.url) + '" target="_blank" rel="noreferrer">公式サイト →</a>';
-    const html = '<strong>' + escapeHtml(p.name) + '</strong><br>' + link;
+      ? '<a class="map-popup-link" href="' + escapeHtml(p.url) + '">ひらく →</a>'
+      : '<a class="map-popup-link" href="' + escapeHtml(p.url) + '" target="_blank" rel="noreferrer">公式サイト →</a>';
+    const html = '<strong>' + escapeHtml(p.name) + '</strong>' + tagsHtml([POI_TYPE_LABEL[p.type]]) + link;
     addMarker(p.lng, p.lat, p.type, html);
   }
 

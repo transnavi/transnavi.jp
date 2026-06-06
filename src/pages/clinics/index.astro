@@ -5,7 +5,7 @@ import clinicsData from '../../data/clinics.json';
 import poisData from '../../data/map-pois.json';
 import type { Clinic } from '../../types/clinic';
 import { splitClinicUrls } from '../../utils/clinic-links';
-import { categoriesOf, primaryGenre, surgeryTypesOf, capabilitiesOf, CAPABILITY_LABELS, isGiCertified } from '../../utils/clinic-genre';
+import { categoriesOf, primaryGenre, surgeryTypesOf, capabilitiesOf, CAPABILITY_LABELS, isGiCertified, clinicMapTags } from '../../utils/clinic-genre';
 
 const clinics = clinicsData as Clinic[];
 const prefectureOrder = [
@@ -140,6 +140,7 @@ const mapClinics = clinicsWithCategories
     area: [clinic.prefecture, clinic.city].filter(Boolean).join(' '),
     approx: clinic.geoSource !== 'address',
     genre: primaryGenre(clinic.categories),
+    tags: clinicMapTags(clinic),
     lat: clinic.lat,
     lng: clinic.lng,
   }));

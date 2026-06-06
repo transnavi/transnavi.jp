@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import clinicsData from '../data/clinics.json';
 import poisData from '../data/map-pois.json';
 import type { Clinic } from '../types/clinic';
-import { categoriesOf, primaryGenre } from '../utils/clinic-genre';
+import { categoriesOf, primaryGenre, clinicMapTags } from '../utils/clinic-genre';
 
 const clinics = (clinicsData as Clinic[])
   .filter((c) => typeof c.lat === 'number' && typeof c.lng === 'number')
@@ -15,6 +15,7 @@ const clinics = (clinicsData as Clinic[])
     // Coloured by 診療区分 (ホルモン療法 / 精神科・診断 / 手術) — the same buckets as
     // the /clinics/ finder, so the two pages are consistent.
     genre: primaryGenre(categoriesOf(c)),
+    tags: clinicMapTags(c),
     lat: c.lat,
     lng: c.lng,
   }));

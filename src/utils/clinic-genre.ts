@@ -168,3 +168,18 @@ const GI_CERTIFIED_IDS = new Set<string>([
 ]);
 
 export const isGiCertified = (clinic: Clinic): boolean => GI_CERTIFIED_IDS.has(clinic.id);
+
+const GENRE_LABEL: Record<ClinicGenre, string> = {
+  hrt: 'ホルモン療法',
+  mental: '精神科・診断',
+  surgery: '手術',
+};
+
+// Short tag labels for a clinic, shown on the map popup (and reusable on cards):
+// the specific capabilities (女性化ホルモン（MtF）, 性別適合手術（SRS）…), falling back to
+// the 診療区分 when no direction/procedure is named, plus GI学会認定 when certified.
+export function clinicMapTags(clinic: Clinic): string[] {
+  const caps = capabilitiesOf(clinic).map((cap) => CAPABILITY_LABELS[cap]);
+  const base = caps.length ? caps : categoriesOf(clinic).map((g) => GENRE_LABEL[g]);
+  return isGiCertified(clinic) ? [...base, 'GI学会認定'] : base;
+}
