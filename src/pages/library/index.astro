@@ -3,22 +3,42 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const pages = (await getCollection('imported')).sort((a, b) => a.data.title.localeCompare(b.data.title, 'ja'));
-const categories = [...new Set(pages.map((page) => page.data.sourceCategory))].sort((a, b) => a.localeCompare(b, 'ja'));
+
+// Group by 出典 (source project), not by topic: each source is a different
+// project with its own provenance, nature (faithful import vs. transnavi
+// adaptation) and license, so keeping them in separate, clearly-labelled
+// sections is what keeps the attribution honest as more sources are added.
+const sources = [...new Set(pages.map((page) => page.data.sourceProject))];
+const groups = sources.map((source) => {
+  const items = pages.filter((page) => page.data.sourceProject === source);
+  return { source, license: items[0]?.data.sourceLicense ?? '', items };
+});
 ---
 
-<BaseLayout title="資料集 - とらんすナビ" description="既存資料を確認しやすい形で整理したページです。">
+<BaseLayout
+  title="資料集 - とらんすナビ"
+  description="ほかのプロジェクトの資料を、出典ごとに取り込み・整理したページです。それぞれの出典とライセンスを明記しています。"
+>
   <article class="article-shell">
     <div class="eyebrow">資料集</div>
     <h1>資料集</h1>
-    <p class="lead">MtF.wiki 日本語版から取り込んだ資料。</p>
-    {categories.map((category) => (
-      <section aria-labelledby={`category-${category}`}>
-        <h2 id={`category-${category}`}>{category}</h2>
+    <p class="lead">
+      ほかのプロジェクトがつくった資料を、出典ごとに取り込み・整理したページです。それぞれの出典とライセンスを明記しています。
+    </p>
+
+    <div class="page-disclaimer">
+      ここにある資料は、別のプロジェクトの文章をそのまま取り込んだものや、日本語に訳して再構成したものです。出典によって性質がちがうので、各セクションの出典とライセンスを確認してください。内容が最新・正確とはかぎりません。医療のことは、必ず医師に相談してください。
+    </div>
+
+    {groups.map((group, i) => (
+      <section aria-labelledby={`src-${i}`}>
+        <h2 id={`src-${i}`}>{group.source}</h2>
+        <p class="resource-section-intro">ライセンス: {group.license}</p>
         <div class="article-list">
-          {pages.filter((page) => page.data.sourceCategory === category).map((page) => (
+          {group.items.map((page) => (
             <a class="article-link" href={`/library/${page.id}/`}>
               <strong>{page.data.title}</strong>
-              <span>{page.data.sourcePath}</span>
+              <span>{page.data.sourceCategory}</span>
             </a>
           ))}
         </div>
