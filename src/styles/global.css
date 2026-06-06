@@ -2729,6 +2729,39 @@ a.glossary-card-tag:hover {
   word-break: break-word;
 }
 
+/* Tables in imported markdown prose (e.g. the /library/ MtF.wiki articles): the
+   markdown renders a bare <table>, which otherwise shows as unstyled, run-together
+   text. Give it borders, padding and a header tint, and let it scroll sideways on
+   narrow screens instead of overflowing the page. */
+.prose table {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 18px 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.prose th,
+.prose td {
+  border: 1px solid var(--line);
+  padding: 7px 11px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.prose thead th {
+  background: var(--accent-soft);
+  color: var(--ink-heading);
+  font-weight: 700;
+}
+
+.prose tbody tr:nth-child(even) {
+  background: var(--paper-strong);
+}
+
 .cite-block code,
 .data-dump-list code {
   padding: 0;
