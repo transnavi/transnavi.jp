@@ -1,7 +1,7 @@
 {
   "/start/": {
     "created": "2026-06-02",
-    "updated": "2026-06-05"
+    "updated": "2026-06-07"
   },
   "/faq/": {
     "created": "2026-06-04",
@@ -13,7 +13,7 @@
   },
   "/basics/": {
     "created": "2026-06-02",
-    "updated": "2026-06-04"
+    "updated": "2026-06-07"
   },
   "/gender/": {
     "created": "2026-06-02",
@@ -25,11 +25,11 @@
   },
   "/intersex/": {
     "created": "2026-06-04",
-    "updated": "2026-06-04"
+    "updated": "2026-06-07"
   },
   "/dysphoria/": {
     "created": "2026-06-02",
-    "updated": "2026-06-05"
+    "updated": "2026-06-07"
   },
   "/transition/": {
     "created": "2026-06-02",
@@ -41,7 +41,7 @@
   },
   "/hrt-medications/": {
     "created": "2026-06-02",
-    "updated": "2026-06-05"
+    "updated": "2026-06-07"
   },
   "/fertility/": {
     "created": "2026-06-02",
@@ -61,7 +61,7 @@
   },
   "/hair-removal/": {
     "created": "2026-06-02",
-    "updated": "2026-06-04"
+    "updated": "2026-06-07"
   },
   "/surgery/": {
     "created": "2026-06-02",
@@ -73,7 +73,7 @@
   },
   "/legal-change/": {
     "created": "2026-06-02",
-    "updated": "2026-06-06"
+    "updated": "2026-06-07"
   },
   "/coming-out/": {
     "created": "2026-06-02",
@@ -109,7 +109,7 @@
   },
   "/reference/": {
     "created": "2026-06-05",
-    "updated": "2026-06-05"
+    "updated": "2026-06-07"
   },
   "/about/": {
     "created": "2026-06-02",
