@@ -45,6 +45,8 @@
 /school/:
   - mext
   - mext-2016
+/everyday/:
+  - tokyo-np-trans-toilet
 /orientation/:
   - apa-understanding-transgender-people
   - transequality-the-report-of
