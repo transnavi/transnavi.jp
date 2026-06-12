@@ -14,6 +14,7 @@
     "astro": "astro",
     "check": "astro check",
     "test:browser": "playwright test",
+    "test:data": "node --test tests/data-validation.test.mjs",
     "deploy": "npm run build && wrangler deploy",
     "generate-types": "wrangler types",
     "import:mtf-clinics": "node scripts/import-mtf-clinics.mjs",

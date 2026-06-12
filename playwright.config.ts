@@ -4,6 +4,8 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
+  // Only the browser specs; tests/*.test.mjs are node:test data checks (npm run test:data).
+  testMatch: /.*\.spec\.ts/,
   webServer: {
     // Serve the BUILT site (astro preview), not the dev server, so postbuild
     // artifacts like /search-index.json and /link-map.json are present —
