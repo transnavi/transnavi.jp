@@ -120,7 +120,7 @@ const MASCULINIZING = /(ＦＴＭ|FTM|FtM|ftm|女性から男性|男性化ホル
 // Specific procedures, named in the notes. Genital/internal ones are more precise
 // than the generic SRS umbrella, so when one is found the umbrella is suppressed
 // (e.g. an orchiectomy-only clinic should not read as offering full SRS).
-const ORCHIECTOMY = /睾丸摘出|精巣摘出|去勢/;
+const ORCHIECTOMY = /睾丸摘出|精巣摘出|睾丸切除|精巣切除|精巣摘除|除睾|去勢/;
 const VAGINOPLASTY = /造腟|造膣|腟形成|膣形成/;
 const PHALLOPLASTY = /陰茎形成|陰茎再建/;
 const HYSTERECTOMY = /子宮摘出|卵巣摘出|子宮全摘|内性器摘出/;
@@ -129,19 +129,26 @@ const BREAST_AUG = /(豊胸|豊乳|乳房増大|バストアップ)/;
 const VFS_TEXT = /(ＶＦＳ|VFS|声の(女性化)?手術|音声の?手術|声帯手術)/;
 const FFS_TEXT = /(ＦＦＳ|FFS|顔面女性化|顔の女性化)/;
 
-// Negation that immediately follows a procedure word and flips it negative — e.g.
-// 「豊胸術を行わずに女性化」 mentions 豊胸 only to say it ISN'T needed. Such a
-// mention must NOT produce a capability tag. Matched within a short window after
-// the keyword (allowing a trailing 術/など etc.).
-const NEGATION_AFTER =
-  /^[^。\n、]{0,8}?(行わ(ず|ない|ぬ)|行いません|行っていな(い|ければ)|行っていません|なし|無し|不要|せず|しな(い|いで)|しません|していな(い|ければ)|していません|対応していな|扱っていな|要しない)/;
+// NEGATION applies to the procedure right next to it, so it is matched only
+// within the same clause (never across 。 、 \n) — otherwise 「造腟術に対応、豊胸は
+// しない」 would wrongly un-tag 造腟. e.g. 「豊胸術を行わずに女性化」 (without breast aug).
+const NEGATION_LOCAL =
+  /^[^。\n、]{0,14}?(行わ(ず|ない|ぬ)|行いません|行っていな|なし|無し|不要|せず|しな(い|いで)|しません|していな|できません|できない|対応していな|扱っていな|要しない)/;
 
-// True when `re` matches the text in at least one place that is NOT negated, so
-// affirmative mentions tag and negated-only mentions ("〜を行わず") do not.
+// SPECULATION / hearsay hedges the whole statement, so it is matched anywhere in
+// the same sentence (up to the next 。 \n) after the keyword:
+//   「女性ホルモン注射もやっていると考えられる」「MTFからの情報提供があったとの報告（未確認）」
+const SPECULATION_IN_SENTENCE = /(考えられ|と思われ|かもしれ|未確認|不明|との報告|との記録|情報提供があ|らしい)/;
+
+// True when `re` has at least one affirmative, non-speculative mention — so
+// negated ("〜を行わず") or speculative ("〜と考えられる", "未確認") mentions alone
+// don't produce a capability tag, but a plain affirmative mention does.
 function statesAffirmatively(text: string, re: RegExp): boolean {
   const g = new RegExp(re.source, re.global ? re.flags : `${re.flags}g`);
   for (let m = g.exec(text); m; m = g.exec(text)) {
-    if (!NEGATION_AFTER.test(text.slice(m.index + m[0].length))) return true;
+    const after = text.slice(m.index + m[0].length);
+    const sentence = after.split(/[。\n]/, 1)[0];
+    if (!NEGATION_LOCAL.test(after) && !SPECULATION_IN_SENTENCE.test(sentence)) return true;
     if (m.index === g.lastIndex) g.lastIndex++; // guard against zero-width matches
   }
   return false;

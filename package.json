@@ -23,6 +23,7 @@
     "import:mtf": "npm run import:mtf-clinics && npm run import:mtf-content && npm run import:terminology",
     "coverage": "node scripts/citation-coverage.mjs",
     "links": "node scripts/analyze-links.mjs",
+    "audit:clinics": "bun run scripts/audit-clinic-tags.ts",
     "prebuild": "node scripts/gen-page-dates.mjs && node scripts/gen-citations.mjs && node scripts/gen-glossary-readings.mjs"
   },
   "dependencies": {
