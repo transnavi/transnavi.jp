@@ -57,6 +57,12 @@ caaps-rogd-statement:
   title: 'ROGD Statement: there are no sound empirical studies of Rapid-Onset Gender Dysphoria'
   type: web
   url: https://www.caaps.co/rogd-statement
+cao-rikaizoshin-qa:
+  lang: ja
+  publisher: 内閣府 政策統括官（共生・共助担当）
+  title: 性的指向及びジェンダーアイデンティティの多様性に関する国民の理解の増進に関する法律に関するQ&A
+  type: web
+  url: https://www8.cao.go.jp/rikaizoshin/qa/index.html
 apa-understanding-sexual-orientation:
   lang: en
   publisher: American Psychological Association（米国心理学会）
@@ -249,6 +255,18 @@ j-sfp:
   title: 妊孕性／妊孕性温存について
   type: web
   url: https://www.j-sfp.org/fertility/
+ioc-tokyo2020-balance:
+  lang: en
+  publisher: International Olympic Committee（IOC）
+  title: Tokyo 2020 first ever gender-balanced Olympic Games in history, record number of female competitors at Paralympic Games
+  type: web
+  url: https://www.olympics.com/ioc/news/tokyo-2020-first-ever-gender-balanced-olympic-games-in-history-record-number-of-female-competitors-at-paralympic-games
+ioc-gender-framework:
+  lang: en
+  publisher: International Olympic Committee（IOC, 2021）
+  title: IOC Framework on Fairness, Inclusion and Non-Discrimination on the Basis of Gender Identity and Sex Variations
+  type: web
+  url: https://www.olympics.com/ioc/news/ioc-releases-framework-on-fairness-inclusion-and-non-discrimination-on-the-basis-of-gender-identity-and-sex-variations
 japaneselawtranslation:
   lang: ja
   publisher: 法務省 日本法令外国語訳データベースシステム
@@ -364,6 +382,12 @@ mhlw-3:
   title: 医師免許を有しない者による脱毛行為等の取扱いについて
   type: web
   url: https://www.mhlw.go.jp/web/t_doc?dataId=00ta6731&dataType=1&pageNo=1
+mhlw-bath-2023:
+  lang: ja
+  publisher: 厚生労働省 医薬・生活衛生局生活衛生課（令和5年6月23日 事務連絡 薬生衛発0623第1号）
+  title: 公衆浴場や旅館業の施設の共同浴室における男女の取扱いについて
+  type: web
+  url: https://www.mhlw.go.jp/content/001168571.pdf
 mhlw-3-2:
   lang: ja
   publisher: 厚生労働省
@@ -594,6 +618,13 @@ rebit-2022-youth:
     LGBTQユース。過去1年で約半数が自殺を考え、約14%が自殺未遂。10代では53.9%が自殺念慮、19.6%が自殺未遂を経験
   type: web
   url: https://prtimes.jp/main/html/rd/p/000000073.000047512.html
+rebit-medical-welfare-2023:
+  lang: ja
+  publisher: 認定NPO法人ReBit「LGBTQ医療福祉調査2023」
+  title: >-
+    トランスジェンダー男性・女性の約8割が医療で困難を経験し、その影響で約4割が病院に行けなくなり、約4人に1人が自殺を考えた／自殺未遂をしたと回答
+  type: web
+  url: https://rebitlgbt.org/news/9873/
 scj:
   lang: ja
   publisher: 日本学術会議

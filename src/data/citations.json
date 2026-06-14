@@ -1157,6 +1157,20 @@
       "id": "courts-2"
     },
     {
+      "title": "公衆浴場や旅館業の施設の共同浴室における男女の取扱いについて",
+      "url": "https://www.mhlw.go.jp/content/001168571.pdf",
+      "publisher": "厚生労働省 医薬・生活衛生局生活衛生課（令和5年6月23日 事務連絡 薬生衛発0623第1号）",
+      "lang": "ja",
+      "id": "mhlw-bath-2023"
+    },
+    {
+      "title": "性的指向及びジェンダーアイデンティティの多様性に関する国民の理解の増進に関する法律に関するQ&A",
+      "url": "https://www8.cao.go.jp/rikaizoshin/qa/index.html",
+      "publisher": "内閣府 政策統括官（共生・共助担当）",
+      "lang": "ja",
+      "id": "cao-rikaizoshin-qa"
+    },
+    {
       "title": "Gender Identity Nondiscrimination Laws in Public Accommodations: a Review of Evidence Regarding Safety and Privacy in Public Restrooms, Locker Rooms, and Changing Rooms",
       "url": "https://williamsinstitute.law.ucla.edu/publications/ma-public-accommodations/",
       "publisher": "Hasenbush ら／Sexuality Research and Social Policy 2018（Williams Institute）",
@@ -1204,6 +1218,27 @@
       "publisher": "Olson KR ら／Pediatrics 2022;150(2):e2021056082（米国小児科学会）",
       "lang": "en",
       "id": "olson-gender-identity-5-years"
+    },
+    {
+      "title": "トランスジェンダー男性・女性の約8割が医療で困難を経験し、その影響で約4割が病院に行けなくなり、約4人に1人が自殺を考えた／自殺未遂をしたと回答",
+      "url": "https://rebitlgbt.org/news/9873/",
+      "publisher": "認定NPO法人ReBit「LGBTQ医療福祉調査2023」",
+      "lang": "ja",
+      "id": "rebit-medical-welfare-2023"
+    },
+    {
+      "title": "Tokyo 2020 first ever gender-balanced Olympic Games in history, record number of female competitors at Paralympic Games",
+      "url": "https://www.olympics.com/ioc/news/tokyo-2020-first-ever-gender-balanced-olympic-games-in-history-record-number-of-female-competitors-at-paralympic-games",
+      "publisher": "International Olympic Committee（IOC）",
+      "lang": "en",
+      "id": "ioc-tokyo2020-balance"
+    },
+    {
+      "title": "IOC Framework on Fairness, Inclusion and Non-Discrimination on the Basis of Gender Identity and Sex Variations",
+      "url": "https://www.olympics.com/ioc/news/ioc-releases-framework-on-fairness-inclusion-and-non-discrimination-on-the-basis-of-gender-identity-and-sex-variations",
+      "publisher": "International Olympic Committee（IOC, 2021）",
+      "lang": "en",
+      "id": "ioc-gender-framework"
     }
   ],
   "/faq/": [
