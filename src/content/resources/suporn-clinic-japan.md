@@ -4,7 +4,7 @@ description: Suporn Clinic の日本語案内サイトです。
 url: https://supornclinic.jp
 language: ja
 region: japan
-category: guide
+category: medical
 topicTags:
   - 手術
   - MtF・女性化
