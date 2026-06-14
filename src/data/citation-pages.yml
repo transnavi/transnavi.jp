@@ -1,4 +1,14 @@
 # Which references (and in what order = display number) appear on each page.
+/work/:
+  - no-harassment-sogi
+  - mhlw-diversity
+  - mhlw-rirekisho
+/mental-health/:
+  - who-icd11
+  - jspn-guideline
+  - tandfonline-standards-of-care
+  - ncbi-expecting-rejection-understanding
+  - mhlw
 /transition/:
   - tandfonline-standards-of-care
   - academic-endocrine-treatment-of

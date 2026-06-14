@@ -1,4 +1,64 @@
 {
+  "/work/": [
+    {
+      "title": "あかるい職場応援団（ハラスメント・SOGIハラ・アウティングの防止）",
+      "url": "https://www.no-harassment.mhlw.go.jp/",
+      "publisher": "厚生労働省",
+      "lang": "ja",
+      "id": "no-harassment-sogi"
+    },
+    {
+      "title": "職場におけるダイバーシティ推進に関する事業（性的指向・性自認に関する取組）",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyoukintou/0000088194_00001.html",
+      "publisher": "厚生労働省",
+      "lang": "ja",
+      "id": "mhlw-diversity"
+    },
+    {
+      "title": "新たな履歴書の様式例（性別欄は任意記載）",
+      "url": "https://www.mhlw.go.jp/content/11601000/000769679.pdf",
+      "publisher": "厚生労働省",
+      "lang": "ja",
+      "id": "mhlw-rirekisho"
+    }
+  ],
+  "/mental-health/": [
+    {
+      "title": "Gender incongruence and transgender health in the ICD",
+      "url": "https://www.who.int/standards/classifications/frequently-asked-questions/gender-incongruence-and-transgender-health-in-the-icd",
+      "publisher": "世界保健機関（WHO）",
+      "lang": "en",
+      "id": "who-icd11"
+    },
+    {
+      "title": "性別不合に関する診断と治療のガイドライン（第5版）",
+      "url": "https://www.jspn.or.jp/modules/advocacy/index.php?content_id=23",
+      "publisher": "日本精神神経学会（JSPN）",
+      "lang": "ja",
+      "id": "jspn-guideline"
+    },
+    {
+      "title": "Standards of Care for the Health of Transgender and Gender Diverse People, Version 8 (WPATH SOC-8)",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/26895269.2022.2100644",
+      "publisher": "World Professional Association for Transgender Health / International Journal of Transgender Health",
+      "lang": "en",
+      "id": "tandfonline-standards-of-care"
+    },
+    {
+      "title": "Expecting Rejection: Understanding the Minority Stress Experiences of Transgender and Gender-Nonconforming Individuals",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5685272/",
+      "publisher": "Rood BA, et al. / Transgender Health（査読付き論文）",
+      "lang": "en",
+      "id": "ncbi-expecting-rejection-understanding"
+    },
+    {
+      "title": "電話相談窓口（よりそいホットライン）｜まもろうよ こころ",
+      "url": "https://www.mhlw.go.jp/mamorouyokokoro/soudan/tel/",
+      "publisher": "厚生労働省",
+      "lang": "ja",
+      "id": "mhlw"
+    }
+  ],
   "/transition/": [
     {
       "title": "Standards of Care for the Health of Transgender and Gender Diverse People, Version 8 (WPATH SOC-8)",

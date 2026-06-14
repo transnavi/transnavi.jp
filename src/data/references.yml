@@ -388,6 +388,18 @@ mhlw-bath-2023:
   title: 公衆浴場や旅館業の施設の共同浴室における男女の取扱いについて
   type: web
   url: https://www.mhlw.go.jp/content/001168571.pdf
+mhlw-diversity:
+  lang: ja
+  publisher: 厚生労働省
+  title: 職場におけるダイバーシティ推進に関する事業（性的指向・性自認に関する取組）
+  type: web
+  url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyoukintou/0000088194_00001.html
+mhlw-rirekisho:
+  lang: ja
+  publisher: 厚生労働省
+  title: 新たな履歴書の様式例（性別欄は任意記載）
+  type: web
+  url: https://www.mhlw.go.jp/content/11601000/000769679.pdf
 mhlw-3-2:
   lang: ja
   publisher: 厚生労働省

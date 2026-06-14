@@ -24,6 +24,8 @@ const pages = [
   '/orientation/',
   '/dysphoria/',
   '/school/',
+  '/work/',
+  '/mental-health/',
   '/transition/',
   '/hrt-medications/',
   '/presentation/',
