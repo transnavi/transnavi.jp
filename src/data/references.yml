@@ -684,6 +684,43 @@ thetrevorproject-accepting-adults-reduce:
   type: web
   url: >-
     https://www.thetrevorproject.org/research-briefs/accepting-adults-reduce-suicide-attempts-among-lgbtq-youth/
+trans101-ally:
+  lang: ja
+  publisher: はじめてのトランスジェンダー trans101.jp
+  title: トランスアライにできること
+  type: web
+  url: https://trans101.jp/2021/11/12/allys/
+glaad-ally-tips:
+  lang: en
+  publisher: GLAAD
+  title: Tips for Allies of Transgender People
+  type: web
+  url: https://glaad.org/transgender/allies/
+a4te-ally-guide:
+  lang: en
+  publisher: Advocates for Trans Equality（旧 National Center for Transgender Equality）
+  title: "Supporting the Transgender People in Your Life: A Guide to Being a Good Ally"
+  type: web
+  url: https://transequality.org/resources/supporting-transgender-people-your-life-guide-being-good-ally
+pflag-ally-guide:
+  lang: en
+  publisher: PFLAG National（Straight for Equality）
+  title: Guide to Being An Ally to Trans and Nonbinary People
+  type: web
+  url: https://pflag.org/resource/trans-nonbinary-ally-guide/
+transhub-allies:
+  lang: en
+  publisher: TransHub（ACON、オーストラリア）
+  title: For Allies
+  type: web
+  url: https://www.transhub.org.au/allies
+trevor-ally-guide:
+  lang: en
+  publisher: The Trevor Project
+  title: Guide to Being an Ally to Transgender and Nonbinary Young People
+  type: web
+  url: >-
+    https://www.thetrevorproject.org/resources/guide/a-guide-to-being-an-ally-to-transgender-and-nonbinary-youth/
 thetrevorproject-protectiveness-of-famil:
   lang: en
   publisher: The Trevor Project（研究ブリーフ）

@@ -21,36 +21,117 @@ const listenTips = [
 ---
 
 <BaseLayout
-  title="周囲の人へ - とらんすナビ"
-  description="家族・学校・友人に伝えるとき、そして身近な人から打ち明けられたとき。"
+  title="周囲の人へ・アライにできること - とらんすナビ"
+  description="トランスの人を支えたい周囲の人（アライ）に、できること。名前や代名詞の尊重、まちがえたときの対応、すぐできること・少し踏み込めること、関係によってのヒント、打ち明けられたときの受けとめ方を、海外・国内の手引きを参考にやさしくまとめました。"
 >
   <article class="article-shell prose">
     <div class="eyebrow">周囲の人へ</div>
     <Mascot name="calm" />
-    <h1>周囲の人へ</h1>
-    <p class="lead">自分のことを伝えたいとき。そして、身近な人から打ち明けられたとき。</p>
-
-    <h2>家族・学校・友人に伝えたいとき</h2>
-    <p>自分のことを伝えるかどうか、誰に・いつ伝えるかは、あなたが選んでいいことです。伝えることは義務ではありません。</p>
-    <ul class="assure-list">
-      {tellingTips.map((tip) => <li>{tip}</li>)}
-    </ul>
-
-    <h2>身近な人から打ち明けられたら</h2>
-    <p><Cite src={['familyproject-family-acceptance-of', 'whatweknow-what-does-the', 'thetrevorproject-accepting-adults-reduce']}>大切な人から打ち明けられたとき、あなたの最初のひと言は、その人がほっとできるかどうかを大きく左右します</Cite>。</p>
-    <ul class="assure-list">
-      {listenTips.map((tip) => <li>{tip}</li>)}
-    </ul>
-    <p>
-      <Cite src="pmc-chosen-name-use">呼んでほしい名前で呼ばれることは、その人のこころの健康を守り、つらさを減らすことにつながると報告されています</Cite>。また、<Cite src="tokyo-jinken">打ち明けられたことを、本人の許可なく他の人へ伝える（<a href="/glossary/force-outing/">アウティング</a>）のは避けてください</Cite>。
-    </p>
-
-    <h2>学校や職場で、できること</h2>
-    <p>学校・大学・職場・自治体には、<a href="/glossary/sexual-orientation/">性的指向</a>や<a href="/glossary/gender-identity/">性自認</a>（<a href="/glossary/sogi/">SOGI</a>）への対応をまとめた公式のガイドラインを公表しているところが増えています。<Cite src={['mext', 'apa-2020-resolution-on']}>名前や呼称、トイレ・更衣室、健康診断、就職活動などでの配慮の、よりどころになります</Cite>。<a href="/guidelines/">学校・職場・自治体のSOGIガイドライン</a>に、国・大学・自治体・企業などの例を集めました。自分の通う学校や働く場の方針を調べたり、まだないときに「こういう例があります」と伝えたりするのに使えます。</p>
+    <h1>周囲の人へ・アライにできること</h1>
+    <p class="lead">自分は当事者ではないけれど、トランスの人を理解し、支えようとする。その人のことを<a href="/glossary/ally/">アライ</a>と呼びます。ここでは、できることを具体的にまとめました。身近な人から打ち明けられたときのことも。</p>
 
     <p>
-      こうして、自分は当事者ではないけれど理解し支えようとする人のことを、<a href="/glossary/ally/">アライ</a>と呼びます。完璧である必要はありません。学び続け、まちがえたら直し、必要なときに声をあげる。その積み重ねが、何よりの支えになります。
+      <Cite src={['glaad-ally-tips', 'pflag-ally-guide', 'transhub-allies']}>アライは、肩書きや資格ではなく、続けていく行動です。完璧である必要はありません。専門家になる必要もありません</Cite>。学び続け、まちがえたら直し、必要なときに声をあげる。その積み重ねが、何よりの支えになります。
     </p>
+
+    <section aria-labelledby="stance">
+      <h2 id="stance">まず、大切にしたい姿勢</h2>
+      <ul>
+        <li>
+          <strong>否定せず、そのまま受けとめる。</strong>
+          <Cite src={['a4te-ally-guide', 'pflag-ally-guide']}>すべてを理解できなくても、その人を尊重することはできます。「本当に？」と疑ったり、説明を求めたりせず、本人が話す自分のことを、そのまま受けとめてください</Cite>。
+        </li>
+        <li>
+          <strong>名前・代名詞・呼ばれ方を尊重する。</strong>
+          <Cite src={['trevor-ally-guide', 'pmc-chosen-name-use']}>本人が望む名前や呼ばれ方を使うことは、その人のこころの健康を守り、つらさを減らすことにつながると報告されています</Cite>。戸籍が変わっているかどうかは関係ありません。わからないときは、決めつけずに本人に確かめて大丈夫です。
+        </li>
+        <li>
+          <strong>本人の許可なく、他の人に伝えない。</strong>
+          <Cite src={['tokyo-jinken', 'glaad-ally-tips']}>打ち明けられたことを、本人の同意なく他の人へ伝えること（<a href="/glossary/force-outing/">アウティング</a>）は避けてください。誰に・いつ・どこまで話すかは、本人が決めることです</Cite>。
+        </li>
+        <li>
+          <strong>根掘り葉掘り聞かない。</strong>
+          <Cite src={['a4te-ally-guide', 'glaad-ally-tips', 'pflag-ally-guide']}>からだや手術・ホルモンのこと、元の名前、昔の写真、性生活などは、とても個人的でデリケートなことです。「それを知らないと、その人を大切にできないだろうか？」「自分が同じことを聞かれたら、いやではないか？」と、一度立ち止まってみてください</Cite>。
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="mistakes">
+      <h2 id="mistakes">まちがえたときは</h2>
+      <p>
+        名前や代名詞を、つい間違えてしまうこともあります。
+        <Cite src={['transhub-allies', 'a4te-ally-guide', 'pflag-ally-guide', 'trevor-ally-guide']}>そんなときは、さっと短くあやまって、言い直して、先に進んでください。大げさに落ち込んだり、何度もあやまったりすると、かえって相手に気をつかわせてしまいます</Cite>。
+        大切なのは、その場の言葉だけでなく、その人をどう思い浮かべるか、頭の中の認識を少しずつ更新していくことです。
+      </p>
+    </section>
+
+    <section aria-labelledby="actions">
+      <h2 id="actions">アライにできること</h2>
+      <p>大きなことでなくて大丈夫。小さなことの積み重ねが、その場の空気を変えていきます。</p>
+
+      <h3>すぐできること</h3>
+      <ul>
+        <li><Cite src={['trans101-ally', 'glaad-ally-tips']}>見た目で性別を決めつけない。わからないときは、誰に対しても「さん」で呼ぶ</Cite>。「くん」「おねえさん」などを自動的に使わない。</li>
+        <li>誰かを指すとき、性別ではなく中立的な言い方を使う（「前の列の、黄色いシャツの方」など）。</li>
+        <li>名前や代名詞を、推測せず、本人の希望に合わせて使う。</li>
+        <li>トランスについて、当事者が書いたものなどから、自分から学ぶ。当事者に説明役をさせない。</li>
+      </ul>
+
+      <h3>少し踏み込んでできること</h3>
+      <ul>
+        <li><Cite src={['a4te-ally-guide', 'pflag-ally-guide']}>差別的な冗談やデマがあったとき、本人に代わって、おだやかに声をあげる。当事者がいないところでも</Cite>。人をやりこめるのではなく、その言動がなぜ問題かを伝える形で。</li>
+        <li><Cite src={['trans101-ally', 'a4te-ally-guide']}>必要のない男女分けを、減らせないか考えてみる。書類の性別欄、イベントの男女別、制服や髪型の規則など</Cite>。</li>
+        <li>だれでも使える個室のトイレ・更衣室など、性別で二択を迫らずにすむ選択肢を後押しする（強制はしない）。</li>
+      </ul>
+
+      <h3>つづけていけること</h3>
+      <ul>
+        <li><Cite src={['pflag-ally-guide', 'glaad-ally-tips']}>学び続け、まちがえたら直す。トランスの人は、今に始まった存在ではなく、世界の各地に昔からいました</Cite>（<a href="/history/">歴史</a>・<a href="/myths/">よくある誤解</a>）。</li>
+        <li><Cite src="trans101-ally">SNSで目立つ話題（公衆浴場など）に流されず、当事者が実際に困っている課題（雇用・医療・教育など）に目を向け、そこで動いている人や団体を支える</Cite>。</li>
+        <li><Cite src={['transhub-allies', 'pflag-ally-guide']}>自分の戸惑いや感情は、当事者に背負わせず、カウンセラーや信頼できる人に話して整理する</Cite>。</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="relationships">
+      <h2 id="relationships">関係によって、できること</h2>
+      <p>立場によって、できることは少しずつ変わります。</p>
+      <ul>
+        <li><strong>友だち：</strong><Cite src="transhub-allies">陰で言いふらす人ではなく、安心して相談できる人でいてください</Cite>。</li>
+        <li><strong>恋人・パートナー：</strong><Cite src="transhub-allies">まず、関係そのものを大切に思っていると伝えてください。戸惑いがあれば、自分の時間をかけて整理を。もし関係を終えるとしても、相手の「本当の性」を否定する形ではなく、自分の気持ちの変化として向き合ってください</Cite>。必要なら、理解のある専門家のカウンセリングも。</li>
+        <li><strong>きょうだい・家族：</strong>受けとめ方や、家族自身の相談先は、<a href="/parents/">保護者の方へ</a>もあわせてどうぞ。</li>
+        <li><strong>先生・学校の人：</strong>配慮の具体例は、<a href="/school/">学校でのこと</a>と<a href="/guidelines/">SOGIガイドライン</a>に。</li>
+        <li><strong>職場の人：</strong><Cite src="transhub-allies">ハラスメントを見かけたら、割って入ってください</Cite>。具体例は<a href="/work/">働くこと・職場でのこと</a>に。</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="told">
+      <h2 id="told">身近な人から打ち明けられたら</h2>
+      <p><Cite src={['familyproject-family-acceptance-of', 'whatweknow-what-does-the', 'thetrevorproject-accepting-adults-reduce']}>大切な人から打ち明けられたとき、あなたの最初のひと言は、その人がほっとできるかどうかを大きく左右します</Cite>。</p>
+      <ul class="assure-list">
+        {listenTips.map((tip) => <li>{tip}</li>)}
+      </ul>
+    </section>
+
+    <section aria-labelledby="institution">
+      <h2 id="institution">学校や職場で、できること</h2>
+      <p>学校・大学・職場・自治体には、<a href="/glossary/sexual-orientation/">性的指向</a>や<a href="/glossary/gender-identity/">性自認</a>（<a href="/glossary/sogi/">SOGI</a>）への対応をまとめた公式のガイドラインを公表しているところが増えています。<Cite src={['mext', 'apa-2020-resolution-on']}>名前や呼称、トイレ・更衣室、健康診断、就職活動などでの配慮の、よりどころになります</Cite>。<a href="/guidelines/">学校・職場・自治体のSOGIガイドライン</a>に、国・大学・自治体・企業などの例を集めました。自分の通う学校や働く場の方針を調べたり、まだないときに「こういう例があります」と伝えたりするのに使えます。</p>
+    </section>
+
+    <section aria-labelledby="self-care">
+      <h2 id="self-care">あなた自身のケアも</h2>
+      <p>
+        <Cite src={['pflag-ally-guide', 'transhub-allies']}>支える側にも、戸惑いやしんどさが生まれることがあります。その気持ちは当事者本人ではなく、カウンセラーや信頼できる人に話して整理してください。また、無理な議論や、安全でない場からは、離れていいのです</Cite>。あなたが消耗しすぎないことも、支えを続けるためには大切です。
+      </p>
+    </section>
+
+    <section aria-labelledby="telling">
+      <h2 id="telling">（自分のことを伝えたい、あなたへ）</h2>
+      <p>このページにたどり着いた当事者の方へ。自分のことを伝えるかどうか、誰に・いつ伝えるかは、あなたが選んでいいことです。伝えることは義務ではありません。</p>
+      <ul class="assure-list">
+        {tellingTips.map((tip) => <li>{tip}</li>)}
+      </ul>
+      <p>伝え方のことは、<a href="/coming-out/">カミングアウト入門</a>にもくわしくまとめています。</p>
+    </section>
 
     <aside class="entry-message" role="note" aria-label="読んでいるあなたへ">
       <p>「ありのままでいいよ」と言える人が一人いるだけで、その人の世界はずいぶん生きやすくなります。</p>
@@ -59,11 +140,11 @@ const listenTips = [
     <nav class="word-chips entry-related" aria-label="関連ページ">
       <a class="word-chip" href="/parents/">保護者の方へ</a>
       <a class="word-chip" href="/coming-out/">カミングアウト入門</a>
+      <a class="word-chip" href="/school/">学校でのこと</a>
+      <a class="word-chip" href="/work/">働くこと・職場でのこと</a>
       <a class="word-chip" href="/guidelines/">SOGIガイドライン</a>
       <a class="word-chip" href="/support/">相談先</a>
-      <a class="word-chip" href="/safety/">安全とこころ</a>
       <a class="word-chip" href="/glossary/">用語集</a>
-      <a class="word-chip" href="/resources/">関連サイト</a>
     </nav>
     <References route="/allies/" />
   </article>
