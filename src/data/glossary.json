@@ -5098,5 +5098,60 @@
       "gender-critical",
       "transphobia"
     ]
+  },
+  {
+    "id": "virilization",
+    "term": "男性化",
+    "category": "医療",
+    "translations": {
+      "en": "Virilization"
+    },
+    "aliases": [
+      "男性化作用",
+      "雄性化",
+      "masculinization"
+    ],
+    "tags": [
+      "ホルモン療法",
+      "からだ・解剖",
+      "FtM・男性化",
+      "インターセックス",
+      "医学用語"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "アンドロゲンの作用により、声が低くなる、顔や体の毛が増える、筋肉量が増える、陰核が成長するなど、男性に典型的な二次性徴や身体的特徴が現れること。ホルモン療法による変化や、アンドロゲンの過剰による症状を表す。",
+    "seeAlso": [
+      "feminization",
+      "gaht",
+      "testosterone",
+      "antiandrogen"
+    ]
+  },
+  {
+    "id": "feminization",
+    "term": "女性化",
+    "category": "医療",
+    "translations": {
+      "en": "Feminization"
+    },
+    "aliases": [
+      "女性化作用"
+    ],
+    "tags": [
+      "ホルモン療法",
+      "からだ・解剖",
+      "MtF・女性化",
+      "医学用語"
+    ],
+    "avoid": [],
+    "disputed": [],
+    "notes": "エストロゲンの作用やアンドロゲン作用の低下により、乳房が発達する、体脂肪のつき方が変わる、筋肉量や体毛が減るなど、女性に典型的な二次性徴や身体的特徴が現れること。ホルモン療法による変化を表す文脈でも使われる。",
+    "seeAlso": [
+      "virilization",
+      "gaht",
+      "estrogen",
+      "antiandrogen"
+    ]
   }
 ]
