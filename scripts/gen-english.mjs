@@ -53,7 +53,8 @@ function visitText(node, callback, blocked = false) {
     return;
   }
   if (!(node instanceof HTMLElement)) return;
-  const nextBlocked = blocked || SKIP_TEXT.has(node.tagName);
+  const language = node.getAttribute('lang');
+  const nextBlocked = blocked || SKIP_TEXT.has(node.tagName) || Boolean(language && language !== 'ja');
   for (const child of node.childNodes) visitText(child, callback, nextBlocked);
 }
 
@@ -119,8 +120,22 @@ function collectStrings() {
 
 function polishTranslation(value) {
   return value
-    .replace(/(?:Translation|Translator|Transgender|Trans)[ -]?Navi/gi, 'TransNavi')
-    .replace(/Toransu Navi/gi, 'TransNavi')
+    .split(/(https?:\/\/[^\s)]+)/)
+    .map((part, index) => {
+      if (index % 2) return part;
+      return part
+        .replace(/(?:Translation|Translator|Transgender|Trans)[ -]?Navi/gi, 'TransNavi')
+        .replace(/Toransu Navi/gi, 'TransNavi')
+        .replace(/\b(?:Furahol|Frahol)\b/gi, 'DIY HRT')
+        .replace(/\bMamorouyo Kokoro\b/g, 'Ministry of Health, Labour and Welfare mental health support portal')
+        .replace(/\bKinki Trance Meeting\b/g, 'Kinki Trans Meeting')
+        .replace(/\bGender Assignment Hormone Therapy\b/gi, 'gender-affirming hormone therapy')
+        .replace(/\bvaginal ostomy(?: surgery)?\b/gi, 'vaginoplasty')
+        .replace(/\bgrottoplasty\b/gi, 'glottoplasty')
+        .replace(/``/g, '“')
+        .replace(/''/g, '”');
+    })
+    .join('')
     .trim();
 }
 
@@ -202,24 +217,115 @@ async function updateCatalog(strings) {
 
 const translationOf = (value) => {
   const key = keyOf(value);
+  if (key in overrides) return polishTranslation(overrides[key]);
   if (key.endsWith(' - とらんすナビ')) return `${translationOf(key.slice(0, -' - とらんすナビ'.length))} - TransNavi`;
+  if (key.endsWith(' →')) {
+    const base = key.slice(0, -' →'.length);
+    if (base in overrides) return `${translationOf(base)} →`;
+    if (key in catalog) return polishTranslation(catalog[key]);
+    return `${translationOf(base)} →`;
+  }
   if (key in glossaryEnglish) return glossaryEnglish[key];
   if (key in workEnglish) return workEnglish[key];
   if (key.startsWith('作者：')) return `Creator: ${key.slice('作者：'.length)}`;
-  const translated = polishTranslation(overrides[key] ?? catalog[key] ?? key);
+  const translated = polishTranslation(catalog[key] ?? key);
   if (clinicNames.has(key) && translated !== key) return `${translated} (${key})`;
   return translated;
 };
 
 const escapeText = (value) => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
+function capitalizeFirstWord(element) {
+  let found = false;
+
+  function visit(node) {
+    if (found) return;
+    if (node instanceof TextNode) {
+      const index = node.text.search(/[A-Za-z]/);
+      if (index === -1) return;
+      found = true;
+      const firstLetter = node.text[index];
+      if (firstLetter === firstLetter.toLowerCase()) {
+        node.rawText = escapeText(
+          `${node.text.slice(0, index)}${firstLetter.toUpperCase()}${node.text.slice(index + 1)}`,
+        );
+      }
+      return;
+    }
+    if (!(node instanceof HTMLElement)) return;
+    for (const child of node.childNodes) visit(child);
+  }
+
+  visit(element);
+}
+
+function conciseDescription(value, maximum = 160) {
+  const normalized = keyOf(value);
+  if (normalized.length <= maximum) return normalized;
+  const candidate = normalized.slice(0, maximum - 1);
+  const boundary = Math.max(candidate.lastIndexOf('. '), candidate.lastIndexOf('; '), candidate.lastIndexOf(' '));
+  const end = boundary >= Math.floor(maximum * 0.65) ? boundary : candidate.length;
+  return `${candidate.slice(0, end).replace(/[,:;.!?\s]+$/, '')}…`;
+}
+
+function polishEnglishInterface(root) {
+  root.querySelectorAll('main h1, main h2, main h3, main h4, main h5, main h6').forEach(capitalizeFirstWord);
+
+  for (const selector of ['meta[name="description"]', 'meta[property="og:description"]', 'meta[name="twitter:description"]']) {
+    const meta = root.querySelector(selector);
+    const content = meta?.getAttribute('content');
+    if (meta && content) meta.setAttribute('content', conciseDescription(content));
+  }
+
+  for (const link of root.querySelectorAll('a[href="https://db.transnavi.jp/ja/"]')) {
+    link.setAttribute('href', 'https://db.transnavi.jp/en/');
+  }
+
+  const licenseNote = root.querySelector('.footer-license-note');
+  licenseNote?.set_content(
+    'For details, see <a href="/en/data/">Citing and reusing the data</a>. If a page lists a different source or license, follow the terms shown on that page.',
+  );
+}
+
 function replaceTextNode(node) {
   const raw = node.text;
   const source = keyOf(raw);
-  if (!needsTranslation(source)) return;
+  const shouldTranslate = needsTranslation(source) || source in overrides;
+  const rendered = shouldTranslate ? translationOf(source) : raw.trim();
+  const polished = rendered
+    .replace(/。/g, '.')
+    .replace(/、/g, ', ')
+    .replace(/「/g, '“')
+    .replace(/」/g, '”')
+    .replace(/『/g, '‘')
+    .replace(/』/g, '’')
+    .replace(/（/g, '(')
+    .replace(/）/g, ')')
+    .replace(/・/g, ' · ');
+  if (!shouldTranslate && polished === raw.trim()) return;
   const leading = raw.match(/^\s*/)?.[0] ?? '';
   const trailing = raw.match(/\s*$/)?.[0] ?? '';
-  node.rawText = escapeText(`${leading}${translationOf(source)}${trailing}`);
+  node.rawText = escapeText(`${leading}${polished}${trailing}`);
+}
+
+function addInlineWordSpacing(root) {
+  const containers = root.querySelectorAll(
+    'p, li, dd, dt, blockquote, figcaption, summary, h1, h2, h3, h4, h5, h6, .page-disclaimer',
+  );
+  for (const container of containers) {
+    const textNodes = [];
+    visitText(container, (node) => {
+      if (node.text) textNodes.push(node);
+    });
+    for (let index = 1; index < textNodes.length; index++) {
+      const previous = textNodes[index - 1];
+      const current = textNodes[index];
+      if (/\s$/.test(previous.text) || /^\s/.test(current.text)) continue;
+      if (/[\p{L}\p{N}.!?,:;)\]”’]$/u.test(previous.text) && /^[\p{L}\p{N}(“‘]/u.test(current.text)) {
+        current.rawText = ` ${current.rawText}`;
+      }
+    }
+  }
 }
 
 function localizePath(value) {
@@ -310,6 +416,9 @@ function translateHtml(file) {
     noscript.set_content(fragment.toString());
   }
 
+  addInlineWordSpacing(root);
+  polishEnglishInterface(root);
+
   root.querySelector('html')?.setAttribute('lang', 'en');
   setMeta(root, 'meta[http-equiv="content-language"]', 'content', 'en');
   setMeta(root, 'meta[property="og:locale"]', 'content', 'en_US');
@@ -336,7 +445,7 @@ function translateHtml(file) {
   if (mainColumn) {
     mainColumn.insertAdjacentHTML(
       'afterbegin',
-      `<aside class="translation-note">This page was machine-translated from the <a href="${route}" hreflang="ja">Japanese original</a>. Check cited official sources for current medical, legal, and cost information.</aside>`,
+      `<aside class="translation-note">This site provides information about Japan. The <a href="${route}" hreflang="ja">Japanese version</a> is the authoritative version of this page. Please refer to it as well, especially for current medical, legal, and cost information.</aside>`,
     );
   }
 
@@ -359,6 +468,31 @@ function sectionLabel(route) {
   return 'Guide';
 }
 
+function textWithSpaces(element) {
+  const parts = [];
+  visitText(element, (node) => {
+    const text = keyOf(node.text);
+    if (text) parts.push(text);
+  });
+  return keyOf(parts.join(' '));
+}
+
+function englishSearchSynonyms() {
+  const result = {};
+  for (const entry of glossary) {
+    const forms = [entry.translations.en, entry.abbr, ...(entry.aliases || [])]
+      .filter((value) => typeof value === 'string' && /[A-Za-z]/.test(value) && !needsTranslation(value))
+      .map(keyOf)
+      .filter(Boolean);
+    const unique = [...new Set(forms)];
+    for (const form of unique) {
+      const alternatives = unique.filter((candidate) => candidate.toLowerCase() !== form.toLowerCase());
+      if (alternatives.length) result[form.toLowerCase()] = alternatives;
+    }
+  }
+  return result;
+}
+
 function buildEnglishSearch(files) {
   const entries = [];
   for (const file of files) {
@@ -374,13 +508,13 @@ function buildEnglishSearch(files) {
     const route = relative === 'index.html' ? '/en/' : `/en/${relative.replace(/index\.html$/, '')}`;
     entries.push({
       u: route,
-      t: keyOf(heading.text),
+      t: textWithSpaces(heading),
       k: sectionLabel(route),
-      x: keyOf(main.text).slice(0, 1600),
+      x: textWithSpaces(main).slice(0, 1600),
     });
   }
   fs.writeFileSync(path.join(EN_DIR, 'search-index.json'), JSON.stringify(entries));
-  fs.writeFileSync(path.join(EN_DIR, 'search-synonyms.json'), '{}');
+  fs.writeFileSync(path.join(EN_DIR, 'search-synonyms.json'), JSON.stringify(englishSearchSynonyms()));
   console.log(`english: search index contains ${entries.length} pages`);
 }
 

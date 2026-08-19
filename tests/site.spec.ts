@@ -84,7 +84,10 @@ test('英語版は主要ページとデータ由来の詳細ページを同じUR
     await page.goto(path);
     await expect(page.locator('html')).toHaveAttribute('lang', 'en');
     await expect(page.locator('h1').first()).toBeVisible();
-    await expect(page.locator('.translation-note')).toBeVisible();
+    await expect(page.locator('.translation-note')).toHaveText(
+      'This site provides information about Japan. The Japanese version is the authoritative version of this page. Please refer to it as well, especially for current medical, legal, and cost information.',
+    );
+    await expect(page.locator('.translation-note a')).toHaveAttribute('hreflang', 'ja');
     await expect(page.locator('.language-switch')).toHaveAttribute('href', path.replace(/^\/en/, '') || '/');
     if (heading) await expect(page.locator('h1').first()).toContainText(heading);
   }
@@ -108,6 +111,129 @@ test('英語版の医療機関と用語集を英語で絞り込める', async ({
   await page.goto('/en/glossary/');
   await page.locator('[data-filter-input]').fill('Estradiol Monotherapy');
   await expect(page.locator('[data-filter-item]', { hasText: 'Estradiol Monotherapy' })).toBeVisible();
+});
+
+test('英語版の主要ナビゲーションとホーム導線は一貫した表記を使う', async ({ page }) => {
+  await page.goto('/en/basics/');
+
+  await expect(page.locator('.site-nav a')).toHaveText([
+    'Start here',
+    'Learn',
+    'Glossary',
+    'Support',
+    'Clinics',
+    'Map',
+    'Resources',
+    'Sitemap',
+  ]);
+
+  await page.goto('/en/');
+  await expect(page.locator('.hero-button', { hasText: 'Basic words' })).toHaveText('Basic words');
+  await expect(page.locator('#about-site')).toHaveText('About this site');
+  await expect(page.locator('body')).not.toContainText('Yakusokugoto');
+});
+
+test('英語版フッターは統一した用語とライセンス表記を使う', async ({ page }) => {
+  await page.goto('/en/');
+
+  const expectedColumns = [
+    ['Getting started', 'Start here', 'Frequently asked questions', 'Support', 'Safety and mental health', 'For allies', 'For families', 'SOGI guidance'],
+    ['Healthcare', 'Clinics', 'Find care and support on the map', 'Gender transition', 'Effects of HRT', 'HRT medications', 'Puberty blockers', 'Surgery', 'Fertility', 'Detransition'],
+    ['Daily life', 'Everyday life', 'Presentation', 'Voice', 'Hair removal', 'Coming out', 'School', 'Relationships', 'Legal name and gender changes', 'Costs'],
+    ['Learn', 'Overview', 'Basics', 'Gender', 'Sexual orientation', 'Gender dysphoria', 'Intersex / DSD', 'Common misconceptions', 'History'],
+    ['Resources', 'Experience Index', 'Glossary', 'Library', 'Bibliography', 'Books, films, and media', 'Browse by topic', 'Pride flags', 'Pride dates and events', 'Related links'],
+    ['Site', 'About TransNavi', 'Submit information', 'Reuse this content', 'Search', 'Sitemap', 'Publication policy', 'Reference', 'Discord', 'GitHub'],
+  ];
+
+  const columns = page.locator('.footer-col');
+  await expect(columns).toHaveCount(expectedColumns.length);
+  for (const [index, labels] of expectedColumns.entries()) {
+    await expect(columns.nth(index).locator('h2, a')).toHaveText(labels);
+  }
+
+  const experienceIndex = page.locator('.site-footer').getByRole('link', { name: 'Experience Index' });
+  await expect(experienceIndex).toHaveAttribute('href', 'https://db.transnavi.jp/en/');
+  await expect(page.locator('.footer-license-title')).toHaveText('Copyright and licenses');
+  await expect(page.locator('.footer-license-line')).toContainText('© 2026 TransNavi contributors');
+  await expect(page.locator('.footer-license-line')).toContainText('Text and data');
+  await expect(page.locator('.footer-license-line')).toContainText('Website source code');
+  await expect(page.locator('.footer-license-note')).toHaveText(
+    'For details, see Citing and reusing the data. If a page lists a different source or license, follow the terms shown on that page.',
+  );
+});
+
+test('英語版の相談カードは自然な見出しと案内文を使う', async ({ page }) => {
+  await page.goto('/en/support/');
+
+  await expect(page.locator('.step-item h2')).toHaveText([
+    'A trusted friend',
+    'A teacher or school counselor',
+    'Local support services',
+    'LGBTQ+ community organizations',
+    'Clinics',
+    'Before talking with family',
+  ]);
+  await expect(page.locator('.step-item').nth(4)).toContainText(
+    'You can take your time deciding whether medical care is right for you. A clinic is one option when you want more information.',
+  );
+  await expect(page.locator('.step-item').nth(4).locator('.step-link')).toHaveText('Browse clinics →');
+  await expect(page.locator('.step-item').nth(5)).toContainText(
+    'Family may feel closest to you, which can make their response harder to predict. Think about how they might react and choose a time that feels safe and manageable.',
+  );
+
+  const headings = await page.locator('main h1, main h2, main h3, main h4, main h5, main h6').allTextContents();
+  for (const heading of headings) {
+    const firstLetter = heading.match(/[A-Za-z]/)?.[0];
+    if (firstLetter) expect(firstLetter).toBe(firstLetter.toUpperCase());
+  }
+});
+
+test('英語版は不要な日本語のローマ字読みを表示しない', async ({ page }) => {
+  for (const path of ['/en/', '/en/hrt-medications/', '/en/support/', '/en/faq/']) {
+    await page.goto(path);
+    await expect(page.locator('body')).not.toContainText(/Yakusokugoto|Furahol|Frahol|Mamorouyo/i);
+  }
+});
+
+test('英語版は監査で見つかった重大な誤訳を表示しない', async ({ page }) => {
+  await page.goto('/en/cost/');
+  await expect(page.locator('main')).toContainText('non-insured private care');
+  await expect(page.locator('main')).not.toContainText(/free (medical )?treatment/i);
+
+  await page.goto('/en/legal-change/');
+  await expect(page.locator('main')).toContainText('25 October 2023');
+  await expect(page.locator('main')).toContainText(
+    'the Hiroshima High Court found constitutional concerns with the appearance requirement',
+  );
+  await expect(page.locator('main')).not.toContainText('October 25, 2020');
+
+  await page.goto('/en/parents/');
+  await expect(page.locator('main')).toContainText('Ask your child which name and terms they want you to use');
+  await expect(page.locator('main')).not.toContainText('he/she/it');
+
+  await page.goto('/en/library/ftm-wiki/fertility/');
+  await expect(page.locator('main')).toContainText("Transferring an embryo to a cisgender woman partner's uterus");
+  await expect(page.locator('main')).not.toContainText('How to infect');
+});
+
+test('英語版の用語集は他言語の表記を改変しない', async ({ page }) => {
+  await page.goto('/en/glossary/cisgender-man/');
+  await expect(page.locator('.glossary-detail [lang="zh-Hans"]')).toHaveText('顺性别男性');
+  await expect(page.locator('.glossary-detail [lang="zh-Hant"]')).toHaveText('順性別男性');
+  await expect(page.locator('.glossary-detail [lang="es"]')).toHaveText('Hombre Cisgénero');
+
+  await page.goto('/en/glossary/estradiol-valerate/');
+  await expect(page.locator('.glossary-detail [lang="zh-Hans"]')).toHaveText('戊酸雌二醇');
+});
+
+test('英語版の用語と引用符は監査済みの表記を使う', async ({ page }) => {
+  for (const path of ['/en/basics/', '/en/resources/', '/en/glossary/cisgender/']) {
+    await page.goto(path);
+    await expect(page.locator('main')).not.toContainText(/\bSith\b|\btransformer\b|\btrance\b|``|''/i);
+  }
+
+  await page.goto('/en/basics/');
+  await expect(page.getByRole('link', { name: 'Terminology explanation →' })).toHaveCount(3);
 });
 
 test('全ページのフッターに今すぐの相談先（タップできる電話番号）がある', async ({ page }) => {
@@ -134,6 +260,16 @@ test('性別を考える本文からジェンダー体験事典へ移動でき�
     const link = page.locator('.article-shell a[href="https://db.transnavi.jp/ja/"]');
     await expect(link).toHaveCount(1);
     await expect(link).toHaveAttribute('href', 'https://db.transnavi.jp/ja/');
+    await expect(link).toHaveAttribute('target', '_blank');
+  }
+});
+
+test('英語版の本文から英語版Experience Indexへ移動できる', async ({ page }) => {
+  for (const path of ['/en/start/', '/en/dysphoria/']) {
+    await page.goto(path);
+
+    const link = page.locator('.article-shell a[href="https://db.transnavi.jp/en/"]');
+    await expect(link).toHaveCount(1);
     await expect(link).toHaveAttribute('target', '_blank');
   }
 });
