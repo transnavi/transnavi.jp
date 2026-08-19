@@ -115,18 +115,22 @@ const categoryFor = (route) =>
   ROUTE_CATEGORY[route] ??
   Object.entries(COLLECTION_CATEGORY).find(([base]) => route.startsWith(base))?.[1];
 
-fs.rmSync('dist/og', { recursive: true, force: true });
 fs.mkdirSync('dist/og', { recursive: true });
 let n = 0;
 for (const route of [...OG_ROUTES, ...detailRoutes]) {
   const title = titleFor(route);
   if (!title) continue;
+  const output = `dist/og/${slugForRoute(route)}.png`;
+  if (fs.existsSync(output)) {
+    n++;
+    continue;
+  }
   const svg = await satori(card(title, categoryFor(route)), {
     width: 1200, height: 630,
     fonts: [{ name: 'M PLUS Rounded 1c', data: FONT_BOLD, weight: 700, style: 'normal' }],
   });
   const png = new Resvg(svg, { fitTo: { mode: 'width', value: 1200 } }).render().asPng();
-  fs.writeFileSync(`dist/og/${slugForRoute(route)}.png`, png);
+  fs.writeFileSync(output, png);
   n++;
 }
-console.log(`og images: ${n} cards written to dist/og/ (${detailRoutes.length} collection entries)`);
+console.log(`og images: ${n} cards available in dist/og/ (${detailRoutes.length} collection entries)`);
