@@ -3,6 +3,7 @@
 // ↑ a b c… (one link per occurrence). References never cited inline (page-level
 // only) get no back-link.
 (function () {
+  const en = document.documentElement.lang === 'en';
   for (const list of document.querySelectorAll('.reference-list')) {
     const root = list.closest('article') || document;
     const markersAll = [...root.querySelectorAll('.cite a[href^="#ref-"]')];
@@ -15,14 +16,14 @@
       const back = document.createElement('span');
       back.className = 'ref-back';
       if (markers.length === 1) {
-        back.innerHTML = '<a href="#' + markers[0].id + '" aria-label="本文の引用箇所に戻る">↑</a>';
+        back.innerHTML = '<a href="#' + markers[0].id + '" aria-label="' + (en ? 'Return to citation in the text' : '本文の引用箇所に戻る') + '">↑</a>';
       } else {
         back.append('↑ ');
         markers.forEach((m, i) => {
           const a = document.createElement('a');
           a.href = '#' + m.id;
           a.textContent = String.fromCharCode(97 + i); // a, b, c…
-          a.setAttribute('aria-label', '本文の引用箇所 ' + (i + 1) + ' に戻る');
+          a.setAttribute('aria-label', en ? 'Return to citation ' + (i + 1) + ' in the text' : '本文の引用箇所 ' + (i + 1) + ' に戻る');
           back.append(a, ' ');
         });
       }

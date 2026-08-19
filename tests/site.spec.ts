@@ -59,6 +59,57 @@ for (const path of pages) {
   });
 }
 
+test('日本語ページから同じ内容の英語ページへ移動できる', async ({ page }) => {
+  await page.goto('/basics/');
+
+  const switcher = page.locator('.language-switch');
+  await expect(switcher).toHaveText('English');
+  await expect(switcher).toHaveAttribute('href', '/en/basics/');
+  await expect(page.locator('link[rel="alternate"][hreflang="en"]')).toHaveAttribute(
+    'href',
+    'https://transnavi.jp/en/basics/',
+  );
+});
+
+test('英語版は主要ページとデータ由来の詳細ページを同じURL構造で表示する', async ({ page }) => {
+  const englishPages = [
+    ['/en/', 'If you think you may be trans'],
+    ['/en/basics/', 'Trans, cis, and nonbinary basics'],
+    ['/en/glossary/estradiol-monotherapy/', 'Estradiol Monotherapy'],
+    ['/en/clinics/hrt-tokyo-gender-clinic/', 'Tokyo Gender Clinic'],
+    ['/en/library/mtf-wiki-ja/docs/medicine/risk/', null],
+  ] as const;
+
+  for (const [path, heading] of englishPages) {
+    await page.goto(path);
+    await expect(page.locator('html')).toHaveAttribute('lang', 'en');
+    await expect(page.locator('h1').first()).toBeVisible();
+    await expect(page.locator('.translation-note')).toBeVisible();
+    await expect(page.locator('.language-switch')).toHaveAttribute('href', path.replace(/^\/en/, '') || '/');
+    if (heading) await expect(page.locator('h1').first()).toContainText(heading);
+  }
+});
+
+test('英語版の検索は英語の本文を検索する', async ({ page }) => {
+  await page.goto('/en/search/');
+  await page.locator('#search-input').fill('hormone therapy');
+
+  await expect(page.locator('.search-result').first()).toBeVisible();
+  await expect(page.locator('.search-status')).toContainText('results');
+  await expect(page.locator('.search-result[href^="/en/"]').first()).toBeVisible();
+});
+
+test('英語版の医療機関と用語集を英語で絞り込める', async ({ page }) => {
+  await page.goto('/en/clinics/');
+  await page.locator('[data-filter-input]').fill('Tokyo Gender');
+  await expect(page.locator('[data-filter-item]', { hasText: 'Tokyo Gender Clinic' })).toBeVisible();
+  await expect(page.locator('[data-filter-count]')).toHaveText('1');
+
+  await page.goto('/en/glossary/');
+  await page.locator('[data-filter-input]').fill('Estradiol Monotherapy');
+  await expect(page.locator('[data-filter-item]', { hasText: 'Estradiol Monotherapy' })).toBeVisible();
+});
+
 test('全ページのフッターに今すぐの相談先（タップできる電話番号）がある', async ({ page }) => {
   // 取り乱した利用者がどのページからでも、画面遷移なしで 24時間の番号に届くこと。
   await page.goto('/basics/');

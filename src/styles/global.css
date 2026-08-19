@@ -499,6 +499,43 @@ main {
   height: 18px;
 }
 
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-height: 38px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper-strong);
+  box-shadow: var(--shadow-soft);
+  color: var(--ink-heading);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.language-switch:hover {
+  border-color: var(--line-hover);
+  background: var(--accent-soft);
+}
+
+.translation-note {
+  margin: 0 0 20px;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--paper-strong);
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
+.translation-note a {
+  font-weight: 700;
+}
+
 /* --- Site search page (/search/) --- */
 .search-box .search-hint {
   margin: 8px 0 0;
@@ -4031,6 +4068,11 @@ rp {
   .header-tools {
     gap: 6px;
     margin-left: auto;
+  }
+  .language-switch {
+    min-height: 34px;
+    padding: 0 9px;
+    font-size: 0.76rem;
   }
   .theme-toggle,
   .furigana-toggle,

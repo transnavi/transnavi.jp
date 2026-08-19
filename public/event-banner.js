@@ -4,6 +4,7 @@
 // dismissed banner stays hidden for that occurrence (per id + year).
 (function () {
   'use strict';
+  const en = document.documentElement.lang === 'en';
 
   function init() {
     var el = document.getElementById('event-banner');
@@ -49,8 +50,8 @@
     el.querySelector('.event-banner-emoji').textContent = active.emoji || '🏳️‍🌈';
     el.querySelector('.event-banner-text').textContent = active.text;
     var link = el.querySelector('.event-banner-link');
-    link.textContent = (active.cta || 'くわしく') + ' →';
-    link.setAttribute('href', active.href || '/pride/');
+    link.textContent = (active.cta || (en ? 'Learn more' : 'くわしく')) + ' →';
+    link.setAttribute('href', active.href || (en ? '/en/pride/' : '/pride/'));
     el.hidden = false;
 
     el.querySelector('.event-banner-close').addEventListener('click', function () {
