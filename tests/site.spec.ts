@@ -122,7 +122,7 @@ test('全ページのフッターからジェンダー体験事典へ移動で�
   await page.goto('/basics/');
 
   const link = page.locator('.site-footer').getByRole('link', { name: 'ジェンダー体験事典' });
-  await expect(link).toHaveText('体験事典');
+  await expect(link).toHaveAttribute('aria-label', 'ジェンダー体験事典');
   await expect(link).toHaveAttribute('href', 'https://db.transnavi.jp/ja/');
   await expect(link).toHaveAttribute('target', '_blank');
 });
