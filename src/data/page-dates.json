@@ -1,7 +1,7 @@
 {
   "/start/": {
     "created": "2026-06-02",
-    "updated": "2026-06-13"
+    "updated": "2026-06-16"
   },
   "/faq/": {
     "created": "2026-06-04",
@@ -9,11 +9,11 @@
   },
   "/myths/": {
     "created": "2026-06-07",
-    "updated": "2026-06-07"
+    "updated": "2026-06-16"
   },
   "/basics/": {
     "created": "2026-06-02",
-    "updated": "2026-06-13"
+    "updated": "2026-06-16"
   },
   "/gender/": {
     "created": "2026-06-02",
@@ -53,7 +53,7 @@
   },
   "/voice/": {
     "created": "2026-06-02",
-    "updated": "2026-06-13"
+    "updated": "2026-06-16"
   },
   "/presentation/": {
     "created": "2026-06-02",
@@ -61,7 +61,7 @@
   },
   "/hair-removal/": {
     "created": "2026-06-02",
-    "updated": "2026-06-13"
+    "updated": "2026-06-16"
   },
   "/surgery/": {
     "created": "2026-06-02",
@@ -69,7 +69,7 @@
   },
   "/cost/": {
     "created": "2026-06-04",
-    "updated": "2026-06-06"
+    "updated": "2026-06-16"
   },
   "/legal-change/": {
     "created": "2026-06-02",
@@ -85,23 +85,23 @@
   },
   "/pronouns/": {
     "created": "2026-06-07",
-    "updated": "2026-06-07"
+    "updated": "2026-06-17"
   },
   "/relationships/": {
     "created": "2026-06-04",
-    "updated": "2026-06-05"
+    "updated": "2026-06-16"
   },
   "/allies/": {
     "created": "2026-06-02",
-    "updated": "2026-06-13"
+    "updated": "2026-06-16"
   },
   "/parents/": {
     "created": "2026-06-07",
-    "updated": "2026-06-07"
+    "updated": "2026-06-16"
   },
   "/safety/": {
     "created": "2026-06-02",
-    "updated": "2026-06-13"
+    "updated": "2026-06-16"
   },
   "/guidelines/": {
     "created": "2026-06-03",
@@ -109,11 +109,11 @@
   },
   "/detransition/": {
     "created": "2026-06-03",
-    "updated": "2026-06-05"
+    "updated": "2026-06-16"
   },
   "/reference/": {
     "created": "2026-06-05",
-    "updated": "2026-06-07"
+    "updated": "2026-06-16"
   },
   "/about/": {
     "created": "2026-06-02",
