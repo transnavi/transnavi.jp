@@ -242,6 +242,78 @@ test('英語版は監査で見つかった重大な誤訳を表示しない', as
   await expect(page.locator('main')).toContainText('babies and children who could not consent');
 });
 
+test('英語版は用語・医療値・裁判判断を正確に伝える', async ({ page }) => {
+  await page.goto('/en/glossary/transgender/');
+  await expect(page.locator('main')).toContainText('transtrender');
+  await expect(page.locator('main')).not.toContainText(/Words to avoid:[^\n]*transgender/i);
+
+  await page.goto('/en/glossary/homosexuality/');
+  await expect(page.locator('main')).toContainText('lez (rezu)');
+  await expect(page.locator('main')).not.toContainText(/Words to avoid:[^\n]*lesbian/i);
+
+  await page.goto('/en/library/mtf-wiki-ja/cyproterone/');
+  await expect(page.locator('main')).toContainText('roughly more than 10 g');
+  await expect(page.locator('main')).not.toContainText(/10 g[^.]{0,40}2000/i);
+
+  await page.goto('/en/transition/');
+  await expect(page.locator('main')).toContainText(
+    'In an individual case in 2024, the Hiroshima High Court granted a legal gender change',
+  );
+  await expect(page.locator('main')).not.toContainText('will be changed');
+});
+
+test('英語版の人物・団体カードは敬称と話者を取り違えない', async ({ page }) => {
+  await page.goto('/en/resources/');
+
+  const expectedDescriptions = [
+    ['https://x.com/nmcmnc', 'autobiographical book Okama dakedo OL yattemasu'],
+    ['https://ah-yeah.com/', 'Aya Kamikawa was elected'],
+    ['https://www.uruwa-law.com/', 'Shun Nakaoka is an openly trans woman'],
+    ['https://yoda-karen.com/', 'Karen Yoda is an openly trans woman'],
+    ['https://x.com/ayanatsubaki', 'Ayana Tsubaki is a media personality'],
+    ['https://x.com/LadyTanya_Tokyo', 'Toshimi Tanio is an openly trans woman'],
+    ['https://x.com/risakawakami279', "She shares trans people's own voices"],
+    ['https://atarunakamura.com/', 'Ataru Nakamura is a singer-songwriter'],
+    ['https://ameblo.jp/carrousel-maki/', 'Maki Carrousel is a pioneering'],
+    ['https://www.instagram.com/_genking_/', 'GENKING. is an openly trans woman'],
+    ['https://note.com/maru2blog', 'Marumaru is a trans woman'],
+    ['https://www.youtube.com/channel/UCTQZKCd-p5zTOW6Ff5sFssg', 'Kanata Kimoto (Kanatime)'],
+    ['https://www.kodansha.co.jp/book/products/0000409904', 'Yuki Eri is a trans man'],
+    ['https://x.com/yakun28', 'Mika Yakushi is an openly trans man'],
+    ['https://www.instagram.com/baaaakuuuu/', 'Baku Idegami is a model'],
+    ['https://www.stardust.co.jp/talent/section1/yoshiharashuto/', 'Shuto Yoshihara is an openly trans man'],
+    ['https://www.youtube.com/@AokiKanon', 'Kanon Aoki is a YouTuber'],
+  ] as const;
+
+  for (const [href, description] of expectedDescriptions) {
+    const card = page.locator(`a.link-chip[href="${href}"]`);
+    await expect(card).toHaveAttribute('title', new RegExp(description.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
+  }
+
+  const metadata = await page.locator('a.link-chip[title]').evaluateAll((cards) =>
+    cards.map((card) => `${card.getAttribute('title') ?? ''} ${card.getAttribute('data-search') ?? ''}`).join('\n'),
+  );
+  expect(metadata).not.toMatch(/\bfag\b|\bsufferer\b|\bpatients\b|people with disabilities|Nakamura Junior High/i);
+
+  const organizationHrefs = [
+    'https://pridehouse.jp/legacy/',
+    'https://www.rainbowpride-ehime.org/',
+    'https://rebitlgbt.org/',
+    'https://lgbt-family.or.jp/',
+    'https://www.proudfutures.org/',
+    'https://asta.themedia.jp/',
+    'https://stonewalljapan.org/',
+    'http://www5e.biglobe.ne.jp/~gfront/',
+    'https://kiraequal.org',
+    'https://www.healthcare.novartis.co.jp/medicalallynetwork/allymap',
+    'https://www.outjapan.co.jp/pride_japan/',
+    'https://www.irodorismile.org/',
+  ];
+  for (const href of organizationHrefs) {
+    await expect(page.locator(`a.link-chip[title][href="${href}"]`)).not.toHaveAttribute('title', /\b(?:we|our)\b/i);
+  }
+});
+
 test('英語版の用語集は他言語の表記を改変しない', async ({ page }) => {
   await page.goto('/en/glossary/cisgender-man/');
   await expect(page.locator('.glossary-detail [lang="zh-Hans"]')).toHaveText('顺性别男性');

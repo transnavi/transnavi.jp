@@ -277,6 +277,13 @@ function conciseDescription(value, maximum = 160) {
 function polishEnglishInterface(root) {
   root.querySelectorAll('main h1, main h2, main h3, main h4, main h5, main h6').forEach(capitalizeFirstWord);
 
+  for (const link of root.querySelectorAll('a.link-chip[data-filter-item][title]')) {
+    const title = keyOf(link.querySelector('.link-chip-title')?.text ?? '');
+    const description = keyOf(link.getAttribute('title') ?? '');
+    const tags = link.querySelectorAll('.link-chip-tag').map((tag) => keyOf(tag.text)).filter(Boolean);
+    link.setAttribute('data-search', [title, description, ...tags].filter(Boolean).join(' '));
+  }
+
   for (const selector of ['meta[name="description"]', 'meta[property="og:description"]', 'meta[name="twitter:description"]']) {
     const meta = root.querySelector(selector);
     const content = meta?.getAttribute('content');
