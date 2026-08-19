@@ -118,6 +118,26 @@ test('全ページのフッターに今すぐの相談先（タップできる�
   await expect(tel).toContainText('0120-279-338');
 });
 
+test('全ページのフッターからジェンダー体験事典へ移動できる', async ({ page }) => {
+  await page.goto('/basics/');
+
+  const link = page.locator('.site-footer').getByRole('link', { name: 'ジェンダー体験事典' });
+  await expect(link).toHaveText('体験事典');
+  await expect(link).toHaveAttribute('href', 'https://db.transnavi.jp/ja/');
+  await expect(link).toHaveAttribute('target', '_blank');
+});
+
+test('性別を考える本文からジェンダー体験事典へ移動できる', async ({ page }) => {
+  for (const path of ['/start/', '/dysphoria/']) {
+    await page.goto(path);
+
+    const link = page.locator('.article-shell a[href="https://db.transnavi.jp/ja/"]');
+    await expect(link).toHaveCount(1);
+    await expect(link).toHaveAttribute('href', 'https://db.transnavi.jp/ja/');
+    await expect(link).toHaveAttribute('target', '_blank');
+  }
+});
+
 test('医療機関ページは主観的コメント欄を表示しない', async ({ page }) => {
   await page.goto('/clinics/hrt-tokyo-gender-clinic/');
 
