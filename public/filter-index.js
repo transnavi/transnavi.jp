@@ -13,6 +13,8 @@ const norm = (value) => {
 const esc = (s) =>
   (s || '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
+const FILTER_EN = document.documentElement.lang === 'en';
+
 // Per-character normalise keeping a map from each normalised UTF-16 code unit
 // back to its source code-point index, so a match found in normalised space
 // (kana-folded, NFKC, punctuation-stripped) can be highlighted on the original
@@ -244,7 +246,7 @@ for (const form of document.querySelectorAll('[data-filter-form]')) {
           const hints = active && !marked ? matchedTokens(item.searchTokens, hlTerms) : [];
           if (hints.length) {
             item.hint.innerHTML =
-              `<span class="glossary-aliases-label">一致</span><span>${hints.map((t) => highlight(t, hlTerms)).join('、')}</span>`;
+              `<span class="glossary-aliases-label">${FILTER_EN ? 'Match' : '一致'}</span><span>${hints.map((t) => highlight(t, hlTerms)).join(FILTER_EN ? ', ' : '、')}</span>`;
             item.hint.hidden = false;
           } else {
             item.hint.hidden = true;
@@ -333,7 +335,9 @@ for (const form of document.querySelectorAll('[data-filter-form]')) {
 
       const expanded = button.getAttribute('aria-expanded') === 'true';
       button.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-      button.textContent = expanded ? '詳細を開く' : '詳細を閉じる';
+      button.textContent = expanded
+        ? (FILTER_EN ? 'Show details' : '詳細を開く')
+        : (FILTER_EN ? 'Hide details' : '詳細を閉じる');
       panel.hidden = expanded;
     });
   }

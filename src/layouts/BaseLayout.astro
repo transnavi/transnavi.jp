@@ -17,6 +17,7 @@ const {
   description = 'トランスジェンダー、ノンバイナリー、Xジェンダー、ジェンダーを探索中の人のための医療・制度・生活・地域情報。',
 } = Astro.props;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const englishUrl = new URL(`/en${Astro.url.pathname}`, Astro.site).toString();
 // Per-page Open Graph card (generated in postbuild by gen-og-images.mjs). The
 // homepage and any unmapped route keep the hand-made /og-image.png.
 const ogCard = ogCardFor(Astro.url.pathname);
@@ -183,6 +184,8 @@ const pageLd = pageDate
     {pageLd && <script type="application/ld+json" set:html={JSON.stringify(pageLd)} />}
     <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" hreflang="ja" href={canonicalUrl} />
+    <link rel="alternate" hreflang="en" href={englishUrl} />
+    <link rel="alternate" hreflang="x-default" href={canonicalUrl} />
     <link rel="sitemap" href="/sitemap.xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -244,6 +247,13 @@ const pageLd = pageDate
           </span>
         </a>
         <div class="header-tools">
+          <a
+            class="language-switch"
+            href={`/en${pathname}`}
+            lang="en"
+            hreflang="en"
+            aria-label="View this page in English"
+          >English</a>
           <form class="header-search" role="search" action="/search/" method="get">
             <input type="search" name="q" aria-label="サイト内を検索" placeholder="検索…" autocomplete="off" />
             <button type="submit" aria-label="検索する">
@@ -376,6 +386,7 @@ const pageLd = pageDate
           </div>
           <div class="footer-col">
             <h2>資料</h2>
+            <a href="https://db.transnavi.jp/ja/" target="_blank" rel="noreferrer" aria-label="ジェンダー体験事典">体験事典</a>
             <a href="/glossary/">用語集</a>
             <a href="/library/">資料集</a>
             <a href="/bibliography/">文献</a>

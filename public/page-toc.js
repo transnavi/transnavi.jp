@@ -7,6 +7,7 @@
 // anywhere — so you can jump around without scrolling back up. Headings carry
 // toggle-able furigana <ruby>, so link text is read with <rt> stripped.
 (function () {
+  var en = document.documentElement.lang === 'en';
   var DESKTOP = '(min-width: 1080px)';
   var shell = document.querySelector('main#main-content .article-shell');
   var nav = document.getElementById('page-toc');
@@ -60,7 +61,7 @@
   box.open = !smallScreen();
   var summary = document.createElement('summary');
   summary.className = 'page-toc-summary';
-  summary.textContent = '目次';
+  summary.textContent = en ? 'Contents' : '目次';
   box.appendChild(summary);
   box.appendChild(buildList(function (e) {
     if (e.target.tagName === 'A' && smallScreen()) box.open = false;
@@ -75,15 +76,15 @@
   fab.className = 'page-toc-fab';
   fab.setAttribute('aria-expanded', 'false');
   fab.setAttribute('aria-controls', 'page-toc-pop');
-  fab.setAttribute('aria-label', '目次をひらく');
-  fab.innerHTML = '<span class="page-toc-fab-icon" aria-hidden="true">☰</span>目次';
+  fab.setAttribute('aria-label', en ? 'Open table of contents' : '目次をひらく');
+  fab.innerHTML = '<span class="page-toc-fab-icon" aria-hidden="true">☰</span>' + (en ? 'Contents' : '目次');
 
   var pop = document.createElement('div');
   pop.className = 'page-toc-pop';
   pop.id = 'page-toc-pop';
   pop.hidden = true;
   pop.setAttribute('role', 'dialog');
-  pop.setAttribute('aria-label', '目次');
+  pop.setAttribute('aria-label', en ? 'Table of contents' : '目次');
   pop.appendChild(buildList(function (e) { if (e.target.tagName === 'A') closePop(); }));
 
   document.body.appendChild(pop);

@@ -6,6 +6,7 @@
 // it. Pauses when scrolled out of view.
 (function () {
   'use strict';
+  var EN = document.documentElement.lang === 'en';
   var SVGNS = 'http://www.w3.org/2000/svg';
   var COLORS = {
     start: '#5bb0ee',
@@ -35,7 +36,7 @@
     if (!host) return;
     var data;
     try {
-      data = await (await fetch('/link-map.json')).json();
+      data = await (await fetch(EN ? '/en/link-map.json' : '/link-map.json')).json();
     } catch (e) {
       return;
     }
@@ -66,7 +67,7 @@
     seed(terms, 230);
     pageLinks.concat(termLinks).forEach(function (l) { byId[l.source].deg++; byId[l.target].deg++; });
 
-    var svg = el('svg', { viewBox: '0 0 ' + W + ' ' + H, class: 'link-map-svg', role: 'img', 'aria-label': 'サイト内のページのつながりの3D図' });
+    var svg = el('svg', { viewBox: '0 0 ' + W + ' ' + H, class: 'link-map-svg', role: 'img', 'aria-label': EN ? '3D map of links between pages' : 'サイト内のページのつながりの3D図' });
     var defs = el('defs', {});
     svg.appendChild(defs);
     Object.keys(COLORS).forEach(function (g) {

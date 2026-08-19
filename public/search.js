@@ -7,12 +7,14 @@ import { norm, bigrams, expand, prepare, search, addSynonyms } from '/search-cor
 
 (function () {
   'use strict';
+  const en = document.documentElement.lang === 'en';
 
   let PREP = null;
 
   async function load() {
     if (PREP) return PREP;
-    const [idxRes, synRes] = await Promise.all([fetch('/search-index.json'), fetch('/search-synonyms.json')]);
+    const base = en ? '/en' : '';
+    const [idxRes, synRes] = await Promise.all([fetch(base + '/search-index.json'), fetch(base + '/search-synonyms.json')]);
     addSynonyms(await synRes.json().catch(() => null)); // glossary alias synonyms (best-effort)
     PREP = prepare(await idxRes.json());
     return PREP;
@@ -174,7 +176,9 @@ import { norm, bigrams, expand, prepare, search, addSynonyms } from '/search-cor
 
   function render(results, terms, synTerms, els) {
     if (!results.length) {
-      els.status.textContent = '見つかりませんでした。別のことばや、ひらがな・カタカナを変えて試してみてください。';
+      els.status.textContent = en
+        ? 'No results found. Try another word or a shorter phrase.'
+        : '見つかりませんでした。別のことばや、ひらがな・カタカナを変えて試してみてください。';
       els.results.innerHTML = '';
       return;
     }
@@ -184,7 +188,7 @@ import { norm, bigrams, expand, prepare, search, addSynonyms } from '/search-cor
     // result shows every name of the concept it matched, not only the one typed.
     // Drop 1-char synonyms so a stray abbreviation letter doesn't speckle prose.
     const hlTerms = [...new Set([...terms, ...synTerms.filter((t) => t.length >= 2)])];
-    els.status.textContent = `${results.length} 件`;
+    els.status.textContent = en ? `${results.length} results` : `${results.length} 件`;
     els.results.innerHTML = results
       .map(({ e }) => {
         const ext = e.ext ? ' target="_blank" rel="noreferrer"' : '';
@@ -197,7 +201,7 @@ import { norm, bigrams, expand, prepare, search, addSynonyms } from '/search-cor
           const kw = matchedKeywords(e.a, hlTerms).filter((k) => !norm(e.t).includes(norm(k)));
           if (kw.length) {
             aliasHtml =
-              `<span class="search-result-alias"><span class="search-result-alias-label">別名</span><span>${kw
+              `<span class="search-result-alias"><span class="search-result-alias-label">${en ? 'Also known as' : '別名'}</span><span>${kw
                 .map((k) => highlight(k, hlTerms))
                 .join('、')}</span></span>`;
             marked = true;
@@ -246,7 +250,7 @@ import { norm, bigrams, expand, prepare, search, addSynonyms } from '/search-cor
         results.innerHTML = '';
         return;
       }
-      status.textContent = '検索中…';
+      status.textContent = en ? 'Searching…' : '検索中…';
       await load();
       const rawTerms = q.trim().split(/[\s　]+/).filter(Boolean);
       const terms = rawTerms.map(norm).filter(Boolean);

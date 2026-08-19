@@ -5,7 +5,7 @@
     "category": "music",
     "year": 2019,
     "url": "https://youtube.com/watch?v=ucbx9we6EHk",
-    "poster": null,
+    "poster": "/images/works/music/music-onnanoko-ni-naritai.webp",
     "tags": [
       "トランス女性",
       "ジェンダー探索"
@@ -17,7 +17,7 @@
     "category": "film",
     "year": 2017,
     "url": "https://ja.wikipedia.org/wiki/彼らが本気で編むときは、",
-    "poster": null,
+    "poster": "/images/works/film/film-karera-ga-honki-de-amu-toki-wa.webp",
     "tags": [
       "トランス女性",
       "家族"
@@ -30,7 +30,7 @@
     "category": "film",
     "year": 2021,
     "url": "https://eiga.com/movie/94272/",
-    "poster": "https://media.eiga.com/images/movie/94272/photo/11c27e3be8edb7c6.jpg",
+    "poster": "/images/works/film/film-katasode-no-uo.webp",
     "tags": [
       "トランス女性",
       "日常"
@@ -42,7 +42,7 @@
     "category": "film",
     "year": 2022,
     "url": "https://futarinosekai.com/",
-    "poster": "https://futarinosekai.com/img/fns_main.jpg",
+    "poster": "/images/works/film/film-futari-no-sekai.webp",
     "tags": [
       "トランス男性",
       "恋愛"
@@ -54,7 +54,7 @@
     "category": "film",
     "year": 2024,
     "url": "https://natalie.mu/eiga/news/586504",
-    "poster": "https://ogre.natalie.mu/media/news/eiga/2024/0814/musukotoyobuhimade_202408.jpg?impolicy=twitter_card_face_crop",
+    "poster": "/images/works/film/film-musuko-to-yobu-hi-made.webp",
     "tags": [
       "トランス男性",
       "家族"
@@ -67,7 +67,7 @@
     "category": "film",
     "year": 2025,
     "url": "https://ja.wikipedia.org/wiki/ブルーボーイ事件",
-    "poster": null,
+    "poster": "/images/works/film/film-blue-boy-jiken.webp",
     "tags": [
       "トランス女性",
       "実話・歴史",
@@ -82,7 +82,7 @@
     "category": "film",
     "year": 2025,
     "url": "https://senpaiha-otokonoko.com/",
-    "poster": "https://senpaiha-otokonoko.com/ogp.png",
+    "poster": "/images/works/film/film-senpai-wa-otokonoko-amenochi-hare.webp",
     "tags": [
       "男の娘",
       "学園",
@@ -95,7 +95,7 @@
     "category": "film",
     "year": 2026,
     "url": "https://ja.wikipedia.org/wiki/This_is_I",
-    "poster": null,
+    "poster": "/images/works/film/film-this-is-i.webp",
     "tags": [
       "ジェンダー探索"
     ]
@@ -106,7 +106,7 @@
     "category": "film",
     "year": 2026,
     "url": "https://motion-gallery.net/projects/tonatoramovie",
-    "poster": "https://mg-img.s3.ap-northeast-1.amazonaws.com/projects/tonatoramovie/1ef72d1a-e9ef-419e-b8ff-ef5f3d659361",
+    "poster": "/images/works/film/film-tonari-no-trans-shoujo-chan-live.webp",
     "tags": [
       "トランス女性",
       "日常"
@@ -118,26 +118,36 @@
     "category": "manga",
     "year": 2002,
     "url": "https://ja.wikipedia.org/wiki/放浪息子",
-    "poster": null,
+    "poster": "/images/works/manga/manga-hourou-musuko.webp",
+    "creators": [
+      "志村貴子"
+    ],
     "tags": [
       "トランス女性",
       "トランス男性",
       "思春期・青春",
       "学園"
     ],
-    "popular": true
+    "popular": true,
+    "aliases": [
+      "Hourou Musuko",
+      "Wandering Son"
+    ]
   },
   {
     "id": "manga-is",
     "title": "IS〜男でも女でもない性〜",
     "category": "manga",
     "year": 2003,
-    "url": "https://ja.wikipedia.org/wiki/IS〜男でも女でもない性〜",
-    "poster": null,
+    "url": "https://www.kodansha.co.jp/comic/products/0000035925",
+    "poster": "/images/works/manga/manga-is.webp",
     "tags": [
       "インターセックス"
     ],
-    "popular": true
+    "popular": true,
+    "creators": [
+      "六花チヨ"
+    ]
   },
   {
     "id": "manga-bokura-no-hentai",
@@ -145,11 +155,17 @@
     "category": "manga",
     "year": 2012,
     "url": "https://ja.wikipedia.org/wiki/ぼくらのへんたい",
-    "poster": null,
+    "poster": "/images/works/manga/manga-bokura-no-hentai.webp",
+    "creators": [
+      "ふみふみこ"
+    ],
     "tags": [
       "女装",
       "トランス女性",
       "思春期・青春"
+    ],
+    "aliases": [
+      "Bokura no Hentai"
     ]
   },
   {
@@ -158,23 +174,33 @@
     "category": "manga",
     "year": 2016,
     "url": "https://kc.kodansha.co.jp/product?item=0000018814",
-    "poster": "https://dvs-cover.kodansha.co.jp/0000018814/IctSVm5kchwvf4erfPJUPojNgo5ANdhA5JcUmnHb.jpg",
+    "poster": "/images/works/manga/manga-boku-ga-watashi-ni-naru-tame-ni.webp",
+    "creators": [
+      "平沢ゆうな"
+    ],
     "tags": [
       "トランス女性",
       "性別移行",
       "当事者エッセイ"
+    ],
+    "aliases": [
+      "Boku ga Watashi ni Naru Tame ni",
+      "In Order for Me to Be Me"
     ]
   },
   {
     "id": "manga-umareru-seibetsu-wo-machigaeta",
-    "title": "生まれる性別をまちがえた!",
+    "title": "生まれる性別をまちがえた！",
     "category": "manga",
     "year": 2017,
-    "url": "https://www.amazon.co.jp/dp/4041052386",
-    "poster": null,
+    "url": "https://www.kadokawa.co.jp/product/321609000455/",
+    "poster": "/images/works/manga/manga-umareru-seibetsu-wo-machigaeta.webp",
     "tags": [
       "性別移行",
       "当事者エッセイ"
+    ],
+    "creators": [
+      "小西真冬"
     ]
   },
   {
@@ -182,13 +208,16 @@
     "title": "性別「モナリザ」の君へ。",
     "category": "manga",
     "year": 2018,
-    "url": "https://ja.wikipedia.org/wiki/性別「モナリザ」の君へ。",
-    "poster": null,
+    "url": "https://magazine.jp.square-enix.com/top/comics/detail/9784757558489/",
+    "poster": "/images/works/manga/manga-seibetsu-mona-lisa-no-kimi-e.webp",
     "tags": [
       "ノンバイナリー・Xジェンダー",
       "思春期・青春"
     ],
-    "popular": true
+    "popular": true,
+    "creators": [
+      "吉村旋"
+    ]
   },
   {
     "id": "manga-fukakai-na-boku-no-subete-wo",
@@ -196,23 +225,34 @@
     "category": "manga",
     "year": 2018,
     "url": "https://comic.pixiv.net/works/5315",
-    "poster": null,
-    "tags": [
-      "ノンバイナリー・Xジェンダー"
+    "poster": "/images/works/manga/manga-fukakai-na-boku-no-subete-wo.webp",
+    "creators": [
+      "粉山カタ"
     ],
-    "popular": true
+    "tags": [
+      "ノンバイナリー・Xジェンダー",
+      "トランス女性"
+    ],
+    "popular": true,
+    "aliases": [
+      "Love Me for Who I Am",
+      "Fukakai na Boku no Subete o"
+    ]
   },
   {
     "id": "manga-ore-ga-watashi-ni-naru-made",
     "title": "オレが私になるまで",
     "category": "manga",
     "year": 2019,
-    "url": "https://ja.wikipedia.org/wiki/オレが私になるまで",
-    "poster": null,
+    "url": "https://www.kadokawa.co.jp/product/321901000267/",
+    "poster": "/images/works/manga/manga-ore-ga-watashi-ni-naru-made.webp",
     "tags": [
       "トランス女性",
       "性別移行",
       "当事者エッセイ"
+    ],
+    "creators": [
+      "佐藤はつき"
     ]
   },
   {
@@ -220,25 +260,765 @@
     "title": "先輩はおとこのこ",
     "category": "manga",
     "year": 2019,
-    "url": "https://ja.wikipedia.org/wiki/先輩はおとこのこ",
-    "poster": null,
+    "url": "https://data.ichijinsha.co.jp/detail/75802313",
+    "poster": "/images/works/manga/manga-senpai-wa-otokonoko.webp",
     "tags": [
       "男の娘",
       "学園",
       "恋愛"
     ],
-    "popular": true
+    "popular": true,
+    "creators": [
+      "ぽむ"
+    ]
   },
   {
     "id": "manga-tonari-no-trans-shoujo-chan",
     "title": "となりのとらんす少女ちゃん",
     "category": "manga",
-    "year": 2024,
-    "url": "https://www.amazon.co.jp/dp/4991392004",
-    "poster": null,
+    "year": 2025,
+    "url": "https://www.hanmoto.com/bd/isbn/9784991392009",
+    "poster": "/images/works/manga/manga-tonari-no-trans-shoujo-chan.webp",
     "tags": [
       "トランス女性",
       "日常"
+    ],
+    "creators": [
+      "とら少"
+    ]
+  },
+  {
+    "id": "manga-girlfriend-kishikawa-mizuki",
+    "title": "ガールフレンド",
+    "category": "manga",
+    "year": 2021,
+    "url": "https://comic-days.com/episode/3269754496332558422",
+    "poster": "/images/works/manga/manga-girlfriend-kishikawa-mizuki.webp",
+    "creators": [
+      "岸川瑞樹"
+    ],
+    "tags": [
+      "トランス女性",
+      "恋愛"
+    ],
+    "aliases": [
+      "Girlfriend"
+    ]
+  },
+  {
+    "id": "manga-brave-new-world-yamada-nari",
+    "title": "愛の新大陸",
+    "category": "manga",
+    "year": 2004,
+    "url": "https://bookwalker.jp/series/208976/",
+    "poster": "/images/works/manga/manga-brave-new-world-yamada-nari.webp",
+    "creators": [
+      "山田也"
+    ],
+    "tags": [
+      "トランス女性",
+      "学園"
+    ],
+    "aliases": [
+      "Brave New World",
+      "Ai no Shintairiku"
+    ]
+  },
+  {
+    "id": "manga-kimi-no-neiro",
+    "title": "キミノネイロ",
+    "category": "manga",
+    "year": 2010,
+    "url": "https://www.kodansha.co.jp/comic/products/0000040778",
+    "poster": "/images/works/manga/manga-kimi-no-neiro.webp",
+    "creators": [
+      "フクシマハルカ"
+    ],
+    "tags": [
+      "ジェンダー探索",
+      "女装",
+      "恋愛"
+    ],
+    "aliases": [
+      "Your Melody",
+      "Kimi no Neiro"
+    ]
+  },
+  {
+    "id": "manga-hanayome-wa-motodanshi",
+    "title": "花嫁は元男子。",
+    "category": "manga",
+    "year": 2016,
+    "url": "https://ameblo.jp/infection1985/entry-12111658195.html",
+    "poster": "/images/works/manga/manga-hanayome-wa-motodanshi.webp",
+    "creators": [
+      "ちぃ"
+    ],
+    "tags": [
+      "トランス女性",
+      "性別移行",
+      "当事者エッセイ"
+    ],
+    "aliases": [
+      "The Bride Was a Boy",
+      "Hanayome wa Motodanshi"
+    ]
+  },
+  {
+    "id": "manga-majo-ni-naritai-otoko-no-ko",
+    "title": "魔女になりたい男の子",
+    "category": "manga",
+    "year": 2017,
+    "url": "https://ameblo.jp/infection1985/entry-12253169004.html",
+    "poster": "/images/works/manga/manga-majo-ni-naritai-otoko-no-ko.webp",
+    "creators": [
+      "ちぃ"
+    ],
+    "tags": [
+      "ジェンダー探索"
+    ],
+    "aliases": [
+      "The Boy Who Wanted to Be a Witch",
+      "Majo ni Naritai Otoko no Ko"
+    ]
+  },
+  {
+    "id": "manga-kyoukai-no-nai-sekai",
+    "title": "境界のないセカイ",
+    "category": "manga",
+    "year": 2014,
+    "url": "https://www.kadokawa.co.jp/product/321503000405/",
+    "poster": "/images/works/manga/manga-kyoukai-no-nai-sekai.webp",
+    "creators": [
+      "幾夜大黒堂"
+    ],
+    "tags": [
+      "トランス女性",
+      "ジェンダーと社会"
+    ],
+    "aliases": [
+      "Borderless",
+      "Kyoukai no Nai Sekai"
+    ]
+  },
+  {
+    "id": "manga-cosmos-matsumura-naoki",
+    "title": "コスモス",
+    "category": "manga",
+    "year": 2010,
+    "url": "https://bookwalker.jp/author/111104/?detail=1&order=rank",
+    "poster": "/images/works/manga/manga-cosmos-matsumura-naoki.webp",
+    "creators": [
+      "松村直紀"
+    ],
+    "tags": [
+      "ジェンダー探索"
+    ],
+    "aliases": [
+      "Cosmos"
+    ]
+  },
+  {
+    "id": "manga-kami-sama-onegai",
+    "title": "かみさまお願い「エプロンとサングラス」",
+    "category": "manga",
+    "year": 2005,
+    "url": "https://mangaseek.net/work/19496.html",
+    "poster": "/images/works/manga/manga-kami-sama-onegai.webp",
+    "creators": [
+      "南Q太"
+    ],
+    "tags": [
+      "トランス女性",
+      "恋愛"
+    ],
+    "aliases": [
+      "Kami-sama Onegai",
+      "Please God",
+      "Apron and Sunglasses"
+    ]
+  },
+  {
+    "id": "manga-onna-to-shite-dakaretai",
+    "title": "「女」として抱かれたい…性転換して、初恋をもう一度。",
+    "category": "manga",
+    "year": 2016,
+    "url": "https://ebookjapan.yahoo.co.jp/books/388879/",
+    "poster": "/images/works/manga/manga-onna-to-shite-dakaretai.webp",
+    "creators": [
+      "宮越和草"
+    ],
+    "tags": [
+      "トランス女性",
+      "恋愛"
+    ],
+    "aliases": [
+      "Onna to Shite Dakaretai",
+      "Hold Me, Baby, As a Lady"
+    ]
+  },
+  {
+    "id": "manga-mascara-blues-long-dream",
+    "title": "マスカラブルース「私が私であるために―長い夢―」",
+    "category": "manga",
+    "year": 2005,
+    "url": "https://books.rakuten.co.jp/rb/4392764/",
+    "poster": "/images/works/manga/manga-mascara-blues-long-dream.webp",
+    "creators": [
+      "咲坂伊緒"
+    ],
+    "tags": [
+      "トランス女性",
+      "学園",
+      "恋愛"
+    ],
+    "aliases": [
+      "Mascara Blues",
+      "So I Can Be Myself: A Long Dream"
+    ]
+  },
+  {
+    "id": "manga-katakoi-no-nikki-shoujo",
+    "title": "片恋の日記少女「父と息子とブリ大根」",
+    "category": "manga",
+    "year": 2004,
+    "url": "https://www.hakusensha.co.jp/comicslist/44845/",
+    "poster": "/images/works/manga/manga-katakoi-no-nikki-shoujo.webp",
+    "creators": [
+      "中村明日美子"
+    ],
+    "tags": [
+      "トランス女性",
+      "家族"
+    ],
+    "aliases": [
+      "Katakoi no Nikki Shoujo",
+      "The Girl in the Diary of Unrequited Love"
+    ]
+  },
+  {
+    "id": "manga-f-compo",
+    "title": "F.COMPO",
+    "category": "manga",
+    "year": 1997,
+    "url": "https://catalog.coamix.co.jp/fcompo/",
+    "poster": "/images/works/manga/manga-f-compo.webp",
+    "creators": [
+      "北条司"
+    ],
+    "tags": [
+      "トランス女性",
+      "トランス男性",
+      "ノンバイナリー・Xジェンダー",
+      "家族"
+    ],
+    "aliases": [
+      "Family Compo"
+    ]
+  },
+  {
+    "id": "manga-double-house",
+    "title": "ダブルハウス",
+    "category": "manga",
+    "year": 1998,
+    "url": "https://booklive.jp/product/index/title_id/412018/vol_no/001",
+    "poster": "/images/works/manga/manga-double-house.webp",
+    "creators": [
+      "榛野なな恵"
+    ],
+    "tags": [
+      "トランス女性",
+      "友情"
+    ],
+    "aliases": [
+      "Double House"
+    ]
+  },
+  {
+    "id": "manga-mermaids-line-ayumi-akira",
+    "title": "マーメイドライン「あゆみとあいか」",
+    "category": "manga",
+    "year": 2008,
+    "url": "https://books.rakuten.co.jp/rb/15922022/",
+    "poster": "/images/works/manga/manga-mermaids-line-ayumi-akira.webp",
+    "creators": [
+      "金田一蓮十郎"
+    ],
+    "tags": [
+      "トランス女性",
+      "恋愛",
+      "家族"
+    ],
+    "aliases": [
+      "Mermaids Line",
+      "Ayumi and Aika"
+    ]
+  },
+  {
+    "id": "manga-half-and-half-nanami-mao",
+    "title": "ハーフ・アンド・ハーフ",
+    "category": "manga",
+    "year": 2008,
+    "url": "https://www.kodansha.co.jp/comic/products/0000041892",
+    "poster": "/images/works/manga/manga-half-and-half-nanami-mao.webp",
+    "creators": [
+      "那波マオ"
+    ],
+    "tags": [
+      "トランス女性",
+      "家族",
+      "恋愛"
+    ],
+    "aliases": [
+      "Half and Half"
+    ]
+  },
+  {
+    "id": "manga-densen-complex-love-horizon",
+    "title": "伝染コンプレックス「LOVE HORIZON」",
+    "category": "manga",
+    "year": 2006,
+    "url": null,
+    "poster": "/images/works/manga/manga-densen-complex-love-horizon.webp",
+    "creators": [
+      "きづきあきら"
+    ],
+    "tags": [
+      "トランス女性",
+      "友情"
+    ],
+    "aliases": [
+      "Densen Complex",
+      "Love Horizon"
+    ]
+  },
+  {
+    "id": "manga-josou-shite-off-kai",
+    "title": "女装してオフ会に参加してみた。",
+    "category": "manga",
+    "year": 2020,
+    "url": "https://comic-days.com/episode/13933686331763194902",
+    "poster": "/images/works/manga/manga-josou-shite-off-kai.webp",
+    "creators": [
+      "くらの"
+    ],
+    "tags": [
+      "トランス女性",
+      "女装"
+    ],
+    "aliases": [
+      "I Cross-Dressed for the IRL Meetup",
+      "Josou Shite Off-Kai ni Sanka Shite Mita"
+    ]
+  },
+  {
+    "id": "manga-girl-who-likes-girls",
+    "title": "女性が好きな女性と 男だった女性の話",
+    "category": "manga",
+    "year": 2019,
+    "url": "https://twicomi.com/manga/masuda_yuu7/1180074624823902208",
+    "poster": "/images/works/manga/manga-girl-who-likes-girls.webp",
+    "creators": [
+      "ますだ悠"
+    ],
+    "tags": [
+      "トランス女性",
+      "恋愛"
+    ],
+    "aliases": [
+      "The Story of a Girl Who Likes Girls, and a Girl Who Used to Be a Guy"
+    ]
+  },
+  {
+    "id": "manga-natsu-no-ane",
+    "title": "夏の姉",
+    "category": "manga",
+    "year": 2015,
+    "url": null,
+    "poster": "/images/works/manga/manga-natsu-no-ane.webp",
+    "creators": [
+      "冬目景"
+    ],
+    "tags": [
+      "トランス女性",
+      "家族"
+    ],
+    "aliases": [
+      "Natsu no Ane",
+      "Summer Sister"
+    ]
+  },
+  {
+    "id": "manga-doumo-newhalf-desu",
+    "title": "どうも、ニューハーフです。",
+    "category": "manga",
+    "year": 2020,
+    "url": null,
+    "poster": "/images/works/manga/manga-doumo-newhalf-desu.webp",
+    "creators": [
+      "犬丸そう"
+    ],
+    "tags": [
+      "トランス女性",
+      "家族"
+    ],
+    "aliases": [
+      "Doumo, Newhalf desu.",
+      "Hi, I'm Trans."
+    ]
+  },
+  {
+    "id": "manga-tsubomi-cotton-candy-love",
+    "title": "つぼみ「恋するシュガーコットン」",
+    "category": "manga",
+    "year": 2011,
+    "url": null,
+    "poster": "/images/works/manga/manga-tsubomi-cotton-candy-love.webp",
+    "creators": [
+      "天堂きりん"
+    ],
+    "tags": [
+      "トランス女性",
+      "学園"
+    ],
+    "aliases": [
+      "Tsubomi",
+      "Cotton Candy Love"
+    ]
+  },
+  {
+    "id": "manga-snusmumrik-no-koibito",
+    "title": "スヌスムムリクの恋人",
+    "category": "manga",
+    "year": 2009,
+    "url": "https://csbs.shogakukan.co.jp/book/list-ec-books?book_group_id=6255",
+    "poster": "/images/works/manga/manga-snusmumrik-no-koibito.webp",
+    "creators": [
+      "タアモ",
+      "野島伸司"
+    ],
+    "tags": [
+      "トランス女性",
+      "性別移行",
+      "恋愛"
+    ],
+    "aliases": [
+      "Snusmumrik no Koibito"
+    ]
+  },
+  {
+    "id": "manga-telomere",
+    "title": "テロメア",
+    "category": "manga",
+    "year": 2023,
+    "url": "https://manga.line.me/book/product_list?product_id=E852192",
+    "poster": "/images/works/manga/manga-telomere.webp",
+    "creators": [
+      "鶴川かきお"
+    ],
+    "tags": [
+      "トランス女性"
+    ],
+    "aliases": [
+      "TELOMERE"
+    ]
+  },
+  {
+    "id": "manga-high-school-runway",
+    "title": "ハイスクールランウェイ",
+    "category": "manga",
+    "year": 2021,
+    "url": "https://shonenjumpplus.com/search?q=%E3%82%80%E3%81%8E%E3%81%99%E3%81%91",
+    "poster": "/images/works/manga/manga-high-school-runway.webp",
+    "creators": [
+      "むぎすけ"
+    ],
+    "tags": [
+      "ジェンダー探索",
+      "学園"
+    ],
+    "aliases": [
+      "High School Runway"
+    ]
+  },
+  {
+    "id": "manga-shoudou-drive",
+    "title": "衝動",
+    "category": "manga",
+    "year": 2022,
+    "url": "https://kuragebunch.com/episode/3270296674385857050",
+    "poster": "/images/works/manga/manga-shoudou-drive.webp",
+    "creators": [
+      "山田はまち"
+    ],
+    "tags": [
+      "ジェンダー探索"
+    ],
+    "aliases": [
+      "Shoudou",
+      "Drive"
+    ]
+  },
+  {
+    "id": "manga-we-start-a-threesome",
+    "title": "3P始めました！！",
+    "category": "manga",
+    "year": 2018,
+    "url": "https://e-comi.shogakukan.co.jp/books/098606740000d0000000",
+    "poster": "/images/works/manga/manga-we-start-a-threesome.webp",
+    "creators": [
+      "克・亜樹"
+    ],
+    "tags": [
+      "トランス女性",
+      "恋愛",
+      "家族"
+    ],
+    "aliases": [
+      "We Start a Threesome"
+    ]
+  },
+  {
+    "id": "manga-zanki-x-99",
+    "title": "残機×99",
+    "category": "manga",
+    "year": 2018,
+    "url": "https://www.shinchosha.co.jp/book/772111/",
+    "poster": "/images/works/manga/manga-zanki-x-99.webp",
+    "creators": [
+      "愛南ぜろ"
+    ],
+    "tags": [
+      "トランス女性"
+    ],
+    "aliases": [
+      "Zanki x 99",
+      "Remaining Lives x 99"
+    ]
+  },
+  {
+    "id": "manga-kaoru-san-no-kikyou",
+    "title": "薫さんの帰郷",
+    "category": "manga",
+    "year": 1996,
+    "url": "https://www.cmoa.jp/title/95521/",
+    "poster": "/images/works/manga/manga-kaoru-san-no-kikyou.webp",
+    "creators": [
+      "TONO"
+    ],
+    "tags": [
+      "トランス女性"
+    ],
+    "aliases": [
+      "Kaoru-san no Kikyou",
+      "Kaoru-san's Homecoming"
+    ]
+  },
+  {
+    "id": "manga-concept-cafe-girl-wears-love",
+    "title": "コンカフェ嬢は恋を着る",
+    "category": "manga",
+    "year": 2024,
+    "url": "https://manga.line.me/product/periodic?id=S153012",
+    "poster": "/images/works/manga/manga-concept-cafe-girl-wears-love.webp",
+    "creators": [
+      "卯花りりか"
+    ],
+    "tags": [
+      "トランス女性",
+      "職場"
+    ],
+    "aliases": [
+      "The Concept Café Girl Wears Love"
+    ]
+  },
+  {
+    "id": "manga-kyou-kara-yonshimai",
+    "title": "きょうから四姉妹",
+    "category": "manga",
+    "year": 2013,
+    "url": null,
+    "poster": "/images/works/manga/manga-kyou-kara-yonshimai.webp",
+    "creators": [
+      "きづきあきら",
+      "サトウナンキ"
+    ],
+    "tags": [
+      "トランス女性",
+      "性別移行",
+      "家族"
+    ],
+    "aliases": [
+      "Kyou Kara Yonshimai",
+      "Four Sisters Starting Today"
+    ]
+  },
+  {
+    "id": "manga-stop-hibari-kun",
+    "title": "ストップ!!ひばりくん！",
+    "category": "manga",
+    "year": 1981,
+    "url": "https://shogakukan-comic.jp/book-series?cd=25050",
+    "poster": "/images/works/manga/manga-stop-hibari-kun.webp",
+    "creators": [
+      "江口寿史"
+    ],
+    "tags": [
+      "トランス女性",
+      "コメディ"
+    ],
+    "aliases": [
+      "Stop!! Hibari-kun!"
+    ]
+  },
+  {
+    "id": "manga-madoka-no-himitsu",
+    "title": "まどかのひみつ",
+    "category": "manga",
+    "year": 2019,
+    "url": "https://www.shodensha.co.jp/mangajam/jam006.html",
+    "poster": "/images/works/manga/manga-madoka-no-himitsu.webp",
+    "creators": [
+      "金魚鉢でめ"
+    ],
+    "tags": [
+      "ジェンダー探索",
+      "学園"
+    ],
+    "aliases": [
+      "Madoka no Himitsu",
+      "Madoka's Secret"
+    ]
+  },
+  {
+    "id": "manga-kanojo-ni-naritai-kimi-to-boku",
+    "title": "カノジョになりたい君と僕",
+    "category": "manga",
+    "year": 2018,
+    "url": "https://mangaseek.net/work/63864.html",
+    "poster": "/images/works/manga/manga-kanojo-ni-naritai-kimi-to-boku.webp",
+    "creators": [
+      "たかせうみ"
+    ],
+    "tags": [
+      "トランス女性",
+      "学園",
+      "恋愛"
+    ],
+    "aliases": [
+      "Kanojo ni Naritai Kimi to Boku",
+      "I Wanna Be Your Girl"
+    ]
+  },
+  {
+    "id": "manga-no-bra",
+    "title": "のーぶら",
+    "category": "manga",
+    "year": 2002,
+    "url": "https://akitashoten.co.jp/comics/4253203345",
+    "poster": "/images/works/manga/manga-no-bra.webp",
+    "creators": [
+      "川津健二朗"
+    ],
+    "tags": [
+      "ジェンダー探索",
+      "女装",
+      "恋愛"
+    ],
+    "aliases": [
+      "No Bra"
+    ]
+  },
+  {
+    "id": "manga-himegoto-19sai-no-seifuku",
+    "title": "ヒメゴト〜十九歳の制服〜",
+    "category": "manga",
+    "year": 2010,
+    "url": "https://e-comi.shogakukan.co.jp/books/091837770000d0000000",
+    "poster": "/images/works/manga/manga-himegoto-19sai-no-seifuku.webp",
+    "creators": [
+      "峰浪りょう"
+    ],
+    "tags": [
+      "ジェンダー探索"
+    ],
+    "aliases": [
+      "Himegoto: Juukyuusai no Seifuku",
+      "Himegoto: 19sai no Seifuku"
+    ]
+  },
+  {
+    "id": "manga-sakura-chan-to-amane-kun",
+    "title": "サクラちゃんとアマネくん",
+    "category": "manga",
+    "year": 2017,
+    "url": null,
+    "poster": "/images/works/manga/manga-sakura-chan-to-amane-kun.webp",
+    "creators": [
+      "浅月のりと"
+    ],
+    "tags": [
+      "トランス女性",
+      "トランス男性",
+      "学園"
+    ],
+    "aliases": [
+      "Sakura-chan to Amane-kun"
+    ]
+  },
+  {
+    "id": "manga-okaeri-alice",
+    "title": "おかえりアリス",
+    "category": "manga",
+    "year": 2020,
+    "url": "https://www.kodansha.co.jp/comic/products/0000344119",
+    "poster": "/images/works/manga/manga-okaeri-alice.webp",
+    "creators": [
+      "押見修造"
+    ],
+    "tags": [
+      "ジェンダー探索",
+      "思春期・青春"
+    ],
+    "aliases": [
+      "Okaeri Alice",
+      "Welcome Back, Alice"
+    ]
+  },
+  {
+    "id": "manga-nakamura-ching-tanpenshuu",
+    "title": "ちんまん「LADY STANCH」",
+    "category": "manga",
+    "year": 2009,
+    "url": "https://ching.tv/category/manga/short-comic/",
+    "poster": "/images/works/manga/manga-nakamura-ching-tanpenshuu.webp",
+    "creators": [
+      "中村珍"
+    ],
+    "tags": [
+      "トランス女性"
+    ],
+    "aliases": [
+      "Nakamura Ching Tanpenshuu",
+      "Chinman: Ching Nakamura's Early Manga Short Story Collection"
+    ]
+  },
+  {
+    "id": "manga-young-gto-misato",
+    "title": "湘南純愛組！（第243〜252話）",
+    "category": "manga",
+    "year": 1996,
+    "url": "https://www.kodansha.co.jp/comic/products/0000015660",
+    "poster": "/images/works/manga/manga-young-gto-misato.webp",
+    "creators": [
+      "藤沢とおる"
+    ],
+    "tags": [
+      "トランス女性",
+      "恋愛"
+    ],
+    "aliases": [
+      "Young GTO"
     ]
   },
   {
@@ -247,7 +1027,7 @@
     "category": "novel",
     "year": 2001,
     "url": "https://ja.wikipedia.org/wiki/片想い_%28小説%29",
-    "poster": null,
+    "poster": "/images/works/novel/novel-kataomoi.webp",
     "tags": [
       "トランス男性",
       "性同一性障害"
@@ -259,7 +1039,7 @@
     "category": "novel",
     "year": 2021,
     "url": "https://www.shogakukan.co.jp/books/09453018",
-    "poster": "https://www.shogakukan.co.jp/thumbnail/snsbooks/09453018",
+    "poster": "/images/works/novel/novel-mimoza-no-kokuhaku.webp",
     "tags": [
       "トランス男性",
       "学園",
@@ -273,7 +1053,7 @@
     "category": "tv-drama",
     "year": 2006,
     "url": "https://ja.wikipedia.org/wiki/私が私であるために",
-    "poster": null,
+    "poster": "/images/works/tv-drama/tvdrama-watashi-ga-watashi-de-aru-tame-ni.webp",
     "tags": [
       "性同一性障害",
       "性別移行"
@@ -285,7 +1065,7 @@
     "category": "tv-drama",
     "year": 2018,
     "url": "https://ja.wikipedia.org/wiki/女子的生活",
-    "poster": null,
+    "poster": "/images/works/tv-drama/tvdrama-joshiteki-seikatsu.webp",
     "tags": [
       "トランス女性",
       "日常"
@@ -298,7 +1078,7 @@
     "category": "tv-drama",
     "year": 2020,
     "url": "https://thetv.jp/program/0000971500/",
-    "poster": null,
+    "poster": "/images/works/tv-drama/tvdrama-miura-buchou.webp",
     "tags": [
       "トランス女性",
       "性別移行",
@@ -312,7 +1092,7 @@
     "category": "tv-drama",
     "year": 2024,
     "url": "https://ja.wikipedia.org/wiki/虎に翼",
-    "poster": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Mibuchi_Yoshiko_circa_1938.jpg/330px-Mibuchi_Yoshiko_circa_1938.jpg",
+    "poster": "/images/works/tv-drama/tvdrama-tora-ni-tsubasa.webp",
     "tags": [
       "実話・歴史",
       "ジェンダーと社会"
@@ -325,7 +1105,7 @@
     "category": "tv-anime",
     "year": 2011,
     "url": "https://ja.wikipedia.org/wiki/放浪息子",
-    "poster": null,
+    "poster": "/images/works/tv-anime/tvanime-hourou-musuko.webp",
     "tags": [
       "トランス女性",
       "トランス男性",
@@ -340,7 +1120,7 @@
     "category": "tv-anime",
     "year": 2018,
     "url": "https://ja.wikipedia.org/wiki/Back_Street_Girls",
-    "poster": null,
+    "poster": "/images/works/tv-anime/tvanime-back-street-girls.webp",
     "tags": [
       "女装",
       "コメディ"
@@ -353,7 +1133,7 @@
     "category": "tv-anime",
     "year": 2024,
     "url": "https://ja.wikipedia.org/wiki/先輩はおとこのこ",
-    "poster": null,
+    "poster": "/images/works/tv-anime/tvanime-senpai-wa-otokonoko.webp",
     "tags": [
       "男の娘",
       "学園",
@@ -367,7 +1147,7 @@
     "category": "game",
     "year": 2018,
     "url": "https://store.steampowered.com/app/504230",
-    "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/capsule_616x353.jpg?t=1714089525",
+    "poster": "/images/works/game/game-celeste.webp",
     "tags": [
       "トランス女性",
       "メンタルヘルス"
@@ -380,7 +1160,7 @@
     "category": "game",
     "year": 2018,
     "url": "https://store.steampowered.com/app/917680",
-    "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/917680/capsule_616x353.jpg?t=1770039071",
+    "poster": "/images/works/game/game-one-night-hot-springs.webp",
     "tags": [
       "トランス女性",
       "日常"
@@ -392,7 +1172,7 @@
     "category": "game",
     "year": 2020,
     "url": "https://store.steampowered.com/app/1041920",
-    "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1041920/capsule_616x353.jpg?t=1729099681",
+    "poster": "/images/works/game/game-if-found.webp",
     "tags": [
       "トランス女性",
       "家族"
@@ -404,7 +1184,7 @@
     "category": "game",
     "year": 2021,
     "url": "https://store.steampowered.com/app/1559760",
-    "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1559760/capsule_616x353.jpg?t=1677887257",
+    "poster": "/images/works/game/game-island-diary.webp",
     "tags": [
       "トランス女性",
       "日常"
@@ -416,7 +1196,7 @@
     "category": "game",
     "year": 2021,
     "url": "https://store.steampowered.com/app/1688580",
-    "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1688580/capsule_616x353.jpg?t=1778420532",
+    "poster": "/images/works/game/game-a-year-of-springs.webp",
     "tags": [
       "トランス女性",
       "日常",
@@ -430,7 +1210,7 @@
     "year": 2005,
     "url": "https://ja.wikipedia.org/wiki/処女はお姉さまに恋してる",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-otome-wa-oneesama-ni-koishiteru.webp",
     "tags": [
       "女装",
       "学園",
@@ -444,7 +1224,7 @@
     "year": 2006,
     "url": "https://ja.wikipedia.org/wiki/彼女たちの流儀",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-kanojotachi-no-ryuugi.webp",
     "tags": [
       "女装",
       "恋愛"
@@ -457,7 +1237,7 @@
     "year": 2007,
     "url": "https://ja.wikipedia.org/wiki/姫さまっ、お手やわらかに!",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-himesama-oteyawaraka-ni.webp",
     "tags": [
       "女装",
       "恋愛"
@@ -470,7 +1250,7 @@
     "year": 2007,
     "url": "https://ja.wikipedia.org/wiki/恋する乙女と守護の楯",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-koisuru-otome-to-shugo-no-tate.webp",
     "tags": [
       "女装",
       "学園",
@@ -484,7 +1264,7 @@
     "year": 2009,
     "url": "https://ja.wikipedia.org/wiki/花と乙女に祝福を",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-hana-to-otome-ni-shukufuku-wo.webp",
     "tags": [
       "女装",
       "学園",
@@ -498,7 +1278,7 @@
     "year": 2009,
     "url": "https://ja.wikipedia.org/wiki/花鳥風月_〜恋ニヲチタル花園ノ姫〜",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-kachoufugetsu.webp",
     "tags": [
       "女装",
       "恋愛"
@@ -511,7 +1291,7 @@
     "year": 2011,
     "url": "https://ja.wikipedia.org/wiki/オービット",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-kimi-to-boku-to-eden-no-ringo.webp",
     "tags": [
       "女装",
       "恋愛"
@@ -524,7 +1304,7 @@
     "year": 2011,
     "url": "https://ja.wikipedia.org/wiki/天使の羽根を踏まないでっ",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-tenshi-no-hane-wo-fumanaide.webp",
     "tags": [
       "女装",
       "学園",
@@ -538,7 +1318,7 @@
     "year": 2012,
     "url": "https://ja.wikipedia.org/wiki/乙女が紡ぐ恋のキャンバス",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-otome-ga-tsumugu-koi-no-canvas.webp",
     "tags": [
       "女装",
       "恋愛"
@@ -551,7 +1331,7 @@
     "year": 2012,
     "url": "https://ja.wikipedia.org/wiki/月に寄りそう乙女の作法",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-tsuki-ni-yorisou-otome-no-sahou.webp",
     "tags": [
       "女装",
       "恋愛"
@@ -564,7 +1344,7 @@
     "year": 2014,
     "url": "https://ja.wikipedia.org/wiki/駄作_%28ゲーム%29",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-dasaku-nuiawase.webp",
     "tags": [
       "女装"
     ]
@@ -576,7 +1356,7 @@
     "year": 2016,
     "url": "https://www.freem.ne.jp/win/game/11259",
     "adult": true,
-    "poster": "https://fpiccdn.com/11259/w500/h0/mratio/ejpg/?3a478e7ef203dedb81775df4f38e36d0",
+    "poster": "/images/works/bishojo-game/bishojo-noja-loli-no-yandere-mokushiroku.webp",
     "tags": [
       "女装"
     ]
@@ -588,7 +1368,7 @@
     "year": 2016,
     "url": "https://ja.wikipedia.org/wiki/乙女が彩る恋のエッセンス",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-otome-ga-irodoru-koi-no-essence.webp",
     "tags": [
       "女装",
       "恋愛"
@@ -601,7 +1381,7 @@
     "year": 2016,
     "url": "https://ja.wikipedia.org/wiki/オトメ*ドメイン",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-otome-domain.webp",
     "tags": [
       "女装",
       "学園",
@@ -615,7 +1395,7 @@
     "year": 2017,
     "url": "https://ja.wikipedia.org/wiki/想いを捧げる乙女のメロディー",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-omoi-wo-sasageru-otome-no-melody.webp",
     "tags": [
       "女装",
       "恋愛"
@@ -628,7 +1408,7 @@
     "year": 2017,
     "url": "https://no-strike.jp/millennium/",
     "adult": true,
-    "poster": "https://no-strike.jp/millennium/img/ogp/ogp-icon.jpg",
+    "poster": "/images/works/bishojo-game/bishojo-josou-sennen-oukoku.webp",
     "tags": [
       "女装"
     ]
@@ -641,7 +1421,7 @@
     "url": "https://ja.wikipedia.org/wiki/おとこの娘倶楽部",
     "series": "おとこの娘倶楽部",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-otokonoko-club.webp",
     "tags": [
       "男の娘",
       "女装"
@@ -655,7 +1435,7 @@
     "url": null,
     "series": "おとこの娘倶楽部",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-houkago-josou-netidol.webp",
     "tags": [
       "女装"
     ]
@@ -668,7 +1448,7 @@
     "url": null,
     "series": "おとこの娘倶楽部",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-houkago-josou-tsundere-bitch.webp",
     "tags": [
       "女装"
     ]
@@ -681,7 +1461,7 @@
     "url": "https://ja.wikipedia.org/wiki/ベースユニット",
     "series": "脳内彼女",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-nounai-kanojo.webp",
     "tags": [
       "女装"
     ]
@@ -694,7 +1474,7 @@
     "url": "https://ja.wikipedia.org/wiki/女装山脈",
     "series": "脳内彼女",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-josou-sanmyaku.webp",
     "tags": [
       "女装"
     ]
@@ -707,7 +1487,7 @@
     "url": "https://ja.wikipedia.org/wiki/女装海峡",
     "series": "脳内彼女",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-josou-kaikyou.webp",
     "tags": [
       "女装"
     ]
@@ -720,7 +1500,7 @@
     "url": "https://www.dlsite.com/pro/work/=/product_id/VJ008761.html",
     "series": "脳内彼女",
     "adult": true,
-    "poster": "https://img.dlsite.jp/modpub/images2/work/professional/VJ009000/VJ008761_img_main.jpg",
+    "poster": "/images/works/bishojo-game/bishojo-josou-gakuen-nin.webp",
     "tags": [
       "女装",
       "学園"
@@ -734,7 +1514,7 @@
     "url": "https://no-strike.jp/",
     "series": "の～すとらいく",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-no-strike.webp",
     "tags": [
       "女装"
     ]
@@ -747,7 +1527,7 @@
     "url": "https://www.dlsite.com/maniax/work/=/product_id/RJ173185.html",
     "series": "の～すとらいく",
     "adult": true,
-    "poster": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ174000/RJ173185_img_main.jpg",
+    "poster": "/images/works/bishojo-game/bishojo-kykatsu-wo-josou-suru.webp",
     "tags": [
       "女装"
     ]
@@ -760,7 +1540,7 @@
     "url": "https://www.dlsite.com/pro/work/=/product_id/VJ010863.html",
     "series": "の～すとらいく",
     "adult": true,
-    "poster": "https://img.dlsite.jp/modpub/images2/work/professional/VJ011000/VJ010863_img_main.jpg",
+    "poster": "/images/works/bishojo-game/bishojo-josou-gakuen-haramu.webp",
     "tags": [
       "女装",
       "学園"
@@ -774,7 +1554,7 @@
     "url": "https://www.dlsite.com/pro/work/=/product_id/VJ011275.html",
     "series": "の～すとらいく",
     "adult": true,
-    "poster": "https://img.dlsite.jp/modpub/images2/work/professional/VJ012000/VJ011275_img_main.jpg",
+    "poster": "/images/works/bishojo-game/bishojo-josou-sennen-oukoku-ns.webp",
     "tags": [
       "女装"
     ]
@@ -787,7 +1567,7 @@
     "url": "https://ja.wikipedia.org/wiki/女装神社",
     "series": "の～すとらいく",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-josou-jinja.webp",
     "tags": [
       "女装"
     ]
@@ -800,7 +1580,7 @@
     "url": "https://ja.wikipedia.org/wiki/女装神話",
     "series": "の～すとらいく",
     "adult": true,
-    "poster": null,
+    "poster": "/images/works/bishojo-game/bishojo-josou-shinwa.webp",
     "tags": [
       "女装"
     ]
@@ -813,7 +1593,7 @@
     "url": "https://no-strike.jp/genesis/index-tc.html",
     "series": "の～すとらいく",
     "adult": true,
-    "poster": "https://no-strike.jp/genesis/img/ogp/ogp-icon.png",
+    "poster": "/images/works/bishojo-game/bishojo-josou-souseiki.webp",
     "tags": [
       "女装"
     ]
@@ -826,7 +1606,7 @@
     "url": "https://www.dlsite.com/pro/work/=/product_id/VJ01002467.html",
     "series": "の～すとらいく",
     "adult": true,
-    "poster": "https://img.dlsite.jp/modpub/images2/work/professional/VJ01003000/VJ01002467_img_main.jpg",
+    "poster": "/images/works/bishojo-game/bishojo-josou-yuribatake.webp",
     "tags": [
       "女装",
       "百合"

@@ -29,6 +29,13 @@ npm run dev
 npm run build
 ```
 
+英語版は `/en/` 以下に静的生成されます。日本語の本文やデータを変更したときは、翻訳カタログを更新してからビルドします。カタログの更新時には翻訳サービスへのネットワーク接続が必要です。
+
+```sh
+npm run translate:en
+npm run build
+```
+
 ## ライセンス
 
 コードは [MIT License](LICENSE.md) で公開します。

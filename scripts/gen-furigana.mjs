@@ -23,7 +23,7 @@ const tokenizer = await new Promise((res, rej) =>
 // list, so the toggle reveals ふりがな everywhere.
 const htmlFiles = fs
   .readdirSync('dist', { recursive: true })
-  .filter((f) => typeof f === 'string' && f.endsWith('.html'))
+  .filter((f) => typeof f === 'string' && f.endsWith('.html') && !f.startsWith('en/'))
   .map((f) => 'dist/' + f);
 // Headings and interactive controls are skipped: their accessible name / text
 // identity matters (screen-reader navigation, labels, exact-text tests), and

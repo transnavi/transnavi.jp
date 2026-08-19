@@ -59,12 +59,83 @@ for (const path of pages) {
   });
 }
 
+test('日本語ページから同じ内容の英語ページへ移動できる', async ({ page }) => {
+  await page.goto('/basics/');
+
+  const switcher = page.locator('.language-switch');
+  await expect(switcher).toHaveText('English');
+  await expect(switcher).toHaveAttribute('href', '/en/basics/');
+  await expect(page.locator('link[rel="alternate"][hreflang="en"]')).toHaveAttribute(
+    'href',
+    'https://transnavi.jp/en/basics/',
+  );
+});
+
+test('英語版は主要ページとデータ由来の詳細ページを同じURL構造で表示する', async ({ page }) => {
+  const englishPages = [
+    ['/en/', 'If you think you may be trans'],
+    ['/en/basics/', 'Trans, cis, and nonbinary basics'],
+    ['/en/glossary/estradiol-monotherapy/', 'Estradiol Monotherapy'],
+    ['/en/clinics/hrt-tokyo-gender-clinic/', 'Tokyo Gender Clinic'],
+    ['/en/library/mtf-wiki-ja/docs/medicine/risk/', null],
+  ] as const;
+
+  for (const [path, heading] of englishPages) {
+    await page.goto(path);
+    await expect(page.locator('html')).toHaveAttribute('lang', 'en');
+    await expect(page.locator('h1').first()).toBeVisible();
+    await expect(page.locator('.translation-note')).toBeVisible();
+    await expect(page.locator('.language-switch')).toHaveAttribute('href', path.replace(/^\/en/, '') || '/');
+    if (heading) await expect(page.locator('h1').first()).toContainText(heading);
+  }
+});
+
+test('英語版の検索は英語の本文を検索する', async ({ page }) => {
+  await page.goto('/en/search/');
+  await page.locator('#search-input').fill('hormone therapy');
+
+  await expect(page.locator('.search-result').first()).toBeVisible();
+  await expect(page.locator('.search-status')).toContainText('results');
+  await expect(page.locator('.search-result[href^="/en/"]').first()).toBeVisible();
+});
+
+test('英語版の医療機関と用語集を英語で絞り込める', async ({ page }) => {
+  await page.goto('/en/clinics/');
+  await page.locator('[data-filter-input]').fill('Tokyo Gender');
+  await expect(page.locator('[data-filter-item]', { hasText: 'Tokyo Gender Clinic' })).toBeVisible();
+  await expect(page.locator('[data-filter-count]')).toHaveText('1');
+
+  await page.goto('/en/glossary/');
+  await page.locator('[data-filter-input]').fill('Estradiol Monotherapy');
+  await expect(page.locator('[data-filter-item]', { hasText: 'Estradiol Monotherapy' })).toBeVisible();
+});
+
 test('全ページのフッターに今すぐの相談先（タップできる電話番号）がある', async ({ page }) => {
   // 取り乱した利用者がどのページからでも、画面遷移なしで 24時間の番号に届くこと。
   await page.goto('/basics/');
   const tel = page.locator('.footer-crisis a[href^="tel:"]');
   await expect(tel).toHaveAttribute('href', 'tel:0120279338');
   await expect(tel).toContainText('0120-279-338');
+});
+
+test('全ページのフッターからジェンダー体験事典へ移動できる', async ({ page }) => {
+  await page.goto('/basics/');
+
+  const link = page.locator('.site-footer').getByRole('link', { name: 'ジェンダー体験事典' });
+  await expect(link).toHaveText('体験事典');
+  await expect(link).toHaveAttribute('href', 'https://db.transnavi.jp/ja/');
+  await expect(link).toHaveAttribute('target', '_blank');
+});
+
+test('性別を考える本文からジェンダー体験事典へ移動できる', async ({ page }) => {
+  for (const path of ['/start/', '/dysphoria/']) {
+    await page.goto(path);
+
+    const link = page.locator('.article-shell a[href="https://db.transnavi.jp/ja/"]');
+    await expect(link).toHaveCount(1);
+    await expect(link).toHaveAttribute('href', 'https://db.transnavi.jp/ja/');
+    await expect(link).toHaveAttribute('target', '_blank');
+  }
 });
 
 test('医療機関ページは主観的コメント欄を表示しない', async ({ page }) => {
@@ -350,6 +421,20 @@ test('文芸作品データベースに 2345.LGBT 由来の作品を掲載する
   expect(await textNoRuby(page.locator('h1'))).toContain('文芸作品');
   await expect(page.locator('body')).toContainText('片袖の魚');
   await expect(page.locator('body')).toContainText('三浦部長、本日付けで女性になります。');
+});
+
+test('文芸作品データベースに Transfem Manga 由来の漫画と出典を掲載する', async ({ page }) => {
+  await page.goto('/works/');
+
+  await expect(page.locator('body')).toContainText('ダブルハウス');
+  await expect(page.locator('body')).toContainText('作者：榛野なな恵');
+  await expect(page.locator('img[src="/images/works/manga/manga-double-house.webp"]')).toBeVisible();
+  await page.locator('#works-search').fill('Double House');
+  await expect(page.locator('tr[data-filter-item]', { hasText: 'ダブルハウス' })).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Transfem Manga' })).toHaveAttribute(
+    'href',
+    'https://docs.google.com/spreadsheets/d/1hRt0qJejlU7kxEJ72w5wN0_IQJJ-4IO1POaX6hcWWlQ/edit?gid=0#gid=0',
+  );
 });
 
 test('旧 /articles/ の URL は移行先へ誘導する', async ({ page }) => {

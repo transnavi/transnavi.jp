@@ -7,7 +7,7 @@ for (const head of document.querySelectorAll('[data-sort-head]')) {
   if (!tbody) continue;
 
   const buttons = [...head.querySelectorAll('[data-sort-key]')];
-  const collator = new Intl.Collator('ja', { numeric: true });
+  const collator = new Intl.Collator(document.documentElement.lang === 'en' ? 'en' : 'ja', { numeric: true });
 
   const value = (row, key) => row.dataset[key === 'title' ? 'sortTitle' : key === 'category' ? 'sortCategory' : 'sortYear'] ?? '';
 

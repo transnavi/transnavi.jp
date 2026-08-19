@@ -105,7 +105,7 @@ const posterInitial = (title: string) => Array.from(title)[0] ?? '?';
               data-sort-title={work.title}
               data-sort-category={categoryRank.get(work.category) ?? 99}
               data-sort-year={work.year ?? ''}
-              data-search={[work.title, workCategoryLabels[work.category], work.year, work.series, ...(work.tags ?? [])].filter(Boolean).join(' ')}
+              data-search={[work.title, ...(work.aliases ?? []), workCategoryLabels[work.category], work.year, work.series, ...(work.creators ?? []), ...(work.tags ?? [])].filter(Boolean).join(' ')}
             >
               <td class="works-col-poster">
                 <div class="work-poster" data-initial={posterInitial(work.title)}>
@@ -130,6 +130,9 @@ const posterInitial = (title: string) => Array.from(title)[0] ?? '?';
                 {work.popular && <span class="badge badge-popular">★ 人気</span>}
                 {work.adult && <span class="badge badge-adult">R18</span>}
                 {work.series && <span class="work-series">{work.series}</span>}
+                {work.creators && work.creators.length > 0 && (
+                  <span class="work-creators">作者：{work.creators.join('／')}</span>
+                )}
                 {work.tags && work.tags.length > 0 && (
                   <span class="work-tags">
                     {work.tags.map((tag) => (
@@ -148,8 +151,9 @@ const posterInitial = (title: string) => Array.from(title)[0] ?? '?';
     </div>
 
     <p class="source-note">
-      作品データは
-      {' '}<a href="https://2345.lgbt/ja/cultural-works" target="_blank" rel="noreferrer">2345.LGBT</a>（CC0）をもとに、当サイトで追加・更新しています。ポスター画像は各配給元・出版社・配信元に帰属し、参照のために各サイトから読み込んでいます。
+      作品データは、手作業での選定と公開情報の自動収集をもとに作成しています。一部には
+      {' '}<a href="https://2345.lgbt/ja/cultural-works" target="_blank" rel="noreferrer">2345.LGBT</a>（CC0）のデータを使用し、一部の漫画作品の選定では、フランス語の個人作成リスト
+      {' '}<a href="https://docs.google.com/spreadsheets/d/1hRt0qJejlU7kxEJ72w5wN0_IQJJ-4IO1POaX6hcWWlQ/edit?gid=0#gid=0" target="_blank" rel="noreferrer">Transfem Manga</a> を参照しています。ポスター画像は作品の紹介・参照を目的として掲載しています。各画像の権利は権利者に帰属します。
     </p>
 
     <nav class="word-chips entry-related" aria-label="関連ページ">
