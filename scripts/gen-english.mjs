@@ -130,7 +130,13 @@ function polishTranslation(value) {
         .replace(/\bMamorouyo Kokoro\b/g, 'Ministry of Health, Labour and Welfare mental health support portal')
         .replace(/\bKinki Trance Meeting\b/g, 'Kinki Trans Meeting')
         .replace(/\bGender Assignment Hormone Therapy\b/gi, 'gender-affirming hormone therapy')
+        .replace(/\bForce Outing\b/gi, 'Outing')
+        .replace(/\b(?:Japanese|Japan) GI \(Gender Nonconform(?:ity|ing)\) Society\b/gi, 'Japan Society of Gender Incongruence')
+        .replace(/\bJapan Society for Gender Nonconformity\b/gi, 'Japan Society of Gender Incongruence')
+        .replace(/\bgender non[- ]?conformity\b/gi, (match) => (/^[A-Z]/.test(match) ? 'Gender incongruence' : 'gender incongruence'))
+        .replace(/\bgender nonconforming(?=\s*(?:\(GI\)|in ICD-11))/gi, (match) => (/^[A-Z]/.test(match) ? 'Gender incongruence' : 'gender incongruence'))
         .replace(/\bvaginal ostomy(?: surgery)?\b/gi, 'vaginoplasty')
+        .replace(/\bvaginostomy\b/gi, 'vaginoplasty')
         .replace(/\bgrottoplasty\b/gi, 'glottoplasty')
         .replace(/``/g, '“')
         .replace(/''/g, '”');

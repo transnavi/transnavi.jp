@@ -214,6 +214,32 @@ test('英語版は監査で見つかった重大な誤訳を表示しない', as
   await page.goto('/en/library/ftm-wiki/fertility/');
   await expect(page.locator('main')).toContainText("Transferring an embryo to a cisgender woman partner's uterus");
   await expect(page.locator('main')).not.toContainText('How to infect');
+
+  await page.goto('/en/hrt-medications/');
+  await expect(page.locator('main')).toContainText('salt substitutes containing potassium chloride');
+  await expect(page.locator('main')).not.toContainText('reduced salt intake (potassium chloride)');
+
+  await page.goto('/en/safety/');
+  await expect(page.locator('main')).toContainText("Non-consensual disclosure of someone's gender identity (outing)");
+  await expect(page.locator('main')).not.toContainText(/outings and violence|Force Outing/i);
+
+  await page.goto('/en/faq/');
+  await expect(page.locator('main')).toContainText('gender incongruence');
+  await expect(page.locator('main')).not.toContainText('gender nonconformity');
+
+  await page.goto('/en/library/mtf-wiki-ja/docs/medicine/risk/');
+  await expect(page.locator('main')).toContainText('advises avoiding concomitant progestin use');
+  await expect(page.locator('main')).not.toContainText('concomitant use of progestin drugs is recommended');
+
+  await page.goto('/en/library/mtf-wiki-ja/docs/medicine/monitoring/');
+  await expect(page.locator('main')).toContainText('remain discontinued during the postoperative period of bed rest');
+
+  await page.goto('/en/library/ftm-wiki/top-surgery/');
+  await expect(page.locator('main')).toContainText('temporarily stop certain medications');
+
+  await page.goto('/en/intersex/');
+  await expect(page.locator('main')).toContainText('an umbrella term covering many different variations');
+  await expect(page.locator('main')).toContainText('babies and children who could not consent');
 });
 
 test('英語版の用語集は他言語の表記を改変しない', async ({ page }) => {
