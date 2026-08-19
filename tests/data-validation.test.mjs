@@ -91,6 +91,15 @@ test('work records have unique ids and renderable fields', () => {
     assert.ok(work.year === null || Number.isInteger(work.year), `${work.id}: invalid year`);
     assert.ok(work.url === null || URL.canParse(work.url), `${work.id}: invalid url`);
     assert.ok(work.creators === undefined || (Array.isArray(work.creators) && work.creators.every(Boolean)), `${work.id}: invalid creators`);
+    assert.ok(work.aliases === undefined || (Array.isArray(work.aliases) && work.aliases.every(Boolean)), `${work.id}: invalid aliases`);
+    assert.ok(work.poster === undefined || work.poster === null || work.poster.startsWith('/') || URL.canParse(work.poster), `${work.id}: invalid poster`);
+  }
+});
+
+test('every work record has a local poster image', () => {
+  for (const work of works) {
+    assert.match(work.poster ?? '', /^\/images\/works\/[a-z0-9-]+\/[a-z0-9-]+\.webp$/, `${work.id}: missing local poster`);
+    assert.ok(fs.existsSync(new URL(`../public${work.poster}`, import.meta.url)), `${work.id}: poster file does not exist`);
   }
 });
 

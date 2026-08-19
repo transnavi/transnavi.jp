@@ -18,9 +18,11 @@ export interface Work {
   series?: string;
   /** Authors or creators credited for this work. */
   creators?: string[];
+  /** Alternate titles used by search, including translations and romanizations. */
+  aliases?: string[];
   /** Adult / 18+ content. */
   adult?: boolean;
-  /** Poster / thumbnail image URL (populated by scripts/fetch-work-posters.mjs). */
+  /** Poster / thumbnail image URL. */
   poster?: string | null;
   /** Topical tags describing what the work is about. */
   tags?: string[];

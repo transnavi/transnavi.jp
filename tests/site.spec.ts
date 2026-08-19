@@ -355,8 +355,11 @@ test('文芸作品データベースに 2345.LGBT 由来の作品を掲載する
 test('文芸作品データベースに Transfem Manga 由来の漫画と出典を掲載する', async ({ page }) => {
   await page.goto('/works/');
 
-  await expect(page.locator('body')).toContainText('Double House');
-  await expect(page.locator('body')).toContainText('作者：Haruno Nanae');
+  await expect(page.locator('body')).toContainText('ダブルハウス');
+  await expect(page.locator('body')).toContainText('作者：榛野なな恵');
+  await expect(page.locator('img[src="/images/works/manga/manga-double-house.webp"]')).toBeVisible();
+  await page.locator('#works-search').fill('Double House');
+  await expect(page.locator('tr[data-filter-item]', { hasText: 'ダブルハウス' })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Transfem Manga' })).toHaveAttribute(
     'href',
     'https://docs.google.com/spreadsheets/d/1hRt0qJejlU7kxEJ72w5wN0_IQJJ-4IO1POaX6hcWWlQ/edit?gid=0#gid=0',
