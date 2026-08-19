@@ -9,6 +9,7 @@ import yaml from 'js-yaml';
 const read = (p) => fs.readFileSync(new URL(`../${p}`, import.meta.url), 'utf8');
 const glossary = JSON.parse(read('src/data/glossary.json'));
 const clinics = JSON.parse(read('src/data/clinics.json'));
+const works = JSON.parse(read('src/data/works.json'));
 const pageTags = JSON.parse(read('src/data/page-tags.json'));
 const references = yaml.load(read('src/data/references.yml'));
 const citationPages = yaml.load(read('src/data/citation-pages.yml'));
@@ -76,6 +77,20 @@ test('clinic records have unique ids and the fields the pages render', () => {
     assert.ok(c.prefecture, `${c.id}: missing prefecture`);
     assert.ok(c.services?.length, `${c.id}: no services`);
     assert.ok(c.verificationStatus, `${c.id}: missing verificationStatus`);
+  }
+});
+
+test('work records have unique ids and renderable fields', () => {
+  const categories = new Set(['music', 'film', 'manga', 'novel', 'tv-drama', 'tv-anime', 'game', 'bishojo-game']);
+  const ids = works.map((work) => work.id);
+  assert.equal(new Set(ids).size, ids.length, 'duplicate work id');
+  for (const work of works) {
+    assert.match(work.id, /^[a-z0-9][a-z0-9-]*$/, `bad work id: ${work.id}`);
+    assert.ok(work.title, `${work.id}: missing title`);
+    assert.ok(categories.has(work.category), `${work.id}: unknown category "${work.category}"`);
+    assert.ok(work.year === null || Number.isInteger(work.year), `${work.id}: invalid year`);
+    assert.ok(work.url === null || URL.canParse(work.url), `${work.id}: invalid url`);
+    assert.ok(work.creators === undefined || (Array.isArray(work.creators) && work.creators.every(Boolean)), `${work.id}: invalid creators`);
   }
 });
 

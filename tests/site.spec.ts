@@ -352,6 +352,17 @@ test('文芸作品データベースに 2345.LGBT 由来の作品を掲載する
   await expect(page.locator('body')).toContainText('三浦部長、本日付けで女性になります。');
 });
 
+test('文芸作品データベースに Transfem Manga 由来の漫画と出典を掲載する', async ({ page }) => {
+  await page.goto('/works/');
+
+  await expect(page.locator('body')).toContainText('Double House');
+  await expect(page.locator('body')).toContainText('作者：Haruno Nanae');
+  await expect(page.getByRole('link', { name: 'Transfem Manga' })).toHaveAttribute(
+    'href',
+    'https://docs.google.com/spreadsheets/d/1hRt0qJejlU7kxEJ72w5wN0_IQJJ-4IO1POaX6hcWWlQ/edit?gid=0#gid=0',
+  );
+});
+
 test('旧 /articles/ の URL は移行先へ誘導する', async ({ page }) => {
   // 本番（静的）では meta refresh、開発サーバーでは HTTP リダイレクトになる。
   const expectRedirect = async (from: string, to: RegExp) => {

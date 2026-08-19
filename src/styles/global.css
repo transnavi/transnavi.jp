@@ -3246,6 +3246,13 @@ a.glossary-card-tag:hover {
   vertical-align: middle;
 }
 
+.work-creators {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
 .work-tags {
   display: flex;
   flex-wrap: wrap;

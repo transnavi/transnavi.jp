@@ -119,6 +119,9 @@
     "year": 2002,
     "url": "https://ja.wikipedia.org/wiki/放浪息子",
     "poster": null,
+    "creators": [
+      "Shimura Takako"
+    ],
     "tags": [
       "トランス女性",
       "トランス男性",
@@ -146,6 +149,9 @@
     "year": 2012,
     "url": "https://ja.wikipedia.org/wiki/ぼくらのへんたい",
     "poster": null,
+    "creators": [
+      "Fumi Fumiko"
+    ],
     "tags": [
       "女装",
       "トランス女性",
@@ -159,6 +165,9 @@
     "year": 2016,
     "url": "https://kc.kodansha.co.jp/product?item=0000018814",
     "poster": "https://dvs-cover.kodansha.co.jp/0000018814/IctSVm5kchwvf4erfPJUPojNgo5ANdhA5JcUmnHb.jpg",
+    "creators": [
+      "Hirasawa Yuuna"
+    ],
     "tags": [
       "トランス女性",
       "性別移行",
@@ -197,8 +206,12 @@
     "year": 2018,
     "url": "https://comic.pixiv.net/works/5315",
     "poster": null,
+    "creators": [
+      "Tozaki Ei"
+    ],
     "tags": [
-      "ノンバイナリー・Xジェンダー"
+      "ノンバイナリー・Xジェンダー",
+      "トランス女性"
     ],
     "popular": true
   },
@@ -239,6 +252,597 @@
     "tags": [
       "トランス女性",
       "日常"
+    ]
+  },
+  {
+    "id": "manga-girlfriend-kishikawa-mizuki",
+    "title": "Girlfriend",
+    "category": "manga",
+    "year": null,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Kishikawa Mizuki"
+    ],
+    "tags": [
+      "トランス女性",
+      "恋愛"
+    ]
+  },
+  {
+    "id": "manga-brave-new-world-yamada-nari",
+    "title": "Brave New World",
+    "category": "manga",
+    "year": 2004,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Yamada Nari"
+    ],
+    "tags": [
+      "トランス女性",
+      "学園"
+    ]
+  },
+  {
+    "id": "manga-kimi-no-neiro",
+    "title": "Your Melody / Kimi no Neiro",
+    "category": "manga",
+    "year": 2010,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Fukushima Haruka"
+    ],
+    "tags": [
+      "ジェンダー探索",
+      "女装",
+      "恋愛"
+    ]
+  },
+  {
+    "id": "manga-hanayome-wa-motodanshi",
+    "title": "The Bride Was a Boy / Hanayome wa Motodanshi",
+    "category": "manga",
+    "year": 2016,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Chii"
+    ],
+    "tags": [
+      "トランス女性",
+      "性別移行",
+      "当事者エッセイ"
+    ]
+  },
+  {
+    "id": "manga-majo-ni-naritai-otoko-no-ko",
+    "title": "Majo ni Naritai Otoko no Ko / The Boy Who Wanted to Be a Witch",
+    "category": "manga",
+    "year": null,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Chii"
+    ],
+    "tags": [
+      "ジェンダー探索"
+    ]
+  },
+  {
+    "id": "manga-kyoukai-no-nai-sekai",
+    "title": "Borderless / Kyoukai no Nai Sekai / 境界のないセカイ",
+    "category": "manga",
+    "year": 2014,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Ikuya Daikokudo"
+    ],
+    "tags": [
+      "トランス女性",
+      "ジェンダーと社会"
+    ]
+  },
+  {
+    "id": "manga-cosmos-matsumura-naoki",
+    "title": "Cosmos / コスモス",
+    "category": "manga",
+    "year": 2010,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Naoki Matsumura"
+    ],
+    "tags": [
+      "ジェンダー探索"
+    ]
+  },
+  {
+    "id": "manga-kami-sama-onegai",
+    "title": "Kami-sama Onegai / Please God（Apron and Sunglasses）",
+    "category": "manga",
+    "year": 2005,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Minami Q-Ta"
+    ],
+    "tags": [
+      "トランス女性",
+      "恋愛"
+    ]
+  },
+  {
+    "id": "manga-onna-to-shite-dakaretai",
+    "title": "「女」として抱かれたい…性転換して、初恋をもう一度。",
+    "category": "manga",
+    "year": 2016,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Miyakoshi Wasoh"
+    ],
+    "tags": [
+      "トランス女性",
+      "恋愛"
+    ]
+  },
+  {
+    "id": "manga-mascara-blues-long-dream",
+    "title": "Mascara Blues: So I Can Be Myself - A Long Dream",
+    "category": "manga",
+    "year": 2005,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Sakisaka Io"
+    ],
+    "tags": [
+      "トランス女性",
+      "学園",
+      "恋愛"
+    ]
+  },
+  {
+    "id": "manga-katakoi-no-nikki-shoujo",
+    "title": "Katakoi no Nikki Shoujo / The Girl in the Diary of Unrequited Love",
+    "category": "manga",
+    "year": 2004,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Nakamura Asumiko"
+    ],
+    "tags": [
+      "トランス女性",
+      "家族"
+    ]
+  },
+  {
+    "id": "manga-f-compo",
+    "title": "Family Compo / F.Compo",
+    "category": "manga",
+    "year": 1997,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Hojo Tsukasa"
+    ],
+    "tags": [
+      "トランス女性",
+      "トランス男性",
+      "ノンバイナリー・Xジェンダー",
+      "家族"
+    ]
+  },
+  {
+    "id": "manga-double-house",
+    "title": "Double House",
+    "category": "manga",
+    "year": 1998,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Haruno Nanae"
+    ],
+    "tags": [
+      "トランス女性",
+      "友情"
+    ]
+  },
+  {
+    "id": "manga-mermaids-line-ayumi-akira",
+    "title": "Mermaids Line - Ayumi & Akira",
+    "category": "manga",
+    "year": 2008,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Kindaichi Renjuurou"
+    ],
+    "tags": [
+      "トランス女性",
+      "恋愛",
+      "家族"
+    ]
+  },
+  {
+    "id": "manga-half-and-half-nanami-mao",
+    "title": "Half and Half",
+    "category": "manga",
+    "year": 2008,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Nanami Mao"
+    ],
+    "tags": [
+      "トランス女性",
+      "家族",
+      "恋愛"
+    ]
+  },
+  {
+    "id": "manga-densen-complex-love-horizon",
+    "title": "Densen Complex - Love Horizon",
+    "category": "manga",
+    "year": 2006,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Kizuki Akira"
+    ],
+    "tags": [
+      "トランス女性",
+      "友情"
+    ]
+  },
+  {
+    "id": "manga-josou-shite-off-kai",
+    "title": "I Cross-Dressed for the IRL Meetup",
+    "category": "manga",
+    "year": 2020,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Kurano"
+    ],
+    "tags": [
+      "トランス女性",
+      "女装"
+    ]
+  },
+  {
+    "id": "manga-girl-who-likes-girls",
+    "title": "The Story of a Girl Who Likes Girls, and a Girl Who Used to Be a Guy",
+    "category": "manga",
+    "year": 2019,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Matsuda Yuu"
+    ],
+    "tags": [
+      "トランス女性",
+      "恋愛"
+    ]
+  },
+  {
+    "id": "manga-natsu-no-ane",
+    "title": "Natsu no Ane / Summer Sister",
+    "category": "manga",
+    "year": 2015,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Toume Kei"
+    ],
+    "tags": [
+      "トランス女性",
+      "家族"
+    ]
+  },
+  {
+    "id": "manga-doumo-newhalf-desu",
+    "title": "Doumo, Newhalf desu. / Hi, I'm Trans.",
+    "category": "manga",
+    "year": 2020,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Inumaru Sou"
+    ],
+    "tags": [
+      "トランス女性",
+      "家族"
+    ]
+  },
+  {
+    "id": "manga-tsubomi-cotton-candy-love",
+    "title": "Tsubomi - Cotton Candy Love",
+    "category": "manga",
+    "year": 2011,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Tendou Kirin"
+    ],
+    "tags": [
+      "トランス女性",
+      "学園"
+    ]
+  },
+  {
+    "id": "manga-snusmumrik-no-koibito",
+    "title": "Snusmumrik no Koibito",
+    "category": "manga",
+    "year": 2009,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Nojima Shinji"
+    ],
+    "tags": [
+      "トランス女性",
+      "性別移行",
+      "恋愛"
+    ]
+  },
+  {
+    "id": "manga-telomere",
+    "title": "TELOMERE",
+    "category": "manga",
+    "year": 2023,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Tsurukawa Kakio"
+    ],
+    "tags": [
+      "トランス女性"
+    ]
+  },
+  {
+    "id": "manga-high-school-runway",
+    "title": "High School Runway",
+    "category": "manga",
+    "year": 2021,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Mugisuke"
+    ],
+    "tags": [
+      "ジェンダー探索",
+      "学園"
+    ]
+  },
+  {
+    "id": "manga-shoudou-drive",
+    "title": "Shoudou / Drive",
+    "category": "manga",
+    "year": 2022,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Yamada Hamachi"
+    ],
+    "tags": [
+      "ジェンダー探索"
+    ]
+  },
+  {
+    "id": "manga-we-start-a-threesome",
+    "title": "We Start a Threesome",
+    "category": "manga",
+    "year": 2018,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Kartu Aki"
+    ],
+    "tags": [
+      "トランス女性",
+      "恋愛",
+      "家族"
+    ]
+  },
+  {
+    "id": "manga-zanki-x-99",
+    "title": "Zanki x 99 / Remaining Lives x 99",
+    "category": "manga",
+    "year": 2018,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Aina Zero"
+    ],
+    "tags": [
+      "トランス女性"
+    ]
+  },
+  {
+    "id": "manga-kaoru-san-no-kikyou",
+    "title": "Kaoru-san no Kikyou",
+    "category": "manga",
+    "year": 1998,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Tono"
+    ],
+    "tags": [
+      "トランス女性"
+    ]
+  },
+  {
+    "id": "manga-concept-cafe-girl-wears-love",
+    "title": "The Concept Café Girl Wears Love",
+    "category": "manga",
+    "year": 2024,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Uhana Ririka"
+    ],
+    "tags": [
+      "トランス女性",
+      "職場"
+    ]
+  },
+  {
+    "id": "manga-kyou-kara-yonshimai",
+    "title": "Kyou Kara Yonshimai / Four Sisters Starting Today",
+    "category": "manga",
+    "year": 2013,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Satou Nanki",
+      "Kizuki Akira"
+    ],
+    "tags": [
+      "トランス女性",
+      "性別移行",
+      "家族"
+    ]
+  },
+  {
+    "id": "manga-stop-hibari-kun",
+    "title": "Stop!! Hibari-kun!",
+    "category": "manga",
+    "year": 1981,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Eguchi Hisashi"
+    ],
+    "tags": [
+      "トランス女性",
+      "コメディ"
+    ]
+  },
+  {
+    "id": "manga-madoka-no-himitsu",
+    "title": "Madoka no Himitsu / Madoka's Secret",
+    "category": "manga",
+    "year": 2019,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Kingyobachi Deme"
+    ],
+    "tags": [
+      "ジェンダー探索",
+      "学園"
+    ]
+  },
+  {
+    "id": "manga-kanojo-ni-naritai-kimi-to-boku",
+    "title": "Kanojo ni Naritai Kimi to Boku / I Wanna Be Your Girl",
+    "category": "manga",
+    "year": 2018,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Takase Umi"
+    ],
+    "tags": [
+      "トランス女性",
+      "学園",
+      "恋愛"
+    ]
+  },
+  {
+    "id": "manga-no-bra",
+    "title": "No Bra",
+    "category": "manga",
+    "year": 2002,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Kawatsu Kenjiro"
+    ],
+    "tags": [
+      "ジェンダー探索",
+      "女装",
+      "恋愛"
+    ]
+  },
+  {
+    "id": "manga-himegoto-19sai-no-seifuku",
+    "title": "Himegoto - 19sai no Seifuku",
+    "category": "manga",
+    "year": 2010,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Minenami Ryo"
+    ],
+    "tags": [
+      "ジェンダー探索"
+    ]
+  },
+  {
+    "id": "manga-sakura-chan-to-amane-kun",
+    "title": "Sakura-chan to Amane-kun",
+    "category": "manga",
+    "year": 2017,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Asazuki Norito"
+    ],
+    "tags": [
+      "トランス女性",
+      "トランス男性",
+      "学園"
+    ]
+  },
+  {
+    "id": "manga-okaeri-alice",
+    "title": "Okaeri Alice / Welcome Back, Alice",
+    "category": "manga",
+    "year": 2020,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Oshimi Shuuzou"
+    ],
+    "tags": [
+      "ジェンダー探索",
+      "思春期・青春"
+    ]
+  },
+  {
+    "id": "manga-nakamura-ching-tanpenshuu",
+    "title": "Nakamura Ching Tanpenshuu / Chinman",
+    "category": "manga",
+    "year": 2009,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Nakamura Ching"
+    ],
+    "tags": [
+      "トランス女性"
+    ]
+  },
+  {
+    "id": "manga-young-gto-misato",
+    "title": "Young GTO（第243〜252話）",
+    "category": "manga",
+    "year": 1996,
+    "url": null,
+    "poster": null,
+    "creators": [
+      "Fujisawa Tooru"
+    ],
+    "tags": [
+      "トランス女性",
+      "恋愛"
     ]
   },
   {

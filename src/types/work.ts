@@ -16,6 +16,8 @@ export interface Work {
   url: string | null;
   /** Parent series this entry belongs to, if any. */
   series?: string;
+  /** Authors or creators credited for this work. */
+  creators?: string[];
   /** Adult / 18+ content. */
   adult?: boolean;
   /** Poster / thumbnail image URL (populated by scripts/fetch-work-posters.mjs). */
