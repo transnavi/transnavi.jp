@@ -564,6 +564,7 @@ const missing = strings.filter((value) => !(value in catalog) && !(value in over
 if (missing.length) {
   fs.writeFileSync(path.join(DIST, 'en-missing-translations.json'), `${JSON.stringify(missing, null, 2)}\n`);
   console.error(`english: ${missing.length} translations are missing. Run npm run translate:en.`);
+  for (const value of missing) console.error(`  ${JSON.stringify(value)}`);
   process.exit(1);
 }
 
