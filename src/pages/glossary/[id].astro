@@ -139,6 +139,13 @@ const termLd = {
 
     {entry.notes && <p class="glossary-def">{entry.notes}</p>}
 
+    {entry.contested && (
+      <aside class="entry-contested" role="note" aria-labelledby="contested-label">
+        <span class="entry-contested-label" id="contested-label">この言葉をめぐって</span>
+        {entry.contested.split('\n').map((para) => <p>{para}</p>)}
+      </aside>
+    )}
+
     {entry.tags && entry.tags.length > 0 && (
       <ul class="glossary-tags" aria-label="タグ">
         {entry.tags.map((t) => (
