@@ -229,7 +229,7 @@ const capabilityValuesOf = (clinic: (typeof clinicsWithCategories)[number]): str
     </p>
 
     <div class="clinic-summary" aria-label="掲載件数">
-      <span><span data-filter-count>{clinics.length}</span>件</span>
+      <span><span data-filter-count data-filter-label="{0}件" data-filter-label-one="1件">{`${clinics.length}件`}</span></span>
       <span>国内 {domesticCount} 件・海外 {overseasCount} 件</span>
     </div>
 
@@ -328,7 +328,7 @@ const capabilityValuesOf = (clinic: (typeof clinicsWithCategories)[number]): str
       <details class="clinic-region" data-filter-group>
         <summary aria-labelledby={`prefecture-${group.prefecture}`}>
           <span id={`prefecture-${group.prefecture}`}>{group.prefecture}{group.overseas ? '（海外）' : ''}</span>
-          <span class="clinic-region-count"><span data-filter-group-count>{group.clinics.length}</span>件</span>
+          <span class="clinic-region-count"><span data-filter-group-count data-filter-label="{0}件" data-filter-label-one="1件">{`${group.clinics.length}件`}</span></span>
         </summary>
         <div class="clinic-list">
           {group.clinics.map((clinic) => (

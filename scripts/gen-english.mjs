@@ -4,6 +4,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { HTMLElement, TextNode, parse } from 'node-html-parser';
+import { catalogKeyOf, fillTemplate, retemplatize, templatize } from './en-templates.mjs';
 
 const DIST = 'dist';
 const EN_DIR = path.join(DIST, 'en');
@@ -40,6 +41,7 @@ function walk(dir) {
 
 const japaneseHtmlFiles = () => walk(DIST).filter((file) => file.endsWith('.html') && !file.startsWith(`${EN_DIR}${path.sep}`));
 const keyOf = (value) => value.replace(/\s+/g, ' ').trim();
+
 const needsTranslation = (value) => JAPANESE.test(value);
 
 function translatableAttribute(name, value, element = null) {
@@ -192,15 +194,19 @@ function makeBatches(values, maxCharacters = 3200) {
   return batches;
 }
 
-async function updateCatalog(strings) {
-  const missing = strings.filter((value) => !(value in catalog));
+async function updateCatalog(samples) {
+  const missing = [...samples.keys()].filter((key) => !(key in catalog) && !(key in overrides));
   if (!missing.length) {
-    console.log(`english: translation catalog is current (${strings.length} strings)`);
+    console.log(`english: translation catalog is current (${samples.size} strings)`);
     return;
   }
 
-  const batches = makeBatches(missing);
+  // Templates are translated through a real rendering of themselves — Google
+  // handles 「154件 ・」 and mangles 「{0}件 ・」 — and the placeholders are put
+  // back into the result afterwards.
+  const batches = makeBatches(missing.map((key) => samples.get(key)));
   console.log(`english: translating ${missing.length} strings in ${batches.length} batches`);
+  const keyOfSample = new Map(missing.map((key) => [samples.get(key), key]));
   let next = 0;
   let completed = 0;
   async function worker() {
@@ -208,7 +214,13 @@ async function updateCatalog(strings) {
       const index = next++;
       const batch = batches[index];
       const translated = await translateBatch(batch);
-      batch.forEach((source, i) => (catalog[source] = translated[i]));
+      batch.forEach((source, i) => {
+        const key = keyOfSample.get(source);
+        const values = templatize(source)?.values;
+        const templated = key === source ? null : retemplatize(translated[i], values ?? []);
+        if (templated) catalog[key] = templated;
+        else catalog[source] = translated[i];
+      });
       completed++;
       if (completed % 10 === 0 || completed === batches.length) {
         console.log(`english: translated ${completed}/${batches.length} batches`);
@@ -234,6 +246,11 @@ const translationOf = (value) => {
   if (key in glossaryEnglish) return glossaryEnglish[key];
   if (key in workEnglish) return workEnglish[key];
   if (key.startsWith('作者：')) return `Creator: ${key.slice('作者：'.length)}`;
+  const templated = templatize(key);
+  if (templated) {
+    const stored = overrides[templated.template] ?? catalog[templated.template];
+    if (stored) return polishTranslation(fillTemplate(stored, templated.values));
+  }
   const translated = polishTranslation(catalog[key] ?? key);
   if (clinicNames.has(key) && translated !== key) return `${translated} (${key})`;
   return translated;
@@ -558,13 +575,19 @@ function extendSitemap() {
   fs.writeFileSync(file, xml);
 }
 
-const strings = collectStrings();
-if (UPDATE) await updateCatalog(strings);
-const missing = strings.filter((value) => !(value in catalog) && !(value in overrides));
+// One representative rendering per catalogue key: what gets translated, and
+// what the build gate reports when an entry is missing.
+const samples = new Map();
+for (const value of collectStrings()) {
+  const key = catalogKeyOf(value);
+  if (!samples.has(key)) samples.set(key, value);
+}
+if (UPDATE) await updateCatalog(samples);
+const missing = [...samples.keys()].filter((key) => !(key in catalog) && !(key in overrides));
 if (missing.length) {
   fs.writeFileSync(path.join(DIST, 'en-missing-translations.json'), `${JSON.stringify(missing, null, 2)}\n`);
   console.error(`english: ${missing.length} translations are missing. Run npm run translate:en.`);
-  for (const value of missing) console.error(`  ${JSON.stringify(value)}`);
+  for (const key of missing) console.error(`  ${JSON.stringify(key)}`);
   process.exit(1);
 }
 

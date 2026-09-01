@@ -71,7 +71,7 @@ const aliasPreview = (entry: GlossaryEntry) => {
     </section>
 
     <div class="clinic-summary" aria-label="掲載件数">
-      <span><span data-filter-count>{entries.length}</span>語</span>
+      <span><span data-filter-count data-filter-label="{0}語" data-filter-label-one="1語">{`${entries.length}語`}</span></span>
       <span>{sections.length}分野</span>
     </div>
 
@@ -92,7 +92,7 @@ const aliasPreview = (entry: GlossaryEntry) => {
       <details class="glossary-section" data-filter-group data-filter-default-open open aria-labelledby={`glossary-${section.key}`}>
         <summary class="glossary-section-summary">
           <h2 id={`glossary-${section.key}`}>{section.label}</h2>
-          <span class="glossary-section-count"><span data-filter-group-count>{section.items.length}</span> 語</span>
+          <span class="glossary-section-count"><span data-filter-group-count data-filter-label="{0} 語" data-filter-label-one="1 語">{`${section.items.length} 語`}</span></span>
         </summary>
         <p class="resource-section-intro">{section.desc}</p>
         <div class="glossary-list">
