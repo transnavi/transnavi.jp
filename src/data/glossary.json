@@ -1222,7 +1222,7 @@
     "id": "transgender-man",
     "term": "トランスジェンダー男性",
     "category": "性同一性・属性",
-    "wikidata": "Q1054451",
+    "wikidata": "Q2449503",
     "translations": {
       "en": "Transgender Man",
       "zhHans": "跨性别男性",
@@ -1243,8 +1243,12 @@
     "source": "Transgender Man / FtM",
     "notes": "出生時に女性と割り当てられたが、性同一性が男性であるトランスジェンダーのこと。FtM（Female to Male）とも呼ばれる。",
     "wikipedia": {
-      "en": "https://en.wikipedia.org/wiki/Centuripe_ware",
-      "es": "https://es.wikipedia.org/wiki/Cerámica_de_Centuripa"
+      "ja": "https://ja.wikipedia.org/wiki/トランス男性",
+      "en": "https://en.wikipedia.org/wiki/Trans_man",
+      "ko": "https://ko.wikipedia.org/wiki/트랜스남성",
+      "es": "https://es.wikipedia.org/wiki/Hombre_trans",
+      "zhHans": "https://zh.wikipedia.org/zh-hans/跨性別男性",
+      "zhHant": "https://zh.wikipedia.org/zh-hant/跨性別男性"
     },
     "seeAlso": [
       "transgender",
@@ -2535,7 +2539,7 @@
     "id": "bone-metabolism",
     "term": "骨代謝",
     "category": "検査",
-    "wikidata": "Q830714",
+    "wikidata": "Q952019",
     "translations": {
       "en": "Bone Metabolism",
       "zhHans": "骨代谢",
@@ -2554,7 +2558,7 @@
     "notes": "骨が作られたり壊されたりする働き。長期のホルモン療法（GAHT）では、骨の健康のために確認されることがある。",
     "source": "Bone Metabolism",
     "wikipedia": {
-      "en": "https://en.wikipedia.org/wiki/Fell_Exhibition_Slate_Mine"
+      "en": "https://en.wikipedia.org/wiki/Bone_remodeling"
     }
   },
   {
