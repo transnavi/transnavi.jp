@@ -26,7 +26,8 @@ export interface GlossaryEntry {
    *  register), in addition to the single primary `category`. */
   tags: string[];
   avoid: string[];
-  disputed: string[];
+  /** Alternative names for the same referent whose use is argued over. */
+  disputedNames: string[];
   notes?: string;
   source?: string;
   /** Hand-curated related glossary ids (antonyms, complements, umbrella terms),

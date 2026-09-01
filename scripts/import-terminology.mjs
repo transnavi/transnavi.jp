@@ -49,7 +49,7 @@ const entries = lines
     },
     aliases: splitList(row['aliases-ja']),
     avoid: splitList(row.avoid),
-    disputed: splitList(row.disputed),
+    disputedNames: splitList(row.disputed),
     notes: row.notes || undefined,
     source: row.source || undefined,
   }))
