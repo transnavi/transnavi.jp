@@ -104,10 +104,16 @@ const wikipedia = [
 
 // Real per-page meta description from the definition (not a generic template),
 // trimmed to ~150 chars at a clause boundary so search snippets read cleanly.
-const metaDescription = entry.notes
-  ? entry.notes.length <= 150
-    ? entry.notes
-    : entry.notes.slice(0, 150).replace(/[、。][^、。]*$/, '') + '…'
+// Where the meaning of the term is itself argued over, the snippet says so: a
+// search result and a structured-data description are the places a definition
+// travels without its page, and one that arrives alone reads as settled.
+const definition = entry.contested
+  ? `${entry.notes ?? ''}（この語がだれを指すのかには議論がある）`
+  : entry.notes;
+const metaDescription = definition
+  ? definition.length <= 150
+    ? definition
+    : definition.slice(0, 150).replace(/[、。][^、。]*$/, '') + '…'
   : `${entry.term}（${entry.translations.en ?? ''}）の意味を、やさしく説明します。`;
 
 const canonical = new URL(`/glossary/${entry.id}/`, Astro.site).toString();
@@ -120,7 +126,7 @@ const termLd = {
   url: canonical,
   inLanguage: 'ja',
   ...(alt.length ? { alternateName: alt } : {}),
-  ...(entry.notes ? { description: entry.notes } : {}),
+  ...(definition ? { description: definition } : {}),
   inDefinedTermSet: {
     '@type': 'DefinedTermSet',
     '@id': new URL('/glossary/', Astro.site).toString(),
