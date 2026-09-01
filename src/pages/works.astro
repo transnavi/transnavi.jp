@@ -38,7 +38,7 @@ const posterInitial = (title: string) => Array.from(title)[0] ?? '?';
     </p>
 
     <div class="clinic-summary" aria-label="掲載件数">
-      <span><span data-filter-count>{works.length}</span>件</span>
+      <span><span data-filter-count data-filter-label="{0}件" data-filter-label-one="1件">{`${works.length}件`}</span></span>
       <span>{usedCategories.length}分類</span>
     </div>
 

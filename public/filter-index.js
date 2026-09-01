@@ -15,6 +15,16 @@ const esc = (s) =>
 
 const FILTER_EN = document.documentElement.lang === 'en';
 
+// The counter and its counter word are one message (「154件」/「154 entries」),
+// so the English mirror can translate it as a whole. data-filter-label carries
+// that message with {0} where the number goes, and data-filter-label-one the
+// form English needs for a single item.
+const setCount = (element, value) => {
+  const { filterLabel, filterLabelOne } = element.dataset;
+  const label = (value === 1 ? filterLabelOne || filterLabel : filterLabel) || '{0}';
+  element.textContent = label.replace('{0}', String(value));
+};
+
 // Per-character normalise keeping a map from each normalised UTF-16 code unit
 // back to its source code-point index, so a match found in normalised space
 // (kana-folded, NFKC, punctuation-stripped) can be highlighted on the original
@@ -274,10 +284,10 @@ for (const form of document.querySelectorAll('[data-filter-form]')) {
       }
 
       const groupCount = group.querySelector('[data-filter-group-count]');
-      if (groupCount) groupCount.textContent = String(visibleItems.length);
+      if (groupCount) setCount(groupCount, visibleItems.length);
     }
 
-    if (count) count.textContent = String(visible);
+    if (count) setCount(count, visible);
     if (empty) empty.hidden = visible !== 0;
   };
 
