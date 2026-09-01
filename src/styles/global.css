@@ -1837,6 +1837,36 @@ ul {
   color: var(--ink);
 }
 
+/* Sits directly under .glossary-def, quieter than it: the definition keeps the
+   filled accent panel, the disagreement is an outlined note beside it. */
+.entry-contested {
+  margin: -6px 0 20px;
+  padding: 14px 18px;
+  border: 1px dashed var(--line);
+  border-radius: 14px;
+  background: var(--paper);
+}
+
+.entry-contested-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--accent-term);
+}
+
+.entry-contested p {
+  margin: 0 0 10px;
+  font-size: 0.97rem;
+  line-height: 1.9;
+  color: var(--muted);
+}
+
+.entry-contested p:last-child {
+  margin-bottom: 0;
+}
+
 .glossary-detail {
   font-size: 0.95rem;
 }
