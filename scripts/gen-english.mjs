@@ -417,6 +417,14 @@ function translateHtml(file) {
     }
   }
 
+  // An element can carry its own English in data-en, for a word the catalogue
+  // cannot get right without knowing where it sits: 中国 is the Chugoku region
+  // on the clinic list and China everywhere else.
+  for (const element of root.querySelectorAll('[data-en]')) {
+    element.set_content(escapeText(element.getAttribute('data-en')));
+    element.removeAttribute('data-en');
+  }
+
   visitText(root, replaceTextNode);
   for (const element of root.querySelectorAll('*')) {
     for (const [name, value] of Object.entries(element.attributes)) {
