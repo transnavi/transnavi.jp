@@ -23,7 +23,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "17β-Estradiol",
     "notes": "ヒトの体内で分泌される主要なエストロゲンで、エストロゲン製剤の活性成分として性別適合ホルモン療法（GAHT）に用いられる。",
     "wikipedia": {
@@ -58,7 +58,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "GnRH Analogues",
     "notes": "性腺刺激ホルモン放出ホルモン（GnRH）の作用を抑え、性ホルモンの分泌を抑制する薬剤。思春期ブロッカーや抗アンドロゲン目的で用いられる。",
     "wikipedia": {
@@ -93,7 +93,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Outing",
     "notes": "本人の同意なく、その性同一性や性的指向などを第三者に暴露する行為のこと。",
     "wikipedia": {
@@ -130,7 +130,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Informed Consent Model",
     "notes": "リスクや効果について十分な説明を受けたうえで、本人の同意に基づいてホルモン療法などの医療を開始する考え方。精神科などによる事前の診断・許可を必須とせず、本人の自己決定を尊重する。",
     "seeAlso": [
@@ -159,7 +159,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Estradiol Gel",
     "notes": "エストラジオールを皮膚に塗布して経皮吸収させるゲル状の製剤のこと。"
   },
@@ -181,7 +181,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "抗アンドロゲン薬を併用せず、エストラジオール（エストロゲン）のみで行うホルモン療法を指す。投与方法（注射・経口・経皮など）とは別の概念で、単独療法だからといって特定の剤形・投与間隔に限られるわけではない。",
     "source": "Estradiol Monotherapy"
   },
@@ -204,7 +204,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Estradiol Hemihydrate",
     "notes": "エストラジオールの水和物の一種。製剤（経皮ゲルや錠剤など）に用いられるエストラジオールの形態を指す。"
   },
@@ -228,7 +228,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "天然の女性ホルモン（エストロゲン）の一つ。作用が弱く、現行のガイドラインでは性別適合ホルモン療法（GAHT）でエストラジオールの代替として用いることは一般に推奨されていない。",
     "source": "Estriol (E3)",
     "wikipedia": {
@@ -262,7 +262,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "卵胞ホルモンとも呼ばれる女性ホルモンの総称。ホルモン療法（HRT）の文脈では、エストラジオールをはじめとするエストロゲン製剤を指して用いられることが多い。",
     "source": "Estrogen",
     "wikipedia": {
@@ -301,7 +301,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "天然のエストロゲンの一つ。ホルモン療法（HRT）におけるホルモンモニタリングや、エストラジオールの代謝に関連して言及される。",
     "source": "Estrone (E1)",
     "wikipedia": {
@@ -336,7 +336,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Ethinylestradiol (EE)",
     "notes": "合成エストロゲンの一つ。血栓症などのリスクが高いため、現在の性別適合ホルモン療法（GAHT）では一般にエストラジオールが推奨され、用いられることは少ない。",
     "wikipedia": {
@@ -368,7 +368,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Estradiol Enanthate",
     "notes": "エストラジオールのエステルの一つで、注射剤に用いられる持続型のエストロゲン製剤を指す。",
     "wikipedia": {
@@ -402,7 +402,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Coming Out",
     "message": "話すかどうか、誰に・いつ話すかは、いつだってあなたが選んでいい。あなたの安全が、いちばんです。",
     "notes": "自分の性同一性や性的指向を、自らの意思で他者に開示すること。誰に・いつ・どこまで伝えるかは本人が選べる。",
@@ -441,7 +441,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "In the Closet",
     "notes": "自身のトランスジェンダーであることや性同一性を、家族・職場・周囲などに公表せず隠している状態のこと。「カミングアウト」の対義的な状態を指す。",
     "wikipedia": {
@@ -477,7 +477,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Clocking",
     "notes": "本人が明かしていないのに、見た目や声などから「トランスジェンダーではないか」と気づかれてしまうこと。",
     "seeAlso": [
@@ -505,7 +505,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Standards of Care",
     "notes": "トランスジェンダーの人へのケアの、国際的なよりどころとなる指針。WPATH（世界トランスジェンダー・ヘルス専門家協会）が定める「SOC（Standards of Care）」が代表的で、ホルモン療法や手術の進め方の参考にされる。",
     "seeAlso": [
@@ -533,7 +533,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "医療者や精神科の専門職が、長期間の実生活体験（RLE）や煩雑な診断書の要求など高いハードルを設け、トランスジェンダー当事者が医療資源にアクセスするのを制限する行為を指す。WPATH SOC-8 はこうした傾向の緩和を目指し、インフォームド・コンセント（自己決定）モデルの普及を進めている。",
     "source": "Gatekeeping",
     "seeAlso": [
@@ -564,7 +564,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Gonadotropins (LH/FSH)",
     "notes": "下垂体から分泌され性腺を刺激するホルモンの総称で、黄体形成ホルモン（LH）と卵胞刺激ホルモン（FSH）を指す。ホルモン療法の効果判定などで測定される。",
     "wikipedia": {
@@ -597,7 +597,7 @@
       "コミュニティ文化"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Cisgender",
     "notes": "出生時に割り当てられた性別と性同一性が一致している人のこと。トランスジェンダーの対義語として用いられる。",
     "wikipedia": {
@@ -634,7 +634,7 @@
       "コミュニティ文化"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Cisgender Woman",
     "notes": "出生時に女性を割り当てられ、性同一性も女性である人のこと。シスジェンダーである女性を指す。",
     "wikipedia": {
@@ -665,7 +665,7 @@
       "コミュニティ文化"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Cisgender Man",
     "notes": "出生時に男性を割り当てられ、性同一性も男性である人のこと。シスジェンダーである男性を指す。",
     "wikipedia": {
@@ -695,7 +695,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Estradiol Cypionate",
     "notes": "エストラジオールのエステル製剤の一つで、注射によるホルモン療法（HRT）に用いられる。",
     "wikipedia": {
@@ -727,7 +727,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "テストステロンが5α還元酵素により変換されて生じる強力なアンドロゲン。男性型脱毛（AGA）や術後の抗アンドロゲン管理に関連して話題になることが多い。",
     "source": "Dihydrotestosterone (DHT)",
     "wikipedia": {
@@ -759,7 +759,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "性同一性に沿った性別で生活し、周囲にトランスジェンダーであることを明かさずに過ごしている状態のこと。カミングアウトしていない状態（クローゼット）と近いが、ステルスは性別移行を経て、自認する性別で日常を送りながらトランスであることを明かさないことを指すことが多い。",
     "source": "Stealth",
     "seeAlso": [
@@ -790,7 +790,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Spironolactone",
     "notes": "抗アンドロゲン作用を持つ薬剤で、性別適合ホルモン療法（GAHT）においてテストステロンの作用を抑える目的で用いられる。本来はカリウム保持性利尿薬。",
     "wikipedia": {
@@ -824,7 +824,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "性別適合手術（造腟術）後に、造設した腟が癒着・収縮しないよう、挿入して一定の深さと幅を保つために用いる拡張器具のこと。",
     "source": "Vaginal Dilator",
     "wikipedia": {
@@ -854,7 +854,7 @@
       "MtF・女性化"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Chaser",
     "notes": "トランスジェンダー（特にトランス女性）に性的・恋愛的な関心を向ける人を指す語。フェティッシュ的な対象化を含意することがあり、文脈によっては否定的に受け取られる。",
     "wikipedia": {
@@ -883,7 +883,7 @@
       "インターセックス"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Dexamethasone",
     "notes": "副腎皮質ステロイド（合成糖質コルチコイド）の一つ。先天性副腎過形成などで男性ホルモンの過剰産生を抑える目的などに用いられる。",
     "wikipedia": {
@@ -920,7 +920,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Testosterone (T)",
     "notes": "精巣などで主に分泌される代表的なアンドロゲン（男性ホルモン）。トランス男性（FtM）の男性化を目指すホルモン療法では中心となるホルモンで、逆にトランス女性のホルモン療法では、抗アンドロゲン薬などによってこの作用を抑えることが目標の一つとなる。",
     "wikipedia": {
@@ -960,7 +960,7 @@
       "避けたい言い方"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "トランスジェンダーの人が以前使っていたが現在は使わなくなった名前（多くは出生時の名前）で、その人を呼んだり言及したりすること。",
     "source": "Deadnaming",
     "wikipedia": {
@@ -996,7 +996,7 @@
       "人間関係"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "性別移行を中断したり、元の方向へ戻したりすること、またその過程を指す。",
     "source": "Detransition",
     "message": "進む道も、立ち止まる道も、引き返す道も、ぜんぶあなたのものです。どんな選択も、責められるものではありません。",
@@ -1035,7 +1035,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "5α還元酵素阻害薬の一つ。テストステロンからDHTへの変換を抑え、男性型脱毛症などの治療に用いられる。",
     "source": "Dutasteride",
     "wikipedia": {
@@ -1063,7 +1063,7 @@
       "人間関係"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Bathroom access rights",
     "notes": "自分の性同一性に合ったトイレを使えること、またその権利をめぐる話題。"
   },
@@ -1095,7 +1095,7 @@
       "トラニー",
       "トランストレンダー"
     ],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Transgender",
     "message": "どんなあり方でも、あなたがあなたであることは、誰にも否定できません。",
     "notes": "出生時に割り当てられた性別と性同一性が一致しない人を指す総称。これは広く使われている定義だが、絶対的なものではなく、性同一性がはっきりしない人や、からだへの違和感が中心の人もいる。性別移行をするかどうかや、その方法は人によって異なる。",
@@ -1135,7 +1135,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "自分の性別を自分でどう認識しているか、という内面の感覚（英語の gender identity）。出生時に割り当てられた性別とは別に、自分自身が感じる性のあり方を指します。日本語ではおもに3つの訳語があり、ニュアンスが異なります。「性自認」は人権・当事者支援の文脈で広く使われ、SOGIの「GI」にもあたります。なお、この語がネット上で攻撃の標的にされることもありますが、それは概念そのものの問題ではありません。「性同一性」はやや古い訳で、旧来の診断名「性同一性障害」や特例法を連想させます。「ジェンダーアイデンティティ」は2023年のLGBT理解増進法で採られた表現ですが、長くて、ふだんの文章ではやや使いにくいです。いずれも同じ概念を指す言葉です。",
     "source": "Gender identity",
     "wikipedia": {
@@ -1166,7 +1166,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "自分の性同一性や性的指向が、まだはっきりしていない、あるいは決めていない・決めない状態。迷いや探索のさなかにいることそのものを指す言葉で、結論を急ぐ必要はありません。",
     "source": "Questioning (sexuality and gender)",
     "message": "まだ名前がついていなくても、大丈夫。「わからない」も、ちゃんとあなたの居場所です。",
@@ -1200,7 +1200,7 @@
       "ニューハーフ",
       "おかま"
     ],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Transgender Woman / MtF",
     "notes": "出生時に男性と割り当てられたが、性同一性が女性であるトランスジェンダーのこと。MtF（Male to Female）とも呼ばれる。",
     "wikipedia": {
@@ -1239,7 +1239,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Transgender Man / FtM",
     "notes": "出生時に女性と割り当てられたが、性同一性が男性であるトランスジェンダーのこと。FtM（Female to Male）とも呼ばれる。",
     "wikipedia": {
@@ -1275,7 +1275,7 @@
       "避けたい言い方"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "TERF",
     "notes": "「トランス排除的ラディカルフェミニスト（Trans-Exclusionary Radical Feminist）」の略。フェミニズムの立場をとりながら、トランスジェンダー、とくにトランス女性を女性として認めない主張をする人々を指す。",
     "wikipedia": {
@@ -1311,7 +1311,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "GnRH（性腺刺激ホルモン放出ホルモン）アナログの一つ。思春期ブロッカーや性腺軸の抑制に用いられる。",
     "source": "Triptorelin",
     "wikipedia": {
@@ -1347,7 +1347,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Non-binary",
     "message": "どちらか一つを選ばなくても、あなたはちゃんと、あなたのままでいられます。",
     "notes": "性同一性が男性・女性という二分法のいずれにも当てはまらない、あるいはその枠組みにとらわれないあり方を指す。ノンバイナリーの人の中には、自分をトランスジェンダーだと考える人もいれば、そうは考えない人もいる。どちらの感じ方も否定されるものではない。",
@@ -1389,7 +1389,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Genderfluid",
     "message": "今日の自分と明日の自分が違っても、どちらもちゃんとあなたです。",
     "notes": "性同一性が時とともに揺れ動く・変化するあり方。ある時は男性寄り、別の時は女性寄り、中間やどちらでもないなど、感じ方が一定ではない。ノンバイナリーの一つとして語られることが多い。",
@@ -1419,7 +1419,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Pass/Passing",
     "notes": "服装や振る舞いなどを通して、自認する性別の人として周囲に自然に認識される状態のこと。",
     "wikipedia": {
@@ -1456,7 +1456,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Bicalutamide",
     "wikipedia": {
       "ja": "https://ja.wikipedia.org/wiki/ビカルタミド",
@@ -1489,7 +1489,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "男性型脱毛症などに用いられる5α還元酵素阻害薬。テストステロンからDHTへの変換を抑える。",
     "source": "Finasteride",
     "wikipedia": {
@@ -1525,7 +1525,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Progesterone",
     "wikipedia": {
       "ja": "https://ja.wikipedia.org/wiki/プロゲステロン",
@@ -1560,7 +1560,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "天然の黄体ホルモン（プロゲステロン）と合成黄体ホルモンを含むホルモンの総称。製剤によっては抗アンドロゲン作用を併せ持つものもある。",
     "source": "Progestogen",
     "wikipedia": {
@@ -1593,7 +1593,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Prolactin（PRL）",
     "wikipedia": {
       "ja": "https://ja.wikipedia.org/wiki/プロラクチン"
@@ -1622,7 +1622,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Misgendering",
     "notes": "その人の性同一性とは違う性別で扱ったり、呼んだりすること（わざとかどうかを問わず）。",
     "wikipedia": {
@@ -1656,7 +1656,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "脱毛症の治療に用いられる、髪の成長をうながす外用・内服の薬剤。フィナステリドやデュタステリド（DHTをおさえる薬）とは働き方が異なり、ホルモンには直接作用しない。",
     "source": "Minoxidil",
     "wikipedia": {
@@ -1691,7 +1691,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "SERM（選択的エストロゲン受容体モジュレーター）の一つ。ノンバイナリー向けのホルモン療法の選択肢として言及されることがある。",
     "source": "Raloxifene",
     "wikipedia": {
@@ -1723,7 +1723,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Laser Hair Removal",
     "wikipedia": {
       "ja": "https://ja.wikipedia.org/wiki/レーザー脱毛",
@@ -1755,7 +1755,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Estradiol Benzoate (EB)",
     "wikipedia": {
       "ja": "https://ja.wikipedia.org/wiki/安息香酸エストラジオール",
@@ -1790,7 +1790,7 @@
       "女装癖",
       "異性装症"
     ],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "出生時に割り当てられた性別とは異なる性別の服装を身につけること、またその人を指す。性同一性や性的指向とは必ずしも結びつかず、性別移行を意図するとは限らない。",
     "source": "Cross-dresser (CD)",
     "wikipedia": {
@@ -1824,7 +1824,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "性器手術や性の健康に関する文脈で用いられる解剖学用語。陰核のこと。",
     "source": "Clitoris",
     "wikipedia": {
@@ -1859,7 +1859,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Penile Inversion Vaginoplasty",
     "notes": "陰茎や陰嚢の皮膚を用いて腟を形成する、代表的な造腟（腟形成）の方法の一つ。MtFの性別適合手術で広く行われている。"
   },
@@ -1884,7 +1884,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "性器手術の結果やケア、解剖の説明でよく用いられる用語。陰唇のこと。",
     "source": "Labia",
     "wikipedia": {
@@ -1914,7 +1914,7 @@
       "声"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Vocal Pitch",
     "notes": "声の高さのこと。声の印象を左右する要素の一つだが、高さだけでなく、共鳴や話し方も印象に大きく関わる。ボイストレーニングで調整できる。",
     "seeAlso": [
@@ -1943,7 +1943,7 @@
       "ジェンダー表現"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Voice Training",
     "wikipedia": {
       "en": "https://en.wikipedia.org/wiki/Voice_training"
@@ -1977,7 +1977,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Voice Feminization Surgery (VFS)",
     "wikipedia": {
       "en": "https://en.wikipedia.org/wiki/Voice_feminization_surgery"
@@ -2009,7 +2009,7 @@
       "差別・偏見"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "性同一性や性別表現を理由に、家族など家庭内の成員から暴力を受けた人のこと。",
     "source": "Domestic Violence"
   },
@@ -2034,7 +2034,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [
+    "disputedNames": [
       "ゼロデプス腟形成術（Zero-depth Vaginoplasty）"
     ],
     "notes": "いわゆる「ゼロデプス」と呼ばれるものは、実際には陰茎切除・精巣摘出・尿道形成・外陰形成など複数の術式を含み、外陰部形成術（Vulvoplasty）と完全に一致するかどうかは議論がある。",
@@ -2061,7 +2061,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Outpatient medical records",
     "notes": "外来診療での記録（カルテ）のこと。ホルモン療法や診断の経過が記録され、ほかの医療機関にかかるときの参考にもなる。"
   },
@@ -2087,7 +2087,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Liver Function",
     "wikipedia": {
       "en": "https://en.wikipedia.org/wiki/Liver_function_tests",
@@ -2121,7 +2121,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Facial Feminization Surgery (FFS)",
     "wikipedia": {
       "en": "https://en.wikipedia.org/wiki/Facial_feminization_surgery",
@@ -2157,7 +2157,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "声帯が振動する速さを表す数値。声の高さ（ピッチ）と関係し、ボイストレーニングで用いられる。",
     "source": "Fundamental Frequency (F0)",
     "wikipedia": {
@@ -2192,7 +2192,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Estradiol Valerate (EV)",
     "notes": "エストラジオールのエステル製剤の一つで、女性化を目的としたホルモン療法（HRT）で用いられるエストロゲン製剤を指す。",
     "wikipedia": {
@@ -2222,7 +2222,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Estradiol Valerate Injection",
     "notes": "エストロゲン（エストラジオール）の注射剤の一つ。吉草酸エストラジオールを油に溶かしたもので、効果が比較的長く続く。"
   },
@@ -2242,7 +2242,7 @@
       "MtF・女性化"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Resonance",
     "wikipedia": {
       "ja": "https://ja.wikipedia.org/wiki/共鳴"
@@ -2270,7 +2270,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Conjugated Estrogens",
     "wikipedia": {
       "en": "https://en.wikipedia.org/wiki/Conjugated_estrogens",
@@ -2300,7 +2300,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Colovaginoplasty",
     "notes": "腸（結腸・S状結腸）の一部を用いて腟を形成する造腟の方法の一つ。皮膚が足りない場合などに選ばれることがある。"
   },
@@ -2328,7 +2328,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Thromboembolism",
     "wikipedia": {
       "ja": "https://ja.wikipedia.org/wiki/血栓塞栓症",
@@ -2356,7 +2356,7 @@
       "コミュニティ文化"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Your Mileage May Vary (YMMV)",
     "notes": "効果や変化のあらわれ方は人によって大きく違う、ということ（英語の Your Mileage May Vary から）。このサイトの目安も、あくまで参考です。"
   },
@@ -2379,7 +2379,7 @@
       "人間関係"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Employment Discrimination",
     "notes": "性のあり方などを理由に、採用や職場で不利に扱われること。",
     "wikipedia": {
@@ -2411,7 +2411,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "アンドロゲン（男性ホルモン）の作用を抑えるために用いられる薬剤の総称。",
     "source": "Antiandrogen",
     "wikipedia": {
@@ -2450,7 +2450,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Tracheal Shave",
     "notes": "甲状軟骨（喉仏）の突出を削って目立たなくする手術のこと。喉元の見た目をやわらげる目的で行われ、顔や首まわりの女性化の一環とされることがある。",
     "wikipedia": {
@@ -2482,7 +2482,7 @@
       "MtF・女性化"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "血液中のカリウムが高くなりすぎた状態。スピロノラクトンなど、カリウムを体にためやすい薬を使うときに注意が必要なリスク。",
     "source": "Hyperkalemia",
     "wikipedia": {
@@ -2518,7 +2518,7 @@
       "検査・数値"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "性ホルモン（エストロゲンやテストステロン）が長期間不足すると、骨がもろくなりやすいことに関連する骨の健康リスク。ホルモン療法を十分に続けることや、必要に応じて骨密度を定期的に確認することが予防につながる。気になるときは医師に相談を。",
     "source": "Osteoporosis",
     "wikipedia": {
@@ -2550,7 +2550,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "骨が作られたり壊されたりする働き。長期のホルモン療法（GAHT）では、骨の健康のために確認されることがある。",
     "source": "Bone Metabolism",
     "wikipedia": {
@@ -2580,7 +2580,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Bone Mineral Density (BMD)",
     "wikipedia": {
       "ja": "https://ja.wikipedia.org/wiki/骨密度",
@@ -2612,7 +2612,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "思春期の進行を抑えるために用いられる薬剤。臨床ではGnRHアゴニスト（GnRH類似体）が用いられることが多い。",
     "source": "Puberty Blocker",
     "wikipedia": {
@@ -2655,7 +2655,7 @@
       "生まれつきの性別",
       "出生時の性別"
     ],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Assigned Gender/Assigned Sex at Birth",
     "notes": "出生時に身体的特徴などに基づいて割り当てられた性別のこと。性同一性と一致するとは限らない。英語では AGAB（Assigned Gender At Birth）と呼ばれる。",
     "wikipedia": {
@@ -2687,7 +2687,7 @@
       "アイデンティティ"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Self-acceptance",
     "message": "昔の自分を、責め続けないであげてくださいね。あの子だって、何も見えない霧の中で、必死に迷っていたんだから。",
     "notes": "ありのままの自分を、自分で受け入れていくこと。",
@@ -2719,7 +2719,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "DIY HRT",
     "notes": "医療機関を通さず、自分で薬を入手して行うホルモン療法（フラホルとも）。安く始めやすく見えても、量の調整や副作用の確認がむずかしく、健康上のリスクがある。",
     "seeAlso": [
@@ -2748,7 +2748,7 @@
       "人間関係"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Real Life Experience (RLE)",
     "notes": "性別移行を進める前または途中に、望む性別での社会生活を一定期間実際に送ること。かつて医療の前提条件として求められたが、現在のガイドラインでは必須とはされない傾向にある。",
     "wikipedia": {
@@ -2783,7 +2783,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "出生時に女性と割り当てられた人のこと。性同一性とは関係なく、医師により出生時に指定された性別を指す。AFAB（Assigned Female At Birth）の訳語。",
     "source": "Assigned Female at Birth (AFAB)",
     "wikipedia": {
@@ -2816,7 +2816,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "出生時に男性と割り当てられた人のこと。性同一性とは関係なく、医師により出生時に指定された性別を指す。AMAB（Assigned Male At Birth）の訳語。",
     "source": "Assigned Male at Birth (AMAB)",
     "wikipedia": {
@@ -2847,7 +2847,7 @@
       "人間関係"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Psychological Counseling",
     "wikipedia": {
       "ja": "https://ja.wikipedia.org/wiki/カウンセリング"
@@ -2870,7 +2870,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "医療機関で受診・治療を受けた事実や診断結果を証明する書類のこと。ホルモン療法や手術、各種手続きの際に必要となることがある。",
     "source": "Diagnosis Certificate",
     "wikipedia": {
@@ -2903,7 +2903,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Cyproterone Acetate (CPA)",
     "notes": "抗アンドロゲン作用とプロゲストーゲン作用を併せ持つ薬剤で、性別適合ホルモン療法（GAHT）でアンドロゲン抑制のために用いられることがある。",
     "wikipedia": {
@@ -2936,7 +2936,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "合成プロゲスチンの一つ。女性化ホルモン療法（GAHT）に関する資料では、乳房の発達や精神面への影響、リスクとの関連が議論されることがある。",
     "source": "Medroxyprogesterone Acetate (MPA)",
     "wikipedia": {
@@ -2967,7 +2967,7 @@
       "MtF・女性化"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "脳や脊髄を覆う髄膜から生じる腫瘍。酢酸シプロテロンの長期・高用量使用に関連するリスクの一つとして知られる。",
     "source": "Meningioma",
     "wikipedia": {
@@ -2996,7 +2996,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "エストロゲン、黄体ホルモン（プロゲストーゲン）、アンドロゲンなど、性に関わるホルモンの総称。",
     "source": "Sex Hormone",
     "wikipedia": {
@@ -3026,7 +3026,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "遊離エストラジオールやテストステロンの値の解釈に影響する血漿タンパク質。",
     "source": "Sex Hormone-Binding Globulin (SHBG)",
     "wikipedia": {
@@ -3056,7 +3056,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "性器の形態を性同一性に合わせて変える外科手術の総称。腟形成術や精巣摘除術、陰茎形成術などを含む。性別適合手術（SRS）の一部として行われることが多い。",
     "source": "Genital surgery",
     "seeAlso": [
@@ -3091,7 +3091,7 @@
     "avoid": [
       "性転換症（古い診断名）"
     ],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "性同一性と身体の性が一致せず、医療的な性別移行を望む状態を指した、過去の病理化された診断名。現在は脱病理化が進み、ICD-11では「性別不合」に置き換えられている。",
     "source": "Transsexualism",
     "wikipedia": {
@@ -3125,7 +3125,7 @@
       "歴史的な語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Transgender Certificate",
     "notes": "「性転換症」（ICD-10時代の診断名。現在のICD-11では「性別不合」にあたります）の診断を証明した書類のこと。医療機関で発行され、過去にはホルモン療法や手術、法的手続きなどの場面で求められることがありました。「性転換症」は現在は使われない古い呼び方です。"
   },
@@ -3157,7 +3157,7 @@
     "avoid": [
       "性同一性障害（同義語としては避けたい）"
     ],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "出生時に割り当てられた性別と性同一性との不一致から生じる、心理的な苦痛のこと。「性別違和（gender dysphoria）」は DSM-5（アメリカ精神医学会）の用語で、苦痛があることを定義に含む。一方 ICD-11（WHO）はこれとは別の枠組みで、苦痛を要件としない「性別不合（gender incongruence）」を用い、精神疾患の章からも外して脱病理化した。苦痛そのものに着目したいときは「性別違和」が使われることもある。",
     "source": "Gender Dysphoria",
     "message": "その違和感は、わがままではありません。ちゃんと意味のある、大切な感覚です。",
@@ -3196,7 +3196,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "自分の性のあり方に合わせて、呼び名・服装・社会生活、必要に応じて医療や法的手続きなどを変えていくこと。社会的・医療的・法的な側面があり、どこまで行うかは人によって異なります。すべてを行う必要はありません。",
     "source": "Transitioning (transgender)",
     "wikipedia": {
@@ -3234,7 +3234,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "エストロゲンやテストステロンなどの性ホルモンを使って、からだの特徴を自分の性同一性に近づけていく治療。望む方向への「第二の思春期」のように、月単位・年単位で少しずつ変化していく。診療ガイドライン（SOC-8）では、不足を「補う（Replacement）」という病理的な含みのある「ホルモン補充療法（HRT）」より、その人のあり方を肯定する「性別適合ホルモン療法（GAHT）」という呼び方がすすめられている。",
     "source": "Gender-Affirming Hormone Therapy(GAHT)",
     "wikipedia": {
@@ -3280,7 +3280,7 @@
       "性転換手術",
       "性転換"
     ],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "性同一性に合わせて身体的特徴を変えるための外科手術の総称。性器手術や顔面・胸部の手術などを含み、必要とする内容や範囲は人によって異なる。WPATHのケア基準（SOC-8）では、より中立的な「ジェンダー肯定手術（gender-affirming surgery）」という枠組みで語られる。日本では「性別適合手術」という呼称が一般的。",
     "source": "Gender Affirmation Surgery (GAS)",
     "wikipedia": {
@@ -3316,7 +3316,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "性別の移行や法的な性別変更などの手続きにおいて求められることのある、医療機関が発行する証明書類のこと。求められる書類の種類や名称は国や制度によって異なる。",
     "source": "Sex Reassignment Certificate"
   },
@@ -3341,7 +3341,7 @@
       "アイデンティティ"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "外見・服装・髪型・振る舞い・言葉づかいなどを通して、自分の性のあり方を外に表すこと。性同一性や指定性別とは別の概念で、必ずしも一致するとは限らない。",
     "source": "Gender Expression",
     "wikipedia": {
@@ -3378,7 +3378,7 @@
     "avoid": [
       "性同一性障害（旧称・病理化された用語）"
     ],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "ICD-11で用いられる、性同一性と出生時に割り当てられた性別との不一致を表す診断名。脱病理化された呼称であり、かつての病理的な診断名「性同一性障害」に置き換わるものとして位置づけられる。",
     "source": "Gender Incongruence",
     "wikipedia": {
@@ -3416,7 +3416,7 @@
       "アイデンティティ"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Legal Gender Recognition",
     "notes": "戸籍など、法律上の性別を変える手続き。日本では「性同一性障害者の性別の取扱いの特例に関する法律」（特例法）にもとづくが、要件は近年の裁判で大きく見直されつつある（2023年に生殖不能要件が違憲とされたなど）。",
     "wikipedia": {
@@ -3453,7 +3453,7 @@
     "avoid": [
       "去勢手術"
     ],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Orchiectomy",
     "notes": "精巣を摘出する手術。性別適合手術の一環として、または抗アンドロゲン薬の代替として行われることがある。",
     "wikipedia": {
@@ -3483,7 +3483,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "ボイストレーニングや声の女性化手術における中心的な解剖学用語。声帯のこと。",
     "source": "Vocal Folds",
     "wikipedia": {
@@ -3517,7 +3517,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Glottoplasty",
     "notes": "声帯の前方を癒着させて声帯の振動長を短くし、声の高さを上げる手術のこと。声の女性化を目的に行われることがある。",
     "seeAlso": [
@@ -3547,7 +3547,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "エストロゲン受容体に選択的に作用する薬剤の総称。ノンバイナリーの人や、女性化の程度を抑えたいホルモン療法の選択肢として検討されることがある。",
     "source": "Selective Estrogen Receptor Modulator (SERM)",
     "wikipedia": {
@@ -3579,7 +3579,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "膀胱の下にある生殖器官のひとつ。トランス女性の健康管理、泌尿器系、性別適合手術の説明などで言及される解剖学的部位。",
     "source": "Prostate",
     "wikipedia": {
@@ -3614,7 +3614,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "頭髪が抜けて薄くなる状態のこと。男性型脱毛症（AGA）を含み、トランス女性では、ホルモン療法（HRT）や抗アンドロゲン薬で進行がゆるやかになったり、ある程度改善したりすることがあり、FFS（顔の女性化手術）に関連して話題になることも多い。",
     "source": "Hair Loss",
     "wikipedia": {
@@ -3648,7 +3648,7 @@
       "避けたい言い方"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Conversion Therapy",
     "notes": "性的指向や性同一性を変えようとする心理的・宗教的な介入の総称。科学的根拠がなく有害とされ、近年は法的に規制する動きが広がっている。コンバージョン療法とも呼ばれる。",
     "wikipedia": {
@@ -3681,7 +3681,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Electrolysis",
     "wikipedia": {
       "en": "https://en.wikipedia.org/wiki/Electrology"
@@ -3710,7 +3710,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "ホルモンや内分泌に関わる病気を扱う診療科のこと。ホルモン療法（HRT）の受診や経過観察で関わることが多い。",
     "source": "Endocrinology",
     "wikipedia": {
@@ -3744,7 +3744,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "乳房にできる悪性腫瘍。ホルモン療法のリスク評価や定期的な検診（スクリーニング）で話題になることが多い。",
     "source": "Breast Cancer",
     "wikipedia": {
@@ -3774,7 +3774,7 @@
       "MtF・女性化"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "乳腺組織が発達し乳房が大きくなること。女性化を目的としたホルモン療法（GAHT）で期待される効果の一つ。",
     "source": "Breast Development"
   },
@@ -3798,7 +3798,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "膀胱から体外へ尿を導く管のこと。性別適合手術（性器の手術）やその術後ケアで扱われる解剖学的部位。",
     "source": "Urethra",
     "wikipedia": {
@@ -3833,7 +3833,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Peritoneal Vaginoplasty",
     "notes": "おなかの中の膜（腹膜）を用いて腟を形成する造腟の方法の一つ。比較的新しい方法。"
   },
@@ -3861,7 +3861,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Breast Augmentation",
     "wikipedia": {
       "ja": "https://ja.wikipedia.org/wiki/豊胸手術",
@@ -3898,7 +3898,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Vaginoplasty",
     "notes": "腟を形成する外科手術。トランスジェンダー女性に対する性別適合手術（SRS）の一つで、造腟術とも呼ばれる。",
     "wikipedia": {
@@ -3939,7 +3939,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "トランス男性やノンバイナリーの人が、胸（乳房）を平らにするための手術。「胸オペ」「トップサージェリー」とも呼ばれる。",
     "wikipedia": {
       "ja": "https://ja.wikipedia.org/wiki/乳房切除術",
@@ -3974,7 +3974,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "ホルモン療法で大きくなった陰核（クリトリス）をもとに、小さなペニスを形づくる手術。陰茎形成術より、からだへの負担が小さいとされる。",
     "wikipedia": {
       "en": "https://en.wikipedia.org/wiki/Metoidioplasty"
@@ -4000,7 +4000,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "腕や太ももなどの皮膚を使って、ペニスを形づくる手術。複数回に分けて行うことが多い、規模の大きい手術。",
     "wikipedia": {
       "ja": "https://ja.wikipedia.org/wiki/陰茎形成術",
@@ -4028,7 +4028,7 @@
       "ジェンダー表現"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Sexual orientation and gender identity",
     "notes": "Sexual Orientation and Gender Identity（性的指向と性自認）の頭文字。LGBTのように特定の少数者を指すのではなく、すべての人がもつ属性として性のあり方をとらえる言い方。性表現（Gender Expression）を加えて SOGIE と書くこともある。",
     "seeAlso": [
@@ -4064,7 +4064,7 @@
       "ふたなり",
       "雌雄同体"
     ],
-    "disputed": [],
+    "disputedNames": [],
     "source": "Intersex",
     "message": "あなたのからだは、まちがいではありません。あなたのことばで、あなたを語っていい。",
     "notes": "生まれつき、染色体・性腺・ホルモン・からだのつくりなどが、典型的な男性・女性のどちらの定義にも完全には当てはまらない、さまざまな体の状態の総称。医学では「性分化疾患（DSD）」、また「体の性の様々な発達」とも呼ばれる。からだの特徴の話で、性同一性や性的指向とは別の軸。「第三の性」を意味する語ではないが、特定の性別に押し込めるものでもなく、性同一性は人によってさまざま（男性・女性・ノンバイナリーなど。トランスジェンダーの人もいる）。トランスジェンダーとは別の概念だが、重なる人もおり、LGBTQIA＋の一部とされる。"
@@ -4094,7 +4094,7 @@
       "ホモ",
       "レズ"
     ],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "自分と同じ性別の人に、恋愛的・性的に惹かれること。男性なら「ゲイ」、女性なら「レズビアン」と呼ばれることが多い。「同性／異性」という分け方は、性別を男女のふたつに分ける見方（性別二元論）を前提にしているため、ノンバイナリーの人などには当てはまりにくいこともある。「ホモ」「レズ」といった略し方は、からかいや侮蔑の言葉として使われてきた経緯があり、傷つく人も多いため、当事者が自称する場合を除いて避けたい言い方です。",
     "source": "Homosexuality",
     "wikipedia": {
@@ -4128,7 +4128,7 @@
       "アイデンティティ"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "自分とは異なる性別の人に、恋愛的・性的に惹かれること。「ヘテロ」「ストレート」とも。これも「同性／異性」という、性別を男女に分ける見方（性別二元論）を前提にした言葉で、いちばん多数派とされるが、「ふつう」で「正しい」あり方というわけではない。",
     "source": "Heterosexuality",
     "wikipedia": {
@@ -4161,7 +4161,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "男女どちらの性別の人にも、またはふたつ以上の性別の人に、恋愛的・性的に惹かれること。「バイ」とも。相手の性別をあまり問わずに惹かれる場合は、パンセクシュアルという言葉が使われることもある。どちらか一方に惹かれる時期があっても、両性愛でなくなるわけではない。",
     "source": "Bisexuality",
     "wikipedia": {
@@ -4197,7 +4197,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "他者に性的に惹かれにくい、または惹かれないあり方。「エース（ace）」とも。白か黒かではなくグラデーションがあり、強い信頼が生まれてはじめて惹かれるデミセクシュアルなどもある。恋愛的に惹かれにくいアロマンティックとは別のものさしで、組み合わせは人それぞれ。「欠けている」ことでも、性別違和のしるしでもない。",
     "source": "Asexuality",
     "wikipedia": {
@@ -4231,7 +4231,7 @@
       "インターセックス"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "人の性別を「男」か「女」のふたつだけに分け、その二種類しかないとする考え方・社会の枠組み。とてもよくある前提だけれど、絶対の真実ではなく、ひとつの「ものの見方（信念）」にすぎない。実際の性別のあり方は連続的で、ノンバイナリーやインターセックスなど、この枠に収まらない人たちがいる。",
     "source": "Gender binary",
     "wikipedia": {
@@ -4257,7 +4257,7 @@
       "反トランスの主張"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "トランスジェンダーであるには性別違和や医療的な移行が必要だ、とする考え方。違和の感じ方や移行のしかたは人によってさまざまで、この考え方は、医療を望まない人やノンバイナリーの人を締め出す「線引き（ゲートキーピング）」につながると批判されることも多い。この立場をとる人を「トゥルースカム」と呼ぶことがある。",
     "source": "Transmedicalism",
     "wikipedia": {
@@ -4280,7 +4280,7 @@
       "反トランスの主張"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "トランスメディカリズム（トランスであるには性別違和が必要だとする考え）の立場をとる人を指す、おもにネット上の言葉。もともとはこの立場を批判する側がつけた呼び名。反対の立場は「テュキュート」と呼ばれる。",
     "source": "Truscum"
   },
@@ -4298,7 +4298,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "トランスメディカリズムに反対する立場をとる人を指す、おもにネット上の言葉。トランスであるために、性別違和や医療的な移行は必ずしも必要ではない、と考える。「トゥルースカム」と対比して使われる。",
     "source": "Tucute"
   },
@@ -4316,7 +4316,7 @@
       "避けたい言い方"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "有名人などについて、体の細かい特徴を根拠に「本当は隠れたトランスジェンダーだ」と決めつけようとする、根拠のない陰謀論的な言いがかり。シスジェンダーの人にもトランスの人にも向けられ、容姿をあげつらう差別的なハラスメントで、医学的・科学的な裏づけはまったくない。",
     "source": "Transvestigation"
   },
@@ -4336,7 +4336,7 @@
       "コミュニティ文化"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "「だれもがシスジェンダー（出生時に割り当てられた性別と性同一性が一致する人）である」と当然のように前提する、社会のものの見方や仕組み。書類・施設・言葉づかいの多くがこの前提でできていて、トランスの人が見えにくくされたり、困りごとが生まれたりする。",
     "source": "Cisnormativity"
   },
@@ -4357,7 +4357,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "トランスの人が、移行する前に使っていた・出生時につけられた名前のこと。本人が手放した名前を、本人の意に反して使うこと（デッドネーミング）は、相手を傷つける行為とされる。よかれと思っても、過去の名前を持ち出さないのが基本。",
     "source": "Deadnaming",
     "wikipedia": {
@@ -4382,7 +4382,7 @@
       "コミュニティ文化"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "まだ自分がトランスジェンダーだと気づいていない・受け入れていない段階のトランスの人を、あとから振り返って指すことのあるネットスラング。自覚することを「殻を破る（egg crack）」とたとえる。自分や他人を決めつけたり、急かしたりするための言葉ではない。",
     "source": "Egg"
   },
@@ -4401,7 +4401,7 @@
       "コミュニティ文化"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "自分は当事者ではないけれど、LGBTQ＋の人たちを理解し、支え、ともに行動する人のこと。完璧である必要はなく、学び続け、まちがえたら直し、必要なときに声をあげる姿勢が大切とされる。",
     "source": "Straight ally"
   },
@@ -4425,7 +4425,7 @@
       "差別・偏見"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "「男らしさ」「女らしさ」など、社会がそれぞれの性別に対して期待する役割・ふるまい・見た目のこと。時代や文化によって変わるもので、絶対のものではない。性別表現や性同一性とは別の概念。",
     "source": "Gender role",
     "wikipedia": {
@@ -4449,7 +4449,7 @@
       "歴史的な語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "性のあり方が、社会で「ふつう」とされる枠（異性愛・シスジェンダー）にあてはまらない人を広く指す言葉。既存の枠組みそのものに異議をとなえるニュアンスでも使われる。もともとは侮蔑語だったのを、当事者が肯定的に取り戻した（リクレイムした）言葉でもあり、LGBTQ＋の「Q」にあたる。ただし、いまも侮蔑的に使われることがあり、人に対して使うときは、本人がその言葉を自認しているかに気をつけたい言葉でもある。",
     "source": "Queer",
     "wikipedia": {
@@ -4471,7 +4471,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "どんな性別の人に恋愛的・性的に惹かれるか、という方向性。異性愛・同性愛・両性愛・無性愛などがある。自分の性別（性同一性）とは別のものさしで、「だれを好きになるか」と「自分がどんな性別か」は混同されやすいが別のもの。",
     "source": "Sexual orientation",
     "wikipedia": {
@@ -4498,7 +4498,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "どんな性別の人に恋愛的に惹かれるか、という方向性。性的に惹かれる方向（性的指向）とは分けて考えることがあり（スプリット・アトラクション・モデル）、たとえば「恋愛的には惹かれるが性的には惹かれない」人もいる。",
     "source": "Romantic orientation",
     "wikipedia": {
@@ -4527,7 +4527,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "人への「惹かれ」を、性的な惹かれと恋愛的な惹かれに分けてとらえる考え方。この二つは必ずしも一致せず、向く相手がちがうこともある。アセクシュアル・アロマンティックの文脈でよく使われる。",
     "source": "Split attraction model"
   },
@@ -4547,7 +4547,7 @@
       "アイデンティティ"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "相手の性別にとらわれずに、人に惹かれるあり方。両性愛（バイセクシュアル）と重なる部分もあるが、「性別を問わない」点を強調するときに使われる。",
     "source": "Pansexuality",
     "wikipedia": {
@@ -4571,7 +4571,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "自分には性別（ジェンダー）がない、または性別という枠組みにあてはまらないと感じるあり方。ノンバイナリーの一つとされることが多い。",
     "source": "Agender",
     "seeAlso": [
@@ -4593,7 +4593,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "性別が、男女の二元的な枠の外にあるあり方。ノンバイナリーとほぼ同じ意味で使われることが多い。",
     "source": "Genderqueer",
     "wikipedia": {
@@ -4618,7 +4618,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "二つの性別（たとえば男性と女性）をあわせ持つ、または行き来するあり方。",
     "source": "Bigender"
   },
@@ -4639,7 +4639,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "ある性別に部分的につながりを感じるあり方（例：デミガール、デミボーイ）。完全にその性別というわけではない。",
     "source": "Demigender"
   },
@@ -4657,7 +4657,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "性別が中立的、またはないと感じるあり方。アジェンダーと近いが、より「中立」を志向するニュアンスで使われることがある。",
     "source": "Neutrois"
   },
@@ -4676,7 +4676,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "男女という枠では言い表しにくい自分の性別を、別のイメージ（色・自然・概念など）になぞらえて表すあり方。おもにオンラインのコミュニティで使われる。",
     "source": "Xenogender"
   },
@@ -4694,7 +4694,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "性別の感じ方の「強さ」が時間とともに変化するあり方。種類のあいだで動くジェンダーフルイドに対し、こちらは濃さ・薄さが変わるイメージ。",
     "source": "Genderflux"
   },
@@ -4716,7 +4716,7 @@
       "ノンバイナリー"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "男性的とも女性的とも言いきれない、中性的な見た目やあり方。見た目（性別表現）について使われることも、アイデンティティについて使われることもある。",
     "source": "Androgyny",
     "wikipedia": {
@@ -4740,7 +4740,7 @@
       "アイデンティティ"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "社会が期待する「男らしさ・女らしさ」にあてはまらない見た目やふるまいをする人の総称。ジェンダー・ダイバース、ジェンダー・バリアントとも。トランスかどうかとは別の話で、シスの人もふくむ。",
     "source": "Gender variance"
   },
@@ -4761,7 +4761,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "出生時に男性と割り当てられ、より女性的な方向にあるトランスの人を広く指す言葉。トランス女性だけでなく、その方向のノンバイナリーの人をふくむこともある。",
     "source": "Transfeminine",
     "seeAlso": [
@@ -4786,7 +4786,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "出生時に女性と割り当てられ、より男性的な方向にあるトランスの人を広く指す言葉。トランス男性だけでなく、その方向のノンバイナリーの人をふくむこともある。",
     "source": "Transmasculine",
     "seeAlso": [
@@ -4810,7 +4810,7 @@
       "メンタルヘルス"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "トランスジェンダーの人への偏見・嫌悪・差別。あからさまな攻撃だけでなく、無視や決めつけ、制度的な締め出しもふくむ。問題があるのは差別の側であって、あなたの存在ではありません。",
     "source": "Transphobia",
     "wikipedia": {
@@ -4838,7 +4838,7 @@
       "人間関係"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "同性愛者や、同性に惹かれる人への偏見・嫌悪・差別。両性愛の人への差別はバイフォビアと呼ばれる。",
     "source": "Homophobia",
     "wikipedia": {
@@ -4860,7 +4860,7 @@
       "性的指向"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "「だれもが異性愛者である」ことを当然の前提とする、社会のものの見方や仕組み。シスノーマティビティ（だれもがシスである前提）と並ぶ考え方で、当てはまらない人を見えにくくする。",
     "source": "Heteronormativity",
     "wikipedia": {
@@ -4880,7 +4880,7 @@
       "反トランスの主張"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "性別は出生時のもので決まり、二つしかない、という前提を当然とし、トランスやノンバイナリーのあり方を否定・軽視する考え方や制度のこと。",
     "source": "Cisgenderism"
   },
@@ -4900,7 +4900,7 @@
       "避けたい言い方"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "おもにトランスジェンダーの権利に反対する立場が自称する言葉。実際にはトランス排除的な主張をさすことが多く、当事者からはトランス差別的だと批判される。TERFと近い。",
     "source": "Gender critical",
     "seeAlso": [
@@ -4923,7 +4923,7 @@
       "避けたい言い方"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "もともとは中立的な語だったが、近年はおもに、トランスジェンダーを「イデオロギー」であるかのように否定的に扱う差別的な文脈で使われるため、当事者側では使用が避けられている。",
     "source": "Transgenderism"
   },
@@ -4941,7 +4941,7 @@
       "メンタルヘルス"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "悪意がないつもりの何気ない言動が、くり返されることで相手を傷つける、小さな差別。「ほんとはどっちの性別？」「男っぽいね」のような言葉もふくまれる。",
     "source": "Microaggression",
     "wikipedia": {
@@ -4964,7 +4964,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "エンターテインメントとして、誇張した女性らしさを表現するパフォーマンス、またその表現者。性別やアイデンティティとは別の「表現・芸能」であり、トランスジェンダーとはちがう（重なる人もいる）。",
     "source": "Drag queen",
     "wikipedia": {
@@ -4989,7 +4989,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "他者に恋愛的に惹かれにくい、または惹かれないあり方。「アロ（aro）」とも。白か黒かではなくグラデーションがある。性的に惹かれにくいアセクシュアルとは別のものさしで、組み合わせは人それぞれ。恋愛をしないことは「欠けている」ことでも「冷たい」ことでもない。",
     "source": "Aromanticism",
     "wikipedia": {
@@ -5012,7 +5012,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "強い感情的なつながり（信頼や絆）が生まれてはじめて、相手に性的に惹かれるあり方。アセクシュアルのスペクトラムの一つとされる。恋愛的指向でのデミロマンティックも同じ考え方。",
     "source": "Demisexuality"
   },
@@ -5033,7 +5033,7 @@
       "当事者の言葉"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "性的に惹かれることがまれ、またはごく弱いあり方。アセクシュアルと、そうでない人のあいだのグラデーションにあたる。恋愛的指向での同様のあり方はグレーロマンティックと呼ばれる。",
     "source": "Gray asexuality"
   },
@@ -5061,7 +5061,7 @@
       "コミュニティ文化"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "レズビアン（Lesbian）・ゲイ（Gay）・バイセクシュアル（Bisexual）・トランスジェンダー（Transgender）の頭文字をとった言葉で、性的マイノリティ全体をあらわす総称としても使われる。はじめの3つ（LGB）は性的指向、Tは性同一性のことで、別々のものさし。クィアやクエスチョニングの「Q」を加えてLGBTQ、さらにインターセックスやアセクシュアルなどを加えてLGBTQIA＋と書くこともある。すべての人をうまく表せるわけではなく、この言葉を使わない当事者もいる。",
     "source": "LGBT",
     "wikipedia": {
@@ -5090,7 +5090,7 @@
       "避けたい言い方"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "「トランスの権利を求める活動家（Trans Rights Activist）」の略。文字どおりにはトランスジェンダーの権利を支持する人を指すが、実際には、トランスの権利に反対する人たちが相手を揶揄・非難するためのレッテルとして使うことが多い言葉。陰謀論的な意味合いをこめて使われることもある。",
     "source": "TRA",
     "seeAlso": [
@@ -5119,7 +5119,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "アンドロゲンの作用により、声が低くなる、顔や体の毛が増える、筋肉量が増える、陰核が成長するなど、男性に典型的な二次性徴や身体的特徴が現れること。ホルモン療法による変化や、アンドロゲンの過剰による症状を表す。",
     "seeAlso": [
       "feminization",
@@ -5145,7 +5145,7 @@
       "医学用語"
     ],
     "avoid": [],
-    "disputed": [],
+    "disputedNames": [],
     "notes": "エストロゲンの作用やアンドロゲン作用の低下により、乳房が発達する、体脂肪のつき方が変わる、筋肉量や体毛が減るなど、女性に典型的な二次性徴や身体的特徴が現れること。ホルモン療法による変化を表す文脈でも使われる。",
     "seeAlso": [
       "virilization",
