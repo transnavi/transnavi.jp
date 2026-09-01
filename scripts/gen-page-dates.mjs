@@ -21,6 +21,15 @@ const git = (args) => {
   }
 };
 
+// A shallow clone (Cloudflare Workers Builds fetches depth 1) has no per-file
+// history: every page would come out created and updated on the build day. The
+// committed page-dates.json holds the real dates, so leave it alone there.
+if (git('rev-parse --is-shallow-repository') === 'true') {
+  const dated = Object.keys(JSON.parse(fs.readFileSync('src/data/page-dates.json', 'utf8'))).length;
+  console.log(`page-dates.json: shallow clone, keeping the committed dates (${dated} pages)`);
+  process.exit(0);
+}
+
 const out = {};
 for (const route of ROUTES) {
   const file = `src/pages/${route.replace(/^\/|\/$/g, '')}.astro`;
