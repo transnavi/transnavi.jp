@@ -1837,6 +1837,38 @@ ul {
   color: var(--ink);
 }
 
+/* Sits directly under .glossary-def and carries the same weight as it: the
+   definition is a filled panel, the disagreement an outlined one, so neither
+   reads as a footnote to the other. A dashed hairline on --line disappears
+   against the dark theme, so the border is solid and uses --line-strong. */
+.entry-contested {
+  margin: -6px 0 20px;
+  padding: 14px 18px;
+  border: 1px solid var(--line-strong);
+  border-radius: 14px;
+  background: var(--paper);
+}
+
+.entry-contested-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--accent-term);
+}
+
+.entry-contested p {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--ink);
+}
+
+.entry-contested p:last-child {
+  margin-bottom: 0;
+}
+
 .glossary-detail {
   font-size: 0.95rem;
 }
