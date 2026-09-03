@@ -146,7 +146,10 @@ test('English translations are English', () => {
   const japanese = /[ぁ-んァ-ヶ一-龠]/g;
   for (const [key, value] of Object.entries(enTranslations)) {
     assert.ok(value.trim(), `empty translation for ${JSON.stringify(key)}`);
-    assert.notEqual(value.trim(), key.trim(), `untranslated: ${JSON.stringify(key)}`);
+    // A key that is only a URL has nothing to translate and comes back as it is.
+    if (!/^https?:\/\/\S+$/.test(key.trim())) {
+      assert.notEqual(value.trim(), key.trim(), `untranslated: ${JSON.stringify(key)}`);
+    }
     const share = (value.match(japanese) ?? []).length / [...value].length;
     assert.ok(share < 0.35, `mostly Japanese: ${JSON.stringify(key)} -> ${JSON.stringify(value)}`);
   }
