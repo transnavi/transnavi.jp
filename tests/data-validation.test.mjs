@@ -12,6 +12,8 @@ const clinics = JSON.parse(read('src/data/clinics.json'));
 const works = JSON.parse(read('src/data/works.json'));
 const pageTags = JSON.parse(read('src/data/page-tags.json'));
 const references = yaml.load(read('src/data/references.yml'));
+const enTranslations = JSON.parse(read('src/data/en-translations.json'));
+const enOverrides = JSON.parse(read('src/data/en-overrides.json'));
 const citationPages = yaml.load(read('src/data/citation-pages.yml'));
 
 // Controlled tag vocabulary, extracted from the TAGS literal in tag-taxonomy.ts
@@ -125,5 +127,30 @@ test('overseas clinics carry country + city, and group under their country', () 
     // them under a country heading instead of scattering them among prefectures.
     assert.equal(c.prefecture, c.country, `${c.id}: prefecture should equal country for overseas`);
     assert.ok(c.id.startsWith('srs-overseas-'), `${c.id}: overseas id should be namespaced srs-overseas-*`);
+  }
+});
+
+// The English catalogue is written by a model, so the invariants a model can
+// break are asserted here rather than found on the page.
+test('English translations keep the placeholders of their key', () => {
+  const placeholders = (value) => (value.match(/\{\d+\}/g) ?? []).sort().join(',');
+  for (const [key, value] of Object.entries({ ...enTranslations, ...enOverrides })) {
+    assert.equal(placeholders(value), placeholders(key), `placeholders differ: ${JSON.stringify(key)} -> ${JSON.stringify(value)}`);
+  }
+});
+
+test('English translations are English', () => {
+  // A translation may quote a Japanese word it is explaining (一人称「僕」), so
+  // the test is on how much of the string stayed Japanese, not on whether any
+  // of it did.
+  const japanese = /[ぁ-んァ-ヶ一-龠]/g;
+  for (const [key, value] of Object.entries(enTranslations)) {
+    assert.ok(value.trim(), `empty translation for ${JSON.stringify(key)}`);
+    // A key that is only a URL has nothing to translate and comes back as it is.
+    if (!/^https?:\/\/\S+$/.test(key.trim())) {
+      assert.notEqual(value.trim(), key.trim(), `untranslated: ${JSON.stringify(key)}`);
+    }
+    const share = (value.match(japanese) ?? []).length / [...value].length;
+    assert.ok(share < 0.35, `mostly Japanese: ${JSON.stringify(key)} -> ${JSON.stringify(value)}`);
   }
 });

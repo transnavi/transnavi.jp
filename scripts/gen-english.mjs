@@ -5,12 +5,17 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { HTMLElement, TextNode, parse } from 'node-html-parser';
 import { catalogKeyOf, fillTemplate, retemplatize, templatize } from './en-templates.mjs';
+import { translateBatch, translationModel } from './translate-codex.mjs';
 
 const DIST = 'dist';
 const EN_DIR = path.join(DIST, 'en');
 const CATALOG_FILE = 'src/data/en-translations.json';
 const OVERRIDES_FILE = 'src/data/en-overrides.json';
 const UPDATE = process.argv.includes('--update');
+// Translate every rendered string again, and drop catalogue entries no page
+// renders any more — for when the wording of the prompt or the vocabulary
+// changes, not for ordinary copy edits.
+const RETRANSLATE = process.argv.includes('--retranslate');
 const JAPANESE = /[ぁ-んァ-ヶ一-龠々〆〤]/;
 const SKIP_TEXT = new Set(['SCRIPT', 'STYLE', 'SVG', 'CODE', 'PRE', 'NOSCRIPT', 'TEMPLATE', 'RT', 'RP']);
 const HTML_ATTRS = new Set(['alt', 'aria-label', 'content', 'placeholder', 'title', 'value']);
@@ -147,42 +152,13 @@ function polishTranslation(value) {
     .trim();
 }
 
-async function googleTranslate(text, attempt = 0) {
-  const body = new URLSearchParams({ client: 'gtx', sl: 'ja', tl: 'en', dt: 't', q: text });
-  try {
-    const response = await fetch('https://translate.googleapis.com/translate_a/single', {
-      method: 'POST',
-      headers: { 'content-type': 'application/x-www-form-urlencoded;charset=UTF-8' },
-      body,
-    });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
-    const translated = (data[0] || []).map((part) => part[0] || '').join('');
-    if (!translated) throw new Error('empty response');
-    return translated;
-  } catch (error) {
-    if (attempt >= 4) throw error;
-    await new Promise((resolve) => setTimeout(resolve, 600 * 2 ** attempt));
-    return googleTranslate(text, attempt + 1);
-  }
-}
-
-async function translateBatch(values) {
-  if (values.length === 1) return [polishTranslation(await googleTranslate(values[0]))];
-  const joined = values.map((value, index) => `${index ? `\n[[[TN_SPLIT_${index}]]]\n` : ''}${value}`).join('');
-  const translated = await googleTranslate(joined);
-  const parts = translated.split(/\s*\[\[\[TN_SPLIT_\d+\]\]\]\s*/);
-  if (parts.length === values.length) return parts.map(polishTranslation);
-  return Promise.all(values.map(async (value) => polishTranslation(await googleTranslate(value))));
-}
-
-function makeBatches(values, maxCharacters = 3200) {
+function makeBatches(values, maxCharacters = 6000, maxStrings = 25) {
   const batches = [];
   let batch = [];
   let size = 0;
   for (const value of values) {
     const added = value.length + 32;
-    if (batch.length && size + added > maxCharacters) {
+    if (batch.length && (size + added > maxCharacters || batch.length >= maxStrings)) {
       batches.push(batch);
       batch = [];
       size = 0;
@@ -194,18 +170,23 @@ function makeBatches(values, maxCharacters = 3200) {
   return batches;
 }
 
+const writeCatalog = () => {
+  const sorted = Object.fromEntries(Object.entries(catalog).sort(([a], [b]) => a.localeCompare(b, 'ja')));
+  fs.writeFileSync(CATALOG_FILE, `${JSON.stringify(sorted, null, 2)}\n`);
+};
+
 async function updateCatalog(samples) {
-  const missing = [...samples.keys()].filter((key) => !(key in catalog) && !(key in overrides));
+  const missing = [...samples.keys()].filter((key) => (RETRANSLATE || !(key in catalog)) && !(key in overrides));
   if (!missing.length) {
     console.log(`english: translation catalog is current (${samples.size} strings)`);
     return;
   }
 
-  // Templates are translated through a real rendering of themselves — Google
-  // handles 「154件 ・」 and mangles 「{0}件 ・」 — and the placeholders are put
-  // back into the result afterwards.
+  // Templates are translated through a real rendering of themselves — a model
+  // reads 「154件 ・」 and stumbles over 「{0}件 ・」 — and the placeholders are
+  // put back into the result afterwards.
   const batches = makeBatches(missing.map((key) => samples.get(key)));
-  console.log(`english: translating ${missing.length} strings in ${batches.length} batches`);
+  console.log(`english: translating ${missing.length} strings in ${batches.length} batches with ${translationModel()}`);
   const keyOfSample = new Map(missing.map((key) => [samples.get(key), key]));
   let next = 0;
   let completed = 0;
@@ -222,15 +203,23 @@ async function updateCatalog(samples) {
         else catalog[source] = translated[i];
       });
       completed++;
+      // Written as it goes: a run over the whole catalogue takes an hour, and
+      // a batch that fails for good should not cost the ones already done.
+      writeCatalog();
       if (completed % 10 === 0 || completed === batches.length) {
         console.log(`english: translated ${completed}/${batches.length} batches`);
       }
     }
   }
-  await Promise.all(Array.from({ length: Math.min(4, batches.length) }, () => worker()));
-  const sorted = Object.fromEntries(Object.entries(catalog).sort(([a], [b]) => a.localeCompare(b, 'ja')));
-  fs.writeFileSync(CATALOG_FILE, `${JSON.stringify(sorted, null, 2)}\n`);
-  console.log(`english: wrote ${Object.keys(sorted).length} translations to ${CATALOG_FILE}`);
+  try {
+    await Promise.all(Array.from({ length: Math.min(4, batches.length) }, () => worker()));
+  } finally {
+    if (RETRANSLATE && completed === batches.length) {
+      for (const key of Object.keys(catalog)) if (!samples.has(key)) delete catalog[key];
+    }
+    writeCatalog();
+    console.log(`english: wrote ${Object.keys(catalog).length} translations to ${CATALOG_FILE} (${completed}/${batches.length} batches)`);
+  }
 }
 
 const translationOf = (value) => {
