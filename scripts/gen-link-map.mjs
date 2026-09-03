@@ -12,6 +12,7 @@ const NODES = {
   '/faq/': { label: 'よくある質問', group: 'start' },
   '/myths/': { label: 'よくある誤解', group: 'start' },
   '/basics/': { label: '基本のことば', group: 'start' },
+  '/words/': { label: '自分を呼ぶことば', group: 'start' },
   '/gender/': { label: '性別の多様性', group: 'start' },
   '/orientation/': { label: '性的指向', group: 'start' },
   '/intersex/': { label: 'インターセックス', group: 'start' },

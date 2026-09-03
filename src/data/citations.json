@@ -551,6 +551,85 @@
       "id": "hrw-intersex"
     }
   ],
+  "/words/": [
+    {
+      "title": "トランスジェンダー入門",
+      "url": "https://www.shueisha.co.jp/books/items/contents.html?isbn=978-4-08-721274-7",
+      "publisher": "周司あきら・高井ゆと里／集英社新書（2023）",
+      "lang": "ja",
+      "id": "shueisha-transgender-nyumon"
+    },
+    {
+      "title": "女装と日本人",
+      "url": "https://bookclub.kodansha.co.jp/product?item=0000210446",
+      "publisher": "三橋順子／講談社現代新書1960（2008）",
+      "lang": "ja",
+      "id": "mitsuhashi-josou-to-nihonjin"
+    },
+    {
+      "title": "トランスジェンダリズム宣言 ― 性別の自己決定権と多様な性の肯定",
+      "url": "https://ci.nii.ac.jp/ncid/BA63515131",
+      "publisher": "米沢泉美編著／社会批評社（2003）。1989年・1994年の年代は所収の筒井真樹子「ヴァージニア・プリンスとトランスジェンダー」の記述による。原書は未見で、川股(2020)が引く箇所から確認した",
+      "lang": "ja",
+      "id": "yonezawa-transgenderism"
+    },
+    {
+      "title": "セクシュアル・マイノリティの「生きづらさ」に関するライフストーリー研究",
+      "url": "https://repository.dl.itc.u-tokyo.ac.jp/record/55028/files/K-07858.pdf",
+      "publisher": "川股信慈／東京大学大学院新領域創成科学研究科 修士論文（2020）。査読誌論文ではない",
+      "lang": "ja",
+      "id": "kawamata-lifestory"
+    },
+    {
+      "title": "「性同一性障害」概念の普及に伴うトランスジェンダー解釈の変化",
+      "url": "https://www2.igs.ocha.ac.jp/wp-content/uploads/2016/02/05研究ノート-吉澤.pdf",
+      "publisher": "吉澤京助／『ジェンダー研究』第19号（お茶の水女子大学ジェンダー研究所, 2016）研究ノート",
+      "lang": "ja",
+      "id": "yoshizawa-gid-fukyuu"
+    },
+    {
+      "title": "「唄子」を探して ― 大阪における「女装バー」の成立と展開",
+      "url": "https://kihtty.org/wp-content/uploads/2023/03/an02_03_3-34.pdf",
+      "publisher": "三橋順子／Antitled vol.2（2023）3-34頁。当時の広告資料と関係者への聞き取りによる実証研究",
+      "lang": "ja",
+      "id": "mitsuhashi-utako"
+    },
+    {
+      "title": "Xジェンダーはなぜ名乗られたのか ― カテゴリーの力能を規定する社会的文脈に着目して ―",
+      "url": "https://www.jstage.jst.go.jp/article/kantoh/2020/33/2020_133/_article/-char/ja/",
+      "publisher": "武内今日子／年報社会学論集 33号（関東社会学会, 2020）133-144頁",
+      "lang": "ja",
+      "id": "takeuchi-xgender"
+    },
+    {
+      "title": "An Introduction to X-Jenda: Examining a New Gender Identity in Japan",
+      "url": "http://intersections.anu.edu.au/issue31/dale.htm",
+      "publisher": "S.P.F. Dale／Intersections: Gender and Sexuality in Asia and the Pacific, Issue 31（オーストラリア国立大学, 2012）",
+      "lang": "en",
+      "id": "dale-x-jenda"
+    },
+    {
+      "title": "Standards of Care for the Health of Transgender and Gender Diverse People, Version 8 (WPATH SOC-8)",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/26895269.2022.2100644",
+      "publisher": "World Professional Association for Transgender Health / International Journal of Transgender Health",
+      "lang": "en",
+      "id": "tandfonline-standards-of-care"
+    },
+    {
+      "title": "The Empire Strikes Back: A Posttranssexual Manifesto",
+      "url": "https://sandystone.com/empire-strikes-back.html",
+      "publisher": "Sandy Stone（1987年執筆／1991年刊, Body Guards 所収）。著者自身が公開する原文",
+      "lang": "en",
+      "id": "stone-empire-strikes-back"
+    },
+    {
+      "title": "誰かの理想を生きられはしない ― とり残された者のためのトランスジェンダー史",
+      "url": "https://ci.nii.ac.jp/ncid/BC03009247",
+      "publisher": "吉野靫／青土社（2020）",
+      "lang": "ja",
+      "id": "yoshino-dareka-no-risou"
+    }
+  ],
   "/basics/": [
     {
       "title": "Understanding transgender people, gender identity and gender expression",
