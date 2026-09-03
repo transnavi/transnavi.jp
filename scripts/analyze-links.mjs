@@ -37,7 +37,7 @@ const isAsset = (h) => /\.(png|svg|jpg|jpeg|webp|ico|xml|txt|json|css|js|woff2?|
 
 // Pages we treat as "prose" for opportunity scanning + weak-link flags.
 const CONTENT = new Set([
-  '/start/', '/basics/', '/gender/', '/orientation/', '/dysphoria/', '/transition/',
+  '/start/', '/basics/', '/words/', '/gender/', '/orientation/', '/dysphoria/', '/transition/',
   '/hrt-effects/', '/hrt-medications/', '/fertility/', '/puberty-blockers/', '/voice/',
   '/presentation/', '/hair-removal/', '/surgery/', '/legal-change/', '/coming-out/',
   '/allies/', '/safety/', '/guidelines/', '/support/', '/about/', '/legal/', '/learn/',

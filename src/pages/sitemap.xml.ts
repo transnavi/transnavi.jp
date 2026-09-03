@@ -27,6 +27,7 @@ export const GET: APIRoute = async ({ site }) => {
     '/allies/',
     '/parents/',
     '/basics/',
+    '/words/',
     '/gender/',
     '/orientation/',
     '/intersex/',
