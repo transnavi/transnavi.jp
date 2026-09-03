@@ -39,6 +39,12 @@ apa-the-evidence-against:
   title: The evidence against “conversion therapy”
   type: web
   url: https://www.apa.org/topics/lgbtq/evidence-against-conversion-therapy
+dale-x-jenda:
+  lang: en
+  publisher: "S.P.F. Dale／Intersections: Gender and Sexuality in Asia and the Pacific, Issue 31（オーストラリア国立大学, 2012）"
+  title: "An Introduction to X-Jenda: Examining a New Gender Identity in Japan"
+  type: article
+  url: http://intersections.anu.edu.au/issue31/dale.htm
 turban-factors-leading-to:
   lang: en
   publisher: LGBT Health
@@ -649,6 +655,55 @@ shueisha:
   title: アセクシュアル/アロマンティック入門 性的惹かれや恋愛感情を持たない人たち（松浦優）
   type: web
   url: https://www.shueisha.co.jp/books/items/contents.html?isbn=978-4-08-721352-2
+mitsuhashi-josou-to-nihonjin:
+  lang: ja
+  publisher: 三橋順子／講談社現代新書1960（2008）
+  title: 女装と日本人
+  type: book
+  url: https://bookclub.kodansha.co.jp/product?item=0000210446
+mitsuhashi-utako:
+  lang: ja
+  publisher: 三橋順子／Antitled vol.2（2023）3-34頁。当時の広告資料と関係者への聞き取りによる実証研究
+  title: 「唄子」を探して ― 大阪における「女装バー」の成立と展開
+  type: article
+  url: https://kihtty.org/wp-content/uploads/2023/03/an02_03_3-34.pdf
+yoshino-dareka-no-risou:
+  lang: ja
+  publisher: 吉野靫／青土社（2020）
+  title: 誰かの理想を生きられはしない ― とり残された者のためのトランスジェンダー史
+  type: book
+  url: https://ci.nii.ac.jp/ncid/BC03009247
+stone-empire-strikes-back:
+  lang: en
+  publisher: Sandy Stone（1987年執筆／1991年刊, Body Guards 所収）。著者自身が公開する原文
+  title: "The Empire Strikes Back: A Posttranssexual Manifesto"
+  type: article
+  url: https://sandystone.com/empire-strikes-back.html
+yoshizawa-gid-fukyuu:
+  lang: ja
+  publisher: 吉澤京助／『ジェンダー研究』第19号（お茶の水女子大学ジェンダー研究所, 2016）研究ノート
+  title: 「性同一性障害」概念の普及に伴うトランスジェンダー解釈の変化
+  type: article
+  url: https://www2.igs.ocha.ac.jp/wp-content/uploads/2016/02/05研究ノート-吉澤.pdf
+yonezawa-transgenderism:
+  lang: ja
+  publisher: >-
+    米沢泉美編著／社会批評社（2003）。1989年・1994年の年代は所収の筒井真樹子「ヴァージニア・プリンスとトランスジェンダー」の記述による。原書は未見で、川股(2020)が引く箇所から確認した
+  title: トランスジェンダリズム宣言 ― 性別の自己決定権と多様な性の肯定
+  type: book
+  url: https://ci.nii.ac.jp/ncid/BA63515131
+kawamata-lifestory:
+  lang: ja
+  publisher: 川股信慈／東京大学大学院新領域創成科学研究科 修士論文（2020）。査読誌論文ではない
+  title: セクシュアル・マイノリティの「生きづらさ」に関するライフストーリー研究
+  type: article
+  url: https://repository.dl.itc.u-tokyo.ac.jp/record/55028/files/K-07858.pdf
+shueisha-transgender-nyumon:
+  lang: ja
+  publisher: 周司あきら・高井ゆと里／集英社新書（2023）
+  title: トランスジェンダー入門
+  type: book
+  url: https://www.shueisha.co.jp/books/items/contents.html?isbn=978-4-08-721274-7
 si-who-designed-the:
   lang: en
   publisher: Smithsonian Institution（スミソニアン協会）
