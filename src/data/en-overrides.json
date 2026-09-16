@@ -428,5 +428,10 @@
   "藥師実芳": "Mika Yakushi",
   "トランス男性であることを公表している活動家。LGBTの子ども・若者を支援する認定NPO法人ReBitの代表で、『LGBTってなんだろう？』などの著書があります。": "Mika Yakushi is an openly trans man and activist who leads ReBit, a certified nonprofit supporting LGBT children and young people. He has written books including LGBT tte Nandaro?.",
   "はるな愛": "Ai Haruna",
-  "トランス女性であることを公表しているタレント・歌手・実業家。YouTube「あいちゃんねる」でも発信しています。": "Ai Haruna is an openly trans woman, media personality, singer, and business owner who also shares videos on Ai Channel."
+  "トランス女性であることを公表しているタレント・歌手・実業家。YouTube「あいちゃんねる」でも発信しています。": "Ai Haruna is an openly trans woman, media personality, singer, and business owner who also shares videos on Ai Channel.",
+  "声を練習したい": "I want to train my voice",
+  "ボイトレツール Koenami": "Koenami voice training tool",
+  "とらんすナビのボイトレツール": "Our voice training tool",
+  "を公開しました。見本の声を選んで真似しながら録音すると、自分の声が空間上に映り、近づきたい声との距離が見えます。リアルタイム測定にも対応。無料・オープンソースです。": "is now available. Pick a reference voice, record while imitating it, and see your own voice plotted in the same space with its distance from the target. Real-time measurement included. Free and open source.",
+  "：見本の声と比べながら練習できる、女声・男声のボイトレツール。ブラウザーで動き、日本語の見本を収録。": ": A voice training tool for feminine and masculine voices that lets you practice against reference voices. Runs in the browser, with Japanese references included."
 }
