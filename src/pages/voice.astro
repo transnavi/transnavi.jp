@@ -4,6 +4,7 @@ import Cite from '../components/Cite.astro';
 import References from '../components/References.astro';
 
 const tools = [
+  { name: 'Koenami', href: 'https://koe.transnavi.jp/', note: '見本の声と比べながら、自分の声を見て練習できるボイトレツール。' },
   { name: 'Vocal Pitch Monitor', note: 'スマホで自分の声の高さをリアルタイムに表示（Android/iOS）。' },
   { name: 'Praat', note: 'パソコン用の音声分析ソフト。ピッチや共鳴を細かく見られます。' },
   { name: 'Friture', note: 'パソコンで声をリアルタイムに可視化できる無料ツール。' },
@@ -54,8 +55,11 @@ const tools = [
     <section aria-labelledby="tools">
       <h2 id="tools">声を「見える化」する無料ツール</h2>
       <p class="resource-section-intro">自分の声の高さを目で見ながら練習すると、変化がわかりやすくなります。</p>
+      <p class="callout">
+        とらんすナビのボイトレツール <a href="https://koe.transnavi.jp/">Koenami</a> を公開しました。見本の声を選んで真似しながら録音すると、自分の声が空間上に映り、近づきたい声との距離が見えます。リアルタイム測定にも対応。無料・オープンソースです。
+      </p>
       <ul class="assure-list assure-list-plain">
-        {tools.map((tool) => <li><strong>{tool.name}</strong>：{tool.note}</li>)}
+        {tools.map((tool) => <li><strong>{tool.href ? <a href={tool.href}>{tool.name}</a> : tool.name}</strong>：{tool.note}</li>)}
       </ul>
     </section>
 
