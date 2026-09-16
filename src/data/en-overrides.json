@@ -433,5 +433,7 @@
   "ボイトレツール Koenami": "Koenami voice training tool",
   "とらんすナビのボイトレツール": "Our voice training tool",
   "を公開しました。見本の声を選んで真似しながら録音すると、自分の声が空間上に映り、近づきたい声との距離が見えます。リアルタイム測定にも対応。無料・オープンソースです。": "is now available. Pick a reference voice, record while imitating it, and see your own voice plotted in the same space with its distance from the target. Real-time measurement included. Free and open source.",
-  "：見本の声と比べながら、自分の声を見て練習できるボイトレツール。": ": A voice training tool that lets you see your own voice while comparing it with reference voices."
+  "：見本の声と比べながら、自分の声を見て練習できるボイトレツール。": ": A voice training tool that lets you see your own voice while comparing it with reference voices.",
+  "ボイトレツール「Koenami」を公開しました。見本の声と比べながら、自分の声を見て練習できます。": "Koenami, our voice training tool, is now available: practice while seeing your own voice next to a reference.",
+  "使ってみる": "Try it"
 }
