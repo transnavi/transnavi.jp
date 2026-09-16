@@ -226,6 +226,7 @@ const pageLd = pageDate
     <script type="application/json" id="event-banner-data" set:html={JSON.stringify([
       // One-off dated events (`year` set) come first so they win over the
       // recurring windows below during their dates. Update/remove after the year.
+      { id: 'koenami-launch-2026', year: 2026, sm: 9, sd: 16, em: 11, ed: 12, lead: 0, emoji: '🎤', text: 'ボイトレツール「Koenami」を公開しました。見本の声と比べながら、女声・男声を練習できます。', href: 'https://koe.transnavi.jp/', cta: '使ってみる' },
       { id: 'tokyo-pride-2026', year: 2026, sm: 6, sd: 6, em: 6, ed: 7, lead: 0, emoji: '🏳️‍🌈', text: '今日はプライドパレードの日。Tokyo Pride 2026 が代々木公園で開催されています。', href: '/pride/', cta: 'イベントを見る' },
       // Recurring awareness days/months. Each window recurs every year; `lead`
       // is how many days before the start to begin showing ("very close").
