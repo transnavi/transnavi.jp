@@ -18,6 +18,10 @@ const silhouette = [
       '肩のラインを出す服や横の広がりで、上半身がしっかり見えます。',
       'レイヤード（重ね着）やゆとりのあるトップスは、胸を目立たせません。',
       'バインダー（後述）と合わせると、より平らに見せられます。',
+      {
+        text: 'ゆったりしたパンツやベスト、パーカーは、腰まわりや太ももの丸みを目立たせません。オーバーサイズは1サイズ上までにとどめ、肩幅が狭ければ肩パッドで足せます。',
+        cite: 'rle-wiki-ftm-clothing',
+      },
     ],
   },
   {
@@ -54,12 +58,34 @@ const silhouette = [
           <div class="concept-card">
             <h3>{s.name}</h3>
             <ul class="assure-list assure-list-plain">
-              {s.points.map((p) => <li>{p}</li>)}
+              {s.points.map((p) => typeof p === 'string' ? <li>{p}</li> : <li><Cite src={p.cite}>{p.text}</Cite></li>)}
             </ul>
           </div>
         ))}
       </div>
       <p>胸パッド、ヒップパッド、肩や首まわりの工夫など、小物で印象を補うこともできます。鏡の前で少しずつ試して、自分が落ち着くバランスを探してみてください。</p>
+
+      <h3 id="waist">ウエストをつくる</h3>
+      <p><Cite src="x-badjujune-how-to-dress">肩からウエストへ細くなり、ウエストから裾へ広がる「砂時計」の形を服でつくると、体に曲線があるように見えます</Cite>。<Cite src="x-badjujune-how-to-dress">上半身と下半身のどちらか一方だけでも効果があり、体格や体重を問わず使える考え方です</Cite>。</p>
+      <ul class="assure-list">
+        <li><strong>ウエストに区切りをつくる。</strong><Cite src={['x-badjujune-how-to-dress', 'otomejuku-illusion-techniques']}>ウエストは肋骨のすぐ下、おへそより上のあたりです。ハイウエストのパンツやスカートにトップスを入れると区切りができて、もとのくびれを見せることも、少し高い位置にくびれをつくることもできます</Cite>。</li>
+        <li><strong>細いところに印をつける。</strong><Cite src="otomejuku-illusion-techniques">一枚で長方形に見えやすいワンピースは、いちばん細い位置（または少し上）にスカーフやシャツを巻くと、くびれが出ます</Cite>。</li>
+        <li><strong>裾に広がりを足して、肩との釣り合いをとる。</strong><Cite src="x-badjujune-how-to-dress">Aラインスカート、フレアパンツ、ワイドパンツは、肩幅との釣り合いをとってくれます</Cite>。<Cite src="rle-wiki-outfit-guide-for-tall">腰まわりの幅は、腰から太ももの付け根までの短いチュールパニエで足せます。ヒップパッドも使えますが、ズボンの下に入れると暑く手間がかかります</Cite>。</li>
+        <li><strong>首元と袖で肩の印象を変える。</strong><Cite src={['x-badjujune-how-to-dress', 'otomejuku-brands-early-transition']}>V・Uネックや肩ひものトップスは肩に目がいきにくく、体にぴったりしたクルーネックは肩をいちばん目立たせます</Cite>。袖のふくらみは意見が分かれます。<Cite src="rle-wiki-outfit-guide-for-tall">パフスリーブなど、ふくらんだ袖は避けたほうがよいとする記事があります</Cite>。<Cite src="otomejuku-brands-early-transition">反対に、フレアスリーブやボリュームスリーブは視線を腕先に集めて肩幅を目立たなくする、とする記事もあります</Cite>。</li>
+        <li><strong>ぴったりとゆったりを混ぜる。</strong><Cite src={['otomejuku-oversize', 'x-badjujune-how-to-dress']}>全身をオーバーサイズでそろえると、服のいちばん幅のある部分が体の幅に見えて、かえって大きく見えます。どこか一か所は体に沿わせて、細い部分を見せます</Cite>。</li>
+        <li><strong>下着で形を整える。</strong><Cite src="rle-wiki-outfit-guide-for-tall">パッドの入ったブラで胸に少し厚みが出ると、服が前に張ってウエストとの差がつきます</Cite>。<Cite src="x-badjujune-how-to-dress">胸が育ちはじめの時期なら、薄いパッドで形を丸く整えられます</Cite>。<Cite src="x-badjujune-how-to-dress">ハイウエストの服には、タッキング（下の「股間を目立たなくする」を参照）も合わせます</Cite>。</li>
+      </ul>
+
+      <h3 id="sizes">背が高い、体格が大きいとき</h3>
+      <p>サイズが合わないと、どんな形の服も借り物のように見えます。<Cite src="rle-wiki-outfit-guide-for-tall">買う前に身長・バスト・アンダーバスト・ウエスト・ヒップを測っておきます。身長180cm前後なら、パンツの総丈は110cm前後がひとつの目安です。肩の合う長袖でも、袖丈が60cm前後ないと短く見えやすくなります</Cite>。<Cite src="x-badjujune-how-to-dress">レディースの靴が見つからないときは、大きいサイズや幅広を扱う店を探します</Cite>。</p>
+
+      <h3 id="rle">暮らしの中で試す</h3>
+      <p><a href="/glossary/rle/">実生活体験（RLE）</a>は、望む性別で日常を過ごすことです。服は、その中で毎日試せる工夫のひとつです。</p>
+      <p>服選びについての記事は、次のサイトで読めます。どれも書き手個人の経験なので、体や好みに合うところから取り入れてください。</p>
+      <ul>
+        <li><a href="https://rle.wiki/fashion/" target="_blank" rel="noreferrer">RLE.wiki「时尚护理」</a>（中国語）</li>
+        <li><a href="https://otomejuku.jp/media/tag/%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3/" target="_blank" rel="noreferrer">乙女塾のファッション記事</a>（日本語）</li>
+      </ul>
     </section>
 
     <section aria-labelledby="makeup">

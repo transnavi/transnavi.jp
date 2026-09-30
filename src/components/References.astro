@@ -8,7 +8,7 @@ const { route } = Astro.props;
 type Ref = { title: string; url: string; publisher: string; lang: string };
 const refs = (citations as Record<string, Ref[]>)[route] ?? [];
 const slug = route.replace(/^\/+|\/+$/g, '').replace(/\//g, '-') || 'home';
-const langLabel = (l: string) => (l === 'en' ? '英語' : l === 'other' ? '他言語' : '');
+const langLabel = (l: string) => (l === 'en' ? '英語' : l.startsWith('zh') ? '中国語' : l === 'other' ? '他言語' : '');
 ---
 
 {refs.length > 0 && (

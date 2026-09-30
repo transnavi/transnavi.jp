@@ -1276,6 +1276,11 @@ ul {
   font-weight: 800;
 }
 
+/* A heading straight after a list gets the gap a paragraph would have left. */
+.assure-list + h3 {
+  margin-top: 24px;
+}
+
 .assure-list-plain li::before {
   content: '–';
   color: var(--muted);
