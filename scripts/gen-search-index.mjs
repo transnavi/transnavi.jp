@@ -77,7 +77,10 @@ for (const g of glossary) {
   const keywords = [g.abbr, ...(g.aliases || []), ...(g.tags || []), g.translations?.en, g.translations?.zhHans, g.term, glossaryReadings[g.id]]
     .filter(Boolean)
     .join(' ');
-  entries.push({ u: `/glossary/${g.id}/`, t: g.term, k: '用語', a: keywords, x: (g.notes || '').slice(0, 400) });
+  // The disagreement is part of what the entry says, so it belongs in the
+  // snippet a searcher reads before deciding whether to open the page.
+  const meaning = [g.notes, g.contested].filter(Boolean).join(' ');
+  entries.push({ u: `/glossary/${g.id}/`, t: g.term, k: '用語', a: keywords, x: meaning.slice(0, 400) });
 }
 
 // 3. Clinics

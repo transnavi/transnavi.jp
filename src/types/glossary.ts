@@ -29,6 +29,10 @@ export interface GlossaryEntry {
   /** Alternative names for the same referent whose use is argued over. */
   disputedNames: string[];
   notes?: string;
+  /** Where the meaning of the term itself is argued over: who it covers, who
+   *  decides, and what turns on the answer. Rendered as its own block, so the
+   *  disagreement sits beside the definition instead of inside it. */
+  contested?: string;
   source?: string;
   /** Hand-curated related glossary ids (antonyms, complements, umbrella terms),
    *  rendered as 「関連することば」 ahead of the automatic category siblings. */

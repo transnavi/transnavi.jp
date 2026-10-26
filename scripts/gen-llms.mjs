@@ -121,7 +121,13 @@ full += `\n\n---\n\n# 用語集（全${glossary.length}語）\nURL: ${SITE}/glos
 for (const g of glossary) {
   const alias = g.aliases?.length ? `（別名: ${g.aliases.join('、')}）` : '';
   const en = g.translations?.en ? ` [${g.translations.en}]` : '';
-  full += `**${g.term}${g.abbr ? `（${g.abbr}）` : ''}**${alias}${en}: ${g.notes || ''}\n`;
+  // The caveat travels with the definition; a term quoted without it reads as
+  // settled when it is not.
+  // Indent continuation lines so a multi-paragraph note stays inside the entry.
+  const contested = g.contested
+    ? `\n  この言葉をめぐって: ${g.contested.split('\n').join('\n  ')}`
+    : '';
+  full += `**${g.term}${g.abbr ? `（${g.abbr}）` : ''}**${alias}${en}: ${g.notes || ''}${contested}\n`;
 }
 
 // --- data pointers (index) ---
