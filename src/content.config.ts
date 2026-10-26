@@ -21,18 +21,6 @@ const resources = defineCollection({
   }),
 });
 
-const glossary = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/glossary' }),
-  schema: z.object({
-    term: z.string(),
-    reading: z.string().optional(),
-    aliases: z.array(z.string()).default([]),
-    language: z.enum(['ja', 'en']).default('ja'),
-    tags: z.array(z.string()).default([]),
-    updatedAt: z.coerce.date(),
-  }),
-});
-
 const regions = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/regions' }),
   schema: z.object({
@@ -66,4 +54,4 @@ const imported = defineCollection({
   }),
 });
 
-export const collections = { resources, glossary, regions, imported };
+export const collections = { resources, regions, imported };
