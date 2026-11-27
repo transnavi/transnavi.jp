@@ -3,10 +3,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Mascot from '../../components/Mascot.astro';
 import clinicsData from '../../data/clinics.json';
 import type { Clinic } from '../../types/clinic';
+import { activeClinics, closedClinics, closedLabel } from '../../utils/clinic-status';
 import { splitClinicUrls } from '../../utils/clinic-links';
 import { categoriesOf, primaryGenre, surgeryTypesOf, capabilitiesOf, CAPABILITY_LABELS, isGiCertified, isOverseas, clinicMapTags } from '../../utils/clinic-genre';
 
-const clinics = clinicsData as Clinic[];
+// Closed facilities are listed apart, at the end, with nothing to act on.
+const clinics = activeClinics(clinicsData as Clinic[]);
+const closed = closedClinics(clinicsData as Clinic[]).sort((a, b) => (b.closed?.date ?? '').localeCompare(a.closed?.date ?? ''));
 const prefectureOrder = [
   '北海道',
   '青森県',
@@ -441,6 +444,21 @@ const capabilityValuesOf = (clinic: (typeof clinicsWithCategories)[number]): str
       </details>
     ))}
     <p class="empty-state" data-filter-empty hidden>条件に合う医療機関は見つかりませんでした。</p>
+
+    {closed.length > 0 && (
+      <section class="clinic-closed" aria-labelledby="clinic-closed-heading">
+        <h2 id="clinic-closed-heading">閉院した医療機関</h2>
+        <ul>
+          {closed.map((clinic) => (
+            <li>
+              <a href={`/clinics/${clinic.id}/`}>{clinic.name}</a>
+              <span class="clinic-closed-place">{[clinic.prefecture, clinic.city].filter(Boolean).join(' ')}</span>
+              <span class="clinic-closed-when">{closedLabel(clinic)}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
   </article>
   <script is:inline src="/filter-index.js" defer></script>
   <script type="application/json" id="map-data" set:html={JSON.stringify(clinicMapData)} />

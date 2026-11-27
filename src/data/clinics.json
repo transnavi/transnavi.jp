@@ -444,24 +444,24 @@
     "prefecture": "熊本県",
     "city": "合志市",
     "address": "〒861-1112 熊本県合志市幾久富1866-1332",
-    "phone": "096-248-8600",
-    "urls": [
-      "https://ikedaclinic.com/性同一性障害-性別違和の治療/"
-    ],
-    "services": [
-      "ホルモン療法"
-    ],
+    "urls": [],
+    "services": [],
     "source": {
       "project": "MtF.wiki",
       "path": "content/ja/docs/hrt/kumamoto/ikeda.md",
       "license": "CC BY-SA 4.0"
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "閉院",
     "importedAt": "2026-06-03",
-    "notes": "泌尿器科・婦人科\n\n- 〒861-1112 熊本県合志市幾久富1866-1332\n- 電話：096-248-8600\n- 性同一性障害／性別違和の治療：<https://ikedaclinic.com/性同一性障害-性別違和の治療/>\n\n- 1996 年より MTF 女性ホルモン療法を実施（公式サイト記載）\n- MTF・FTM ともにホルモン療法対応\n- 取り扱い製剤：プレマリン・プロセキソール・プロベラ（内服）、プロギノン／ペラニンデポー（注射）、エストラーナテープ（貼付剤）\n- 院内では精神科診断は行わないため、診断書持参が必要\n- 治療中は定期的な血液検査を実施\n- ウェブ予約のみ\n\n具体的な料金は公式サイトに非公開のため、受診前に直接確認すること。",
+    "notes": "",
     "lat": 32.867786,
     "lng": 130.772537,
-    "geoSource": "address"
+    "geoSource": "address",
+    "closed": {
+      "date": "2026-09-30",
+      "source": "https://ikedaclinic.com/",
+      "confirmedAt": "2026-11-28"
+    }
   },
   {
     "id": "hrt-gunma-umeyama",
@@ -4030,5 +4030,92 @@
     "lat": 43.059207,
     "lng": 141.314081,
     "geoSource": "address"
+  },
+  {
+    "id": "hrt-gunma-kyoritsu",
+    "name": "共立美容外科高崎院",
+    "displayName": "高崎市・共立美容外科高崎院",
+    "prefecture": "群馬県",
+    "city": "高崎市",
+    "urls": [],
+    "services": [],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/gunma/kyoritsu.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "閉院",
+    "importedAt": "2026-06-03",
+    "notes": "",
+    "closed": {
+      "date": "2024-10-31",
+      "confirmedAt": "2026-06-13"
+    }
+  },
+  {
+    "id": "hrt-ishikawa-fairy",
+    "name": "フェアリークリニック",
+    "displayName": "金沢市・フェアリークリニック",
+    "prefecture": "石川県",
+    "city": "金沢市",
+    "address": "石川県金沢市此花町 ライフ金沢第一ビル 3F",
+    "urls": [],
+    "services": [],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/ishikawa/fairy.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "閉院",
+    "importedAt": "2026-06-03",
+    "notes": "",
+    "closed": {
+      "confirmedAt": "2026-06-03"
+    }
+  },
+  {
+    "id": "hrt-tokyo-ritz",
+    "name": "リッツメディカルクリニック青山院",
+    "displayName": "港区・リッツメディカルクリニック青山院",
+    "prefecture": "東京都",
+    "city": "港区",
+    "address": "東京都港区北青山 3-11-7 Ao（アオ）7F",
+    "urls": [],
+    "services": [],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/tokyo/ritz.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "閉院",
+    "importedAt": "2026-06-03",
+    "notes": "",
+    "closed": {
+      "date": "2021",
+      "confirmedAt": "2026-06-03"
+    }
+  },
+  {
+    "id": "hrt-hyogo-klady",
+    "name": "川口レディースクリニック",
+    "displayName": "神戸市・川口レディースクリニック",
+    "prefecture": "兵庫県",
+    "city": "神戸市",
+    "address": "〒657-0846 兵庫県神戸市灘区岩屋北町7-1-30 ラ・メルベーユビル2F",
+    "urls": [],
+    "services": [],
+    "source": {
+      "project": "MtF.wiki",
+      "path": "content/ja/docs/hrt/hyogo/klady.md",
+      "license": "CC BY-SA 4.0"
+    },
+    "verificationStatus": "閉院",
+    "importedAt": "2026-06-03",
+    "notes": "",
+    "closed": {
+      "date": "2024-06",
+      "source": "https://klady-clinic.gr.jp/",
+      "confirmedAt": "2026-06-03"
+    }
   }
 ]
