@@ -23,4 +23,14 @@ export interface Clinic {
   lat?: number;
   lng?: number;
   geoSource?: string;
+  /** Present once the facility has closed. The record then keeps only its name
+   *  and place: phone, links, services and notes are removed. */
+  closed?: {
+    /** When it closed, as precisely as the source says: YYYY, YYYY-MM or YYYY-MM-DD. */
+    date?: string;
+    /** Where the closure is stated. */
+    source?: string;
+    /** The day the closure was confirmed. */
+    confirmedAt: string;
+  };
 }

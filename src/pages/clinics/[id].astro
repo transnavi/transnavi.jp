@@ -6,6 +6,7 @@ import { splitClinicUrls } from '../../utils/clinic-links';
 import { categoriesOf, capabilitiesOf, CAPABILITY_LABELS, isGiCertified, isOverseas, countryIso } from '../../utils/clinic-genre';
 import type { ClinicGenre } from '../../utils/clinic-genre';
 import { tagSlug } from '../../data/tag-taxonomy';
+import { closedDateLabel, isClosed } from '../../utils/clinic-status';
 
 export function getStaticPaths() {
   const clinics = clinicsData as Clinic[];
@@ -13,6 +14,8 @@ export function getStaticPaths() {
 }
 
 const { clinic } = Astro.props as { clinic: Clinic };
+const closed = isClosed(clinic);
+const closedDate = closedDateLabel(clinic);
 const links = splitClinicUrls(clinic.urls);
 const capabilities = capabilitiesOf(clinic);
 
@@ -30,8 +33,9 @@ const canonical = new URL(`/clinics/${clinic.id}/`, Astro.site).toString();
 // Location + documented services in the description, so long-tail searches like
 // 「<県名> ホルモン療法 病院」/「MtF クリニック <地名>」can surface this page.
 const place = [clinic.prefecture, clinic.city].filter(Boolean).join('');
-const seoDescription =
-  `${place}のトランスジェンダー対応の医療機関。`
+const seoDescription = closed
+  ? `${place}の${clinic.name}は${closedDate ? `${closedDate}に` : ''}閉院しました。`
+  : `${place}のトランスジェンダー対応の医療機関。`
   + (capLabels.length ? `${capLabels.join('・')}などの掲載情報。` : 'ホルモン療法など。')
   + '受診条件・費用・対応は変わることがあるため、必ず医療機関にご確認ください。';
 
@@ -70,7 +74,38 @@ const clinicLd = {
 ---
 
 <BaseLayout title={`${clinic.name}（${isOverseas(clinic) ? `${clinic.country}・${clinic.city}` : clinic.prefecture}）- とらんすナビ`} description={seoDescription}>
-  <script type="application/ld+json" set:html={JSON.stringify(clinicLd)} />
+  {!closed && <script type="application/ld+json" set:html={JSON.stringify(clinicLd)} />}
+  {closed ? (
+  <article class="article-shell">
+    <div class="eyebrow">医療機関</div>
+    <h1>{clinic.name}</h1>
+    <p class="lead"><span class="clinic-closed-mark">閉院</span>{closedDate ? `${closedDate}に閉院しました。` : 'すでに閉院しています。'}</p>
+
+    <dl class="clinic-detail">
+      <div>
+        <dt>地域</dt>
+        <dd>{[clinic.prefecture, clinic.city].filter(Boolean).join(' / ')}</dd>
+      </div>
+      {clinic.address && (
+        <div>
+          <dt>閉院時の所在地</dt>
+          <dd>{clinic.address}</dd>
+        </div>
+      )}
+      <div>
+        <dt>閉院の確認</dt>
+        <dd>
+          {clinic.closed?.confirmedAt}
+          {clinic.closed?.source && (
+            <span>（<a href={clinic.closed.source} target="_blank" rel="noreferrer">確認した掲載</a>）</span>
+          )}
+        </dd>
+      </div>
+    </dl>
+
+    <p><a href="/clinics/">診療している医療機関をさがす</a></p>
+  </article>
+  ) : (
   <article class="article-shell">
     <div class="eyebrow">医療機関</div>
     <h1>{clinic.name}</h1>
@@ -165,4 +200,5 @@ const clinicLd = {
       <p>{clinic.source.project} / {clinic.source.path}（{clinic.source.license}）。取り込み元に口コミ、体験談、主観的評価が含まれる場合も、医療機関ページには確認できる項目を優先して掲載しています。</p>
     </section>
   </article>
+  )}
 </BaseLayout>
