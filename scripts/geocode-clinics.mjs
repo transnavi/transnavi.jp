@@ -9,6 +9,7 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
+import { cleanAddress } from './clean-address.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const file = resolve(root, 'src/data/clinics.json');
@@ -39,17 +40,6 @@ async function geocode(q) {
     }
   }
   return null;
-}
-
-// Strip building/floor noise that can confuse the geocoder, keep up to the
-// chome-banchi number run.
-function cleanAddress(addr) {
-  if (!addr) return '';
-  // Drop a leading 〒postal-code (e.g. 「〒543-0031 」) first — otherwise the
-  // number-run matcher below grabs the postal code instead of the 丁目・番地.
-  const body = addr.replace(/^\s*〒?\s*[0-9０-９]{3}[-‐－ー−]?[0-9０-９]{4}\s*/, '');
-  const m = body.match(/^.*?[0-9０-９]+(?:[-‐－ー−]?[0-9０-９]+)*(?:番地?|号|丁目)?/);
-  return (m ? m[0] : body).replace(/\s+/g, '');
 }
 
 const force = process.argv.includes('--force');
