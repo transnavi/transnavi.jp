@@ -1,9 +1,10 @@
 // Japanese -> English translation for the catalogue behind the /en mirror,
-// through a model CLI on this machine: Codex, or Gemini through agy
-// (TRANSNAVI_TRANSLATE_LANE=agy). A batch goes out as a JSON array and comes
-// back as a same-length array of strings. Codex returns it through
-// --output-schema; agy has no schema option, so its reply is one JSON code
-// block.
+// through a model on this machine. TRANSNAVI_TRANSLATE_LANE picks it: codex
+// (the default), agy for Gemini, or command for any program named in
+// TRANSNAVI_TRANSLATE_COMMAND that reads the prompt on stdin and prints the
+// model's reply, such as a script driving a chat page. A batch goes out as a
+// JSON array and comes back as a same-length array of strings. Codex returns
+// it through --output-schema; the other lanes reply with one JSON code block.
 //
 // Only `gen-english.mjs --update` calls this; ordinary builds read the
 // committed catalogue and make no model calls at all.
@@ -13,7 +14,9 @@ import os from 'node:os';
 import path from 'node:path';
 
 const LANE = process.env.TRANSNAVI_TRANSLATE_LANE ?? 'codex';
-if (LANE !== 'codex' && LANE !== 'agy') throw new Error(`TRANSNAVI_TRANSLATE_LANE must be codex or agy, not ${LANE}`);
+if (!['codex', 'agy', 'command'].includes(LANE)) throw new Error(`TRANSNAVI_TRANSLATE_LANE must be codex, agy or command, not ${LANE}`);
+const COMMAND = process.env.TRANSNAVI_TRANSLATE_COMMAND;
+if (LANE === 'command' && !COMMAND) throw new Error('TRANSNAVI_TRANSLATE_LANE=command needs TRANSNAVI_TRANSLATE_COMMAND');
 const MODEL = process.env.TRANSNAVI_TRANSLATE_MODEL ?? (LANE === 'agy' ? 'gemini-4-neon-medium' : 'gpt-5.6-terra');
 const EFFORT = process.env.TRANSNAVI_TRANSLATE_EFFORT ?? 'low';
 
@@ -126,12 +129,11 @@ function runCodex(prompt) {
   });
 }
 
-// agy prints the reply on stdout. --mode plan keeps it from reaching for tools,
-// which a headless run cannot be granted.
-function runAgy(prompt) {
+// Lanes without a schema option reply with one JSON code block on stdout.
+function runReply(command, args, prompt, stdin) {
   const ask = `${prompt}\n\nReply with one JSON code block and nothing else: an object {"translations": [...]} holding the translations in input order.`;
   return new Promise((resolve, reject) => {
-    const child = spawn('agy', ['-p', ask, '--model', MODEL, '--mode', 'plan', '--print-timeout', '10m'], { stdio: ['ignore', 'pipe', 'pipe'] });
+    const child = spawn(command, stdin ? args : [...args, ask], { stdio: [stdin ? 'pipe' : 'ignore', 'pipe', 'pipe'], shell: stdin });
     let stdout = '';
     let stderr = '';
     child.stdout.on('data', (chunk) => (stdout += chunk));
@@ -139,17 +141,23 @@ function runAgy(prompt) {
     child.on('error', (error) => reject(error));
     child.on('close', (code) => {
       try {
-        if (code !== 0) throw new Error(`agy exited ${code}: ${stderr.trim().split('\n').slice(-3).join(' ')}`);
+        if (code !== 0) throw new Error(`${command} exited ${code}: ${stderr.trim().split('\n').slice(-3).join(' ')}`);
         const block = stdout.match(/```(?:json)?\s*([\s\S]*?)```/)?.[1] ?? stdout;
         resolve(JSON.parse(block.trim()));
       } catch (error) {
         reject(error);
       }
     });
+    if (stdin) child.stdin.end(ask);
   });
 }
 
-const runModel = LANE === 'agy' ? runAgy : runCodex;
+// --mode plan keeps agy from reaching for tools, which a headless run cannot
+// be granted.
+const runAgy = (prompt) => runReply('agy', ['--model', MODEL, '--mode', 'plan', '--print-timeout', '10m', '-p'], prompt, false);
+const runCommand = (prompt) => runReply(COMMAND, [], prompt, true);
+
+const runModel = { codex: runCodex, agy: runAgy, command: runCommand }[LANE];
 
 // One batch, retried on a transport error or a reply of the wrong length; a
 // batch that keeps coming back wrong is split, down to single strings.
@@ -171,4 +179,4 @@ export async function translateBatch(values, attempt = 0) {
   }
 }
 
-export const translationModel = () => (LANE === 'agy' ? `${MODEL} through agy` : `${MODEL} (effort ${EFFORT})`);
+export const translationModel = () => (LANE === 'command' ? COMMAND : LANE === 'agy' ? `${MODEL} through agy` : `${MODEL} (effort ${EFFORT})`);
