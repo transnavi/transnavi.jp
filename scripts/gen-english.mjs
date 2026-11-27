@@ -5,7 +5,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { HTMLElement, TextNode, parse } from 'node-html-parser';
 import { catalogKeyOf, fillTemplate, retemplatize, templatize } from './en-templates.mjs';
-import { translateBatch, translationModel } from './translate-codex.mjs';
+import { translateBatch, translationModel } from './translate-model.mjs';
 
 const DIST = 'dist';
 const EN_DIR = path.join(DIST, 'en');
@@ -188,8 +188,10 @@ async function updateCatalog(samples) {
   const batches = makeBatches(missing.map((key) => samples.get(key)));
   console.log(`english: translating ${missing.length} strings in ${batches.length} batches with ${translationModel()}`);
   const keyOfSample = new Map(missing.map((key) => [samples.get(key), key]));
-  let next = 0;
-  let completed = 0;
+  // A run cut short by a quota picks up at the batch it stopped at: batches keep their order
+  // as long as the build has not changed.
+  let next = Number(process.env.TRANSNAVI_RESUME_BATCH ?? 0);
+  let completed = next;
   async function worker() {
     while (next < batches.length) {
       const index = next++;

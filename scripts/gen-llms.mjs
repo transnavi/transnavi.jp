@@ -129,7 +129,7 @@ const clinics = JSON.parse(readFileSync(resolve(root, 'src/data/clinics.json'), 
 const works = JSON.parse(readFileSync(resolve(root, 'src/data/works.json'), 'utf8'));
 index += `\n## 参照データ\n`;
 index += `- [用語集](${SITE}/glossary/): ${glossary.length}語（全文は llms-full.txt に収録）\n`;
-index += `- [医療機関](${SITE}/clinics/): ${clinics.length}件（ホルモン療法・診断など）\n`;
+index += `- [医療機関](${SITE}/clinics/): ${clinics.filter((clinic) => !clinic.closed).length}件（ホルモン療法・診断など）\n`;
 index += `- [文芸作品データベース](${SITE}/works/): ${works.length}作品\n`;
 index += `- [地図で探す](${SITE}/map/): 医療機関・団体・イベントの地図\n`;
 index += `- [データダンプ](${SITE}/data/): 構造化JSON（${SITE}/data/transnavi-data.json にまとめて収録）\n`;
