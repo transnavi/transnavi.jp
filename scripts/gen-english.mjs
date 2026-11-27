@@ -5,7 +5,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { HTMLElement, TextNode, parse } from 'node-html-parser';
 import { catalogKeyOf, fillTemplate, retemplatize, templatize } from './en-templates.mjs';
-import { translateBatch, translationModel } from './translate-codex.mjs';
+import { translateBatch, translationModel } from './translate-model.mjs';
 
 const DIST = 'dist';
 const EN_DIR = path.join(DIST, 'en');

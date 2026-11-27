@@ -1,7 +1,9 @@
 // Japanese -> English translation for the catalogue behind the /en mirror,
-// through the local Codex CLI. A batch goes out as a JSON array and comes back
-// through --output-schema, so the reply is a same-length array of strings and
-// nothing has to be parsed out of prose.
+// through a model CLI on this machine: Codex, or Gemini through agy
+// (TRANSNAVI_TRANSLATE_LANE=agy). A batch goes out as a JSON array and comes
+// back as a same-length array of strings. Codex returns it through
+// --output-schema; agy has no schema option, so its reply is one JSON code
+// block.
 //
 // Only `gen-english.mjs --update` calls this; ordinary builds read the
 // committed catalogue and make no model calls at all.
@@ -10,7 +12,9 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 
-const MODEL = process.env.TRANSNAVI_TRANSLATE_MODEL ?? 'gpt-5.6-terra';
+const LANE = process.env.TRANSNAVI_TRANSLATE_LANE ?? 'codex';
+if (LANE !== 'codex' && LANE !== 'agy') throw new Error(`TRANSNAVI_TRANSLATE_LANE must be codex or agy, not ${LANE}`);
+const MODEL = process.env.TRANSNAVI_TRANSLATE_MODEL ?? (LANE === 'agy' ? 'gemini-4-neon-medium' : 'gpt-5.6-terra');
 const EFFORT = process.env.TRANSNAVI_TRANSLATE_EFFORT ?? 'low';
 
 const SCHEMA = {
@@ -45,7 +49,10 @@ Rules:
   explanation, no hedging the Japanese does not have, no marketing tone.
 - Sentence case everywhere, headings and page titles included: capitalize the
   first word and proper nouns only. Never Title Case A Heading.
-- Medical and legal terms follow the site's vocabulary below.`;
+- Medical and legal terms follow the site's vocabulary below.
+- Vocabulary entries are headword forms. Inside a sentence write them in
+  lower case unless they are proper nouns: "gender dysphoria", not
+  "Gender Dysphoria".`;
 
 const CORE_TERMS = [
   ['とらんすナビ', 'TransNavi'],
@@ -119,12 +126,37 @@ function runCodex(prompt) {
   });
 }
 
+// agy prints the reply on stdout. --mode plan keeps it from reaching for tools,
+// which a headless run cannot be granted.
+function runAgy(prompt) {
+  const ask = `${prompt}\n\nReply with one JSON code block and nothing else: an object {"translations": [...]} holding the translations in input order.`;
+  return new Promise((resolve, reject) => {
+    const child = spawn('agy', ['-p', ask, '--model', MODEL, '--mode', 'plan', '--print-timeout', '10m'], { stdio: ['ignore', 'pipe', 'pipe'] });
+    let stdout = '';
+    let stderr = '';
+    child.stdout.on('data', (chunk) => (stdout += chunk));
+    child.stderr.on('data', (chunk) => (stderr += chunk));
+    child.on('error', (error) => reject(error));
+    child.on('close', (code) => {
+      try {
+        if (code !== 0) throw new Error(`agy exited ${code}: ${stderr.trim().split('\n').slice(-3).join(' ')}`);
+        const block = stdout.match(/```(?:json)?\s*([\s\S]*?)```/)?.[1] ?? stdout;
+        resolve(JSON.parse(block.trim()));
+      } catch (error) {
+        reject(error);
+      }
+    });
+  });
+}
+
+const runModel = LANE === 'agy' ? runAgy : runCodex;
+
 // One batch, retried on a transport error or a reply of the wrong length; a
 // batch that keeps coming back wrong is split, down to single strings.
 export async function translateBatch(values, attempt = 0) {
   const prompt = `${STYLE}${vocabularyFor(values)}\n\nInput (JSON array of ${values.length} strings):\n${JSON.stringify(values, null, 1)}`;
   try {
-    const { translations } = await runCodex(prompt);
+    const { translations } = await runModel(prompt);
     if (!Array.isArray(translations) || translations.length !== values.length) {
       throw new Error(`expected ${values.length} translations, got ${translations?.length}`);
     }
@@ -139,4 +171,4 @@ export async function translateBatch(values, attempt = 0) {
   }
 }
 
-export const translationModel = () => `${MODEL} (effort ${EFFORT})`;
+export const translationModel = () => (LANE === 'agy' ? `${MODEL} through agy` : `${MODEL} (effort ${EFFORT})`);
