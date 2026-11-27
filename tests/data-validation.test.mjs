@@ -77,8 +77,21 @@ test('clinic records have unique ids and the fields the pages render', () => {
   for (const c of clinics) {
     assert.ok(c.name, `${c.id}: missing name`);
     assert.ok(c.prefecture, `${c.id}: missing prefecture`);
-    assert.ok(c.services?.length, `${c.id}: no services`);
     assert.ok(c.verificationStatus, `${c.id}: missing verificationStatus`);
+    if (!c.closed) assert.ok(c.services?.length, `${c.id}: no services`);
+  }
+});
+
+test('closed clinics keep their place and nothing to act on', () => {
+  for (const c of clinics.filter((clinic) => clinic.closed)) {
+    assert.match(c.closed.confirmedAt, /^\d{4}-\d{2}-\d{2}$/, `${c.id}: closed.confirmedAt`);
+    if (c.closed.date) assert.match(c.closed.date, /^\d{4}(-\d{2}(-\d{2})?)?$/, `${c.id}: closed.date`);
+    if (c.closed.source) assert.ok(URL.canParse(c.closed.source), `${c.id}: closed.source`);
+    assert.equal(c.phone, undefined, `${c.id}: a closed clinic lists no phone`);
+    assert.deepEqual(c.urls, [], `${c.id}: a closed clinic lists no links`);
+    assert.deepEqual(c.services, [], `${c.id}: a closed clinic lists no services`);
+    assert.equal(c.notes, '', `${c.id}: a closed clinic keeps no notes`);
+    assert.equal(c.verificationStatus, '閉院', `${c.id}: verificationStatus`);
   }
 });
 

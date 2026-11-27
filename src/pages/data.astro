@@ -6,7 +6,7 @@ import worksData from '../data/works.json';
 import bibliographyData from '../data/bibliography.json';
 
 const glossaryCount = glossaryData.length;
-const clinicsCount = clinicsData.length;
+const clinicsCount = clinicsData.filter((clinic) => !('closed' in clinic)).length;
 const worksCount = worksData.length;
 const bibliographyCount = bibliographyData.length;
 

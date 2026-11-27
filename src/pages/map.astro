@@ -3,9 +3,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import clinicsData from '../data/clinics.json';
 import poisData from '../data/map-pois.json';
 import type { Clinic } from '../types/clinic';
+import { activeClinics } from '../utils/clinic-status';
 import { categoriesOf, primaryGenre, clinicMapTags } from '../utils/clinic-genre';
 
-const clinics = (clinicsData as Clinic[])
+const clinics = activeClinics(clinicsData as Clinic[])
   .filter((c) => typeof c.lat === 'number' && typeof c.lng === 'number')
   .map((c) => ({
     id: c.id,

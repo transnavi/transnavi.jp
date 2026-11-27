@@ -2558,6 +2558,45 @@ a.glossary-card-tag:hover {
   font-weight: 800;
 }
 
+/* Closed facilities: a quiet mark and a plain list. Nothing here invites a visit. */
+.clinic-closed-mark {
+  display: inline-block;
+  margin-right: 0.6em;
+  padding: 0.1em 0.7em;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper-strong);
+  color: var(--muted);
+  font-size: 0.85em;
+  font-weight: 700;
+}
+
+.clinic-closed {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px dashed var(--line);
+}
+
+.clinic-closed ul {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.clinic-closed li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 16px;
+  color: var(--muted);
+}
+
+.clinic-closed-when {
+  font-size: 0.92rem;
+}
+
 /* Honesty note under the tags: absence of a tag is not a negative claim. */
 .clinic-tags-note {
   margin: 10px 0 0;

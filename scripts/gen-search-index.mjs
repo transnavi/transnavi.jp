@@ -85,9 +85,10 @@ const clinics = JSON.parse(fs.readFileSync('src/data/clinics.json', 'utf8'));
 for (const c of clinics) {
   entries.push({
     u: `/clinics/${c.id}/`,
-    t: c.displayName || c.name,
+    // A closed facility stays findable by name, marked as closed.
+    t: c.closed ? `${c.name}（閉院）` : c.displayName || c.name,
     k: '医療機関',
-    x: [c.prefecture, c.city, c.address, (c.services || []).join(' ')].filter(Boolean).join(' '),
+    x: [c.prefecture, c.city, c.address, c.closed ? '閉院' : (c.services || []).join(' ')].filter(Boolean).join(' '),
   });
 }
 
