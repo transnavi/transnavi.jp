@@ -60,12 +60,26 @@ const km = (a, b) => {
 // found are not the same address.
 const AGREE_KM = 1.5;
 
+// The library fetches its town data as it goes; one dropped connection should not end a run.
+async function read(text) {
+  for (let attempt = 0; ; attempt++) {
+    try {
+      return await normalize(text);
+    } catch (error) {
+      if (attempt === 3) throw error;
+      await sleep(1500 * (attempt + 1));
+    }
+  }
+}
+
 // { lat, lng, level } for one clinic, or { review } when the sources disagree.
 async function locate(c) {
   // The postal code is not part of the address the library reads.
   const text = (c.address ?? '').replace(/^\s*〒?\s*[0-9０-９]{3}[-‐－ー−]?[0-9０-９]{4}/, '').replace(/\s+/g, '');
-  const parsed = text ? await normalize(text) : null;
-  if (parsed?.point && parsed.level >= 8) return { lat: parsed.point.lat, lng: parsed.point.lng, level: 'address' };
+  const parsed = text ? await read(text) : null;
+  // The match and its coordinates each carry a level: a Kyoto street address can match to the
+  // house number while its point is still the centre of the town.
+  if (parsed?.point && parsed.level >= 8 && parsed.point.level >= 8) return { lat: parsed.point.lat, lng: parsed.point.lng, level: 'address' };
   if (parsed?.point && parsed.level >= 3) {
     const hit = await geocode(`${parsed.pref}${parsed.city}${parsed.town}${parsed.addr ?? ''}${parsed.other ?? ''}`);
     await sleep(120);
