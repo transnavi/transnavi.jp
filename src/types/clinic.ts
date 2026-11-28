@@ -17,7 +17,10 @@ export interface Clinic {
     path: string;
     license: string;
   };
+  /** 要確認 until the care listed is confirmed on the facility's own site; then 確認済み. */
   verificationStatus: string;
+  /** The day the facility's own site was read for a 確認済み record (YYYY-MM-DD). */
+  verifiedAt?: string;
   importedAt: string;
   notes: string;
   lat?: number;
