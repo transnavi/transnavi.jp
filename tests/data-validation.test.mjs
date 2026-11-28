@@ -90,6 +90,17 @@ test('a confirmed clinic says when its own site was read', () => {
   }
 });
 
+test('reports name their source and carry a well-formed date and link', () => {
+  for (const c of clinics) {
+    for (const r of c.reports ?? []) {
+      assert.ok(r.text?.trim(), `${c.id}: empty report`);
+      assert.ok(r.source?.trim(), `${c.id}: report without a source`);
+      if (r.date) assert.match(r.date, /^\d{4}(-\d{2}(-\d{2})?)?$/, `${c.id}: report date`);
+      if (r.url) assert.ok(URL.canParse(r.url), `${c.id}: report url`);
+    }
+  }
+});
+
 test('closed clinics keep their place and nothing to act on', () => {
   for (const c of clinics.filter((clinic) => clinic.closed)) {
     assert.match(c.closed.confirmedAt, /^\d{4}-\d{2}-\d{2}$/, `${c.id}: closed.confirmedAt`);
@@ -99,6 +110,7 @@ test('closed clinics keep their place and nothing to act on', () => {
     assert.deepEqual(c.urls, [], `${c.id}: a closed clinic lists no links`);
     assert.deepEqual(c.services, [], `${c.id}: a closed clinic lists no services`);
     assert.equal(c.notes, '', `${c.id}: a closed clinic keeps no notes`);
+    assert.equal(c.reports, undefined, `${c.id}: a closed clinic keeps no reports`);
     assert.equal(c.verificationStatus, '閉院', `${c.id}: verificationStatus`);
   }
 });

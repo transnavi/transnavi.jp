@@ -1,3 +1,13 @@
+export interface ClinicReport {
+  /** One reported detail, as the source puts it. */
+  text: string;
+  /** Who reported it: 「通院している方からのメール」, 「MtF.wiki」, an account name. */
+  source: string;
+  /** When it was reported: YYYY, YYYY-MM or YYYY-MM-DD. */
+  date?: string;
+  url?: string;
+}
+
 export interface Clinic {
   id: string;
   name: string;
@@ -21,6 +31,9 @@ export interface Clinic {
   verificationStatus: string;
   /** The day the facility's own site was read for a 確認済み record (YYYY-MM-DD). */
   verifiedAt?: string;
+  /** What patients or contributors report and the facility's own site does not say. Shown
+   *  apart from the confirmed details and marked 未確認. */
+  reports?: ClinicReport[];
   importedAt: string;
   notes: string;
   lat?: number;
