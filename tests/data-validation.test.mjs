@@ -82,6 +82,14 @@ test('clinic records have unique ids and the fields the pages render', () => {
   }
 });
 
+test('a confirmed clinic says when its own site was read', () => {
+  for (const c of clinics) {
+    assert.ok(['要確認', '確認済み', '閉院'].includes(c.verificationStatus), `${c.id}: unknown verificationStatus "${c.verificationStatus}"`);
+    if (c.verificationStatus === '確認済み') assert.match(c.verifiedAt ?? '', /^\d{4}-\d{2}-\d{2}$/, `${c.id}: verifiedAt`);
+    else assert.equal(c.verifiedAt, undefined, `${c.id}: verifiedAt without 確認済み`);
+  }
+});
+
 test('closed clinics keep their place and nothing to act on', () => {
   for (const c of clinics.filter((clinic) => clinic.closed)) {
     assert.match(c.closed.confirmedAt, /^\d{4}-\d{2}-\d{2}$/, `${c.id}: closed.confirmedAt`);
