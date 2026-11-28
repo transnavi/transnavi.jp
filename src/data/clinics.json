@@ -4148,12 +4148,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒604-0832 京都府京都市中京区間之町通押小路上る鍵屋町481 シンフォニア御池3号館4階\n- 電話：075-231-7227\n- <https://ichioka-urological-clinic.com/medical/pediatric-gender-dysphoria/>\n\n- 公式サイトの記載（2026年11月27日確認）：「ご自身の性に違和感を持つ方に対し、ガイドラインに基づいたホルモン療法や健康管理を行っています。」\n- 対応可能なホルモン療法は「男性ホルモンの投与のみ（女性ホルモンは不可）」\n- 「診断」や「性別適合手術」は行っていない\n- すでに他院で診断・投与を受けている場合は「他院からの紹介状」の持参が必要\n- 京都駅前院（〒601-8001 京都市南区東九条室町47-3 1F、075-672-7077）もある。公式サイトのページは、どちらの院で対応するかを書いていない\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 35.012905,
     "lng": 135.761505,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-kyoto-kabacli",
@@ -4174,12 +4175,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒604-0924 京都府京都市中京区一之船入町376 CLOTOビルB1\n- 電話：075-746-2739\n- <https://www.kabacli.net/data/158/menu_detail/>\n\n- 公式サイトの記載（2026年11月27日確認）：「Two separate passages, each verbatim: 「トランスジェンダーは性同一性障害ともいわれており、概念が幅広く、心の性別と出生児の性別が一致しない方のことです。」 and 「ホルモン注射の場合、摂取の間隔には個人差がありますが、２週間に一度のペースで行います。」」\n- 3ヶ月に1回の定期検診がある\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 35.012615,
     "lng": 135.768753,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-saga-nakaouro",
@@ -4200,12 +4202,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒843-0023 佐賀県武雄市武雄町大字昭和226-1\n- 電話：0954-28-9901\n- <https://nakaouro.jp/uro_info.html>\n\n- 公式サイトの記載（2026年11月27日確認）：「当院ではFtMの方に対して各種検査やホルモン補充療法を行っています。診断書をお持ちの方であれば受診当日より治療が可能です。」\n- 対象はFtMのみ\n- 診断書があれば受診当日から治療が可能\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 33.193793,
     "lng": 130.026611,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-hyogo-hayashi-ladiesclinic",
@@ -4226,12 +4229,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒650-0017 兵庫県神戸市中央区楠町5-1-13\n- 電話：078-351-1688\n- <https://www.hayashi-ladiesclinic.com/2021/01/26/393/>\n\n- 公式サイトの記載（2026年11月27日確認）：「当院では性別不合（性別違和）の方へのホルモン治療をおこなっております。 (the quote is this sentence minus the leading 当院では)」\n- 性別不合の診断は行っていない\n- ガイドラインに沿ってホルモン療法の適応と診断がついてから治療を開始する\n- 予約制ではない\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 34.682382,
     "lng": 135.173221,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-hyogo-kobe-gyne",
@@ -4252,12 +4256,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒651-2277 兵庫県神戸市西区美賀多台三丁目５番地４\n- 電話：078-939-7588\n- <https://www.kobe-gyne.com/神戸市西区ジェンダーGI外来.html>\n\n- 公式サイトの記載（2026年11月27日確認）：「Two passages, each verbatim: 「当院では、性別不合、ジェンダーに関する医療相談の外来として、主としてホルモン治療を行っています。」 「FTM、MTFどちらも対応したします。」 (typo したします is on the page)」\n- 精神科専門医の診断書または前医からの紹介状の提示が必須\n- 原則として20歳未満へのホルモン投与は行っていない\n- 年齢の上限は女性ホルモンが60歳前半くらいまで、男性ホルモンが68歳くらいまで\n- 男性ホルモン製剤は出荷調整のため125mg製剤のみの取り扱い\n- 完全予約制\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 34.717216,
     "lng": 135.008408,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-hyogo-tor-cl",
@@ -4278,12 +4283,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 兵庫県神戸市中央区北長狭通3-12-15 ゴールドウッズトアロードビル5階\n- 電話：078-333-1011\n- <https://tor-cl.jp/hifuka/injection/male>\n\n- 公式サイトの記載（2026年11月27日確認）：「当院では、性同一性障害の患者様向けに男性ホルモン注射を行っています。」\n- 男性ホルモンのみ対応\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 34.692012,
     "lng": 135.189431,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-hokkaido-sc-h",
@@ -4304,12 +4310,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒064-0809 北海道札幌市中央区南9条西10丁目1-50\n- 電話：011-513-0111\n- <https://www.sc-h.or.jp/medical/urination.html>\n\n- 公式サイトの記載（2026年11月27日確認）：「トランスジェンダー男性・女性にかかわらず治療を行っていますが、基本的には精神科医が発行した意見書を元に、トランスジェンダーケアチーム内でホルモン療法の承認を得た方に対して治療を行っています（承認が得られていれば新規・継続いずれも可能）。」\n- 診断は行っていない\n- 精神神経科医の意見書とチーム承認の書類が必要\n- 診断書のみでは原則対応しない\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 43.04695,
     "lng": 141.343024,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-chiba-konomi-clinic",
@@ -4330,12 +4337,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒272-0133 千葉県市川市行徳駅前1丁目27-17 行徳メディカルプラザビル3F\n- 電話：047-712-8937\n- <https://konomi-clinic.com/menu/medical03/>\n\n- 公式サイトの記載（2026年11月27日確認）：「性同一性障害でお悩みの方に当院では性ホルモン注射をご用意しております。」\n- 来院は基本的に2週間に1度のペース\n- 氏名変更などの書類提出についても相談可能\n- 予約制\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 35.681661,
     "lng": 139.916258,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "psyco-chiba-kashiwanakayama-cl",
@@ -4356,12 +4364,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒277-0852 千葉県柏市旭町一丁目１番２号 ＹＫ－７ビル６階\n- 電話：04-7141-6182\n- <https://kashiwanakayama-cl.com/op-transgender.html>\n\n- 公式サイトの記載（2026年11月27日確認）：「・性別移行を検討している方（ホルモン療法や性転換手術など） — this is one bullet under 対象となる方, not a statement that the clinic gives hormones. Service sentence: 当院では、丁寧なヒアリングとともに、精神的サポート・診断書作成・ホルモン治療のご相談など、一人ひとりの状況に合わせた対応を行います。」\n- 対応は支援、診断書作成、ホルモン治療の相談のみ\n- 完全予約制\n- 希望時は「性別違和外来を希望」と伝える\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 35.862757,
     "lng": 139.969738,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-wakayama-utsunomiya-lc",
@@ -4382,12 +4391,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒640-8331 和歌山県和歌山市美園町5丁目4番20\n- 電話：073-423-1987\n- <http://utsunomiya-lc.com/gynecology/gynecology.html>\n\n- 公式サイトの記載（2026年11月27日確認）：「GIDホルモン治療をおこなっています。治療を希望される患者様は、原則的に専門医による診断書と紹介状をご持参ください。」\n- 原則として専門医による診断書と紹介状が必要\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 34.229782,
     "lng": 135.189911,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-oita-ari-biyo",
@@ -4409,12 +4419,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 大分県大分市中央町2丁目8-10 ヴィアレ・テッツォ 2F\n- 電話：097-538-1911\n- <https://www.ari-biyo.com/html/sinryo_gid.htm>\n\n- 公式サイトの記載（2026年11月27日確認）：「内服や注射によるホルモン療法や、豊胸術や乳房縮小術などの胸の手術、睾丸除去術などの形成外科手術によって、GIDの患者さんに貢献しています。」\n- 完全予約制\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 33.23804,
     "lng": 131.60545,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-osaka-sano-iin",
@@ -4435,12 +4446,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒571-0079 大阪府門真市野里町11-9\n- 電話：072-885-0061\n- <http://www.sano-iin.org/jihishinnryo/>\n\n- 公式サイトの記載（2026年11月27日確認）：「Two passages, each verbatim: 「特にFTM（女⇒男）でTransgender（トランスジェンダー）の方の治療を行っています。」 「Hormone therapy（ホルモン療法）、男性ホルモン注射を行っております。」 followed by 詳しくは当院医師までお問い合わせください。」\n- 対象はFtM（男性ホルモン）のみ\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 34.742208,
     "lng": 135.604825,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-nara-narayayoi-clinic",
@@ -4461,12 +4473,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒630-8122 奈良県奈良市三条本町2-20 マツダオフィスビル1F\n- 電話：0742-20-6480\n- <https://www.narayayoi-clinic.com/hoken/hoken.html>\n\n- 公式サイトの記載（2026年11月27日確認）：「Two lines, each verbatim, with text between them: 「■男性ホルモン注射（保険適応外）料金表」 … 「※性同一性障害（GID）の診断を受けておられる方は診断書をご持参下さい。」」\n- 男性ホルモン（250mg）の注射に対応\n- 診断を受けている場合は診断書の持参が必要\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 34.679946,
     "lng": 135.819898,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-miyagi-kanto-clinic",
@@ -4487,12 +4500,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒980-0014 宮城県仙台市青葉区本町２−１７−２３\n- 電話：022-397-7762\n- <https://kanto-clinic.jp/>\n\n- 公式サイトの記載（2026年11月27日確認）：「男性ホルモン注射（男性更年期症、性腺機能低下症、性同一性障害）」\n- 完全予約制\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 38.265682,
     "lng": 140.873397,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-yamaguchi-kawai-uro",
@@ -4513,12 +4527,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒747-0836 山口県防府市植松559-1 コスパメディカルビル1F\n- 電話：0835-27-3111\n- <https://www.kawai-uro.com/service>\n\n- 公式サイトの記載（2026年11月27日確認）：「性同一性障害(GID)：ホルモン注射は男性ホルモンの注射のみ対応しています。」\n- 男性ホルモン注射のみ対応\n- 電話予約は不可（直接来院またはWeb受付）\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 34.048621,
     "lng": 131.538389,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "psyco-okayama-okayamasatoclinic",
@@ -4539,12 +4554,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒704-8191 岡山県岡山市東区西大寺中野489-8 安倉ビル2F\n- 電話：086-943-0880\n- <https://www.okayamasatoclinic.com/QA..html>\n\n- 公式サイトの記載（2026年11月27日確認）：「A. 性同一性障害に関しての相談、カウンセリングを受けることができます。また、院長は引き続き岡山大学ジェンダークリニックのメンバーであるため、岡山大学でのホルモン療法、手術療法も適応になる方は申請する事が可能です。」\n- 対応は相談・カウンセリングのみ\n- ホルモン療法や手術は岡山大学で実施され、その際は他科や心理テストなどの診療が必要\n- 予約制（電話予約は13:30〜15:00）\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 34.655091,
     "lng": 134.027198,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "srs-okayama-okayama-gmc",
@@ -4565,12 +4581,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒700-8557 岡山県岡山市北区北長瀬表町三丁目20番1号\n- 電話：086-737-3000\n- <https://okayama-gmc.or.jp/shimin/department/plastic-surgery/1650>\n\n- 公式サイトの記載（2026年11月27日確認）：「当院では、公立医療機関としての役割を踏まえ、性別不合(GI)等、性別に関する違和感を抱える方に対して医学的に適切と判断される場合に限り、ジェンダーに関する手術を行います。」\n- 完全紹介制で、さとうクリニックまたは岡山大学病院からの紹介状を持参して受診する人が対象\n- 手術のみ対応し、ホルモン療法や二次性徴抑制療法は実施していない\n- 対象は18歳以上\n- 原則として事前にホルモン療法を受けていない場合のSRSは実施していない\n- 2026年4月から診療開始\n- 未受診者からの電話・メールでの問い合わせは不可\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 34.65276,
     "lng": 133.885071,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-shimane-uro-shimane",
@@ -4591,12 +4608,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒693-8501 島根県出雲市塩冶町89-1\n- 電話：0853-20-2387\n- <https://uro-shimane.jp/doctors-medical/d-medical-info.html>\n\n- 公式サイトの記載（2026年11月27日確認）：「性同一性障害については、現状ではホルモン補充療法を中心に対応しており、性別適合手術（Sex reassignment surgery、SRS）は実施しておりません。」\n- 性別適合手術（SRS）は行っていない\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 35.346793,
     "lng": 132.754479,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-hiroshima-iguchi-jinhinyouki",
@@ -4617,12 +4635,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒730-0031 広島県広島市中区紙屋町2-2-2 紙屋町ビル５階\n- 電話：082-242-1145\n- <http://iguchi-jinhinyouki.jp>\n\n- 公式サイトの記載（2026年11月27日確認）：「性同一性障害（FTMTS）に対する / ホルモン治療を行っています。 (one sentence broken across two lines on the page)」\n- 対象はFtMのみ\n- 予約制ではない\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 34.39466,
     "lng": 132.45724,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-aichi-sudo-stresscare",
@@ -4644,12 +4663,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒485-0029 愛知県小牧市中央1丁目349番地\n- 電話：0568-75-0222\n- <http://www.sudo-stresscare.com/service/gid.html>\n\n- 公式サイトの記載（2026年11月27日確認）：「Two passages, each verbatim: 「当クリニックは、名古屋近郊はもちろん、全国でも数少ない性同一性障害（GID）の診断・治療を行なう医療機関です。」 「当クリニックでは、ホルモン療法も含め、脱毛などを行うことができます。」」\n- 予約制\n- ガイドラインに沿って診断と意見書作成を行う\n- 身体的治療は大学病院での判定会議を経て実施される\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 35.288029,
     "lng": 136.926758,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-aichi-hikosaka-iin",
@@ -4670,12 +4690,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒450-0001 愛知県名古屋市中村区那古野1-46-15\n- 電話：052-551-0509\n- <https://www.hikosaka-iin.jp/price>\n\n- 公式サイトの記載（2026年11月27日確認）：「性同一性障害、男性更年期障害の自費治療 / 治療内容 / 男性ホルモン外用クリームの処方を行います。 (heading, label and sentence on separate lines)」\n- 男性ホルモン外用クリームのみ対応\n- 自費診療\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 35.173988,
     "lng": 136.890143,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "srs-aichi-minamic",
@@ -4696,12 +4717,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 愛知県名古屋市東区東桜1-10-35 セントラル野田ビル2F\n- 電話：052-951-5855\n- <https://minamic.com/ftom/>\n\n- 公式サイトの記載（2026年11月27日確認）：「F to M 乳房切除術とは、胸部の男性化を目指して、乳房を切除してしまう手術です。」\n- FtMの乳房切除手術に対応\n- 予約制（日曜休診）\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 35.172169,
     "lng": 136.908965,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-aichi-sakieladiesclinic",
@@ -4722,12 +4744,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒464-0066 愛知県名古屋市千種区池下町2-15 ハクビ池下ビル5F\n- 電話：052-757-0222\n- <https://www.sakieladiesclinic.com/treatment/femcare/>\n\n- 公式サイトの記載（2026年11月27日確認）：「セクシュアルマイノリティの支援 / 診断を受け治療方針が決まっているトランス女性のホルモン療法を行っています。 (heading + sentence)」\n- 対象はMtFのみ\n- すでに診断を受け治療方針が決まっている人のみ対象\n- 完全予約制\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 35.168499,
     "lng": 136.946671,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-aichi-y-lc",
@@ -4747,12 +4770,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒457-0007 愛知県名古屋市南区駈上2-7-1\n- <https://y-lc.net/f-10/>\n\n- 公式サイトの記載（2026年11月27日確認）：「男性から女性MTF、女性から男性FTMをホルモンの働きを促すことにより、治療していくことです。GIDの認定には2人の精神科医の診断が必要となります。」\n- FtMは月1〜2回の注射に対応\n- MtFは注射、内服薬、貼り薬、塗り薬に対応\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 35.112642,
     "lng": 136.937596,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-tokyo-general-clinic",
@@ -4773,12 +4797,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒106-0032 東京都港区六本木6-1-20 電気ビルディング2階\n- 電話：03-3401-0333\n- <https://general-clinic.tokyo/medical/gid/>\n\n- 公式サイトの記載（2026年11月27日確認）：「当クリニックではGID（性同一性障害）のホルモン療法を行っていますが、同療法を受ける前の検査はもちろん、開始後にも定期的な血液検査が必要です。」\n- 初診時は原則として精神科専門医の診断書または紹介状が必要\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 35.662449,
     "lng": 139.731354,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-tochigi-uwanomachi-cl",
@@ -4799,12 +4824,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒322-0021 栃木県鹿沼市上野町311－4\n- 電話：0289-74-7567\n- <https://uwanomachi-cl.jp/information/>\n\n- 公式サイトの記載（2026年11月27日確認）：「当院では「性別不合に関する診断と治療のガイドライン第5版」にのっとり、出生時に割り当てられた性別に違和感のある方の診療や、ホルモン治療（女性ホルモン療法、テストステロン療法など）を行います。」\n- 初診は電話予約が必要\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 36.564976,
     "lng": 139.765121,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "psyco-kumamoto-nagamine-k",
@@ -4825,12 +4851,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒862-0920 熊本県熊本市東区月出7丁目1番12号 エレガンス月出1階1号\n- 電話：096-387-0803\n- <https://nagamine-k.jp/medical/>\n\n- 公式サイトの記載（2026年11月27日確認）：「性別違和（性同一性障害）の診断やホルモン治療可能な病院への紹介、戸籍変更のための診断書作成も承っております。」\n- 対応は診断、証明書作成、ホルモン療法実施病院への紹介のみ\n- 院内でのホルモン療法は行っていない\n- 初診は電話受付のみ\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 32.808735,
     "lng": 130.768155,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-kanagawa-sola-clinic",
@@ -4851,12 +4878,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒224-0021 神奈川県横浜市都筑区北山田2-2-1 フォーレスト北山田2・3F\n- 電話：045-548-9641\n- <https://sola-clinic.jp/fujinka/gid/>\n\n- 公式サイトの記載（2026年11月27日確認）：「当院では、専門医による診断がつき、ホルモン療法を承諾されている方を対象にホルモン投与を行っております。」\n- 初診時は精神科専門医の診断書または紹介状が必要\n- ホルモン療法は自費診療\n- 受診希望時は事前に電話連絡が必要\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 35.560695,
     "lng": 139.591414,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-kanagawa-mominokiclinic2",
@@ -4877,12 +4905,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 神奈川県大和市大和南2-6-5\n- 電話：046-261-0214\n- <https://mominokiclinic2.com/lgbt>\n\n- 公式サイトの記載（2026年11月27日確認）：「なお、Transgenderの方々に対して、ご希望でしたら自由診療で性ホルモンのお注射をさせていただいておりますので、お気軽にご相談ください。」\n- 自由診療\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 35.467956,
     "lng": 139.463369,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-kanagawa-okamiya",
@@ -4903,12 +4932,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒250-0011 神奈川県小田原市栄町3-10-19\n- 電話：0465-22-4481\n- <http://okamiya.jp/contents.html>\n\n- 公式サイトの記載（2026年11月27日確認）：「トランスジェンダー男性、トランスジェンダー女性の患者様のホルモン治療を行っております。診断書の作成は行っておりません。」\n- 新規受診は紹介状を持参する場合のみ対応\n- 診断書の作成は行っていない\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 35.258551,
     "lng": 139.159688,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-kanagawa-s-nakamura",
@@ -4929,12 +4959,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒251-0052 神奈川県藤沢市藤沢31−2\n- 電話：0466-55-3450\n- <https://s-nakamura.net/jihi/gid>\n\n- 公式サイトの記載（2026年11月27日確認）：「当院では、性同一性障害（GID）の方にホルモン注射を施行しております。」\n- GIDの診断は行っていない\n- 自費診療のみで、GIDの保険診療は行っていない\n- 男性ホルモンの在庫は公式サイトのお知らせ欄で確認が必要\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 35.34267,
     "lng": 139.487991,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-kanagawa-kikuna-ekimae",
@@ -4955,12 +4986,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒222-0013 神奈川県横浜市港北区錦が丘16-16 Y・Kビル3F\n- 電話：045-439-5335\n- <http://www.kikuna-ekimae.com/>\n\n- 公式サイトの記載（2026年11月27日確認）：「保険外診療 / ED治療薬、AGA（男性型脱毛）、新型コロナワクチン予防接種、インフルエンザ予防接種、肺炎球菌ワクチン、風疹・麻疹ワクチン、性同一性障害のホルモン投与 / 保険外（自費）で上記項目の対応が可能です。」\n- 自費診療\n- 予約制ではない\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 35.509428,
     "lng": 139.630621,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-kanagawa-shonan-taiyo",
@@ -4981,12 +5013,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒236-0042 神奈川県横浜市金沢区釜利谷東2-21-22 クリニックビル別館\n- 電話：045-784-2002\n- <http://www.shonan-taiyo.com/edge05.shtml>\n\n- 公式サイトの記載（2026年11月27日確認）：「当院ではＧＩＤ（性同一性障害）のホルモン療法を行っています。」\n- 初診時は原則として精神科専門医の診断書または紹介状が必要\n- 初診でGID診療を希望する場合は来院前に問い合わせが必要\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 35.345504,
     "lng": 139.614993,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-fukuoka-koba-clinic",
@@ -5007,12 +5040,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒811-2233 福岡県糟屋郡志免町別府北1-14-24\n- 電話：092-623-0203\n- <https://www.koba-clinic.com/price/>\n\n- 公式サイトの記載（2026年11月27日確認）：「当院ではGIDに対し男性ホルモン補充療法を行っています。ただしGIDガイドラインに則り精神科でのGIDの確定診断が必要です。（本人の趣向や職業上で男性ホルモン補充を希望される方へは行っておりません。）」\n- 男性ホルモンのみ対応\n- 精神科でのGIDの確定診断が必要\n- 4〜6ヶ月ごとの検査が必要\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 33.60643,
     "lng": 130.456295,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "psyco-fukuoka-nagano-clinic",
@@ -5033,12 +5067,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒807-1112 福岡県北九州市八幡西区千代1丁目1-5\n- 電話：093-613-5557\n- <https://nagano-clinic.com/gid.html>\n\n- 公式サイトの記載（2026年11月27日確認）：「それ以降の場合は精神科医の診察を窓口として心理検査や身体診察・血液検査・セカンドオピニオンなどを行い診断します。」\n- 診断のみ対応\n- 身体的治療は福岡大学病院などの判定会議を経て実施される\n- 予約制\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 33.812495,
     "lng": 130.749061,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-fukuoka-koga-cl",
@@ -5059,12 +5094,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒834-0023 福岡県八女市馬場74-2\n- 電話：0943-24-3121\n- <http://koga-cl.net/menu/jihi.html>\n\n- 公式サイトの記載（2026年11月27日確認）：「性同一性障害 / 初診料 + エナルモンデポー注射 = 5,000円 (heading and price line)」\n- 男性ホルモンのみ対応\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 33.211479,
     "lng": 130.572525,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-fukuoka-gotoh-geka",
@@ -5085,12 +5121,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 福岡県北九州市八幡西区浅川二丁目１５番２０号\n- 電話：093-692-5100\n- <https://gotoh-geka.jp/%e8%87%aa%e8%b2%bb%e8%a8%ba%e7%99%82%ef%bc%88%e4%bf%9d%e9%99%ba%e5%a4%96%e8%a8%ba%e7%99%82%ef%bc%89>\n\n- 公式サイトの記載（2026年11月27日確認）：「○ 当院では、他院で診断を受け、ホルモン療法の方針が決まっている方を対象にホルモン注射を行っています。」\n- 初診時は診断書または紹介状の持参が必要\n- すべて自由診療\n- 薬剤の在庫確認が必要な場合があるため、初診時は受診前に問い合わせが必要\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 33.880565,
     "lng": 130.70169,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-akita-fuji",
@@ -5111,12 +5148,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒010-0802 秋田県秋田市外旭川小谷地２−１\n- 電話：018-853-0788\n- <https://fuji.clinic/gbtq%E7%9B%B8%E8%AB%87%E5%A4%96%E6%9D%A5>\n\n- 公式サイトの記載（2026年11月27日確認）：「ホルモン治療に関する相談（MTF、FTMの方どちらの治療も行っております）」\n- 治療開始にあたり精神科での診断書があるとスムーズだが、ない場合も相談可能\n- 予約制\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 39.751874,
     "lng": 140.097451,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-ibaraki-kanno-sanfujinka",
@@ -5137,12 +5175,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒300-1512 茨城県取手市藤代1076\n- 電話：0297-83-0321\n- <https://kanno-sanfujinka.com/gynecology/>\n\n- 公式サイトの記載（2026年11月27日確認）：「性同一性障害（GID）の方に対し、ホルモン療法（ホルモン注射）を行っています。お一人おひとりの状態やご希望に配慮しながら、継続的な医療支援を行います。MTF（男性から女性）／FTM（女性から男性）いずれの方にも対応しています。」\n- 性別適合手術後のホルモン療法についても相談可能\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 35.915817,
     "lng": 140.113327,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-ibaraki-dr-hattori",
@@ -5163,12 +5202,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 茨城県水戸市宮町1-1-1 水戸駅ビルエクセル北口1階\n- 電話：029-233-6676\n- <https://www.dr-hattori.com/性同一性障害のホルモン療法>\n\n- 公式サイトの記載（2026年11月27日確認）：「Three passages, each verbatim: 「性同一性障害の診断が確定しているＭＴＦとFTMの方の治療を行っています。」 「ホルモン療法をご希望の方は、診断書を必ずご持参ください。」 「○男性ホルモン（注射）による治療を行っています。」」\n- 性同一性障害の診断は行っていない\n- 診断書がない場合はホルモン療法を受けられない\n- 女性ホルモン剤（内服、注射、テープ剤）にも対応\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 36.369884,
     "lng": 140.481567,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-ibaraki-chuo-hinyoukika-mito",
@@ -5189,12 +5229,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒310-0004 茨城県水戸市青柳町4052-6\n- 電話：029-302-5243\n- <https://sites.google.com/view/310u/>\n\n- 公式サイトの記載（2026年11月27日確認）：「性同一性障害（GID）診療は2002年以来、ホルモン補充を主体に対応させて頂いております。」\n- 各診療枠とも予約制\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 36.394073,
     "lng": 140.478546,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-shizuoka-kageyamaiin",
@@ -5215,12 +5256,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒420-0838 静岡県静岡市葵区相生町9-5\n- 電話：054-247-4011\n- <https://kageyamaiin.com/selfpay/>\n\n- 公式サイトの記載（2026年11月27日確認）：「GIDのホルモン治療について / 当院ではGIDの判定は行っておりませんので、診断書をお持ちになってください。 / 定期的な血液検査とホルモン治療を行っております。」\n- 診断書が必要\n- GIDの判定は行っていない\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 34.978744,
     "lng": 138.392871,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-shizuoka-hashimotoclinic",
@@ -5241,12 +5283,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒420-0852 静岡県静岡市葵区紺屋町7-15 Y'sPLATZ 1F・2F\n- 電話：0120-686-100\n- <https://hashimotoclinic.co.jp/service/hormone-therapy/>\n\n- 公式サイトの記載（2026年11月27日確認）：「ホルモン注射とは、なりたい性別のホルモン（男性ホルモンまたは女性ホルモン）を定期的に体内に投与することで、身体的特徴を望む性別へ近づけていく治療です。」\n- 他院での診断書や紹介状がある場合は持参が必要\n- 未成年は保護者の同意書が必要\n- 自費診療\n- 完全予約制\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 34.973248,
     "lng": 138.386322,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "psyco-kagawa-yui-mental-cl",
@@ -5267,12 +5310,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒761-8071 香川県高松市伏石町2150-5\n- 電話：087-897-7277\n- <https://www.yui-mental-cl.com/2021/01/06/109/>\n\n- 公式サイトの記載（2026年11月27日確認）：「当院では性同一性障害に関する診療は行っていますが、ホルモン治療などは行っておりません。あらかじめご了承ください。」\n- ホルモン療法は行っていない\n- 予約制\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 34.307475,
     "lng": 134.062104,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-kagawa-takaoclinic",
@@ -5293,12 +5337,13 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒762-0045 香川県坂出市元町1丁目10-5\n- 電話：0877-46-5111\n- <https://takaoclinic.com/price-list/>\n\n- 公式サイトの記載（2026年11月27日確認）：「性同一性障害薬（FTM） 初診料 ￥3,000 / エナルモンデポ（125mg） ￥1,800 / エナルモンデポ（250mg） ￥3,000 ／ ※再診料はかかりませんが、受診の間隔が1年以上あいた場合は、初診としての扱いになります。」\n- FtMの男性ホルモンに対応\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 34.314259,
     "lng": 133.855675,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   },
   {
     "id": "hrt-kagoshima-kthc-hp",
@@ -5319,11 +5364,12 @@
       "path": "",
       "license": ""
     },
-    "verificationStatus": "要確認",
+    "verificationStatus": "確認済み",
     "importedAt": "2026-11-28",
     "notes": "- 〒890-0051 鹿児島県鹿児島市高麗町43番30号\n- 電話：099-250-5600\n- <https://www.kthc-hp.com/outpatient/urology/>\n\n- 公式サイトの記載（2026年11月27日確認）：「トランスジェンダーの方のホルモン治療を⾏っています。（男性・女性とも）精神科の診断書が必要です。保険外診療になります。 Also: また性別違和の⽅のホルモン治療も⾏っています。」\n- 精神科の診断書が必要\n- 保険外診療\n- 受診の条件と費用は変わることがあるため、受診前に医療機関へ確認すること",
     "lat": 31.577837,
     "lng": 130.553651,
-    "geoSource": "address"
+    "geoSource": "address",
+    "verifiedAt": "2026-11-28"
   }
 ]
