@@ -190,6 +190,22 @@ const clinicLd = {
       )}
     </dl>
 
+    {clinic.reports && clinic.reports.length > 0 && (
+      <section class="clinic-reports" aria-labelledby="clinic-reports-heading">
+        <h2 id="clinic-reports-heading">利用者からの報告 <span class="clinic-unverified">未確認</span></h2>
+        <ul>
+          {clinic.reports.map((report) => (
+            <li>
+              <p>{report.text}</p>
+              <p class="clinic-report-source">
+                {report.url ? <a href={report.url} target="_blank" rel="noreferrer">{report.source}</a> : report.source}{report.date && `（${report.date}）`}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
     <section class="notice" aria-labelledby="clinic-warning">
       <h2 id="clinic-warning">受診前の確認</h2>
       <p>診療内容、費用、予約方法、診断書の要否は変わることがあります。受診前に必ず医療機関へ確認してください。このページは、特定の医療機関をすすめるものではありません。</p>
